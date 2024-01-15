@@ -14,12 +14,12 @@ def readtree():
 def tree_height(root):
     if root is None:
         return 0
-    _, left_height, right_height = root
+    x, left_height, right_height = root
     return max(tree_height(left_height), tree_height(right_height)) + 1
 
 m = int(s())
 
-for _ in range(m):
+for x in range(m):
     input_tree = readtree()
     height = tree_height(input_tree)
     print(height)
