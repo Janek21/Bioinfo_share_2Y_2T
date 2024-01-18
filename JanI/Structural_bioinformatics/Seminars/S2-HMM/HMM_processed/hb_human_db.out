@@ -1,0 +1,83 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             hbb_human
+# target HMM database:             /mnt/NFS_UPF/soft/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       HBB_HUMAN  [L=146]
+Description: Human beta hemoglobin.
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model        Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------     -----------
+    6.1e-30  103.6   0.0    4.5e-29  100.8   0.0    1.9  2  Globin        Globin
+  ------ inclusion threshold ------
+       0.12   11.9   0.7       0.35   10.4   0.0    2.1  2  BCA_ABC_TP_C  Branched-chain amino acid ATP-binding cassette 
+
+
+Domain annotation for each model (and alignments):
+>> Globin  Globin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.8   0.0   6.6e-33   4.5e-29       1     108 []       7     111 ..       7     111 .. 0.98
+   2 ?    0.7   0.1     0.085   5.8e+02      52      72 ..     123     143 ..     116     145 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 100.8 bits;  conditional E-value: 6.6e-33
+                HHHHHHHHHHHHCHHHHHHHHHHHHHHHHHSGGGGGGGCCCTTTT.HHHHHTSCHHHHHHHHHHHHHHHHHHCTTSHHHHHHHHHHHHHHHHTT-.--HH CS
+     Globin   1 qkalvkaswekvkanaeeigaeilkrlfkaypdtkklFkkfgdls.aedlksspkfkahakkvlaaldeavknldnddnlkaalkklgarHakrg.vdpa 98 
+                +k++v a+w+kv  n +e+g e+l rl+ +yp+t+++F++fgdls  ++++++pk+kah+kkvl+a+++ +++l  d nlk+++++l++ H++++ vdp+
+  HBB_HUMAN   7 EKSAVTALWGKV--NVDEVGGEALGRLLVVYPWTQRFFESFGDLStPDAVMGNPKVKAHGKKVLGAFSDGLAHL--D-NLKGTFATLSELHCDKLhVDPE 101
+                6899********..99**********************************************************..6.99******************** PP
+
+                HHCCHHHHHH CS
+     Globin  99 nfklfgeall 108
+                nf+l+g++l+
+  HBB_HUMAN 102 NFRLLGNVLV 111
+                *******986 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.085
+                SCHHHHHHHHHHHHHHHHHHC CS
+     Globin  52 spkfkahakkvlaaldeavkn 72 
+                +p ++a  +kv+a++ +a+++
+  HBB_HUMAN 123 TPPVQAAYQKVVAGVANALAH 143
+                688999999999999999876 PP
+
+>> BCA_ABC_TP_C  Branched-chain amino acid ATP-binding cassette transporter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   5.2e-05      0.35       7      19 ..      50      62 ..      49      63 .. 0.92
+   2 ?   -1.7   0.4      0.34   2.3e+03      17      21 ..     126     130 ..     126     130 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 5.2e-05
+  BCA_ABC_TP_C  7 tPeEVrndPrVie 19
+                  tP++V+ +P+V +
+     HBB_HUMAN 50 TPDAVMGNPKVKA 62
+                  9**********75 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.34
+  BCA_ABC_TP_C  17 VieAY 21 
+                   V++AY
+     HBB_HUMAN 126 VQAAY 130
+                   9**** PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (146 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       217  (0.0158719); expected 273.4 (0.02)
+Passed bias filter:                      204  (0.014921); expected 273.4 (0.02)
+Passed Vit filter:                        17  (0.00124342); expected 13.7 (0.001)
+Passed Fwd filter:                         2  (0.000146284); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.40u 0.37s 00:00:00.77 Elapsed: 00:00:00.69
+# Mc/sec: 507.06
+//
+[ok]
