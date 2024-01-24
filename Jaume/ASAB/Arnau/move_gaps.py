@@ -27,7 +27,7 @@ def move_gaps(seq_1, seq_2):
         long_seq = seq_2
         short_seq = seq_1
 
-    for i in range(len(long_seq) - dif + 1):
+    for i in range(len(short_seq) + 1):
         
         output.append(short_seq[:i] + '-' * dif + short_seq[i:])
 
