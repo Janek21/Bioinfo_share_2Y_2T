@@ -16,6 +16,7 @@ def eq_sum(values, current_item, min_v, cand, cand_v):
                 cand_v + values[current_item])
         return sol + res
 
+
 max_value=int(sys.stdin.readline().strip())
 current_item=int(sys.stdin.readline().strip())
 numbers=[int(x) for x in sys.stdin.readline().strip().split()]#read and place in list as integer
