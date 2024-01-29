@@ -1,14 +1,9 @@
 #!/usr/bin/python3
 
 from read_fasta_oneline import read_fasta_oneline as read_fasta #for doctest
+from print_fasta_oneline import print_fasta_oneline
+import textwrap
 
-def print_fasta_oneline(seqid_seq_dict):
-    fasta_list=[]
-    for entry in seqid_seq_dict:
-        header=">"+entry
-        fasta_list.append([header, seqid_seq_dict[entry]])
-
-    return(fasta_list)
 
 def print_fasta(seqid_seq_dict):
     '''
@@ -27,15 +22,20 @@ def print_fasta(seqid_seq_dict):
     THEVERYFASTCAT
     >LAST_CAT
     ---LASTFA-TCAT
+    >>> print_fasta({'many_cats': 'CAT' * 100})
+    >many_cats
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
     '''
     result=print_fasta_oneline(seqid_seq_dict)
     for entry in result:
         print(entry[0])#key
-        print(entry[1])#value
+        print(textwrap.fill(entry[1], 60))#value, line break every 60 char
 
 
 if __name__=="__main__":
 	import doctest
 	doctest.testmod(verbose=True)
-        
-
