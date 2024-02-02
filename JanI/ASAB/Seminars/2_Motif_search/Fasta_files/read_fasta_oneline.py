@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 from Bio import SeqIO
 
+def read_fasta_oneline_SeqIO(filename):
+    filename="/home/jj/Desktop/Bioinformatics/2nd_year/2term/ASAB/Seminars/S2_Motif_search_ex/data/"+filename
+    readlist={}
+    for read in SeqIO.parse(filename, "fasta"):
+        readlist[read.id]=str(read.seq)
+    return readlist
+
 def read_fasta_oneline(filename):
     '''
     >>> read_fasta_oneline('thefastcat.fasta')
@@ -10,11 +17,21 @@ def read_fasta_oneline(filename):
     '''
     filename="/home/jj/Desktop/Bioinformatics/2nd_year/2term/ASAB/Seminars/S2_Motif_search_ex/data/"+filename
     readlist={}
-    for read in SeqIO.parse(filename, "fasta"):
-        readlist[read.id]=str(read.seq)
+    file=open(filename, "r")
+    for line in file:
+        line=line.strip("\n")
+        if line.startswith(">"):
+            readlist[line[1:]]=""
+        else:
+            last_key=list(readlist)[-1]
+            readlist[last_key]+=line
+    file.close()
     return readlist
+             
+        
+        
 
-#print(read_fasta_oneline('fastcats.fasta'))
+print(read_fasta_oneline('fastcats.fasta'))
 
 if __name__=="__main__":
 	import doctest
