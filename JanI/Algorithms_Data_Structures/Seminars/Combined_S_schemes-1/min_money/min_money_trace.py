@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+
 import sys
 
 def trace(best, goal):
     coins = []
     while goal:
+        if len(best)<=goal:
+            return -1
         use = best[goal]
         coins.append(use)
         goal -= use
@@ -25,20 +28,36 @@ def min_change(goal, denoms):
     return best
     #return table[goal], best
 
-def main():
-    text=sys.stdin.readlines()
 
-    for line in text:
-        line=line.strip("\n").split(" ")
-        goal=int(line[0])
-        denoms=[int(x) for x in line[3:]]
-    #goal = 20
-    #denoms =[2, 4, 6, 17]
-        ls =min_change(goal, denoms)
-        tr=trace(ls, goal)
-        if tr:
-            print(tr)
-        else:
-            print(0)
 
-print(main())
+text=sys.stdin.readlines()
+
+for line in text:
+    line=line.strip("\n").split(" ")
+    goal=int(line[0])
+    denoms=[int(x) for x in line[3:]]
+
+    ls =min_change(goal, denoms)
+    tr=trace(ls, goal)
+    if tr==-1:
+        print("no")
+    elif tr:
+        print(len(tr))
+    else:
+        print(0)
+
+
+
+'''
+def trace(best, goal):
+    if best==[-1]:
+        return 0
+    coins = []
+    while goal:
+        if len(best)<=goal:
+            return "no"
+        use = best[goal]
+        coins.append(use)
+        goal -= use
+    return len(coins)
+'''

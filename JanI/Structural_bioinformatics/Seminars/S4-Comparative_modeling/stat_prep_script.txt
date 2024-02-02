@@ -1,0 +1,21 @@
+blastp -query MODELLER/P11018.fa -db ~/Documents/databases/pdb_seq -out MODELLER/P11018.out
+
+>>get 1st line of file with E-value, get ID (1mee) > from https://www.rcsb.org/ search 1mee > download PDB in data
+
+cd MODELLER
+
+perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i 1mee.pdb -o 1mee
+
+Step2
+
+cat P11018.fa > target_template.fa
+
+>>1meeA because chain A of 1mee
+
+cat 1meeA.fa >> target_template.fa
+
+clustalw target_template.fa
+
+perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <target_template.aln>target_template.pir
+
+mod10.5 modeling.py
