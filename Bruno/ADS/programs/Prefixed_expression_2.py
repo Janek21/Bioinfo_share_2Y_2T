@@ -15,12 +15,6 @@ def calculator(tupple):
 
         return result
 
-def take_input(line_list):
-    operation = []
-    binomio = []
-    binomio.append(line_list[0])
-    line_list[0].pop()
-
 
 def tree():
     root = sys.stdin.read(1)
@@ -36,17 +30,6 @@ def tree():
         return(root, tree(), tree())
 
 
-
-# * 8 + 4 3
-
-tupple1 = tree()
-tupple2 = ['+', '4', '3']
-tupple3 =['*', '8', ['+', '4', '3']]
-tupple4 = ['*', ['-', '2', '8'], ['+', '4', '3']]
+tupple = tree()
 
 print(calculator(tupple1))
-#print(calculator(tupple2))
-#print(calculator(tupple3))
-#print(calculator(tupple4))
-
-#print(tree())
