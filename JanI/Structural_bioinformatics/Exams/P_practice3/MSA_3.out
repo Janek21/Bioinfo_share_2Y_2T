@@ -1,0 +1,698 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  3.hmm
+# target sequence database:        /home/jj/Documents/databases/uniprot_sprot.fasta
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       Glyco_hydro_6  [M=300]
+Accession:   PF01341.12
+Description: Glycosyl hydrolases family 6
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence              Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------              -----------
+   2.8e-117  396.5   0.8   3.7e-117  396.1   0.8    1.1  1  sp|B0XWL3|CBHC_ASPFC   Probable 1,4-beta-D-glucan cellobiohyd
+   2.8e-117  396.5   0.8   3.7e-117  396.1   0.8    1.1  1  sp|Q4WFK4|CBHC_ASPFU   Probable 1,4-beta-D-glucan cellobiohyd
+   4.3e-117  395.9   0.8   5.4e-117  395.5   0.8    1.1  1  sp|A1DJQ7|CBHC_NEOFI   Probable 1,4-beta-D-glucan cellobiohyd
+   4.3e-114  386.0   0.8   5.6e-114  385.6   0.8    1.1  1  sp|P49075|GUX3_AGABI   Exoglucanase 3 OS=Agaricus bisporus GN
+   4.8e-114  385.8   2.0   6.2e-114  385.5   2.0    1.1  1  sp|Q0CFP1|CBHC_ASPTN   Probable 1,4-beta-D-glucan cellobiohyd
+   1.2e-113  384.5   3.7   1.6e-113  384.1   3.7    1.1  1  sp|A2QYR9|CBHC_ASPNC   Probable 1,4-beta-D-glucan cellobiohyd
+   4.1e-113  382.8   1.4   6.1e-113  382.2   1.4    1.2  1  sp|Q5B2E8|CBHC_EMENI   1,4-beta-D-glucan cellobiohydrolase C 
+   2.3e-111  377.0   1.8   2.9e-111  376.7   1.8    1.1  1  sp|A1CCN4|CBHC_ASPCL   Probable 1,4-beta-D-glucan cellobiohyd
+   2.4e-107  363.9   5.4   2.9e-107  363.6   5.4    1.1  1  sp|P46236|GUNB_FUSOX   Putative endoglucanase type B OS=Fusar
+   1.4e-106  361.3   1.0   1.7e-106  361.0   1.0    1.1  1  sp|P07987|GUX2_HYPJE   Exoglucanase 2 OS=Hypocrea jecorina GN
+   4.7e-106  359.6   0.9   5.9e-106  359.3   0.9    1.1  1  sp|Q9C1S9|GUX6_HUMIN   Exoglucanase-6A OS=Humicola insolens G
+   5.3e-101  343.0   0.0   8.2e-101  342.4   0.0    1.3  1  sp|P50401|GUXA_CELFA   Exoglucanase A OS=Cellulomonas fimi (s
+    2.9e-87  297.9   0.9    3.2e-87  297.8   0.9    1.0  1  sp|Q7SIG5|GUN6_HUMIN   Endoglucanase-6B OS=Humicola insolens 
+    1.5e-77  266.0   0.6    2.1e-77  265.5   0.6    1.1  1  sp|P26222|GUN2_THEFU   Endoglucanase E-2 OS=Thermomonospora f
+    2.5e-76  262.0   0.2    3.3e-76  261.6   0.2    1.1  1  sp|P26414|GUNA_THEBI   Endoglucanase A OS=Thermobispora bispo
+    2.3e-75  258.9   1.5    2.8e-75  258.6   1.5    1.1  1  sp|P07984|GUNA_CELFI   Endoglucanase A OS=Cellulomonas fimi G
+    1.1e-71  246.8   1.5    1.2e-71  246.6   1.5    1.0  1  sp|P33682|GUN1_STRHA   Endoglucanase 1 OS=Streptomyces halste
+    4.5e-68  234.9   0.0    5.5e-68  234.6   0.0    1.0  1  sp|P13933|GUN1_STRSS   Endoglucanase 1 OS=Streptomyces sp. (s
+  ------ inclusion threshold ------
+       0.16   16.4   0.0       0.18   16.2   0.0    1.1  1  sp|B2USX3|GMHA_HELPS   Phosphoheptose isomerase OS=Helicobact
+       0.34   15.3   0.0        0.4   15.1   0.0    1.1  1  sp|Q1CT15|GMHA_HELPH   Phosphoheptose isomerase OS=Helicobact
+       0.35   15.3   0.0       0.76   14.2   0.0    1.4  1  sp|Q3SMI5|GMHA_THIDA   Phosphoheptose isomerase OS=Thiobacill
+       0.44   15.0   0.0       0.51   14.7   0.0    1.1  1  sp|O25528|GMHA_HELPY   Phosphoheptose isomerase OS=Helicobact
+       0.67   14.3   0.0       0.79   14.1   0.0    1.1  1  sp|B6JM81|GMHA_HELP2   Phosphoheptose isomerase OS=Helicobact
+       0.68   14.3   0.0       0.79   14.1   0.0    1.1  1  sp|Q9ZKZ1|GMHA_HELPJ   Phosphoheptose isomerase OS=Helicobact
+        1.3   13.4   0.0        2.6   12.4   0.0    1.4  1  sp|B8F3E3|SYM_HAEPS    Methionine--tRNA ligase OS=Haemophilus
+        3.6   11.9   0.0        4.6   11.6   0.0    1.2  1  sp|Q9HJV9|GMHA_THEAC   Probable phosphoheptose isomerase OS=T
+        3.6   11.9   0.0        4.6   11.6   0.0    1.2  1  sp|B8F7D1|END4_HAEPS   Probable endonuclease 4 OS=Haemophilus
+        6.1   11.2   0.0         11   10.4   0.0    1.3  1  sp|B5QTJ7|CLPX_SALEP   ATP-dependent Clp protease ATP-binding
+        6.6   11.1   0.0          9   10.6   0.0    1.3  1  sp|P56886|F16PA_SINMW  Fructose-1,6-bisphosphatase class 1 OS
+
+
+Domain annotation for each sequence (and alignments):
+>> sp|B0XWL3|CBHC_ASPFC  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Neosartorya fumigata (strain CEA10 / CBS 144.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  396.1   0.8    2e-121  3.7e-117       1     299 [.     107     420 ..     107     421 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 396.1 bits;  conditional E-value: 2e-121
+         Glyco_hydro_6   1 vnpkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe.. 83 
+                           +np+ys+ev++ a ++  ++l+ ka++va+vp++vWld +a+v+++ ++lad++a++ka+++   + ++vvYdlPdRDCaalaSnGe  
+  sp|B0XWL3|CBHC_ASPFC 107 ANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGANppiAGIFVVYDLPDRDCAALASNGEys 195
+                           59*************999****************************************9999999999********************* PP
+
+         Glyco_hydro_6  84 .gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgw 171
+                            +++++a+Yk+yidai a+l ky+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e++ yalk+l +lpnva+YlDagh+gWlgw
+  sp|B0XWL3|CBHC_ASPFC 196 iANNGVANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLPNVAMYLDAGHAGWLGW 281
+                           ***************************************************9..***************.******************* PP
+
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrk 246
+                           +anl+paa+l+a+v+++ag++a+vrG+atnv+Ny+a+              +de++Y++a+a+ l++agf+a+f++DtsRnGv+pt+++
+  sp|B0XWL3|CBHC_ASPFC 282 PANLGPAATLFAKVYTDAGSPAAVRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKEAGFDAHFIMDTSRNGVQPTKQN 370
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 247 eagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ++gdWCn+ g+g+G rp++ntgdpl da++WiKp+GeSDGt   s+s++ r+d
+  sp|B0XWL3|CBHC_ASPFC 371 AWGDWCNVIGTGFGVRPSTNTGDPLQDAFVWIKPGGESDGT---SNSTSPRYD 420
+                           *****************************************...677766665 PP
+
+>> sp|Q4WFK4|CBHC_ASPFU  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Neosartorya fumigata (strain ATCC MYA-4609 / 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  396.1   0.8    2e-121  3.7e-117       1     299 [.     107     420 ..     107     421 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 396.1 bits;  conditional E-value: 2e-121
+         Glyco_hydro_6   1 vnpkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe.. 83 
+                           +np+ys+ev++ a ++  ++l+ ka++va+vp++vWld +a+v+++ ++lad++a++ka+++   + ++vvYdlPdRDCaalaSnGe  
+  sp|Q4WFK4|CBHC_ASPFU 107 ANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGANppiAGIFVVYDLPDRDCAALASNGEys 195
+                           59*************999****************************************9999999999********************* PP
+
+         Glyco_hydro_6  84 .gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgw 171
+                            +++++a+Yk+yidai a+l ky+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e++ yalk+l +lpnva+YlDagh+gWlgw
+  sp|Q4WFK4|CBHC_ASPFU 196 iANNGVANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLPNVAMYLDAGHAGWLGW 281
+                           ***************************************************9..***************.******************* PP
+
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrk 246
+                           +anl+paa+l+a+v+++ag++a+vrG+atnv+Ny+a+              +de++Y++a+a+ l++agf+a+f++DtsRnGv+pt+++
+  sp|Q4WFK4|CBHC_ASPFU 282 PANLGPAATLFAKVYTDAGSPAAVRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKEAGFDAHFIMDTSRNGVQPTKQN 370
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 247 eagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ++gdWCn+ g+g+G rp++ntgdpl da++WiKp+GeSDGt   s+s++ r+d
+  sp|Q4WFK4|CBHC_ASPFU 371 AWGDWCNVIGTGFGVRPSTNTGDPLQDAFVWIKPGGESDGT---SNSTSPRYD 420
+                           *****************************************...677766665 PP
+
+>> sp|A1DJQ7|CBHC_NEOFI  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Neosartorya fischeri (strain ATCC 1020 / DSM 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  395.5   0.8  2.9e-121  5.4e-117       1     299 [.     103     416 ..     103     417 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 395.5 bits;  conditional E-value: 2.9e-121
+         Glyco_hydro_6   1 vnpkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe.. 83 
+                           +np+ys+ev++ a ++  ++l+ ka++va+vp++vWld +a+v+++ ++lad++a++ka+++   + ++vvYdlPdRDCaalaSnGe  
+  sp|A1DJQ7|CBHC_NEOFI 103 ANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGASppiAGIFVVYDLPDRDCAALASNGEys 191
+                           59*************999**************************************999988998999********************* PP
+
+         Glyco_hydro_6  84 .gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgw 171
+                            +++++a+Yk+yidai a+l ky+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e++ yalk+l +lpnva+YlDagh+gWlgw
+  sp|A1DJQ7|CBHC_NEOFI 192 iANNGVANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLPNVAMYLDAGHAGWLGW 277
+                           ***************************************************9..***************.******************* PP
+
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrk 246
+                           +anl+paa+l+a+v+++ag++a++rG+atnv+Ny+a+              +de++Y++a+a+ l++agf+a+f++DtsRnGv+pt+++
+  sp|A1DJQ7|CBHC_NEOFI 278 PANLGPAATLFAKVYTDAGSPAALRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKNAGFDAHFIMDTSRNGVQPTKQS 366
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 247 eagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ++gdWCn+ g+g+G rp++ntgdpl da++WiKp+GeSDGt   s+ss++r+d
+  sp|A1DJQ7|CBHC_NEOFI 367 AWGDWCNVIGTGFGVRPSTNTGDPLQDAFVWIKPGGESDGT---SNSSSARYD 416
+                           *****************************************...788888887 PP
+
+>> sp|P49075|GUX3_AGABI  Exoglucanase 3 OS=Agaricus bisporus GN=cel3 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  385.6   0.8    3e-118  5.6e-114       2     299 ..     100     404 ..      99     405 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 385.6 bits;  conditional E-value: 3e-118
+         Glyco_hydro_6   2 npkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGe...gaa 86 
+                           +p y++ev++aaa +s ++la+ka++vak+pt+vW+d++a+v+++  +lada+++++    +v++vvYdlPdRDCaalaSnGe   +++
+  sp|P49075|GUX3_AGABI 100 SPFYADEVAQAAADISnPSLATKAASVAKIPTFVWFDTVAKVPDLGGYLADARSKNQ----LVQIVVYDLPDRDCAALASNGEfslAND 184
+                           68899**********99************************************9966....**************************** PP
+
+         Glyco_hydro_6  87 slakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwdanl 175
+                           +l+kYk+y+d+iaa++k+++d+ +v+v+EpDsLanlvtnlnv+kCa+a  +++yke++ ya++kl ++ +v++Y+Dagh+gWlgw+anl
+  sp|P49075|GUX3_AGABI 185 GLNKYKNYVDQIAAQIKQFPDVSVVAVIEPDSLANLVTNLNVQKCANA--QSAYKEGVIYAVQKL-NAVGVTMYIDAGHAGWLGWPANL 270
+                           ***********************************************9..***************.777******************** PP
+
+         Glyco_hydro_6 176 epaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrkeagd 250
+                           +paa+l+a+++++ag+++++rG+atnv+N++a+              +de++Y+eala+ l++agf+a+f++D++R+Gv+++ r+++gd
+  sp|P49075|GUX3_AGABI 271 SPAAQLFAQIYRDAGSPRNLRGIATNVANFNALrasspdpitqgnsnYDEIHYIEALAPMLSNAGFPAHFIVDQGRSGVQNI-RDQWGD 358
+                           *********************************************************************************7.****** PP
+
+         Glyco_hydro_6 251 WCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           WCn+kgag+G+rpt+ntg++l+da++W+Kp+Ge+DGt   sd+s+ r+d
+  sp|P49075|GUX3_AGABI 359 WCNVKGAGFGQRPTTNTGSSLIDAIVWVKPGGECDGT---SDNSSPRFD 404
+                           *************************************...666666665 PP
+
+>> sp|Q0CFP1|CBHC_ASPTN  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Aspergillus terreus (strain NIH 2624 / FGSC A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  385.5   2.0  3.4e-118  6.2e-114       1     299 [.     121     434 ..     121     435 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 385.5 bits;  conditional E-value: 3.4e-118
+         Glyco_hydro_6   1 vnpkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe.. 83 
+                           +np+ys+ev++ a ++  ++l  +a++ akvp+++Wld++a+v+++ ++lad+ a+++a+++   ++++vvYdlPdRDCaalaSnGe  
+  sp|Q0CFP1|CBHC_ASPTN 121 ANPYYSSEVHTLAMPSLaSSLLPAASAAAKVPSFTWLDTAAKVPTMGTYLADIKAKNAAGANppiAAQFVVYDLPDRDCAALASNGEys 209
+                           59**********99999899************************************9999999*99*********************** PP
+
+         Glyco_hydro_6  84 .gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgw 171
+                            ++ ++a+Yk+yidai a+l +y+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e+++yal +l +lpnva+Y+Dagh+gWlgw
+  sp|Q0CFP1|CBHC_ASPTN 210 iANGGVANYKKYIDAIRAQLLNYPDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVNYALIQL-NLPNVAMYIDAGHAGWLGW 295
+                           ***************************************************9..***************.******************* PP
+
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrk 246
+                           +an++paa+l+a v+k+ag++a++rG+atnv+Ny+a+              +de +Y++a+a+ l+ +g++a+f++Dt+RnGv+pt+++
+  sp|Q0CFP1|CBHC_ASPTN 296 PANIGPAAQLFAGVYKDAGAPAALRGLATNVANYNAFsistcpsytsgdanCDENRYINAIAPLLKDQGWDAHFIVDTGRNGVQPTKQN 384
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 247 eagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ++gdWCn+ g+g+G rpt+ntg++lvda++W+Kp+GeSDGt   sdss++r+d
+  sp|Q0CFP1|CBHC_ASPTN 385 AWGDWCNVIGTGFGVRPTTNTGNSLVDAFVWVKPGGESDGT---SDSSSARYD 434
+                           *****************************************...788888887 PP
+
+>> sp|A2QYR9|CBHC_ASPNC  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Aspergillus niger (strain CBS 513.88 / FGSC A
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  384.1   3.7  8.6e-118  1.6e-113       1     299 [.     109     425 ..     109     426 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 384.1 bits;  conditional E-value: 8.6e-118
+         Glyco_hydro_6   1 vnpkysaeveaaaakls....aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnG 82 
+                           vnp+ys+ev++ a ++     ++l+a+a++ akvp++vWld++a+v+++ ++lad++++++a+++   + ++vvYdlPdRDCaalaSnG
+  sp|A2QYR9|CBHC_ASPNC 109 VNPYYSSEVASLAIPSLtgslSSLQAAATAAAKVPSFVWLDTAAKVPTMGDYLADIQSQNAAGANppiAGQFVVYDLPDRDCAALASNG 197
+                           79*******999887655668899************************************9999999999******************* PP
+
+         Glyco_hydro_6  83 e...gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgW 168
+                           e   +++++++Yk+yid+i ++l +y+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e+++yal++l +lpnva+YlDagh+gW
+  sp|A2QYR9|CBHC_ASPNC 198 EysiADNGVEHYKSYIDSIREILVQYSDVHTLLVIEPDSLANLVTNLNVAKCANA--ESAYLECTNYALTQL-NLPNVAMYLDAGHAGW 283
+                           ******************************************************9..9**************.**************** PP
+
+         Glyco_hydro_6 169 lgwdanlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           lgw+an +paa+l+a+v+k+a+++a+vrG+atnv+Ny+a+              +de++Y++a+a+ l+a+gf+a+f++Dt+RnG++pt
+  sp|A2QYR9|CBHC_ASPNC 284 LGWPANQQPAADLFASVYKNASSPAAVRGLATNVANYNAWtisscpsytqgnsvCDEQQYINAIAPLLQAQGFDAHFIVDTGRNGKQPT 372
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 244 rrkeagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                            ++++gdWCn+ ++g+Gerpt++tgd+lvda++W+Kp+GeSDGt   sdss++r+d
+  sp|A2QYR9|CBHC_ASPNC 373 GQQAWGDWCNVINTGFGERPTTDTGDALVDAFVWVKPGGESDGT---SDSSATRYD 425
+                           ********************************************...899999998 PP
+
+>> sp|Q5B2E8|CBHC_EMENI  1,4-beta-D-glucan cellobiohydrolase C OS=Emericella nidulans (strain FGSC A4 / ATCC 38163 / CBS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  382.2   1.4  3.3e-117  6.1e-113       1     299 [.     105     421 ..     105     422 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 382.2 bits;  conditional E-value: 3.3e-117
+         Glyco_hydro_6   1 vnpkysaeveaaaakls....aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnG 82 
+                           vnp+ys+ev++ a ++     ++la +a++ akvp++vWld +a+v++++++lad++++++a+++   + ++vvYdlPdRDCaalaSnG
+  sp|Q5B2E8|CBHC_EMENI 105 VNPYYSSEVQSIAIPSLtgtlSSLAPAATAAAKVPSFVWLDVAAKVPTMATYLADIRSQNAAGANppiAGQFVVYDLPDRDCAALASNG 193
+                           79*******9988876656678999***********************************9999999999******************* PP
+
+         Glyco_hydro_6  83 e...gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgW 168
+                           e   ++ ++++Yk+yid+i ++l +y+d+++++v+EpDsLanlvtnlnv+kCa+a  +++y+e+++ya+++l +lpnva+YlDagh+gW
+  sp|Q5B2E8|CBHC_EMENI 194 EfaiSDGGVQHYKDYIDSIREILVEYSDVHVILVIEPDSLANLVTNLNVAKCANA--QSAYLECTNYAVTQL-NLPNVAMYLDAGHAGW 279
+                           ****9*************************************************9..***************.**************** PP
+
+         Glyco_hydro_6 169 lgwdanlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           lgw+anl+paa+l+a v+++ag++a++rG+atnv+Ny+a+              +de++Y++ala+ l+a+gf+a+f+ Dt+RnG++pt
+  sp|Q5B2E8|CBHC_EMENI 280 LGWPANLQPAANLYAGVYSDAGSPAALRGLATNVANYNAWaidtcpsytqgnsvCDEKDYINALAPLLRAQGFDAHFITDTGRNGKQPT 368
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 244 rrkeagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                            ++++gdWCn+ g+g+G+rp++ntgd+l+da++W+Kp+GeSDGt   sd+s++r+d
+  sp|Q5B2E8|CBHC_EMENI 369 GQQAWGDWCNVIGTGFGARPSTNTGDSLLDAFVWVKPGGESDGT---SDTSAARYD 421
+                           ********************************************...899999998 PP
+
+>> sp|A1CCN4|CBHC_ASPCL  Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Aspergillus clavatus (strain ATCC 1007 / CBS 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  376.7   1.8  1.6e-115  2.9e-111       1     299 [.     117     430 ..     117     431 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 376.7 bits;  conditional E-value: 1.6e-115
+         Glyco_hydro_6   1 vnpkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe.. 83 
+                           +np+ys+ev++ a ++  +ala ka++va+vp++vWld +a+v+++ ++l++++a++ka+++   + ++vvYdlPdRDCaalaSnGe  
+  sp|A1CCN4|CBHC_ASPCL 117 ANPYYSSEVHTLAIPSMtGALAVKASAVADVPSFVWLDVAAKVPTMGTYLENIRAKNKAGANppvAGIFVVYDLPDRDCAALASNGEya 205
+                           59*********9999999****************************************9999998889********************* PP
+
+         Glyco_hydro_6  84 .gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgw 171
+                            ++ ++akYk+yidai a+l ky+d+++++v+EpDsLanl+tn+nv+kC+ a  +++y+e+++yalk+l +lpnva+Y+Dagh gWlgw
+  sp|A1CCN4|CBHC_ASPCL 206 iADGGIAKYKAYIDAIRAQLLKYPDVHTILVIEPDSLANLITNINVAKCSGA--KDAYLECINYALKQL-NLPNVAMYIDAGHGGWLGW 291
+                           *************************************************999..9**************.******************* PP
+
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrk 246
+                           dan++paae++a+v+k+a+++a++rG+a+nv+Ny+a+              +de++Y++al++ l+aag++a+f++Dt+RnGv+pt+++
+  sp|A1CCN4|CBHC_ASPCL 292 DANIGPAAEMYAKVYKDADAPAALRGLAVNVANYNAWtidtcpsytqgnknCDEKRYIHALYPLLKAAGWDARFIMDTGRNGVQPTKQQ 380
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 247 eagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ++gdWCn+ g+g+G rp+ +tgd+l+da++W+Kp+ eSDGt   sd++++r+d
+  sp|A1CCN4|CBHC_ASPCL 381 AQGDWCNVIGTGFGIRPSSETGDDLLDAFVWVKPGAESDGT---SDTTAARYD 430
+                           *****************************************...899999987 PP
+
+>> sp|P46236|GUNB_FUSOX  Putative endoglucanase type B OS=Fusarium oxysporum PE=2 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  363.6   5.4  1.5e-111  2.9e-107       2     299 ..     116     427 ..     115     428 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 363.6 bits;  conditional E-value: 1.5e-111
+         Glyco_hydro_6   2 npkysaevea.aaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagk.vvvlvvYdlPdRDCaalaSnGe...ga 85 
+                           n++y++ev + a+ kls+a+a++a+kva+vp++ W+d+ +++s +e++lad+++a+ka+gk + ++vvYdlP+RDCaa aSnGe   ++
+  sp|P46236|GUNB_FUSOX 116 NNYYRSEVMNlAVPKLSGAKATAAAKVADVPSFQWMDTYDHISLMEDTLADIRKANKAGGKyAGQFVVYDLPNRDCAAAASNGEyslDK 204
+                           66777776550556667********************************************999************************* PP
+
+         Glyco_hydro_6  86 aslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwdan 174
+                           ++++kYk+yi +i  +l++y+d+++++v+EpDsLanlvtnlnv+kCaka  +++ykel+ ya+k+l +lpnv++YlDagh gWlgw+an
+  sp|P46236|GUNB_FUSOX 205 DGANKYKAYIAKIKGILQNYSDTKVILVIEPDSLANLVTNLNVDKCAKA--ESAYKELTVYAIKEL-NLPNVSMYLDAGHGGWLGWPAN 290
+                           **********************************************999..9**************.********************** PP
+
+         Glyco_hydro_6 175 lepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagf.gakfviDtsRnGvgptrrkea 248
+                           ++paa+l+a+++k+ag++++vrG++tnvsNy+ +              +de++Y++a+a+ l ++g+ + kf++D++R+G++pt +k++
+  sp|P46236|GUNB_FUSOX 291 IGPAAKLYAQIYKDAGKPSRVRGLVTNVSNYNGWklstkpdytesnpnYDEQRYINAFAPLLAQEGWsNVKFIVDQGRSGKQPTGQKAQ 379
+                           *******************************************************************9********************* PP
+
+         Glyco_hydro_6 249 gdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           gdWCn kg+g+G rp++ntgd+l+da++W+Kp+GeSDGt   sd+s++r+d
+  sp|P46236|GUNB_FUSOX 380 GDWCNAKGTGFGLRPSTNTGDALADAFVWVKPGGESDGT---SDTSAARYD 427
+                           ***************************************...899999987 PP
+
+>> sp|P07987|GUX2_HYPJE  Exoglucanase 2 OS=Hypocrea jecorina GN=cbh2 PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  361.0   1.0  9.3e-111  1.7e-106       2     299 ..     125     436 ..     124     437 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 361.0 bits;  conditional E-value: 9.3e-111
+         Glyco_hydro_6   2 npkysaeveaaaakls.aalaakaekvakvptavWldriaavsevekeladalaaakaagk.vvvlvvYdlPdRDCaalaSnGe...ga 85 
+                           n +y++ev++ a ++  +a+a++a++vakvp+++Wld+ ++++ +e++lad+++a+k++g+ + ++vvYdlPdRDCaalaSnGe   ++
+  sp|P07987|GUX2_HYPJE 125 NAYYASEVSSLAIPSLtGAMATAAAAVAKVPSFMWLDTLDKTPLMEQTLADIRTANKNGGNyAGQFVVYDLPDRDCAALASNGEysiAD 213
+                           89999999999888888********************************************999************************* PP
+
+         Glyco_hydro_6  86 aslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwdan 174
+                            ++akYk+yid+i +++ +y+d+r+++v+EpDsLanlvtnl ++kCa+a  +++y+e+++ya+++l +lpnva+YlDagh+gWlgw+an
+  sp|P07987|GUX2_HYPJE 214 GGVAKYKNYIDTIRQIVVEYSDIRTLLVIEPDSLANLVTNLGTPKCANA--QSAYLECINYAVTQL-NLPNVAMYLDAGHAGWLGWPAN 299
+                           ************************************************9..***************.********************** PP
+
+         Glyco_hydro_6 175 lepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagf.gakfviDtsRnGvgptrrkea 248
+                            +paa+l+a+v+k+a++++++rG+atnv+Ny+ +              ++e+ Y++a+ + l ++g+ +a f+ D++R+G++pt ++++
+  sp|P07987|GUX2_HYPJE 300 QDPAAQLFANVYKNASSPRALRGLATNVANYNGWnitsppsytqgnavYNEKLYIHAIGPLLANHGWsNAFFITDQGRSGKQPTGQQQW 388
+                           *******************************************************************8899****************** PP
+
+         Glyco_hydro_6 249 gdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           gdWCn+ g+g+G rp+antgd+l+d ++W+Kp+Ge+DGt   sdss+ r+d
+  sp|P07987|GUX2_HYPJE 389 GDWCNVIGTGFGIRPSANTGDSLLDSFVWVKPGGECDGT---SDSSAPRFD 436
+                           ***************************************...899999887 PP
+
+>> sp|Q9C1S9|GUX6_HUMIN  Exoglucanase-6A OS=Humicola insolens GN=cel6A PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  359.3   0.9  3.2e-110  5.9e-106       2     299 ..     128     442 ..     127     443 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 359.3 bits;  conditional E-value: 3.2e-110
+         Glyco_hydro_6   2 npkysaeveaaaakls..aalaakaekvakvptavWldriaavse.vekeladalaaakaagk...vvvlvvYdlPdRDCaalaSnGe. 83 
+                           n++y++ev++ a ++   +al+a+a++va+vp++ Wldr  +v++ + ++l++++aa++a+++   ++++vvYdlPdRDCaa aSnGe 
+  sp|Q9C1S9|GUX6_HUMIN 128 NNYYRSEVHTLAIPQItdPALRAAASAVAEVPSFQWLDRNVTVDTlLVETLSEIRAANQAGANppyAAQIVVYDLPDRDCAAAASNGEw 216
+                           899999999988876658**********************99999778999999999999998999*********************** PP
+
+         Glyco_hydro_6  84 ..gaaslakYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlg 170
+                             +++++++Yk yi++i ++l +++d+r+++v+EpDsLan+vtn+nv+kC+ a  a++y+el+ yalk+l +lp+va+Y+Dagh+gWlg
+  sp|Q9C1S9|GUX6_HUMIN 217 aiANNGANNYKGYINRIREILISFSDVRTILVIEPDSLANMVTNMNVAKCSGA--ASTYRELTIYALKQL-DLPHVAMYMDAGHAGWLG 302
+                           **************************************************999..9**************.****************** PP
+
+         Glyco_hydro_6 171 wdanlepaaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrr 245
+                           w+an++paael+a+++++ag++++vrG+atnv+Ny+a+              +de++Y+ea+++ lea+gf+a+f++D++R+G++pt +
+  sp|Q9C1S9|GUX6_HUMIN 303 WPANIQPAAELFAKIYEDAGKPRAVRGLATNVANYNAWsisspppytspnpnYDEKHYIEAFRPLLEARGFPAQFIVDQGRSGKQPTGQ 391
+                           ***************************************************************************************** PP
+
+         Glyco_hydro_6 246 keagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGtsegsdssgkrld 299
+                           ke+g+WCn  g+g+G rptantg++ vda++W+Kp+Ge+DGt   sd++++r+d
+  sp|Q9C1S9|GUX6_HUMIN 392 KEWGHWCNAIGTGFGMRPTANTGHQYVDAFVWVKPGGECDGT---SDTTAARYD 442
+                           ******************************************...899999887 PP
+
+>> sp|P50401|GUXA_CELFA  Exoglucanase A OS=Cellulomonas fimi (strain ATCC 484 / DSM 20113 / JCM 1341 / NBRC 15513 / NCIM
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  342.4   0.0  4.4e-105  8.2e-101       1     299 [.      56     425 ..      56     426 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 342.4 bits;  conditional E-value: 4.4e-105
+         Glyco_hydro_6   1 vnpkysaeveaaaakls..aalaakaekvakvptavWldriaavse......vekeladalaaakaagk..vvvlvvYdlPdRDCaala 79 
+                           vnp+++a+v+aaa ++s  +alaak+++va +ptavW+dri+a+++      ++ +l++a+a++kaag   v++lv+YdlP+RDC ala
+  sp|P50401|GUXA_CELFA  56 VNPTWAASVNAAAGRQSadPALAAKMRTVAGQPTAVWMDRISAITGnadgngLKFHLDNAVAQQKAAGVplVFNLVIYDLPGRDCFALA 144
+                           79**********99998899************************999*********************999****************** PP
+
+         Glyco_hydro_6  80 SnGe...gaaslakYke.yidaiaagl..kkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlD 162
+                           SnGe   ++a+la+Yk+ yid+ia+ l  ++y+++ri++ +EpDsL+nl+tn+++++C++a  a +y+++++yal+kl+a+pnv++Y+D
+  sp|P50401|GUXA_CELFA 145 SNGElpaTDAGLARYKSeYIDPIADLLdnPEYESIRIAATIEPDSLPNLTTNISEPACQQA--APYYRQGVKYALDKLHAIPNVYNYID 231
+                           ***************************999****************************999..************************** PP
+
+         Glyco_hydro_6 163 aghsgWlgwdanlepaaellaevlkkagve.akvrGfatnvsNyqat............................edetaYaealasal 222
+                           +ghsgWlgwd+n++p+a+l+aev+k+++++ a+++Gf+++v+N +++                            +de++Y++++++ l
+  sp|P50401|GUXA_CELFA 232 IGHSGWLGWDSNAGPSATLFAEVAKSTTAGfASIDGFVSDVANTTPLeepllsdssltinntpirsskfyewnfdFDEIDYTAHMHRLL 320
+                           ******************************9********************************************************** PP
+
+         Glyco_hydro_6 223 eaagfgak..fviDtsRnGvgpt......................rrkeagdWCnpkgaglGerptant...gdplvdaylWiKppGeS 284
+                           +aagf+++  +++DtsRnG+g+                       rr ++g WCnp gag+G+ p+a++   +++++da++WiKppGeS
+  sp|P50401|GUXA_CELFA 321 VAAGFPSSigMLVDTSRNGWGGPnrptsitastdvnayvdanrvdRRVHRGAWCNPLGAGIGRFPEATPsgyAASHLDAFVWIKPPGES 409
+                           *****87777************99*********************************************99899*************** PP
+
+         Glyco_hydro_6 285 DGts.egsdssgkrld 299
+                           DG+s ++++++gkr+d
+  sp|P50401|GUXA_CELFA 410 DGAStDIPNDQGKRFD 425
+                           ***999********98 PP
+
+>> sp|Q7SIG5|GUN6_HUMIN  Endoglucanase-6B OS=Humicola insolens GN=cel6B PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  297.8   0.9   1.7e-91   3.2e-87       5     298 ..      21     331 ..      13     333 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 297.8 bits;  conditional E-value: 1.7e-91
+         Glyco_hydro_6   5 ysaeveaaaaklsaalaakaekva.kvptavWldriaavsevekeladalaaakaagk.vvvlvvYdlPdRDCaalaSnGe...gaasl 88 
+                             ++++a  ++ ++++aak + v+ kv t++W+++i   ++++ ++++a+aa++++++ +v lv+Y+lPdRDC+a  S+Ge   ++++l
+  sp|Q7SIG5|GUN6_HUMIN  21 LDQTRQAFLSRGDQTNAAKVKYVQeKVGTFYWISNIFLLRDIDVAIQNARAAKARGENpIVGLVLYNLPDRDCSAGESSGElklSQNGL 109
+                           2333444444455777777777765789**************************9999******************************* PP
+
+         Glyco_hydro_6  89 akYke.yidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwdanle 176
+                           ++Yk+ y++++a++lk+ +d++++v+lEpD+++n+vt  + + C++a  ++ ++e++ ya+++l +++++  YlD+++ gWlgw ++le
+  sp|Q7SIG5|GUN6_HUMIN 110 NRYKNeYVNPFAQKLKAASDVQFAVILEPDAIGNMVTG-TSAFCRNA--RGPQQEAIGYAISQL-QASHIHLYLDVANGGWLGWADKLE 194
+                           **************************************.5677**99..***************.888********************* PP
+
+         Glyco_hydro_6 177 paaellaevlkkagveakvrGfatnvsNyqat..............edetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdW 251
+                           p+a+++a++l+kag +ak+rGf++nvsNy+++               de +Ya+++a+a++++g++++f+iD+sR + ++ +r+e+g+W
+  sp|Q7SIG5|GUN6_HUMIN 195 PTAQEVATILQKAGNNAKIRGFSSNVSNYNPYstsnpppytsgspsPDESRYATNIANAMRQRGLPTQFIIDQSRVALSG-ARSEWGQW 282
+                           ********************************************************************************.5******* PP
+
+         Glyco_hydro_6 252 CnpkgaglGerptantgdplvdaylWiKppGeSDGts..egsdssgkrl 298
+                           Cn++ ag+G++ t+nt++p+vda++W+Kp+GeSDG++   g++++g ++
+  sp|Q7SIG5|GUN6_HUMIN 283 CNVNPAGFGQPFTTNTNNPNVDAIVWVKPGGESDGQCgmGGAPAAGMWF 331
+                           *************************************734445555555 PP
+
+>> sp|P26222|GUN2_THEFU  Endoglucanase E-2 OS=Thermomonospora fusca GN=celB PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  265.5   0.6   1.1e-81   2.1e-77       1     288 [.      38     299 ..      38     310 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 265.5 bits;  conditional E-value: 1.1e-81
+         Glyco_hydro_6   1 vnpkysaeveaaaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaasla 89 
+                           vnp++s++++++ +++++++   ++++a+vp+ +W++++ ++ +++ ++++ ++aa+aagk+++lvvY+ P+RDC +++S+G ga s++
+  sp|P26222|GUN2_THEFU  38 VNPNMSSAEWVRNNPNDPRTPVIRDRIASVPQGTWFAHH-NPGQITGQVDALMSAAQAAGKIPILVVYNAPGRDC-GNHSSG-GAPSHS 123
+                           79***********************************96.***********************************.******.****** PP
+
+         Glyco_hydro_6  90 kYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalp.nvavYlDaghsgWlgwdanlep 177
+                           +Y+++id++aagl   +++++ +++EpD ++       +++C+++  ++e +e++aya k+l+a + ++++Y+Daghs+W+        
+  sp|P26222|GUN2_THEFU 124 AYRSWIDEFAAGL---KNRPAYIIVEPDLISL------MSSCMQH-VQQEVLETMAYAGKALKAGSsQARIYFDAGHSAWH-------- 194
+                           *************...**************97......689*988.7999*************9888**************........ PP
+
+         Glyco_hydro_6 178 aaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdWCnpkgaglGerptan 266
+                           + +++a++l++a+++++++G+atn+sNy+ t+de+aYa+a+ sa+++   + ++viDtsRnG+gp    + ++WC+p+g+++G+++t+n
+  sp|P26222|GUN2_THEFU 195 SPAQMASWLQQADISNSAHGIATNTSNYRWTADEVAYAKAVLSAIGNP--SLRAVIDTSRNGNGP----AGNEWCDPSGRAIGTPSTTN 277
+                           999******************************************976..6779***********....59****************** PP
+
+         Glyco_hydro_6 267 tgdplvdaylWiKppGeSDGts 288
+                           tgdp++da+lWiK pGe+DG+ 
+  sp|P26222|GUN2_THEFU 278 TGDPMIDAFLWIKLPGEADGCI 299
+                           ********************96 PP
+
+>> sp|P26414|GUNA_THEBI  Endoglucanase A OS=Thermobispora bispora GN=celA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  261.6   0.2   1.8e-80   3.3e-76       1     288 [.      41     303 ..      41     313 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 261.6 bits;  conditional E-value: 1.8e-80
+         Glyco_hydro_6   1 vnpkysaeveaaaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaasla 89 
+                           v+p+++a++++aa+++++++   ++++a vpt  W+++  ++s+v++e+++++ aa+aagk++++vvY++P+RDC +  S+G ga +++
+  sp|P26414|GUNA_THEBI  41 VDPQSNAAKWVAANPNDPRTPVIRDRIAAVPTGRWFANY-NPSTVRAEVDAYVGAAAAAGKIPIMVVYAMPNRDC-GGPSAG-GAPNHT 126
+                           79***********************************97.***********************************.******.****** PP
+
+         Glyco_hydro_6  90 kYkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalp.nvavYlDaghsgWlgwdanlep 177
+                           +Y+++id+iaagl   +++++v++lEpD+L+  +      +C++ +++ae +++   a kk++a++ +++vY+Dagh +W+        
+  sp|P26414|GUNA_THEBI 127 AYRAWIDEIAAGL---RNRPAVIILEPDALPI-M-----TNCMSPSEQAEVQASAVGAGKKFKAASsQAKVYFDAGHDAWV-------- 198
+                           *************...***************6.4.....55**999*****************9998**************........ PP
+
+         Glyco_hydro_6 178 aaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdWCnpkgaglGerptan 266
+                            a+++a++l+ a+++++++G+a+nvsNy+ t+  ++Ya+++ sa++a   + ++viDtsRnG+gp      ++WC+p+g++ G+ +t++
+  sp|P26414|GUNA_THEBI 199 PADEMASRLRGADIANSADGIALNVSNYRYTSGLISYAKSVLSAIGA--SHLRAVIDTSRNGNGPL----GSEWCDPPGRATGTWSTTD 281
+                           99********************************************5..5888************6....99***************** PP
+
+         Glyco_hydro_6 267 tgdplvdaylWiKppGeSDGts 288
+                           tgdp +da+lWiKppGe+DG+ 
+  sp|P26414|GUNA_THEBI 282 TGDPAIDAFLWIKPPGEADGCI 303
+                           ********************95 PP
+
+>> sp|P07984|GUNA_CELFI  Endoglucanase A OS=Cellulomonas fimi GN=cenA PE=1 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  258.6   1.5   1.5e-79   2.8e-75      13     299 ..     186     437 ..     176     438 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 258.6 bits;  conditional E-value: 1.5e-79
+         Glyco_hydro_6  13 aaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaaslakYkeyidaiaag 101
+                            ++ s++++a  ek+a +p+a+W++++a+ s+ ++e+ad++ +a aagk+++lvvY++P+RDC +++S G g  s ++Y +++d++a+g
+  sp|P07984|GUNA_CELFI 186 WQAASGTDKALLEKIALTPQAYWVGNWADASHAQAEVADYTGRAVAAGKTPMLVVYAIPGRDC-GSHSGG-GV-SESEYARWVDTVAQG 271
+                           3445699********************************************************.9**999.66.899************ PP
+
+         Glyco_hydro_6 102 lkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwdanlepaaellaevlkkag 190
+                           +    + + +v+lEpD+La+        +C+    +++++  l+ya k+l +l++++vY+Dagh++Wl        ++++  ++l++ g
+  sp|P07984|GUNA_CELFI 272 I----KGNPIVILEPDALAQ------LGDCSG---QGDRVGFLKYAAKSL-TLKGARVYIDAGHAKWL--------SVDTPVNRLNQVG 338
+                           *....888899********9......699*54...69*************.9****************........9************ PP
+
+         Glyco_hydro_6 191 veakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdWCnpkgaglGerptantgdplvdaylWiK 279
+                            e ++ Gfa+n+sNyq+t+d++aY+++++++l+    g+kfviDtsRnG+g+     +g+WCnp+g++lGerp a  + +++da+lW+K
+  sp|P07984|GUNA_CELFI 339 FE-YAVGFALNTSNYQTTADSKAYGQQISQRLG----GKKFVIDTSRNGNGS-----NGEWCNPRGRALGERPVAVNDGSGLDALLWVK 417
+                           **.******************************....99*************.....7******************************* PP
+
+         Glyco_hydro_6 280 ppGeSDGtsegsdssgkrld 299
+                            pGeSDG+++g++++g++++
+  sp|P07984|GUNA_CELFI 418 LPGESDGACNGGPAAGQWWQ 437
+                           ******************97 PP
+
+>> sp|P33682|GUN1_STRHA  Endoglucanase 1 OS=Streptomyces halstedii GN=celA1 PE=1 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  246.6   1.5   6.7e-76   1.2e-71       2     298 ..      40     309 ..      39     311 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 246.6 bits;  conditional E-value: 6.7e-76
+         Glyco_hydro_6   2 npkysaeveaaaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaaslak 90 
+                           +p++sa+++aaa++ ++++aa  +++a++p a W++++     + ++  ++  aa+  +k+++lv+Y++ +RD  + +S+G gaas ++
+  sp|P33682|GUN1_STRHA  40 DPDSSASRWAAANPGDGRAAAINASIANTPMARWFGSW--SGAIGTAAGAYAGAADGRDKLPILVAYNIYNRDYCGGHSAG-GAASPSA 125
+                           89***********************************9..999******************************99******.******* PP
+
+         Glyco_hydro_6  91 YkeyidaiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalp.nvavYlDaghsgWlgwdanlepa 178
+                           Y ++i ++a g+     +++vv+lEpDsL+          C++ ++ +e++++l++al +++++  n++vY+Dag+ +W         +
+  sp|P33682|GUN1_STRHA 126 YADWIARFAGGI---AARPAVVILEPDSLGD-------YGCMNPAQIDEREAMLTNALVQFNRQApNTWVYMDAGNPRWA--------D 196
+                           ************...***************6.......68**999****************87656**************........9 PP
+
+         Glyco_hydro_6 179 aellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagf.gakfviDtsRnGvgptrrkeagdWCnpkgaglGerptan 266
+                           a+++a++l++ag + +++Gf++nvsNy +t+++taY++a++++l a+   ++ fv+DtsRnG+g+     +g+WCnp+g+++G++ ++ 
+  sp|P33682|GUN1_STRHA 197 AATMARRLHEAGLR-QAHGFSLNVSNYITTAENTAYGNAVNNELAARYGyTKPFVVDTSRNGNGS-----NGEWCNPSGRRIGTPTRTG 279
+                           **************.******************************99888***************.....7*************99886 PP
+
+         Glyco_hydro_6 267 tgdplvdaylWiKppGeSDGts.egsdssgkrl 298
+                               +++++lWiK+pGeSDG++  gs s+++++
+  sp|P33682|GUN1_STRHA 280 ---GGAEMLLWIKTPGESDGNCgVGSGSTAGQF 309
+                           ...58999**************87777776655 PP
+
+>> sp|P13933|GUN1_STRSS  Endoglucanase 1 OS=Streptomyces sp. (strain KSM-9) GN=casA PE=1 SV=3
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  234.6   0.0   2.9e-72   5.5e-68       9     289 ..      89     344 ..      82     355 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 234.6 bits;  conditional E-value: 2.9e-72
+         Glyco_hydro_6   9 veaaaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaaslakYkeyida 97 
+                            + +a++ ++++   ae++ ++p+avW++ ++++ ++++++a++++aa+aag+++v+v Y++P RDC +++S G ga s a+Y e+   
+  sp|P13933|GUN1_STRSS  89 AWLDANPGDHRAPLIAERIGSQPQAVWFAGAYNPGTITQQVAEVTSAAAAAGQLPVVVPYMIPFRDC-GNHSGG-GAPSFAAYAEWSGL 175
+                           57788899999999*****************************************************.******.************** PP
+
+         Glyco_hydro_6  98 iaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalp.nvavYlDaghsgWlgwdanlepaaellaev 185
+                           +aagl   g+e++vvvlEpD+++         +C +++++ae++++la   +++++++ +++vY D+ghs+W+        a + +a +
+  sp|P13933|GUN1_STRSS 176 FAAGL---GSEPVVVVLEPDAIPL-------IDCLDNQQRAERLAALAGLAEAVTDANpEARVYYDVGHSAWH--------APAAIAPT 246
+                           *****...***************5.......5899999999999999988888877666**************........9999**** PP
+
+         Glyco_hydro_6 186 lkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdWCnpkgaglGerptantgdplvda 274
+                           l +ag+ ++  G+atn+sNy++t+detaYa+a+ ++l+    g  +v+DtsRnG+gp      ++WC+p+g+ +G++pt+n+g p+vda
+  sp|P13933|GUN1_STRSS 247 LVEAGILEHGAGIATNISNYRTTTDETAYASAVIAELGG---GLGAVVDTSRNGNGPL----GSEWCDPPGRLVGNNPTVNPGVPGVDA 328
+                           *************************************94...6779***********6....99************************* PP
+
+         Glyco_hydro_6 275 ylWiKppGeSDGts.e 289
+                           +lWiK pGe DG+   
+  sp|P13933|GUN1_STRSS 329 FLWIKLPGELDGCDgP 344
+                           ************9543 PP
+
+>> sp|B2USX3|GMHA_HELPS  Phosphoheptose isomerase OS=Helicobacter pylori (strain Shi470) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   16.2   0.0   9.8e-06      0.18     167     243 ..      52     125 ..      11     144 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 9.8e-06
+         Glyco_hydro_6 167 gWlgwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           g   + +++++ a++l+ ++k   ++ ++  ++t++s  +a+++++ Y e +a+++ea g++++++i  s +G+++ 
+  sp|B2USX3|GMHA_HELPS  52 G---SASDAQHFAAELTGRYKLERKGLSALSLSTDTSALTAIANDYGYEEVFARQVEALGVKNDVLIGISTSGNSKN 125
+                           3...44788899999999**99999999***************************************9999999875 PP
+
+>> sp|Q1CT15|GMHA_HELPH  Phosphoheptose isomerase OS=Helicobacter pylori (strain HPAG1) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.1   0.0   2.2e-05       0.4     167     243 ..      52     125 ..      11     145 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 2.2e-05
+         Glyco_hydro_6 167 gWlgwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           g   + +++++ a++l+ ++k   ++ ++  + t++s  +a+++++ Y e +a+++ea g++++++i  s +G+++ 
+  sp|Q1CT15|GMHA_HELPH  52 G---SASDAQHFATELTGRYKLERKGLSAISLNTDTSALTAIANDYGYEEVFARQVEALGVKNDVLIGISTSGNSKN 125
+                           3...44788899999999**9999999999*************************************9999999875 PP
+
+>> sp|Q3SMI5|GMHA_THIDA  Phosphoheptose isomerase OS=Thiobacillus denitrificans (strain ATCC 25259) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.2   0.0   4.1e-05      0.76     170     252 ..      53     162 ..      46     169 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 4.1e-05
+         Glyco_hydro_6 170 gwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgak...........................f 231
+                           g+ a++++ a+++ +++++   + ++  ++t++s  +++++++aY + +a++++a g + +                           +
+  sp|Q3SMI5|GMHA_THIDA  53 GSAADAQHFASEMLNRFEQERPGLAALALTTDTSTLTSIANDYAYDQVFARQVKALGQPGDvllaistsgnsanvlqavaaaharsmqV 141
+                           556888999999999999999999999********************999999999997776777777777777777777777777767 PP
+
+         Glyco_hydro_6 232 viDtsRnGvgptrrkeagdWC 252
+                           +  t+R+G g +++ ++gd C
+  sp|Q3SMI5|GMHA_THIDA 142 IALTGRSGGGLAEQIDDGDVC 162
+                           777888888877888888877 PP
+
+>> sp|O25528|GMHA_HELPY  Phosphoheptose isomerase OS=Helicobacter pylori (strain ATCC 700392 / 26695) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   0.0   2.7e-05      0.51     170     243 ..      52     125 ..      11     147 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.7e-05
+         Glyco_hydro_6 170 gwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           g+ +++++ a++l+ ++k   ++ ++  + t++s  +a+++++ Y e +a+++ea g++++++i  s +G+++ 
+  sp|O25528|GMHA_HELPY  52 GSASDAQHFAAELTGRYKLERKGLSAISLNTDISALTAIANDYGYEEVFARQVEALGVKNDVLIGISTSGNSKN 125
+                           444788899999999999999999999*************************************9999999875 PP
+
+>> sp|B6JM81|GMHA_HELP2  Phosphoheptose isomerase OS=Helicobacter pylori (strain P12) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.0   4.2e-05      0.79     166     243 ..      51     125 ..      11     145 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 4.2e-05
+         Glyco_hydro_6 166 sgWlgwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                            g   + +++++ a++l+ ++k   ++ ++  ++t++s  +a+++++ Y e +a+++ea g +++++i  s +G+++ 
+  sp|B6JM81|GMHA_HELP2  51 GG---SASDAQHFAAELTGRYKLERKGLSAISLSTDTSALTAIANDYGYEEVFARQVEALGNKEDVLIGISTSGNSKN 125
+                           44...4488889999999***99999999***************************************9999999875 PP
+
+>> sp|Q9ZKZ1|GMHA_HELPJ  Phosphoheptose isomerase OS=Helicobacter pylori (strain J99) GN=gmhA PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   0.0   4.3e-05      0.79     170     243 ..      52     125 ..      11     143 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 4.3e-05
+         Glyco_hydro_6 170 gwdanlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                           g+ +++++ a++l+ ++k   ++ +v  ++t++s  +a+++++ Y e +a+++ea g +++++i  s +G+++ 
+  sp|Q9ZKZ1|GMHA_HELPJ  52 GSASDAQHFAAELTGRYKLERKGLSVISLSTDTSALTAIANDYGYEEVFARQVEALGNKEDILIGISTSGNSKN 125
+                           34478889999999****9999999***************************************9999999875 PP
+
+>> sp|B8F3E3|SYM_HAEPS  Methionine--tRNA ligase OS=Haemophilus parasuis serovar 5 (strain SH0165) GN=metG PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   0.00014       2.6     184     233 ..      72     125 ..      45     163 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 0.00014
+        Glyco_hydro_6 184 evlkkagve..akvrGfatnvsNyqat..edetaYaealasaleaagf.gakfvi 233
+                          ++++ka+++  a++ Gf   + Ny++t  e++ +Y++a++++l+a+gf ++k vi
+  sp|B8F3E3|SYM_HAEPS  72 QLIEKAKADhiADFAGFNISFDNYHSThsEENREYTSAIYKKLKANGFiKSK-VI 125
+                          44445554444599*************7677789**************5555.33 PP
+
+>> sp|Q9HJV9|GMHA_THEAC  Probable phosphoheptose isomerase OS=Thermoplasma acidophilum (strain ATCC 25905 / DSM 1728 / J
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   0.00025       4.6     172     243 ..      48     119 ..      40     152 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00025
+         Glyco_hydro_6 172 danlepaaellaevlkkagveakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgpt 243
+                            a++++ +++l+  + k  ++ ++  ++tn+s  +a++++++Y   +++++ea + + ++v+  s +G+++ 
+  sp|Q9HJV9|GMHA_THEAC  48 AADAQHFVAELTGHFMKERKPLAAIALTTNTSSITAIANDYSYDVVFSRQVEALAKPGDVVVGISTSGNSKN 119
+                           56677777777777777777879999***********************************99999998764 PP
+
+>> sp|B8F7D1|END4_HAEPS  Probable endonuclease 4 OS=Haemophilus parasuis serovar 5 (strain SH0165) GN=nfo PE=3 SV=1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   0.00025       4.6     114     204 ..     132     221 ..     114     271 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.00025
+         Glyco_hydro_6 114 lEpDsLanlvtnlnvekCakakaaaeykellayalkklgalpnvavYlDaghsgWlgwd.anlepaaellaevlkkagveakvrGfatn 201
+                           +  Ds++n+v+ +++ + + + + + ++e la+ ++++++ + v v lD+ h    g d + l+   +++a++ k  g e  +rG+ +n
+  sp|B8F7D1|END4_HAEPS 132 IAVDSVPNVVAVIENTAGQGS-NLGWRFEHLAEIIEQVENKQRVGVCLDTCHLFSAGYDiSSLASCEQTFADFDKVVGFE-FLRGMHLN 218
+                           557*****9999888777655.899*******************************998345666778888888888888.99999999 PP
+
+         Glyco_hydro_6 202 vsN 204
+                            s 
+  sp|B8F7D1|END4_HAEPS 219 GSK 221
+                           875 PP
+
+>> sp|B5QTJ7|CLPX_SALEP  ATP-dependent Clp protease ATP-binding subunit ClpX OS=Salmonella enteritidis PT4 (strain P1251
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   0.00058        11      41      83 ..      66     108 ..      48     115 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.00058
+         Glyco_hydro_6  41 avsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGe 83 
+                           +++e++++l+d++  +++a+kv  l vY+  +R  ++  SnG 
+  sp|B5QTJ7|CLPX_SALEP  66 TPHEIRTHLDDYVIGQEQAKKVLALAVYNHYKRLRNGDTSNGV 108
+                           5789**************************************4 PP
+
+>> sp|P56886|F16PA_SINMW  Fructose-1,6-bisphosphatase class 1 OS=Sinorhizobium medicae (strain WSM419) GN=fbp PE=3 SV=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   0.00049         9     180     213 ..     184     217 ..     174     288 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 0.00049
+          Glyco_hydro_6 180 ellaevlkkagveakvrGfatnvsNyqatedeta 213
+                              + +++k+ g++++++ fa n+sNy+ +e+ ++
+  sp|P56886|F16PA_SINMW 184 GCFVDAYKSVGIPDRANEFAINMSNYRHWEEAIR 217
+                            568899***********************66543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (300 nodes)
+Target sequences:                     537505  (190795142 residues searched)
+Passed MSV filter:                     15328  (0.0285169); expected 10750.1 (0.02)
+Passed bias filter:                    11731  (0.0218249); expected 10750.1 (0.02)
+Passed Vit filter:                      1066  (0.00198324); expected 537.5 (0.001)
+Passed Fwd filter:                        29  (5.3953e-05); expected 5.4 (1e-05)
+Initial search space (Z):             537505  [actual number of targets]
+Domain search space  (domZ):              29  [number of targets reported over threshold]
+# CPU time: 3.48u 0.10s 00:00:03.58 Elapsed: 00:00:02.22
+# Mc/sec: 25737.97
+//
+[ok]

@@ -1,0 +1,122 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fasta
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=439]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    1.9e-78  263.8   3.2    2.5e-78  263.4   3.2    1.1  1  Glyco_hydro_6   Glycosyl hydrolases family 6
+    5.5e-27   93.6   2.9    1.5e-26   92.2   2.9    1.7  1  CBM_2           Cellulose binding domain
+    3.9e-05   23.3   8.0    0.00012   21.8   8.0    1.8  1  Trypan_PARP     Procyclic acidic repetitive protein (PARP)
+  ------ inclusion threshold ------
+       0.31    9.2   2.7       0.51    8.5   2.7    1.3  1  Neisseria_TspB  Neisseria meningitidis TspB protein
+        3.6    6.5  24.5       0.99    8.3  21.3    1.5  2  PLRV_ORF5       Potato leaf roll virus readthrough protein
+
+
+Domain annotation for each model (and alignments):
+>> Glyco_hydro_6  Glycosyl hydrolases family 6
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  263.4   3.2   9.1e-82   2.5e-78       1     288 [.      36     298 ..      36     307 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 263.4 bits;  conditional E-value: 9.1e-82
+  Glyco_hydro_6   1 vnpkysaeveaaaaklsaalaakaekvakvptavWldriaavsevekeladalaaakaagkvvvlvvYdlPdRDCaalaSnGegaaslakYkeyid 96 
+                    vnp+++++++++ ++++++++  a++va+vp+ +W+ +  +++ev+ ++++ + +a++agk++++vvY++P+RDC +++S G ga ++++Y++++d
+         target  36 VNPDMASAQWVRDNPQDSRADVIANRVADVPQGTWFTSY-NPNEVQGQVDALVGSAESAGKTPIMVVYNIPNRDC-SNHSGG-GAPDHSSYRDWVD 128
+                    79**********************************996.***********************************.******.************* PP
+
+  Glyco_hydro_6  97 aiaaglkkygderivvvlEpDsLanlvtnlnvekCakakaaaeykellayalkklgalp.nvavYlDaghsgWlgwdanlepaaellaevlkkagv 191
+                    ++aagl   + +++ +v+EpD L+       +++C++++++++ ++++aya k+l a + +++vY+DaghsgW+        +  ++a++l+ a++
+         target 129 QVAAGL---NGRPATIVVEPDVLSL------MDSCMDQSQQNHVMDSIAYAGKTLMAGSsQARVYFDAGHSGWH--------SPGEIASRLNGADI 207
+                    ******...9**************7......799*********************99888**************........9************* PP
+
+  Glyco_hydro_6 192 eakvrGfatnvsNyqatedetaYaealasaleaagfgakfviDtsRnGvgptrrkeagdWCnpkgaglGerptantgdplvdaylWiKppGeSDGt 287
+                    +++++G+atn+sNy+ t de++Y++++ +a++++g   ++v+DtsRnG+gp    + ++WC+p+g+++G+++t+ntg+++vda+lW+K pGe+DG+
+         target 208 ANSAHGIATNTSNYNWTDDEVSYTRQIIDATGHSG--LRAVVDTSRNGNGP----QGSEWCDPEGRAIGTESTTNTGSSHVDAFLWVKLPGEADGC 297
+                    *******************************9875..569***********....699*************************************9 PP
+
+  Glyco_hydro_6 288 s 288
+                    +
+         target 298 A 298
+                    5 PP
+
+>> CBM_2  Cellulose binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.2   2.9   5.5e-30   1.5e-26       1      92 [.     344     433 ..     344     438 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 92.2 bits;  conditional E-value: 5.5e-30
+             EEEEEEEEEE-SSEEEEEEEEEE----SB..-EEEEE--TTEEEEE-SSCEEEE---EEEEEE-----EE-E---CEE-EEEEE-XXXXXXX CS
+   CBM_2   1 ckatytvtseWgsGftanvtvknsgssaingWtvkltlpagqritqsWnanvsesGstvtvtnvswngtiapGasasfGfqgsgsgsnsapt 92 
+             c+a y+v++eW++Gf+a+vtv++  +  ++gW+v +++p+gq i+q+Wna+vs+sG ++t++ vs+ng++++G+s+ fGf+g++sg+n +p+
+  target 344 CEAAYSVANEWSDGFQAEVTVTAGAD--LDGWEVAIDFPDGQGIEQAWNAEVSGSGGAYTASDVSHNGSLSAGESTGFGFTGTHSGANGEPE 433
+             89*****************9997655..679********************************************************98886 PP
+
+>> Trypan_PARP  Procyclic acidic repetitive protein (PARP)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.8   8.0   4.2e-08   0.00012      95     129 ..     317     351 ..     293     363 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 21.8 bits;  conditional E-value: 4.2e-08
+  Trypan_PARP  95 eeepepepetepepepepepepepepGaatlksva 129
+                  ++ep+pep ++pep p+pep pep  G  +  sva
+       target 317 DPEPDPEPSPDPEPTPDPEPTPEPGEGCEAAYSVA 351
+                  34445555555555555555555555565666666 PP
+
+>> Neisseria_TspB  Neisseria meningitidis TspB protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   2.7   0.00019      0.51     330     368 ..     303     341 ..     233     354 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00019
+  Neisseria_TspB 330 kplpevspaenpannedpdendgtrpnpepdpdlnpdan 368
+                     +  p+ + +   a +++pd +++  p+p+pdp+ +p++ 
+          target 303 EFVPQLAYDMAVAADPEPDPEPSPDPEPTPDPEPTPEPG 341
+                     455666666666777777777777777777777777664 PP
+
+>> PLRV_ORF5  Potato leaf roll virus readthrough protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.1      0.94   2.6e+03      77     101 ..      42      70 ..      37      73 .. 0.67
+   2 ?    8.3  21.3   0.00036      0.99       2      25 ..     317     340 ..     316     345 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.94
+  PLRV_ORF5  77 dakwysnnsvea....ipmfvfpvpkGew 101
+                +a+w ++n + +    i+  v  vp+G+w
+     target  42 SAQWVRDNPQDSradvIANRVADVPQGTW 70 
+                67888887665511114555778999999 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.00036
+  PLRV_ORF5   2 dsepgPkPgPsPtPpppPqPtPeP 25 
+                d ep+P+P+P+P+P+p+P+PtPeP
+     target 317 DPEPDPEPSPDPEPTPDPEPTPEP 340
+                889999999999999999999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (439 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       286  (0.0209187); expected 273.4 (0.02)
+Passed bias filter:                      222  (0.0162376); expected 273.4 (0.02)
+Passed Vit filter:                        27  (0.00197484); expected 13.7 (0.001)
+Passed Fwd filter:                         5  (0.000365711); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.56u 0.47s 00:00:01.03 Elapsed: 00:00:04.52
+# Mc/sec: 232.74
+//
+[ok]

@@ -17,22 +17,74 @@ FTGTHSGANGEPELTCSAA
 1) What is the function of this protein?
 	
 	$blastp -query target.fasta -db ~/Documents/databases/pdb_seq -out target_pdb.out
+	Lowest E-value = First entries
+	ID=2bod -> Search pdb
+	Function = ENDOGLUCANASE E-2
 
 2) What is the fold of this protein? 
 
+	From previous exercise, first hit was 2bod, chain X -> SCOP database -> search for 2bod ?? -> 7 stranded beta/alpha barrel
+
 3) Obtain a HMM for this protein in the PFAM database. Name this HMM 3.hmm.
+
+	$hmmscan ~/Documents/databases/Pfam-A.hmm target.fasta > scan_target_PFAM.out
+	
+	Choose the first hit in scan_target_PFAM.out (Glyco_hydro_6)
+	
+	$hmmfetch ~/Documents/databases/Pfam-A.hmm Glyco_hydro_6 > 3.hmm
 
 4) Use the HMM you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same HMM you used to get the sequences. Name the alignment 4.aln.
 
-5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it? 
+	$hmmsearch 3.hmm ~/Documents/databases/uniprot_sprot.fasta > MSA_3.out
+	
+	First 4 sequences (B0XWL3, Q4WFK4, A1DJQ7, P49075) (seq1-4) -> download from uniprot ->join all
+	
+	$cat seq*.fasta >> sequences.fasta
+	
+	$hmmalign 3.hmm sequences.fasta > MSA_ex4.sto
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <MSA_ex4.sto > 4.aln
+	
+
+5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it?
+
+	PDB IDs to get templates are: 2bod, 1tml, 2bog, 2bof
+	to get the you can use pymol 
+		fetch 2bod 1tml 2bog 2bof
 
 6) Superimpose the 4 templates you obtained in the previous question using pymol. Provide the RMSD value for all the superimpositions and save an image of the superimposition as 6.png.
 
+	fetch 2bod 1tml 2bog 2bof
+	remove resn hoh
+	super 2bod, 1tml, object=aln6
+	super 2bog, 1tml, object=aln6
+	super 2bof, 1tml, object=aln6
+	
+	2bod-1tml RMSD = 2.298
+	2bog-1tml RMSD = 2.300
+	2bof-1tml RMSD = 2.295
+	
+	Menu> Draw/Ray >Ray >Save as. Save the render as 6.png
+	
 7) Your target is an enzyme. Find a template that contains a substrate molecule in its active site. Provide an image of the template you chose where the substrate can be seen and name the image 7.png.
 
+	Many of the templates present what could be active sites, I decided to use 2bod.
+	Select the residues that are separated from the rest on sequence display. Then sidebar> sele> color >blue. Then save the image
+	
 8) Analyze the template you selected in the previous question: identify 3 aminoacids that are making contacts with the substrate molecule. Provide 3 images (one for each aminoacid) where one of the aminoacids can be seen interacting with the substrate. Name the images active1.png, active2.png and active3.png.
-
+	
+	rename selection to substrate
+	select nearby residues
+		show sticks, byres all within 5 of subst
+	Sidebar>2bod>hide>cartoon
+	Select all shown molecules
+	rename selection to active_site
+	Sidebar>active_site>A>find>polar contacts>polar contacts to many atoms
+	Look at connections to substrate, then select the residue and use sequence display to find residue name and position
+	TYR-73, ALA-271, ASN-190
+	
 9) Make an structural model of the target sequence and name it 9.pdb. 
+
+	Pymol? or modeller?
 
 10) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this?
 
