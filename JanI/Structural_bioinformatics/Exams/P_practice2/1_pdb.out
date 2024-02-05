@@ -1,0 +1,4159 @@
+BLASTP 2.5.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for composition-based statistics: Alejandro A. Schaffer,
+L. Aravind, Thomas L. Madden, Sergei Shavirin, John L. Spouge, Yuri
+I. Wolf, Eugene V. Koonin, and Stephen F. Altschul (2001),
+"Improving the accuracy of PSI-BLAST protein database searches with
+composition-based statistics and other refinements", Nucleic Acids
+Res. 29:2994-3005.
+
+
+
+Database: pdb_seq
+           133,266 sequences; 30,839,592 total letters
+
+
+
+Query= 1
+
+Length=103
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  2hdx_F mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdx_E mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdx_D mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdx_C mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdx_B mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdx_A mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdv_B mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  2hdv_A mol:protein length:111 SH2-B PH domain containing signal...  207     7e-71
+  1rqq_D mol:protein length:114 adaptor protein APS                   153     2e-49
+  1rqq_C mol:protein length:114 adaptor protein APS                   153     2e-49
+  1rpy_B mol:protein length:114 adaptor protein APS                   153     2e-49
+  1rpy_A mol:protein length:114 adaptor protein APS                   153     2e-49
+  1k9a_F mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  1k9a_E mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  1k9a_D mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  1k9a_C mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  1k9a_B mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  1k9a_A mol:protein length:450 Carboxyl-terminal Src kinase          55.5    5e-10
+  2ci9_B mol:protein length:102 CYTOPLASMIC PROTEIN NCK1              52.0    1e-09
+  2ci9_A mol:protein length:102 CYTOPLASMIC PROTEIN NCK1              52.0    1e-09
+  1tce_A mol:protein length:107 SHC                                   51.2    2e-09
+  2ci8_A mol:protein length:99 CYTOPLASMIC PROTEIN NCK1               50.4    4e-09
+  1mil_A mol:protein length:104 SHC ADAPTOR PROTEIN                   49.7    1e-08
+  1csz_A mol:protein length:112 SYK PROTEIN TYROSINE KINASE           48.1    4e-08
+  1csy_A mol:protein length:112 SYK PROTEIN TYROSINE KINASE           48.1    4e-08
+  1ab2_A mol:protein length:109 C-ABL TYROSINE KINASE SH2 DOMAIN      47.8    6e-08
+  1a81_K mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1a81_I mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1a81_G mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1a81_E mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1a81_C mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1a81_A mol:protein length:254 SYK KINASE                            48.1    2e-07
+  1bm2_A mol:protein length:117 PROTEIN (GROWTH FACTOR RECEPTOR B...  46.6    2e-07
+  1bmb_A mol:protein length:123 PROTEIN (GROWTH FACTOR RECEPTOR B...  46.6    2e-07
+  1fhs_A mol:protein length:112 GROWTH FACTOR RECEPTOR BOUND PROT...  46.2    2e-07
+  2abl_A mol:protein length:163 ABL TYROSINE KINASE                   47.0    3e-07
+  1fyr_D mol:protein length:114 GROWTH FACTOR RECEPTOR-BOUND PROT...  46.2    3e-07
+  1fyr_C mol:protein length:114 GROWTH FACTOR RECEPTOR-BOUND PROT...  46.2    3e-07
+  1fyr_B mol:protein length:114 GROWTH FACTOR RECEPTOR-BOUND PROT...  46.2    3e-07
+  1fyr_A mol:protein length:114 GROWTH FACTOR RECEPTOR-BOUND PROT...  46.2    3e-07
+  3c7i_A mol:protein length:116 Growth factor receptor-bound prot...  46.2    3e-07
+  2huw_B mol:protein length:116 Growth factor receptor-bound prot...  46.2    3e-07
+  2huw_A mol:protein length:116 Growth factor receptor-bound prot...  46.2    3e-07
+  2h5k_B mol:protein length:116 Growth factor receptor-bound prot...  46.2    3e-07
+  2h5k_A mol:protein length:116 Growth factor receptor-bound prot...  46.2    3e-07
+  2h46_E mol:protein length:116 Growth Receptor Binding Protein 2     46.2    3e-07
+  1opk_A mol:protein length:495 Proto-oncogene tyrosine-protein k...  47.8    3e-07
+  1cj1_L mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_K mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_J mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_I mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_H mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_G mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_F mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_E mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_D mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_C mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_B mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1cj1_A mol:protein length:96 PROTEIN (GROWTH FACTOR RECEPTOR-BO...  45.4    3e-07
+  1tze_E mol:protein length:98 GROWTH FACTOR RECEPTOR-BOUND PROTE...  45.4    3e-07
+  2aob_D mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  2aob_C mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  2aob_B mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  2aob_A mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  2aoa_B mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  2aoa_A mol:protein length:99 Growth factor receptor-bound prote...  45.4    3e-07
+  1x0n_A mol:protein length:104 Growth factor receptor-bound prot...  45.4    3e-07
+  1qg1_E mol:protein length:104 PROTEIN (GROWTH FACTOR RECEPTOR B...  45.4    3e-07
+  2fo0_A mol:protein length:495 Proto-oncogene tyrosine-protein k...  47.8    3e-07
+  1zfp_E mol:protein length:98 GROWTH FACTOR RECEPTOR BINDING PRO...  45.4    4e-07
+  2ecd_A mol:protein length:119 Tyrosine-protein kinase ABL2          45.4    5e-07
+  1opl_B mol:protein length:537 proto-oncogene tyrosine-protein k...  47.0    5e-07
+  1opl_A mol:protein length:537 proto-oncogene tyrosine-protein k...  47.0    5e-07
+  2shp_B mol:protein length:525 SHP-2                                 46.6    8e-07
+  2shp_A mol:protein length:525 SHP-2                                 46.6    8e-07
+  1gri_B mol:protein length:217 GROWTH FACTOR BOUND PROTEIN 2         46.2    9e-07
+  1gri_A mol:protein length:217 GROWTH FACTOR BOUND PROTEIN 2         46.2    9e-07
+  2gsb_A mol:protein length:119 Ras GTPase-activating protein 1       44.7    1e-06
+  2dx0_B mol:protein length:138 Phospholipase C, gamma 2              44.7    1e-06
+  2dx0_A mol:protein length:138 Phospholipase C, gamma 2              44.7    1e-06
+  2cia_A mol:protein length:102 CYTOPLASMIC PROTEIN NCK2              43.5    2e-06
+  1jwo_A mol:protein length:97 Csk Homologous Kinase                  42.4    5e-06
+  1ghu_A mol:protein length:107 GRB2                                  42.4    7e-06
+  2dly_A mol:protein length:121 Fyn-related kinase                    42.4    8e-06
+  1z3k_A mol:protein length:98 Cytoplasmic protein NCK2               42.0    8e-06
+  2eo3_A mol:protein length:111 Crk-like protein                      42.0    1e-05
+  1jyu_A mol:protein length:96 GROWTH FACTOR RECEPTOR-BOUND PROTE...  41.2    1e-05
+  1jyr_A mol:protein length:96 GROWTH FACTOR RECEPTOR-BOUND PROTE...  41.2    1e-05
+  1jyq_B mol:protein length:96 GROWTH FACTOR RECEPTOR-BOUND PROTE...  41.2    1e-05
+  1jyq_A mol:protein length:96 GROWTH FACTOR RECEPTOR-BOUND PROTE...  41.2    1e-05
+  2eob_A mol:protein length:124 1-phosphatidylinositol-4,5-bispho...  41.6    2e-05
+  1ju5_A mol:protein length:109 Crk                                   40.8    3e-05
+  2eyv_A mol:protein length:124 v-crk sarcoma virus CT10 oncogene...  40.4    4e-05
+  2aug_B mol:protein length:126 Growth factor receptor-bound prot...  40.4    4e-05
+  2aug_A mol:protein length:126 Growth factor receptor-bound prot...  40.4    4e-05
+  2dvj_A mol:protein length:230 V-crk sarcoma virus CT10 oncogene...  41.2    5e-05
+  2eyy_A mol:protein length:204 v-crk sarcoma virus CT10 oncogene...  41.2    5e-05
+  2dlz_A mol:protein length:118 Protein vav-2                         40.0    6e-05
+  3cxl_A mol:protein length:463 N-chimerin                            41.2    6e-05
+  2eyz_A mol:protein length:304 v-crk sarcoma virus CT10 oncogene...  41.2    6e-05
+  1i3z_A mol:protein length:103 EWS/FLI1 ACTIVATED TRANSCRIPT 2       37.7    3e-04
+  2crh_A mol:protein length:138 Vav proto-oncogene                    37.7    6e-04
+  1fbz_B mol:protein length:104 PROTO-ONCOGENE TYROSINE-PROTEIN K...  37.0    6e-04
+  1fbz_A mol:protein length:104 PROTO-ONCOGENE TYROSINE-PROTEIN K...  37.0    6e-04
+  1ijr_A mol:protein length:104 PROTO-ONCOGENE TYROSINE-PROTEIN K...  37.0    7e-04
+  2eu0_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  2etz_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  1lun_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  1lum_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  1luk_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  1lui_A mol:protein length:108 Tyrosine-protein kinase ITK/TSK       37.0    8e-04
+  1rja_A mol:protein length:100 Tyrosine-protein kinase 6             36.2    0.001
+  1r1s_G mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1s_E mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1s_C mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1s_A mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1q_B mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1q_A mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1p_D mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1p_C mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1p_B mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1r1p_A mol:protein length:100 GRB2-related adaptor protein 2        36.2    0.001
+  1shd_A mol:protein length:107 C-SRC TYROSINE KINASE SH2 DOMAIN      36.2    0.002
+  1hct_B mol:protein length:107 HUMAN SRC                             36.2    0.002
+  1hcs_B mol:protein length:107 HUMAN SRC                             36.2    0.002
+  1a1e_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a1e_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a1c_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a1c_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a1b_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a1b_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a09_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a09_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a08_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a08_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a07_B mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1a07_A mol:protein length:107 C-SRC TYROSINE KINASE                 36.2    0.002
+  1o4r_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4q_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4p_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4o_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4n_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4m_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4l_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4k_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4j_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4i_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4h_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4g_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4f_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4e_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4d_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4c_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4b_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o4a_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o49_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o48_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o47_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o46_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o45_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o44_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o43_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o42_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1o41_A mol:protein length:108 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.2    0.002
+  1kc2_A mol:protein length:103 Src Tyrosine kinase                   35.8    0.002
+  1a1a_B mol:protein length:107 C-SRC TYROSINE KINASE                 35.8    0.002
+  1a1a_A mol:protein length:107 C-SRC TYROSINE KINASE                 35.8    0.002
+  1lkl_A mol:protein length:104 HUMAN P56 TYROSINE KINASE             35.8    0.002
+  1bhh_B mol:protein length:103 P56 LCK TYROSINE KINASE SH2 DOMAIN    35.8    0.002
+  1lkk_A mol:protein length:105 HUMAN P56 TYROSINE KINASE             35.8    0.002
+  1skj_A mol:protein length:113 PP60 V-SRC TYROSINE KINASE TRANSF...  35.8    0.002
+  1bhh_A mol:protein length:108 T-LYMPHOCYTE-SPECIFIC PROTEIN TYR...  35.4    0.002
+  1bhf_A mol:protein length:108 T-LYMPHOCYTE-SPECIFIC PROTEIN TYR...  35.4    0.002
+  2src_A mol:protein length:452 TYROSINE-PROTEIN KINASE SRC           36.6    0.002
+  1y57_A mol:protein length:452 Proto-oncogene tyrosine-protein k...  36.6    0.002
+  1fmk_A mol:protein length:452 TYROSINE-PROTEIN KINASE SRC           36.6    0.002
+  1lcj_A mol:protein length:109 P56==LCK== TYROSINE KINASE            35.4    0.002
+  2b3o_A mol:protein length:532 Tyrosine-protein phosphatase, non...  36.6    0.003
+  1ksw_A mol:protein length:452 PROTO-ONCOGENE TYROSINE-PROTEIN K...  36.6    0.003
+  1bkl_A mol:protein length:113 PP60 V-SRC TYROSINE KINASE TRANSF...  35.4    0.003
+  1lck_A mol:protein length:175 P56==LCK== TYROSINE KINASE            35.8    0.003
+  2jyq_A mol:protein length:106 Tyrosine-protein kinase transform...  35.0    0.004
+  1is0_B mol:protein length:106 Tyrosine-protein kinase transform...  35.0    0.004
+  1is0_A mol:protein length:106 Tyrosine-protein kinase transform...  35.0    0.004
+  2h8h_A mol:protein length:535 Proto-oncogene tyrosine-protein k...  36.2    0.004
+  1nzv_B mol:protein length:103 Tyrosine-protein kinase transform...  35.0    0.004
+  1nzv_A mol:protein length:103 Tyrosine-protein kinase transform...  35.0    0.004
+  1nzl_B mol:protein length:103 Tyrosine-protein kinase transform...  35.0    0.004
+  1nzl_A mol:protein length:103 Tyrosine-protein kinase transform...  35.0    0.004
+  1bkm_A mol:protein length:113 PP60 V-SRC TYROSINE KINASE TRANSF...  35.0    0.004
+  1sps_C mol:protein length:104 SRC SH2 DOMAIN                        35.0    0.004
+  1sps_B mol:protein length:104 SRC SH2 DOMAIN                        35.0    0.004
+  1sps_A mol:protein length:104 SRC SH2 DOMAIN                        35.0    0.004
+  1spr_D mol:protein length:104 SRC TYROSINE KINASE SH2 DOMAIN        35.0    0.004
+  1spr_C mol:protein length:104 SRC TYROSINE KINASE SH2 DOMAIN        35.0    0.004
+  1spr_B mol:protein length:104 SRC TYROSINE KINASE SH2 DOMAIN        35.0    0.004
+  1spr_A mol:protein length:104 SRC TYROSINE KINASE SH2 DOMAIN        35.0    0.004
+  1shb_A mol:protein length:104 V-SRC SH2 DOMAIN                      35.0    0.004
+  1sha_A mol:protein length:104 V-SRC SH2 DOMAIN                      35.0    0.004
+  1p13_B mol:protein length:102 Proto-oncogene tyrosine-protein k...  35.0    0.004
+  1p13_A mol:protein length:102 Proto-oncogene tyrosine-protein k...  35.0    0.004
+  1g83_B mol:protein length:165 PROTO-ONCOGENE TYROSINE-PROTEIN K...  35.4    0.004
+  1g83_A mol:protein length:165 PROTO-ONCOGENE TYROSINE-PROTEIN K...  35.4    0.004
+  1aou_F mol:protein length:106 FYN PROTEIN-TYROSINE KINASE           35.0    0.004
+  1aot_F mol:protein length:106 FYN PROTEIN-TYROSINE KINASE           35.0    0.004
+  1m61_A mol:protein length:259 TYROSINE-PROTEIN KINASE ZAP-70        35.8    0.004
+  2oq1_A mol:protein length:254 Tyrosine-protein kinase ZAP-70        35.4    0.005
+  1x27_F mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  1x27_E mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  1x27_D mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  1x27_C mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  1x27_B mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  1x27_A mol:protein length:167 Proto-oncogene tyrosine-protein k...  35.4    0.005
+  2dcr_A mol:protein length:114 Proto-oncogene tyrosine-protein k...  34.7    0.006
+  1wqu_A mol:protein length:114 Proto-oncogene tyrosine-protein k...  34.7    0.006
+  2ptk_A mol:protein length:453 TYROSINE-PROTEIN KINASE TRANSFORM...  35.4    0.006
+  1f2f_A mol:protein length:104 PROTO-ONCOGENE TYROSINE-PROTEIN K...  33.9    0.011
+  1f1w_A mol:protein length:104 PROTO-ONCOGENE TYROSINE-PROTEIN K...  33.9    0.011
+  2ozo_A mol:protein length:613 Tyrosine-protein kinase ZAP-70        34.7    0.011
+  2ekx_A mol:protein length:110 Cytoplasmic tyrosine-protein kina...  33.1    0.019
+  1nrv_B mol:protein length:105 Growth factor receptor-bound prot...  33.1    0.023
+  1nrv_A mol:protein length:105 Growth factor receptor-bound prot...  33.1    0.023
+  3cd3_A mol:protein length:377 Proto-oncogene tyrosine-protein k...  33.1    0.039
+  3cbl_A mol:protein length:377 Proto-oncogene tyrosine-protein k...  33.1    0.039
+  3bkb_A mol:protein length:377 Proto-oncogene tyrosine-protein k...  33.1    0.039
+  2ysx_A mol:protein length:119 Signaling inositol polyphosphate ...  32.3    0.041
+  1cwe_C mol:protein length:98 P56LCK TYROSINE KINASE                 32.0    0.047
+  1cwe_A mol:protein length:98 P56LCK TYROSINE KINASE                 32.0    0.047
+  1cwd_L mol:protein length:98 P56LCK TYROSINE KINASE                 32.0    0.047
+  2qms_D mol:protein length:120 Growth factor receptor-bound prot...  32.0    0.053
+  2qms_C mol:protein length:120 Growth factor receptor-bound prot...  32.0    0.053
+  2qms_B mol:protein length:120 Growth factor receptor-bound prot...  32.0    0.053
+  2qms_A mol:protein length:120 Growth factor receptor-bound prot...  32.0    0.053
+  1mw4_A mol:protein length:120 Growth factor receptor-bound prot...  32.0    0.053
+  1blk_A mol:protein length:114 P55 BLK PROTEIN TYROSINE KINASE       31.2    0.10 
+  1blj_A mol:protein length:114 P55 BLK PROTEIN TYROSINE KINASE       31.2    0.10 
+  2vif_A mol:protein length:141 SUPPRESSOR OF CYTOKINE SIGNALLING 6   30.0    0.40 
+  3hck_A mol:protein length:107 HCK SH2                               28.9    0.68 
+  2cs0_A mol:protein length:119 Hematopoietic SH2 domain containing   28.9    0.78 
+  3d5d_D mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  3d5b_D mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  2v49_D mol:protein length:276 50S RIBOSOMAL PROTEIN L2              29.3    0.87 
+  2v47_D mol:protein length:276 50S RIBOSOMAL PROTEIN L2              29.3    0.87 
+  2j03_D mol:protein length:276 50S RIBOSOMAL PROTEIN L2              29.3    0.87 
+  2j01_D mol:protein length:276 50S RIBOSOMAL PROTEIN L2              29.3    0.87 
+  2hgu_D mol:protein length:276 50S RIBOSOMAL PROTEIN L2              29.3    0.87 
+  2hgq_D mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  2hgj_D mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  1vsp_B mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  1vsa_B mol:protein length:276 50S ribosomal protein L2              29.3    0.87 
+  2cr4_A mol:protein length:126 SH3 domain-binding protein 2          28.5    1.3  
+  2hck_B mol:protein length:438 HEMATOPOETIC CELL KINASE HCK          28.5    1.6  
+  2hck_A mol:protein length:438 HEMATOPOETIC CELL KINASE HCK          28.5    1.6  
+  1ad5_B mol:protein length:438 HAEMATOPOETIC CELL KINASE HCK         28.5    1.6  
+  1ad5_A mol:protein length:438 HAEMATOPOETIC CELL KINASE HCK         28.5    1.6  
+  2c0t_B mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  2c0t_A mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  2c0o_B mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  2c0o_A mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  2c0i_B mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  2c0i_A mol:protein length:454 TYROSINE-PROTEIN KINASE HCK           28.5    1.6  
+  1qcf_A mol:protein length:454 HAEMATOPOETIC CELL KINASE (HCK)       28.5    1.6  
+  1vp0_D mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1voy_D mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1vow_D mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1vou_D mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1vor_D mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1pny_A mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1pnu_A mol:protein length:270 50S ribosomal protein L2              26.2    8.9  
+  1sm1_A mol:protein length:275 50S RIBOSOMAL PROTEIN L2              26.2    9.1  
+  1nkw_A mol:protein length:275 50S ribosomal protein L2              26.2    9.1  
+  3dll_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  3cf5_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  2zjr_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  2zjq_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  2zjp_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  1xbp_A mol:protein length:274 50S ribosomal protein L2              26.2    9.4  
+  1nwy_A mol:protein length:274 ribosomal protein L2                  26.2    9.4  
+  1nwx_A mol:protein length:274 ribosomal protein L2                  26.2    9.4  
+
+
+> 2hdx_F mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdx_E mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdx_D mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdx_C mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdx_B mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdx_A mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdv_B mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 2hdv_A mol:protein length:111  SH2-B PH domain containing signaling 
+mediator
+Length=111
+
+ Score = 207 bits (526),  Expect = 7e-71, Method: Compositional matrix adjust.
+ Identities = 103/110 (94%), Positives = 103/110 (94%), Gaps = 7/110 (6%)
+
+Query  1    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+            SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL
+Sbjct  2    SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  61
+
+Query  61   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYVPS  103
+            RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIP       DVVLVSYVPS
+Sbjct  62   RLSLNAAGQCRVQHLHFQSIFDMLEHFRVHPIPLESGGSSDVVLVSYVPS  111
+
+
+> 1rqq_D mol:protein length:114  adaptor protein APS
+Length=114
+
+ Score = 153 bits (386),  Expect = 2e-49, Method: Compositional matrix adjust.
+ Identities = 76/104 (73%), Positives = 82/104 (79%), Gaps = 7/104 (7%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS YPWFHG LSR+KAAQLVL GG  SHG+F++RQSETR GECVLTFNFQGKAKHLRLSL
+Sbjct  8    LSDYPWFHGTLSRVKAAQLVLAGGPRSHGLFVIRQSETRPGECVLTFNFQGKAKHLRLSL  67
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYV  101
+            N  GQC VQHL FQS+FDML HF  HPIP       D+ L SYV
+Sbjct  68   NGHGQCHVQHLWFQSVFDMLRHFHTHPIPLESGGSADITLRSYV  111
+
+
+> 1rqq_C mol:protein length:114  adaptor protein APS
+Length=114
+
+ Score = 153 bits (386),  Expect = 2e-49, Method: Compositional matrix adjust.
+ Identities = 76/104 (73%), Positives = 82/104 (79%), Gaps = 7/104 (7%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS YPWFHG LSR+KAAQLVL GG  SHG+F++RQSETR GECVLTFNFQGKAKHLRLSL
+Sbjct  8    LSDYPWFHGTLSRVKAAQLVLAGGPRSHGLFVIRQSETRPGECVLTFNFQGKAKHLRLSL  67
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYV  101
+            N  GQC VQHL FQS+FDML HF  HPIP       D+ L SYV
+Sbjct  68   NGHGQCHVQHLWFQSVFDMLRHFHTHPIPLESGGSADITLRSYV  111
+
+
+> 1rpy_B mol:protein length:114  adaptor protein APS
+Length=114
+
+ Score = 153 bits (386),  Expect = 2e-49, Method: Compositional matrix adjust.
+ Identities = 76/104 (73%), Positives = 82/104 (79%), Gaps = 7/104 (7%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS YPWFHG LSR+KAAQLVL GG  SHG+F++RQSETR GECVLTFNFQGKAKHLRLSL
+Sbjct  8    LSDYPWFHGTLSRVKAAQLVLAGGPRSHGLFVIRQSETRPGECVLTFNFQGKAKHLRLSL  67
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYV  101
+            N  GQC VQHL FQS+FDML HF  HPIP       D+ L SYV
+Sbjct  68   NGHGQCHVQHLWFQSVFDMLRHFHTHPIPLESGGSADITLRSYV  111
+
+
+> 1rpy_A mol:protein length:114  adaptor protein APS
+Length=114
+
+ Score = 153 bits (386),  Expect = 2e-49, Method: Compositional matrix adjust.
+ Identities = 76/104 (73%), Positives = 82/104 (79%), Gaps = 7/104 (7%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS YPWFHG LSR+KAAQLVL GG  SHG+F++RQSETR GECVLTFNFQGKAKHLRLSL
+Sbjct  8    LSDYPWFHGTLSRVKAAQLVLAGGPRSHGLFVIRQSETRPGECVLTFNFQGKAKHLRLSL  67
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFRVHPIP-------DVVLVSYV  101
+            N  GQC VQHL FQS+FDML HF  HPIP       D+ L SYV
+Sbjct  68   NGHGQCHVQHLWFQSVFDMLRHFHTHPIPLESGGSADITLRSYV  111
+
+
+> 1k9a_F mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 1k9a_E mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 1k9a_D mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 1k9a_C mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 1k9a_B mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 1k9a_A mol:protein length:450  Carboxyl-terminal Src kinase
+Length=450
+
+ Score = 55.5 bits (132),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 50/83 (60%), Gaps = 3/83 (4%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            LS  PWFHG ++R +A +L+    TG   +FLVR+S    G+  L  + +GK +H R+  
+Sbjct  77   LSLMPWFHGKITREQAERLLYPPETG---LFLVRESTNYPGDYTLCVSCEGKVEHYRIMY  133
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHF  87
+            +A+     + ++F+++  ++EH+
+Sbjct  134  HASKLSIDEEVYFENLMQLVEHY  156
+
+
+> 2ci9_B mol:protein length:102  CYTOPLASMIC PROTEIN NCK1
+Length=102
+
+ Score = 52.0 bits (123),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 26/86 (30%), Positives = 47/86 (55%), Gaps = 3/86 (3%)
+
+Query  7   GYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNA  66
+           G PW++G ++R +A   + E   G  G FL+R SE+   +  ++   QGK KH ++ L  
+Sbjct  4   GSPWYYGKVTRHQAEMALNE--RGHEGDFLIRDSESSPNDFSVSLKAQGKNKHFKVQLKE  61
+
+Query  67  AGQCRVQHLHFQSIFDMLEHFRVHPI  92
+              C +    F ++ +++EH++  PI
+Sbjct  62  TVYC-IGQRKFSTMEELVEHYKKAPI  86
+
+
+> 2ci9_A mol:protein length:102  CYTOPLASMIC PROTEIN NCK1
+Length=102
+
+ Score = 52.0 bits (123),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 26/86 (30%), Positives = 47/86 (55%), Gaps = 3/86 (3%)
+
+Query  7   GYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNA  66
+           G PW++G ++R +A   + E   G  G FL+R SE+   +  ++   QGK KH ++ L  
+Sbjct  4   GSPWYYGKVTRHQAEMALNE--RGHEGDFLIRDSESSPNDFSVSLKAQGKNKHFKVQLKE  61
+
+Query  67  AGQCRVQHLHFQSIFDMLEHFRVHPI  92
+              C +    F ++ +++EH++  PI
+Sbjct  62  TVYC-IGQRKFSTMEELVEHYKKAPI  86
+
+
+> 1tce_A mol:protein length:107  SHC
+Length=107
+
+ Score = 51.2 bits (121),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 33/89 (37%), Positives = 49/89 (55%), Gaps = 6/89 (7%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           L G PWFHG LSR +A  L+   G      FLVR+S T  G+ VLT +  G+ KHL L +
+Sbjct  4   LRGEPWFHGKLSRREAEALLQLNGD-----FLVRESTTTPGQYVLTGSQSGQPKHLLL-V  57
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFRVHPIP  93
+           +  G  R +   F+S+  ++ +   + +P
+Sbjct  58  DPEGVVRTKDHRFESVSHLISYHMDNHLP  86
+
+
+> 2ci8_A mol:protein length:99  CYTOPLASMIC PROTEIN NCK1
+Length=99
+
+ Score = 50.4 bits (119),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 25/84 (30%), Positives = 46/84 (55%), Gaps = 3/84 (4%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           PW++G ++R +A   + E   G  G FL+R SE+   +  ++   QGK KH ++ L    
+Sbjct  2   PWYYGKVTRHQAEMALNE--RGHEGDFLIRDSESSPNDFSVSLKAQGKNKHFKVQLKETV  59
+
+Query  69  QCRVQHLHFQSIFDMLEHFRVHPI  92
+            C +    F ++ +++EH++  PI
+Sbjct  60  YC-IGQRKFSTMEELVEHYKKAPI  82
+
+
+> 1mil_A mol:protein length:104  SHC ADAPTOR PROTEIN
+Length=104
+
+ Score = 49.7 bits (117),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 33/91 (36%), Positives = 49/91 (54%), Gaps = 6/91 (7%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           L G PWFHG LSR +A  L+   G      FLVR+S T  G+ VLT    G+ KHL L +
+Sbjct  4   LRGEPWFHGKLSRREAEALLQLNGD-----FLVRESTTTPGQYVLTGLQSGQPKHLLL-V  57
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFRVHPIPDV  95
+           +  G  R +   F+S+  ++ +   + +P +
+Sbjct  58  DPEGVVRTKDHRFESVSHLISYHMDNHLPII  88
+
+
+> 1csz_A mol:protein length:112  SYK PROTEIN TYROSINE KINASE
+Length=112
+
+ Score = 48.1 bits (113),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  14  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  71
+
+Query  69  QCRV-QHLHFQSIFDMLEHF  87
+           +  + +   F +++ ++EH+
+Sbjct  72  KLSIPEGKKFDTLWQLVEHY  91
+
+
+> 1csy_A mol:protein length:112  SYK PROTEIN TYROSINE KINASE
+Length=112
+
+ Score = 48.1 bits (113),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  14  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  71
+
+Query  69  QCRV-QHLHFQSIFDMLEHF  87
+           +  + +   F +++ ++EH+
+Sbjct  72  KLSIPEGKKFDTLWQLVEHY  91
+
+
+> 1ab2_A mol:protein length:109  C-ABL TYROSINE KINASE SH2 DOMAIN
+Length=109
+
+ Score = 47.8 bits (112),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 26/87 (30%), Positives = 49/87 (56%), Gaps = 4/87 (5%)
+
+Query  1   SDQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHL  60
+           S   L  + W+HG +SR  AA+ +L  G   +G FLVR+SE+  G+  ++  ++G+  H 
+Sbjct  2   SGNSLEKHSWYHGPVSR-NAAEYLLSSGI--NGSFLVRESESSPGQRSISLRYEGRVYHY  58
+
+Query  61  RLSLNAAGQCRV-QHLHFQSIFDMLEH  86
+           R++  + G+  V     F ++ +++ H
+Sbjct  59  RINTASDGKLYVSSESRFNTLAELVHH  85
+
+
+> 1a81_K mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1a81_I mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1a81_G mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1a81_E mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1a81_C mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1a81_A mol:protein length:254  SYK KINASE
+Length=254
+
+ Score = 48.1 bits (113),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 25/80 (31%), Positives = 46/80 (58%), Gaps = 3/80 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PWFHG +SR ++ Q+VL  G+ ++G FL+R  +   G   L    +GK  H R+  +  G
+Sbjct  159  PWFHGKISREESEQIVLI-GSKTNGKFLIRARDN-NGSYALCLLHEGKVLHYRIDKDKTG  216
+
+Query  69   QCRV-QHLHFQSIFDMLEHF  87
+            +  + +   F +++ ++EH+
+Sbjct  217  KLSIPEGKKFDTLWQLVEHY  236
+
+
+ Score = 31.6 bits (70),  Expect = 0.15, Method: Compositional matrix adjust.
+ Identities = 19/60 (32%), Positives = 31/60 (52%), Gaps = 1/60 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P+F G ++R +A   +++GG  S G++L+RQS    G   L+     KA H  +     G
+Sbjct  6   PFFFGNITREEAEDYLVQGGM-SDGLYLLRQSRNYLGGFALSVAHGRKAHHYTIERELNG  64
+
+
+> 1bm2_A mol:protein length:117  PROTEIN (GROWTH FACTOR RECEPTOR 
+BOUND PROTEIN
+Length=117
+
+ Score = 46.6 bits (109),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  9   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  66
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  67  DGAGKYFLWVVKFNSLNELVDYHR  90
+
+
+> 1bmb_A mol:protein length:123  PROTEIN (GROWTH FACTOR RECEPTOR 
+BOUND PROTEIN
+Length=123
+
+ Score = 46.6 bits (109),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  10  MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  67
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  68  DGAGKYFLWVVKFNSLNELVDYHR  91
+
+
+> 1fhs_A mol:protein length:112  GROWTH FACTOR RECEPTOR BOUND PROTEIN-2
+Length=112
+
+ Score = 46.2 bits (108),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  4   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  61
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  62  DGAGKYFLWVVKFNSLNELVDYHR  85
+
+
+> 2abl_A mol:protein length:163  ABL TYROSINE KINASE
+Length=163
+
+ Score = 47.0 bits (110),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 25/83 (30%), Positives = 48/83 (58%), Gaps = 4/83 (5%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            L  + W+HG +SR  AA+ +L  G   +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  67   LEKHSWYHGPVSR-NAAEYLLSSGI--NGSFLVRESESSPGQRSISLRYEGRVYHYRINT  123
+
+Query  65   NAAGQCRV-QHLHFQSIFDMLEH  86
+             + G+  V     F ++ +++ H
+Sbjct  124  ASDGKLYVSSESRFNTLAELVHH  146
+
+
+> 1fyr_D mol:protein length:114  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=114
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  8   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  65
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  66  DGAGKYFLWVVKFNSLNELVDYHR  89
+
+
+> 1fyr_C mol:protein length:114  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=114
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  8   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  65
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  66  DGAGKYFLWVVKFNSLNELVDYHR  89
+
+
+> 1fyr_B mol:protein length:114  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=114
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  8   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  65
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  66  DGAGKYFLWVVKFNSLNELVDYHR  89
+
+
+> 1fyr_A mol:protein length:114  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=114
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  8   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  65
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  66  DGAGKYFLWVVKFNSLNELVDYHR  89
+
+
+> 3c7i_A mol:protein length:116  Growth factor receptor-bound protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 2huw_B mol:protein length:116  Growth factor receptor-bound protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 2huw_A mol:protein length:116  Growth factor receptor-bound protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 2h5k_B mol:protein length:116  Growth factor receptor-bound protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 2h5k_A mol:protein length:116  Growth factor receptor-bound protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 2h46_E mol:protein length:116  Growth Receptor Binding Protein 
+2
+Length=116
+
+ Score = 46.2 bits (108),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  3   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  60
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  61  DGAGKYFLWVVKFNSLNELVDYHR  84
+
+
+> 1opk_A mol:protein length:495  Proto-oncogene tyrosine-protein 
+kinase ABL1
+Length=495
+
+ Score = 47.8 bits (112),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/83 (30%), Positives = 49/83 (59%), Gaps = 4/83 (5%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            L  + W+HG +SR  AA+ +L   +G +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  102  LEKHSWYHGPVSR-NAAEYLLS--SGINGSFLVRESESSPGQRSISLRYEGRVYHYRINT  158
+
+Query  65   NAAGQCRV-QHLHFQSIFDMLEH  86
+             + G+  V     F ++ +++ H
+Sbjct  159  ASDGKLYVSSESRFNTLAELVHH  181
+
+
+> 1cj1_L mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_K mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_J mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_I mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_H mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_G mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_F mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_E mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_D mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_C mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_B mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1cj1_A mol:protein length:96  PROTEIN (GROWTH FACTOR RECEPTOR-BOUND 
+PROTEIN
+Length=96
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  2   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  59
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  60  GKYFLWVVKFNSLNELVDYHR  80
+
+
+> 1tze_E mol:protein length:98  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=98
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aob_D mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aob_C mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aob_B mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aob_A mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aoa_B mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 2aoa_A mol:protein length:99  Growth factor receptor-bound protein 
+2
+Length=99
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 46/84 (55%), Gaps = 2/84 (2%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           +  +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  1   MKPHPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  58
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHFR  88
+           + AG+  +  + F S+ +++++ R
+Sbjct  59  DGAGKYFLWVVKFNSLNELVDYHR  82
+
+
+> 1x0n_A mol:protein length:104  Growth factor receptor-bound protein 
+2
+Length=104
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  3   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  60
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  61  GKYFLWVVKFNSLNELVDYHR  81
+
+
+> 1qg1_E mol:protein length:104  PROTEIN (GROWTH FACTOR RECEPTOR 
+BINDING PROTE
+Length=104
+
+ Score = 45.4 bits (106),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  3   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  60
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  61  GKYFLWVVKFNSLNELVDYHR  81
+
+
+> 2fo0_A mol:protein length:495  Proto-oncogene tyrosine-protein 
+kinase ABL1 (
+Length=495
+
+ Score = 47.8 bits (112),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 25/83 (30%), Positives = 49/83 (59%), Gaps = 4/83 (5%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            L  + W+HG +SR  AA+ +L   +G +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  99   LEKHSWYHGPVSR-NAAEYLLS--SGINGSFLVRESESSPGQRSISLRYEGRVYHYRINT  155
+
+Query  65   NAAGQCRV-QHLHFQSIFDMLEH  86
+             + G+  V     F ++ +++ H
+Sbjct  156  ASDGKLYVSSESRFNTLAELVHH  178
+
+
+> 1zfp_E mol:protein length:98  GROWTH FACTOR RECEPTOR BINDING 
+PROTEIN
+Length=98
+
+ Score = 45.4 bits (106),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 22/81 (27%), Positives = 45/81 (56%), Gaps = 2/81 (2%)
+
+Query  8   YPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAA  67
+           +PWF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + A
+Sbjct  3   HPWFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGA  60
+
+Query  68  GQCRVQHLHFQSIFDMLEHFR  88
+           G+  +  + F S+ +++++ R
+Sbjct  61  GKYFLWVVKFNSLNELVDYHR  81
+
+
+> 2ecd_A mol:protein length:119  Tyrosine-protein kinase ABL2
+Length=119
+
+ Score = 45.4 bits (106),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 25/83 (30%), Positives = 47/83 (57%), Gaps = 4/83 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           L  + W+HG +SR  AA+ +L      +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  13  LEKHSWYHGPVSR-SAAEYLLSSLI--NGSFLVRESESSPGQLSISLRYEGRVYHYRINT  69
+
+Query  65  NAAGQCRVQ-HLHFQSIFDMLEH  86
+            A G+  V     F ++ +++ H
+Sbjct  70  TADGKVYVTAESRFSTLAELVHH  92
+
+
+> 1opl_B mol:protein length:537  proto-oncogene tyrosine-protein 
+kinase
+Length=537
+
+ Score = 47.0 bits (110),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 25/83 (30%), Positives = 49/83 (59%), Gaps = 4/83 (5%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            L  + W+HG +SR  AA+ +L   +G +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  141  LEKHSWYHGPVSR-NAAEYLLS--SGINGSFLVRESESSPGQRSISLRYEGRVYHYRINT  197
+
+Query  65   NAAGQCRV-QHLHFQSIFDMLEH  86
+             + G+  V     F ++ +++ H
+Sbjct  198  ASDGKLYVSSESRFNTLAELVHH  220
+
+
+> 1opl_A mol:protein length:537  proto-oncogene tyrosine-protein 
+kinase
+Length=537
+
+ Score = 47.0 bits (110),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 25/83 (30%), Positives = 49/83 (59%), Gaps = 4/83 (5%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            L  + W+HG +SR  AA+ +L   +G +G FLVR+SE+  G+  ++  ++G+  H R++ 
+Sbjct  141  LEKHSWYHGPVSR-NAAEYLLS--SGINGSFLVRESESSPGQRSISLRYEGRVYHYRINT  197
+
+Query  65   NAAGQCRV-QHLHFQSIFDMLEH  86
+             + G+  V     F ++ +++ H
+Sbjct  198  ASDGKLYVSSESRFNTLAELVHH  220
+
+
+> 2shp_B mol:protein length:525  SHP-2
+Length=525
+
+ Score = 46.6 bits (109),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 32/99 (32%), Positives = 51/99 (52%), Gaps = 24/99 (24%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF--------NFQGKAKHLR  61
+            WFHG LS  +A +L+ E   G HG FLVR+S++  G+ VL+         +  GK+K   
+Sbjct  112  WFHGHLSGKEAEKLLTE--KGKHGSFLVRESQSHPGDFVLSVRTGDDKGESNDGKSKVTH  169
+
+Query  62   LSLNAAGQCRVQHL--------HFQSIFDMLEHFRVHPI  92
+            + +      R Q L         F S+ D++EH++ +P+
+Sbjct  170  VMI------RCQELKYDVGGGERFDSLTDLVEHYKKNPM  202
+
+
+> 2shp_A mol:protein length:525  SHP-2
+Length=525
+
+ Score = 46.6 bits (109),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 32/99 (32%), Positives = 51/99 (52%), Gaps = 24/99 (24%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF--------NFQGKAKHLR  61
+            WFHG LS  +A +L+ E   G HG FLVR+S++  G+ VL+         +  GK+K   
+Sbjct  112  WFHGHLSGKEAEKLLTE--KGKHGSFLVRESQSHPGDFVLSVRTGDDKGESNDGKSKVTH  169
+
+Query  62   LSLNAAGQCRVQHL--------HFQSIFDMLEHFRVHPI  92
+            + +      R Q L         F S+ D++EH++ +P+
+Sbjct  170  VMI------RCQELKYDVGGGERFDSLTDLVEHYKKNPM  202
+
+
+> 1gri_B mol:protein length:217  GROWTH FACTOR BOUND PROTEIN 2
+Length=217
+
+ Score = 46.2 bits (108),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 47/84 (56%), Gaps = 2/84 (2%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            +  +PWF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  55   MKPHPWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  112
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFR  88
+            + AG+  +  + F S+ +++++ R
+Sbjct  113  DGAGKYFLWVVKFNSLNELVDYHR  136
+
+
+> 1gri_A mol:protein length:217  GROWTH FACTOR BOUND PROTEIN 2
+Length=217
+
+ Score = 46.2 bits (108),  Expect = 9e-07, Method: Compositional matrix adjust.
+ Identities = 22/84 (26%), Positives = 47/84 (56%), Gaps = 2/84 (2%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            +  +PWF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  
+Sbjct  55   MKPHPWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLR  112
+
+Query  65   NAAGQCRVQHLHFQSIFDMLEHFR  88
+            + AG+  +  + F S+ +++++ R
+Sbjct  113  DGAGKYFLWVVKFNSLNELVDYHR  136
+
+
+> 2gsb_A mol:protein length:119  Ras GTPase-activating protein 
+1
+Length=119
+
+ Score = 44.7 bits (104),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 25/91 (27%), Positives = 43/91 (47%), Gaps = 2/91 (2%)
+
+Query  2   DQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLR  61
+           + P  G  WFHG +S+ +A  L++    G    FLVR S+   G+  L F      +  +
+Sbjct  10  EDPHEGKIWFHGKISKQEAYNLLMT--VGQVCSFLVRPSDNTPGDYSLYFRTNENIQRFK  67
+
+Query  62  LSLNAAGQCRVQHLHFQSIFDMLEHFRVHPI  92
+           +      Q  +   ++ SI D+++H+R   I
+Sbjct  68  ICPTPNNQFMMGGRYYNSIGDIIDHYRKEQI  98
+
+
+> 2dx0_B mol:protein length:138  Phospholipase C, gamma 2
+Length=138
+
+ Score = 44.7 bits (104),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 32/90 (36%), Positives = 49/90 (54%), Gaps = 8/90 (9%)
+
+Query  7    GYPWFHGML-SRLKAAQLVLE--GGTGSH-GVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+            G  WFH  + SR  A +L+ E    TG+  G FLVR+SET   +  L+F   G+ +H R+
+Sbjct  21   GEKWFHKKVESRTSAEKLLQEYCAETGAKDGTFLVRESETFPNDYTLSFWRSGRVQHCRI  80
+
+Query  63   -SLNAAGQCR---VQHLHFQSIFDMLEHFR  88
+             S    G  +     +L F SI+ +++H+R
+Sbjct  81   RSTMENGVMKYYLTDNLTFNSIYALIQHYR  110
+
+
+> 2dx0_A mol:protein length:138  Phospholipase C, gamma 2
+Length=138
+
+ Score = 44.7 bits (104),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 32/90 (36%), Positives = 49/90 (54%), Gaps = 8/90 (9%)
+
+Query  7    GYPWFHGML-SRLKAAQLVLE--GGTGSH-GVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+            G  WFH  + SR  A +L+ E    TG+  G FLVR+SET   +  L+F   G+ +H R+
+Sbjct  21   GEKWFHKKVESRTSAEKLLQEYCAETGAKDGTFLVRESETFPNDYTLSFWRSGRVQHCRI  80
+
+Query  63   -SLNAAGQCR---VQHLHFQSIFDMLEHFR  88
+             S    G  +     +L F SI+ +++H+R
+Sbjct  81   RSTMENGVMKYYLTDNLTFNSIYALIQHYR  110
+
+
+> 2cia_A mol:protein length:102  CYTOPLASMIC PROTEIN NCK2
+Length=102
+
+ Score = 43.5 bits (101),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 24/86 (28%), Positives = 45/86 (52%), Gaps = 3/86 (3%)
+
+Query  7   GYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNA  66
+           G  W++G ++R +A   + E G    G FL+R SE+   +  ++    GK KH ++ L  
+Sbjct  4   GSEWYYGNVTRHQAECALNERGV--EGDFLIRDSESSPSDFSVSLKASGKNKHFKVQLVD  61
+
+Query  67  AGQCRVQHLHFQSIFDMLEHFRVHPI  92
+              C +    F ++ +++EH++  PI
+Sbjct  62  NVYC-IGQRRFHTMDELVEHYKKAPI  86
+
+
+> 1jwo_A mol:protein length:97  Csk Homologous Kinase
+Length=97
+
+ Score = 42.4 bits (98),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 29/84 (35%), Positives = 45/84 (54%), Gaps = 5/84 (6%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+           LS  PWFHG +S  +A Q +        G+FLVR+S    G+ VL  +F     H R+ L
+Sbjct  1   LSLMPWFHGKISGQEAVQQL---QPPEDGLFLVRESARHPGDYVLCVSFGRDVIHYRV-L  56
+
+Query  65  NAAGQCRV-QHLHFQSIFDMLEHF  87
+           +  G   + + + F ++ DM+EH+
+Sbjct  57  HRDGHLTIDEAVFFCNLMDMVEHY  80
+
+
+> 1ghu_A mol:protein length:107  GRB2
+Length=107
+
+ Score = 42.4 bits (98),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 21/79 (27%), Positives = 43/79 (54%), Gaps = 2/79 (3%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WF G + R KA +++        G FL+R+SE+  G+  L+  F    +H ++  + AG+
+Sbjct  3   WFFGKIPRAKAEEML--SKQRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAGK  60
+
+Query  70  CRVQHLHFQSIFDMLEHFR  88
+             +  + F S+ +++++ R
+Sbjct  61  YFLWVVKFNSLNELVDYHR  79
+
+
+> 2dly_A mol:protein length:121  Fyn-related kinase
+Length=121
+
+ Score = 42.4 bits (98),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 21/61 (34%), Positives = 34/61 (56%), Gaps = 1/61 (2%)
+
+Query  2   DQPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLR  61
+           D+ L   PWF G + R  A + +L       G FL+R+SE+++G+  L+   +G  KH R
+Sbjct  10  DRSLQAEPWFFGAIKRADAEKQLLYS-ENQTGAFLIRESESQKGDFSLSVLDEGVVKHYR  68
+
+Query  62  L  62
+           +
+Sbjct  69  I  69
+
+
+> 1z3k_A mol:protein length:98  Cytoplasmic protein NCK2
+Length=98
+
+ Score = 42.0 bits (97),  Expect = 8e-06, Method: Compositional matrix adjust.
+ Identities = 23/83 (28%), Positives = 44/83 (53%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           W++G ++R +A   + E G    G FL+R SE+   +  ++    GK KH ++ L     
+Sbjct  3   WYYGNVTRHQAECALNERGV--EGDFLIRDSESSPSDFSVSLKASGKNKHFKVQLVDNVY  60
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+           C +    F ++ +++EH++  PI
+Sbjct  61  C-IGQRRFHTMDELVEHYKKAPI  82
+
+
+> 2eo3_A mol:protein length:111  Crk-like protein
+Length=111
+
+ Score = 42.0 bits (97),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 26/93 (28%), Positives = 47/93 (51%), Gaps = 3/93 (3%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+            W+ G +SR + AQ  L+G    HG+FLVR S T  G+ VL+ +   +  H  ++     +
+Sbjct  21   WYMGPVSR-QEAQTRLQGQ--RHGMFLVRDSSTCPGDYVLSVSENSRVSHYIINSLPNRR  77
+
+Query  70   CRVQHLHFQSIFDMLEHFRVHPIPDVVLVSYVP  102
+             ++    F  +  +LE +++H +    L+   P
+Sbjct  78   FKIGDQEFDHLPALLEFYKIHYLDTTTLIEPAP  110
+
+
+> 1jyu_A mol:protein length:96  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=96
+
+ Score = 41.2 bits (95),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 21/80 (26%), Positives = 44/80 (55%), Gaps = 2/80 (3%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            WF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  + AG
+Sbjct  4   AWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAG  61
+
+Query  69  QCRVQHLHFQSIFDMLEHFR  88
+           +  +  + F S+ +++++ R
+Sbjct  62  KYFLWVVKFNSLNELVDYHR  81
+
+
+> 1jyr_A mol:protein length:96  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=96
+
+ Score = 41.2 bits (95),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 21/80 (26%), Positives = 44/80 (55%), Gaps = 2/80 (3%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            WF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  + AG
+Sbjct  4   AWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAG  61
+
+Query  69  QCRVQHLHFQSIFDMLEHFR  88
+           +  +  + F S+ +++++ R
+Sbjct  62  KYFLWVVKFNSLNELVDYHR  81
+
+
+> 1jyq_B mol:protein length:96  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=96
+
+ Score = 41.2 bits (95),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 21/80 (26%), Positives = 44/80 (55%), Gaps = 2/80 (3%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            WF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  + AG
+Sbjct  4   AWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAG  61
+
+Query  69  QCRVQHLHFQSIFDMLEHFR  88
+           +  +  + F S+ +++++ R
+Sbjct  62  KYFLWVVKFNSLNELVDYHR  81
+
+
+> 1jyq_A mol:protein length:96  GROWTH FACTOR RECEPTOR-BOUND PROTEIN 
+2
+Length=96
+
+ Score = 41.2 bits (95),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 21/80 (26%), Positives = 44/80 (55%), Gaps = 2/80 (3%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            WF G + R KA +++ +      G FL+R+SE+  G+  L+  F    +H ++  + AG
+Sbjct  4   AWFFGKIPRAKAEEMLSK--QRHDGAFLIRESESAPGDFSLSVKFGNDVQHFKVLRDGAG  61
+
+Query  69  QCRVQHLHFQSIFDMLEHFR  88
+           +  +  + F S+ +++++ R
+Sbjct  62  KYFLWVVKFNSLNELVDYHR  81
+
+
+> 2eob_A mol:protein length:124  1-phosphatidylinositol-4,5-bisphosphate 
+phosp
+Length=124
+
+ Score = 41.6 bits (96),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 22/90 (24%), Positives = 44/90 (49%), Gaps = 3/90 (3%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+            P    PW++  LSR +A  +++       G FL+R+ E       +TF  +GK KH R+
+Sbjct  14  NPHESKPWYYDRLSRGEAEDMLMR--IPRDGAFLIRKREGT-DSYAITFRARGKVKHCRI  70
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHFRVHPI  92
+           + +          +F+S+ +++ ++  H +
+Sbjct  71  NRDGRHFVLGTSAYFESLVELVSYYEKHAL  100
+
+
+> 1ju5_A mol:protein length:109  Crk
+Length=109
+
+ Score = 40.8 bits (94),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 29/106 (27%), Positives = 49/106 (46%), Gaps = 20/106 (19%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN----  65
+            W+ G LSR +A  L L+G    HGVFLVR S T  G+ VL+ +   +  H  ++ +    
+Sbjct  2    WYWGRLSRQEAVAL-LQGQ--RHGVFLVRDSSTSPGDYVLSVSENSRVSHYIINSSGPRP  58
+
+Query  66   -------------AAGQCRVQHLHFQSIFDMLEHFRVHPIPDVVLV  98
+                         +  + R+    F S+  +LE +++H +    L+
+Sbjct  59   PVPPSPAQPPPGVSPSRLRIGDQEFDSLPALLEFYKIHYLDTTTLI  104
+
+
+> 2eyv_A mol:protein length:124  v-crk sarcoma virus CT10 oncogene 
+homolog iso
+Length=124
+
+ Score = 40.4 bits (93),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 30/109 (28%), Positives = 50/109 (46%), Gaps = 20/109 (18%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN----  65
+            W+ G LSR +A  L L+G    HGVFLVR S T  G+ VL+ +   +  H  ++ +    
+Sbjct  12   WYWGRLSRQEAVAL-LQGQR--HGVFLVRDSSTSPGDYVLSVSENSRVSHYIINSSGPRP  68
+
+Query  66   -------------AAGQCRVQHLHFQSIFDMLEHFRVHPIPDVVLVSYV  101
+                         +  + R+    F S+  +LE +++H +    L+  V
+Sbjct  69   PVPPSPAQPPPGVSPSRLRIGDQEFDSLPALLEFYKIHYLDTTTLIEPV  117
+
+
+> 2aug_B mol:protein length:126  Growth factor receptor-bound protein 
+14
+Length=126
+
+ Score = 40.4 bits (93),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 21/54 (39%), Positives = 33/54 (61%), Gaps = 1/54 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           PWFH  +SR +A +L+++ G    GVFLVR S++     VL+ +   K KH ++
+Sbjct  27  PWFHHKISRDEAQRLIIQQGLVD-GVFLVRDSQSNPKTFVLSMSHGQKIKHFQI  79
+
+
+> 2aug_A mol:protein length:126  Growth factor receptor-bound protein 
+14
+Length=126
+
+ Score = 40.4 bits (93),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 21/54 (39%), Positives = 33/54 (61%), Gaps = 1/54 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           PWFH  +SR +A +L+++ G    GVFLVR S++     VL+ +   K KH ++
+Sbjct  27  PWFHHKISRDEAQRLIIQQGLVD-GVFLVRDSQSNPKTFVLSMSHGQKIKHFQI  79
+
+
+> 2dvj_A mol:protein length:230  V-crk sarcoma virus CT10 oncogene 
+homolog, is
+Length=230
+
+ Score = 41.2 bits (95),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 30/109 (28%), Positives = 50/109 (46%), Gaps = 20/109 (18%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN----  65
+            W+ G LSR +A  L L+G    HGVFLVR S T  G+ VL+ +   +  H  ++ +    
+Sbjct  15   WYWGRLSRQEAVAL-LQGQR--HGVFLVRDSSTSPGDYVLSVSENSRVSHYIINSSGPRP  71
+
+Query  66   -------------AAGQCRVQHLHFQSIFDMLEHFRVHPIPDVVLVSYV  101
+                         +  + R+    F S+  +LE +++H +    L+  V
+Sbjct  72   PVPPSPAQPPPGVSPSRLRIGDQEFDSLPALLEFYKIHYLDTTTLIEPV  120
+
+
+> 2eyy_A mol:protein length:204  v-crk sarcoma virus CT10 oncogene 
+homolog iso
+Length=204
+
+ Score = 41.2 bits (95),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 30/109 (28%), Positives = 50/109 (46%), Gaps = 20/109 (18%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN----  65
+            W+ G LSR +A  L L+G    HGVFLVR S T  G+ VL+ +   +  H  ++ +    
+Sbjct  13   WYWGRLSRQEAVAL-LQGQR--HGVFLVRDSSTSPGDYVLSVSENSRVSHYIINSSGPRP  69
+
+Query  66   -------------AAGQCRVQHLHFQSIFDMLEHFRVHPIPDVVLVSYV  101
+                         +  + R+    F S+  +LE +++H +    L+  V
+Sbjct  70   PVPPSPAQPPPGVSPSRLRIGDQEFDSLPALLEFYKIHYLDTTTLIEPV  118
+
+
+> 2dlz_A mol:protein length:118  Protein vav-2
+Length=118
+
+ Score = 40.0 bits (92),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 17/89 (19%), Positives = 42/89 (47%), Gaps = 3/89 (3%)
+
+Query  6   SGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN  65
+           + YPWF G + R +   L+    + + G +L+R+         ++  F  + KH+++   
+Sbjct  14  TAYPWFAGNMERQQTDNLL---KSHASGTYLIRERPAEAERFAISIKFNDEVKHIKVVEK  70
+
+Query  66  AAGQCRVQHLHFQSIFDMLEHFRVHPIPD  94
+                  +   F S+ +++E+++ H + +
+Sbjct  71  DNWIHITEAKKFDSLLELVEYYQCHSLKE  99
+
+
+> 3cxl_A mol:protein length:463  N-chimerin
+Length=463
+
+ Score = 41.2 bits (95),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 41/74 (55%), Gaps = 6/74 (8%)
+
+Query  11   FHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQC  70
+            FHGM+SR  A QL++     + G +L+R+S+ + G   L   F  + ++ RL  +  G+ 
+Sbjct  54   FHGMISREAADQLLIV----AEGSYLIRESQRQPGTYTLALRFGSQTRNFRLYYD--GKH  107
+
+Query  71   RVQHLHFQSIFDML  84
+             V    F+SI D++
+Sbjct  108  FVGEKRFESIHDLV  121
+
+
+> 2eyz_A mol:protein length:304  v-crk sarcoma virus CT10 oncogene 
+homolog iso
+Length=304
+
+ Score = 41.2 bits (95),  Expect = 6e-05, Method: Compositional matrix adjust.
+ Identities = 30/109 (28%), Positives = 50/109 (46%), Gaps = 20/109 (18%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLN----  65
+            W+ G LSR +A  L L+G    HGVFLVR S T  G+ VL+ +   +  H  ++ +    
+Sbjct  13   WYWGRLSRQEAVAL-LQGQR--HGVFLVRDSSTSPGDYVLSVSENSRVSHYIINSSGPRP  69
+
+Query  66   -------------AAGQCRVQHLHFQSIFDMLEHFRVHPIPDVVLVSYV  101
+                         +  + R+    F S+  +LE +++H +    L+  V
+Sbjct  70   PVPPSPAQPPPGVSPSRLRIGDQEFDSLPALLEFYKIHYLDTTTLIEPV  118
+
+
+> 1i3z_A mol:protein length:103  EWS/FLI1 ACTIVATED TRANSCRIPT 
+2
+Length=103
+
+ Score = 37.7 bits (86),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 20/65 (31%), Positives = 34/65 (52%), Gaps = 2/65 (3%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           P++HG L++ +   L+L+GG    G FL+R SE+  G   L  +F+      R+     G
+Sbjct  4   PYYHGCLTKRECEALLLKGGV--DGNFLIRDSESVPGALCLCVSFKKLVYSYRIFREKHG  61
+
+Query  69  QCRVQ  73
+             R++
+Sbjct  62  YYRIE  66
+
+
+> 2crh_A mol:protein length:138  Vav proto-oncogene
+Length=138
+
+ Score = 37.7 bits (86),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 23/93 (25%), Positives = 47/93 (51%), Gaps = 5/93 (5%)
+
+Query  3    QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+            Q LS + W+ G + R  A  ++      S G FLVRQ      E  ++  +  + KH+++
+Sbjct  21   QDLSVHLWYAGPMERAGAESIL---ANRSDGTFLVRQRVKDAAEFAISIKYNVEVKHIKI  77
+
+Query  63   SLNAAGQCRV-QHLHFQSIFDMLEHFRVHPIPD  94
+             + A G  R+ +   F+ + +++E ++ + + D
+Sbjct  78   -MTAEGLYRITEKKAFRGLTELVEFYQQNSLKD  109
+
+
+> 1fbz_B mol:protein length:104  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE LCK
+Length=104
+
+ Score = 37.0 bits (84),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 27/85 (32%), Positives = 46/85 (54%), Gaps = 7/85 (8%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNF---QGK-AKHLRL-  62
+           PWF   LSR  A + +L  G  +HG FL+R+SE+  G  C+   +F   QG+  KH ++ 
+Sbjct  4   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFCLSVRDFDQNQGEVVKHYKIR  62
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+           +L+  G      + F  + +++ H+
+Sbjct  63  NLDNGGFYISPRITFPGLHELVRHY  87
+
+
+> 1fbz_A mol:protein length:104  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE LCK
+Length=104
+
+ Score = 37.0 bits (84),  Expect = 6e-04, Method: Compositional matrix adjust.
+ Identities = 27/85 (32%), Positives = 46/85 (54%), Gaps = 7/85 (8%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNF---QGK-AKHLRL-  62
+           PWF   LSR  A + +L  G  +HG FL+R+SE+  G  C+   +F   QG+  KH ++ 
+Sbjct  4   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFCLSVRDFDQNQGEVVKHYKIR  62
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+           +L+  G      + F  + +++ H+
+Sbjct  63  NLDNGGFYISPRITFPGLHELVRHY  87
+
+
+> 1ijr_A mol:protein length:104  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE LCK
+Length=104
+
+ Score = 37.0 bits (84),  Expect = 7e-04, Method: Compositional matrix adjust.
+ Identities = 27/85 (32%), Positives = 46/85 (54%), Gaps = 7/85 (8%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNF---QGK-AKHLRL-  62
+           PWF   LSR  A + +L  G  +HG FL+R+SE+  G  C+   +F   QG+  KH ++ 
+Sbjct  4   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFCLSVRDFDQNQGEVVKHYKIR  62
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+           +L+  G      + F  + +++ H+
+Sbjct  63  NLDNGGFYISPRITFPGLHELVRHY  87
+
+
+> 2eu0_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 2etz_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 1lun_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 1lum_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 1luk_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 1lui_A mol:protein length:108  Tyrosine-protein kinase ITK/TSK
+Length=108
+
+ Score = 37.0 bits (84),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 17/38 (45%), Positives = 24/38 (63%), Gaps = 2/38 (5%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           L  Y W++  +SR KA +L+L+  TG  G F+VR S T
+Sbjct  3   LETYEWYNKSISRDKAEKLLLD--TGKEGAFMVRDSRT  38
+
+
+> 1rja_A mol:protein length:100  Tyrosine-protein kinase 6
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 22/85 (26%), Positives = 43/85 (51%), Gaps = 2/85 (2%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+           PWF G +SR +A + +   G  + G FL+R SE    + VL+       +H ++   A G
+Sbjct  3   PWFFGCISRSEAVRRLQAEGNAT-GAFLIRVSEKPSADYVLSVRDTQAVRHYKIWRRAGG  61
+
+Query  69  QCRV-QHLHFQSIFDMLEHFRVHPI  92
+           +  + + + F S+ +++ + R   +
+Sbjct  62  RLHLNEAVSFLSLPELVNYHRAQSL  86
+
+
+> 1r1s_G mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1s_E mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1s_C mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1s_A mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1q_B mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1q_A mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1p_D mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1p_C mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1p_B mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1r1p_A mol:protein length:100  GRB2-related adaptor protein 2
+Length=100
+
+ Score = 36.2 bits (82),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 19/83 (23%), Positives = 41/83 (49%), Gaps = 3/83 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+           WFH  LSR +A  L++       G F++R S++  G+  ++   +   +H ++  +  G 
+Sbjct  11  WFHEGLSRHQAENLLMGKDI---GFFIIRASQSSPGDFSISVRHEDDVQHFKVMRDTKGN  67
+
+Query  70  CRVQHLHFQSIFDMLEHFRVHPI  92
+             +    F S+  +++++R   I
+Sbjct  68  YFLWTEKFPSLNKLVDYYRTTSI  90
+
+
+> 1shd_A mol:protein length:107  C-SRC TYROSINE KINASE SH2 DOMAIN
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1hct_B mol:protein length:107  HUMAN SRC
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1hcs_B mol:protein length:107  HUMAN SRC
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1e_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1e_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1c_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1c_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1b_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1b_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a09_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a09_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a08_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a08_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a07_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a07_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1o4r_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4q_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4p_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4o_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4n_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4m_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4l_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4k_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4j_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4i_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4h_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4g_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4f_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4e_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4d_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4c_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4b_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o4a_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o49_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o48_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o47_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o46_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o45_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o44_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o43_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o42_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1o41_A mol:protein length:108  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=108
+
+ Score = 36.2 bits (82),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/88 (26%), Positives = 43/88 (49%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  7   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  66  LDSGGFYITSRTQFNSLQQLVAYYSKHA  93
+
+
+> 1kc2_A mol:protein length:103  Src Tyrosine kinase
+Length=103
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLS------  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G   L+ +    AK L ++      
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSAFANAKGLNVAHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1a1a_B mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/88 (27%), Positives = 44/88 (50%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYSLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1a1a_A mol:protein length:107  C-SRC TYROSINE KINASE
+Length=107
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/88 (27%), Positives = 44/88 (50%), Gaps = 7/88 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  9   WYFGKITRRESERLLL-NAENPRGTFLVRESETTKGAYSLSVSDFDNAKGLNVKHYKIRK  67
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVHP  91
+           L++ G        F S+  ++ ++  H 
+Sbjct  68  LDSGGFYITSRTQFNSLQQLVAYYSKHA  95
+
+
+> 1lkl_A mol:protein length:104  HUMAN P56 TYROSINE KINASE
+Length=104
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+           PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  4   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  62
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+           +L+  G      + F  + +++ H+
+Sbjct  63  NLDNGGFYISPRITFPGLHELVRHY  87
+
+
+> 1bhh_B mol:protein length:103  P56 LCK TYROSINE KINASE SH2 DOMAIN
+Length=103
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9   PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+           PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  3   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  61
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+           +L+  G      + F  + +++ H+
+Sbjct  62  NLDNGGFYISPRITFPGLHELVRHY  86
+
+
+> 1lkk_A mol:protein length:105  HUMAN P56 TYROSINE KINASE
+Length=105
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 7/89 (8%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKH  59
+           L   PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH
+Sbjct  1   LEPEPWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKH  59
+
+Query  60  LRL-SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            ++ +L+  G      + F  + +++ H+
+Sbjct  60  YKIRNLDNGGFYISPRITFPGLHELVRHY  88
+
+
+> 1skj_A mol:protein length:113  PP60 V-SRC TYROSINE KINASE TRANSFORMING 
+PROTE
+Length=113
+
+ Score = 35.8 bits (81),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 24/91 (26%), Positives = 44/91 (48%), Gaps = 7/91 (8%)
+
+Query  6   SGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHL  60
+           S   W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH 
+Sbjct  2   SAEEWYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHY  60
+
+Query  61  RL-SLNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           ++  L++ G        F S+  ++ ++  H
+Sbjct  61  KIRKLDSGGFYITSRTQFSSLQQLVAYYSKH  91
+
+
+> 1bhh_A mol:protein length:108  T-LYMPHOCYTE-SPECIFIC PROTEIN 
+TYROSINE KINASE
+Length=108
+
+ Score = 35.4 bits (80),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 7/89 (8%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKH  59
+           L   PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH
+Sbjct  4   LEPEPWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKH  62
+
+Query  60  LRL-SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            ++ +L+  G      + F  + +++ H+
+Sbjct  63  YKIRNLDNGGFYISPRITFPGLHELVRHY  91
+
+
+> 1bhf_A mol:protein length:108  T-LYMPHOCYTE-SPECIFIC PROTEIN 
+TYROSINE KINASE
+Length=108
+
+ Score = 35.4 bits (80),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 7/89 (8%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKH  59
+           L   PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH
+Sbjct  4   LEPEPWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKH  62
+
+Query  60  LRL-SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            ++ +L+  G      + F  + +++ H+
+Sbjct  63  YKIRNLDNGGFYISPRITFPGLHELVRHY  91
+
+
+> 2src_A mol:protein length:452  TYROSINE-PROTEIN KINASE SRC
+Length=452
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  67   WYFGKITRRESERLLLNA-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  125
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  126  LDSGGFYITSRTQFNSLQQLVAYYSKH  152
+
+
+> 1y57_A mol:protein length:452  Proto-oncogene tyrosine-protein 
+kinase Src
+Length=452
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  67   WYFGKITRRESERLLLNA-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  125
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  126  LDSGGFYITSRTQFNSLQQLVAYYSKH  152
+
+
+> 1fmk_A mol:protein length:452  TYROSINE-PROTEIN KINASE SRC
+Length=452
+
+ Score = 36.6 bits (83),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  67   WYFGKITRRESERLLLNA-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  125
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  126  LDSGGFYITSRTQFNSLQQLVAYYSKH  152
+
+
+> 1lcj_A mol:protein length:109  P56==LCK== TYROSINE KINASE
+Length=109
+
+ Score = 35.4 bits (80),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 7/89 (8%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKH  59
+           L   PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH
+Sbjct  5   LEPEPWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKH  63
+
+Query  60  LRL-SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            ++ +L+  G      + F  + +++ H+
+Sbjct  64  YKIRNLDNGGFYISPRITFPGLHELVRHY  92
+
+
+> 2b3o_A mol:protein length:532  Tyrosine-protein phosphatase, 
+non-receptor ty
+Length=532
+
+ Score = 36.6 bits (83),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 20/53 (38%), Positives = 27/53 (51%), Gaps = 2/53 (4%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           WFH  LS L A  L+   G G HG FL R S   +G+  L+     +  H+R+
+Sbjct  4   WFHRDLSGLDAETLL--KGRGVHGSFLARPSRKNQGDFSLSVRVGDQVTHIRI  54
+
+
+> 1ksw_A mol:protein length:452  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=452
+
+ Score = 36.6 bits (83),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  67   WYFGKITRRESERLLLNA-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  125
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  126  LDSGGFYITSRTQFNSLQQLVAYYSKH  152
+
+
+> 1bkl_A mol:protein length:113  PP60 V-SRC TYROSINE KINASE TRANSFORMING 
+PROTE
+Length=113
+
+ Score = 35.4 bits (80),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 24/91 (26%), Positives = 43/91 (47%), Gaps = 7/91 (8%)
+
+Query  6   SGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHL  60
+           S   W+ G ++R ++  L+L       G FLVR+SET +G  C+   +F        KH 
+Sbjct  2   SAEEWYFGKITRRESESLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHY  60
+
+Query  61  RL-SLNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           ++  L++ G        F S+  ++ ++  H
+Sbjct  61  KIRKLDSGGFYITSRTQFSSLQQLVAYYSKH  91
+
+
+> 1lck_A mol:protein length:175  P56==LCK== TYROSINE KINASE
+Length=175
+
+ Score = 35.8 bits (81),  Expect = 0.003, Method: Compositional matrix adjust.
+ Identities = 27/89 (30%), Positives = 45/89 (51%), Gaps = 7/89 (8%)
+
+Query  5    LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKH  59
+            L   PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH
+Sbjct  71   LEPEPWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKH  129
+
+Query  60   LRL-SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             ++ +L+  G      + F  + +++ H+
+Sbjct  130  YKIRNLDNGGFYISPRITFPGLHELVRHY  158
+
+
+> 2jyq_A mol:protein length:106  Tyrosine-protein kinase transforming 
+protein 
+Length=106
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1is0_B mol:protein length:106  Tyrosine-protein kinase transforming 
+protein 
+Length=106
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1is0_A mol:protein length:106  Tyrosine-protein kinase transforming 
+protein 
+Length=106
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 2h8h_A mol:protein length:535  Proto-oncogene tyrosine-protein 
+kinase Src
+Length=535
+
+ Score = 36.2 bits (82),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  150  WYFGKITRRESERLLLNA-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  208
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  209  LDSGGFYITSRTQFNSLQQLVAYYSKH  235
+
+
+> 1nzv_B mol:protein length:103  Tyrosine-protein kinase transforming 
+protein 
+Length=103
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1nzv_A mol:protein length:103  Tyrosine-protein kinase transforming 
+protein 
+Length=103
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1nzl_B mol:protein length:103  Tyrosine-protein kinase transforming 
+protein 
+Length=103
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1nzl_A mol:protein length:103  Tyrosine-protein kinase transforming 
+protein 
+Length=103
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1bkm_A mol:protein length:113  PP60 V-SRC TYROSINE KINASE TRANSFORMING 
+PROTE
+Length=113
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 24/91 (26%), Positives = 43/91 (47%), Gaps = 7/91 (8%)
+
+Query  6   SGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHL  60
+           S   W+ G ++R ++  L+L       G FLVR+SET +G  C+   +F        KH 
+Sbjct  2   SAEEWYFGKITRRESEALLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHY  60
+
+Query  61  RL-SLNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           ++  L++ G        F S+  ++ ++  H
+Sbjct  61  KIRKLDSGGFYITSRTQFSSLQQLVAYYSKH  91
+
+
+> 1sps_C mol:protein length:104  SRC SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1sps_B mol:protein length:104  SRC SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1sps_A mol:protein length:104  SRC SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1spr_D mol:protein length:104  SRC TYROSINE KINASE SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1spr_C mol:protein length:104  SRC TYROSINE KINASE SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1spr_B mol:protein length:104  SRC TYROSINE KINASE SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1spr_A mol:protein length:104  SRC TYROSINE KINASE SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1shb_A mol:protein length:104  V-SRC SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1sha_A mol:protein length:104  V-SRC SH2 DOMAIN
+Length=104
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYITSRTQFSSLQQLVAYYSKH  90
+
+
+> 1p13_B mol:protein length:102  Proto-oncogene tyrosine-protein 
+kinase Src
+Length=102
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1p13_A mol:protein length:102  Proto-oncogene tyrosine-protein 
+kinase Src
+Length=102
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 43/87 (49%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGE-CVLTFNFQG----KAKHLRL-S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G  C+   +F        KH ++  
+Sbjct  4   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  62
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  63  LDSGGFYITSRTQFSSLQQLVAYYSKH  89
+
+
+> 1g83_B mol:protein length:165  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE FYN
+Length=165
+
+ Score = 35.4 bits (80),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/84 (27%), Positives = 42/84 (50%), Gaps = 7/84 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+            W+ G L R  A + +L  G    G FL+R+SET +G   L+     + +G   KH ++  
+Sbjct  68   WYFGKLGRKDAERQLLSFGN-PRGTFLIRESETTKGAYSLSIRDWDDMKGDHVKHYKIRK  126
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHF  87
+            L+  G        F+++  +++H+
+Sbjct  127  LDNGGYYITTRAQFETLQQLVQHY  150
+
+
+> 1g83_A mol:protein length:165  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE FYN
+Length=165
+
+ Score = 35.4 bits (80),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/84 (27%), Positives = 42/84 (50%), Gaps = 7/84 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+            W+ G L R  A + +L  G    G FL+R+SET +G   L+     + +G   KH ++  
+Sbjct  68   WYFGKLGRKDAERQLLSFGN-PRGTFLIRESETTKGAYSLSIRDWDDMKGDHVKHYKIRK  126
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHF  87
+            L+  G        F+++  +++H+
+Sbjct  127  LDNGGYYITTRAQFETLQQLVQHY  150
+
+
+> 1aou_F mol:protein length:106  FYN PROTEIN-TYROSINE KINASE
+Length=106
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/84 (27%), Positives = 42/84 (50%), Gaps = 7/84 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+           W+ G L R  A + +L  G    G FL+R+SET +G   L+     + +G   KH ++  
+Sbjct  7   WYFGKLGRKDAERQLLSFGN-PRGTFLIRESETTKGAYSLSIRDWDDMKGDHVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHF  87
+           L+  G        F+++  +++H+
+Sbjct  66  LDNGGYYITTRAQFETLQQLVQHY  89
+
+
+> 1aot_F mol:protein length:106  FYN PROTEIN-TYROSINE KINASE
+Length=106
+
+ Score = 35.0 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 23/84 (27%), Positives = 42/84 (50%), Gaps = 7/84 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+           W+ G L R  A + +L  G    G FL+R+SET +G   L+     + +G   KH ++  
+Sbjct  7   WYFGKLGRKDAERQLLSFGN-PRGTFLIRESETTKGAYSLSIRDWDDMKGDHVKHYKIRK  65
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHF  87
+           L+  G        F+++  +++H+
+Sbjct  66  LDNGGYYITTRAQFETLQQLVQHY  89
+
+
+> 1m61_A mol:protein length:259  TYROSINE-PROTEIN KINASE ZAP-70
+Length=259
+
+ Score = 35.8 bits (81),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 21/82 (26%), Positives = 42/82 (51%), Gaps = 3/82 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PW+H  L+R + A+  L  G  + G FL+R     +G   L+  +     H  +S + AG
+Sbjct  165  PWYHSSLTR-EEAERKLYSGAQTDGKFLLR-PRKEQGTYALSLIYGKTVYHYLISQDKAG  222
+
+Query  69   Q-CRVQHLHFQSIFDMLEHFRV  89
+            + C  +   F +++ ++E+ ++
+Sbjct  223  KYCIPEGTKFDTLWQLVEYLKL  244
+
+
+> 2oq1_A mol:protein length:254  Tyrosine-protein kinase ZAP-70
+Length=254
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 21/82 (26%), Positives = 42/82 (51%), Gaps = 3/82 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PW+H  L+R + A+  L  G  + G FL+R     +G   L+  +     H  +S + AG
+Sbjct  160  PWYHSSLTR-EEAERKLYSGAQTDGKFLLR-PRKEQGTYALSLIYGKTVYHYLISQDKAG  217
+
+Query  69   Q-CRVQHLHFQSIFDMLEHFRV  89
+            + C  +   F +++ ++E+ ++
+Sbjct  218  KYCIPEGTKFDTLWQLVEYLKL  239
+
+
+> 1x27_F mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 1x27_E mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 1x27_D mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 1x27_C mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 1x27_B mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 1x27_A mol:protein length:167  Proto-oncogene tyrosine-protein 
+kinase LCK
+Length=167
+
+ Score = 35.4 bits (80),  Expect = 0.005, Method: Compositional matrix adjust.
+ Identities = 26/85 (31%), Positives = 44/85 (52%), Gaps = 7/85 (8%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-  62
+            PWF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ 
+Sbjct  67   PWFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIR  125
+
+Query  63   SLNAAGQCRVQHLHFQSIFDMLEHF  87
+            +L+  G      + F  + +++ H+
+Sbjct  126  NLDNGGFYISPRITFPGLHELVRHY  150
+
+
+> 2dcr_A mol:protein length:114  Proto-oncogene tyrosine-protein 
+kinase Fes/Fp
+Length=114
+
+ Score = 34.7 bits (78),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 24/85 (28%), Positives = 45/85 (53%), Gaps = 7/85 (8%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           +PL    W+HG + R + A+L++  G      FLVR+S+ ++ E VL+  + G  +H  +
+Sbjct  11  KPLHEQLWYHGAIPRAEVAELLVHSGD-----FLVRESQGKQ-EYVLSVLWDGLPRHFII  64
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             +     R++   F SI  +++H 
+Sbjct  65  Q-SLDNLYRLEGEGFPSIPLLIDHL  88
+
+
+> 1wqu_A mol:protein length:114  Proto-oncogene tyrosine-protein 
+kinase FES/FP
+Length=114
+
+ Score = 34.7 bits (78),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 24/85 (28%), Positives = 45/85 (53%), Gaps = 7/85 (8%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           +PL    W+HG + R + A+L++  G      FLVR+S+ ++ E VL+  + G  +H  +
+Sbjct  11  KPLHEQLWYHGAIPRAEVAELLVHSGD-----FLVRESQGKQ-EYVLSVLWDGLPRHFII  64
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             +     R++   F SI  +++H 
+Sbjct  65  Q-SLDNLYRLEGEGFPSIPLLIDHL  88
+
+
+> 2ptk_A mol:protein length:453  TYROSINE-PROTEIN KINASE TRANSFORMING 
+PROTEIN 
+Length=453
+
+ Score = 35.4 bits (80),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 24/87 (28%), Positives = 44/87 (51%), Gaps = 7/87 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQG-KAKHLRL-S  63
+            W+ G ++R ++ +L+L       G FLVR+SET +G   L+     N +G   KH ++  
+Sbjct  68   WYFGKITRRESERLLLNP-ENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  126
+
+Query  64   LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+            L++ G        F S+  ++ ++  H
+Sbjct  127  LDSGGFYITSRTQFSSLQQLVAYYSKH  153
+
+
+> 1f2f_A mol:protein length:104  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=104
+
+ Score = 33.9 bits (76),  Expect = 0.011, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 42/87 (48%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL------S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G   L+ +    AK L +       
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYIWSRTQFSSLQQLVAYYSKH  90
+
+
+> 1f1w_A mol:protein length:104  PROTO-ONCOGENE TYROSINE-PROTEIN 
+KINASE SRC
+Length=104
+
+ Score = 33.9 bits (76),  Expect = 0.011, Method: Compositional matrix adjust.
+ Identities = 23/87 (26%), Positives = 42/87 (48%), Gaps = 7/87 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL------S  63
+           W+ G ++R ++ +L+L       G FLVR+SET +G   L+ +    AK L +       
+Sbjct  5   WYFGKITRRESERLLL-NPENPRGTFLVRESETTKGAYCLSVSDFDNAKGLNVKHYKIRK  63
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFRVH  90
+           L++ G        F S+  ++ ++  H
+Sbjct  64  LDSGGFYIWSRTQFSSLQQLVAYYSKH  90
+
+
+> 2ozo_A mol:protein length:613  Tyrosine-protein kinase ZAP-70
+Length=613
+
+ Score = 34.7 bits (78),  Expect = 0.011, Method: Composition-based stats.
+ Identities = 21/82 (26%), Positives = 43/82 (52%), Gaps = 3/82 (4%)
+
+Query  9    PWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAG  68
+            PW+H  L+R + A+  L  G  + G FL+R  +  +G   L+  +     H  +S + AG
+Sbjct  162  PWYHSSLTR-EEAERKLYSGAQTDGKFLLRPRK-EQGTYALSLIYGKTVYHYLISQDKAG  219
+
+Query  69   Q-CRVQHLHFQSIFDMLEHFRV  89
+            + C  +   F +++ ++E+ ++
+Sbjct  220  KYCIPEGTKFDTLWQLVEYLKL  241
+
+
+ Score = 27.7 bits (60),  Expect = 3.0, Method: Composition-based stats.
+ Identities = 16/48 (33%), Positives = 27/48 (56%), Gaps = 1/48 (2%)
+
+Query  4   PLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF  51
+           P +  P+F+G +SR +A + +   G  + G+FL+RQ     G  VL+ 
+Sbjct  4   PAAHLPFFYGSISRAEAEEHLKLAGM-ADGLFLLRQCLRSLGGYVLSL  50
+
+
+> 2ekx_A mol:protein length:110  Cytoplasmic tyrosine-protein kinase 
+BMX
+Length=110
+
+ Score = 33.1 bits (74),  Expect = 0.019, Method: Compositional matrix adjust.
+ Identities = 22/70 (31%), Positives = 32/70 (46%), Gaps = 7/70 (10%)
+
+Query  5   LSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF-----NFQGKAKH  59
+           L  Y WF G +SR ++ QL+ +   G  G F+VR S       V  F     + +G  KH
+Sbjct  8   LDDYDWFAGNISRSQSEQLLRQ--KGKEGAFMVRNSSQVGMYTVSLFSKAVNDKKGTVKH  65
+
+Query  60  LRLSLNAAGQ  69
+             +  NA  +
+Sbjct  66  YHVHTNAENK  75
+
+
+> 1nrv_B mol:protein length:105  Growth factor receptor-bound protein 
+10
+Length=105
+
+ Score = 33.1 bits (74),  Expect = 0.023, Method: Compositional matrix adjust.
+ Identities = 17/53 (32%), Positives = 31/53 (58%), Gaps = 1/53 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           WFHG +SR ++ +++ + G    G+FL+R S++     VLT     K K+ ++
+Sbjct  7   WFHGRISREESHRIIKQQGLVD-GLFLLRDSQSNPKAFVLTLCHHQKIKNFQI  58
+
+
+> 1nrv_A mol:protein length:105  Growth factor receptor-bound protein 
+10
+Length=105
+
+ Score = 33.1 bits (74),  Expect = 0.023, Method: Compositional matrix adjust.
+ Identities = 17/53 (32%), Positives = 31/53 (58%), Gaps = 1/53 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           WFHG +SR ++ +++ + G    G+FL+R S++     VLT     K K+ ++
+Sbjct  7   WFHGRISREESHRIIKQQGLVD-GLFLLRDSQSNPKAFVLTLCHHQKIKNFQI  58
+
+
+> 3cd3_A mol:protein length:377  Proto-oncogene tyrosine-protein 
+kinase Fes/Fp
+Length=377
+
+ Score = 33.1 bits (74),  Expect = 0.039, Method: Compositional matrix adjust.
+ Identities = 24/85 (28%), Positives = 45/85 (53%), Gaps = 7/85 (8%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           +PL    W+HG + R + A+L++  G      FLVR+S+ ++ E VL+  + G  +H  +
+Sbjct  8   KPLHEQLWYHGAIPRAEVAELLVHSGD-----FLVRESQGKQ-EYVLSVLWDGLPRHFII  61
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             +     R++   F SI  +++H 
+Sbjct  62  Q-SLDNLYRLEGEGFPSIPLLIDHL  85
+
+
+> 3cbl_A mol:protein length:377  Proto-oncogene tyrosine-protein 
+kinase Fes/Fp
+Length=377
+
+ Score = 33.1 bits (74),  Expect = 0.039, Method: Compositional matrix adjust.
+ Identities = 24/85 (28%), Positives = 45/85 (53%), Gaps = 7/85 (8%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           +PL    W+HG + R + A+L++  G      FLVR+S+ ++ E VL+  + G  +H  +
+Sbjct  8   KPLHEQLWYHGAIPRAEVAELLVHSGD-----FLVRESQGKQ-EYVLSVLWDGLPRHFII  61
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             +     R++   F SI  +++H 
+Sbjct  62  Q-SLDNLYRLEGEGFPSIPLLIDHL  85
+
+
+> 3bkb_A mol:protein length:377  Proto-oncogene tyrosine-protein 
+kinase Fes/Fp
+Length=377
+
+ Score = 33.1 bits (74),  Expect = 0.039, Method: Compositional matrix adjust.
+ Identities = 24/85 (28%), Positives = 45/85 (53%), Gaps = 7/85 (8%)
+
+Query  3   QPLSGYPWFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRL  62
+           +PL    W+HG + R + A+L++  G      FLVR+S+ ++ E VL+  + G  +H  +
+Sbjct  8   KPLHEQLWYHGAIPRAEVAELLVHSGD-----FLVRESQGKQ-EYVLSVLWDGLPRHFII  61
+
+Query  63  SLNAAGQCRVQHLHFQSIFDMLEHF  87
+             +     R++   F SI  +++H 
+Sbjct  62  Q-SLDNLYRLEGEGFPSIPLLIDHL  85
+
+
+> 2ysx_A mol:protein length:119  Signaling inositol polyphosphate 
+phosphatase 
+Length=119
+
+ Score = 32.3 bits (72),  Expect = 0.041, Method: Compositional matrix adjust.
+ Identities = 16/33 (48%), Positives = 21/33 (64%), Gaps = 2/33 (6%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSET  42
+           W HG ++R KA +L+    TG  G FLVR SE+
+Sbjct  12  WNHGNITRSKAEELL--SRTGKDGSFLVRASES  42
+
+
+> 1cwe_C mol:protein length:98  P56LCK TYROSINE KINASE
+Length=98
+
+ Score = 32.0 bits (71),  Expect = 0.047, Method: Compositional matrix adjust.
+ Identities = 25/84 (30%), Positives = 43/84 (51%), Gaps = 7/84 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+           WF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ +
+Sbjct  3   WFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIRN  61
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHF  87
+           L+  G      + F  + +++ H+
+Sbjct  62  LDNGGFYISPRITFPGLHELVRHY  85
+
+
+> 1cwe_A mol:protein length:98  P56LCK TYROSINE KINASE
+Length=98
+
+ Score = 32.0 bits (71),  Expect = 0.047, Method: Compositional matrix adjust.
+ Identities = 25/84 (30%), Positives = 43/84 (51%), Gaps = 7/84 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+           WF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ +
+Sbjct  3   WFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIRN  61
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHF  87
+           L+  G      + F  + +++ H+
+Sbjct  62  LDNGGFYISPRITFPGLHELVRHY  85
+
+
+> 1cwd_L mol:protein length:98  P56LCK TYROSINE KINASE
+Length=98
+
+ Score = 32.0 bits (71),  Expect = 0.047, Method: Compositional matrix adjust.
+ Identities = 25/84 (30%), Positives = 43/84 (51%), Gaps = 7/84 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTF----NFQGK-AKHLRL-S  63
+           WF   LSR  A + +L  G  +HG FL+R+SE+  G   L+       QG+  KH ++ +
+Sbjct  3   WFFKNLSRKDAERQLLAPGN-THGSFLIRESESTAGSFSLSVRDFDQNQGEVVKHYKIRN  61
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHF  87
+           L+  G      + F  + +++ H+
+Sbjct  62  LDNGGFYISPRITFPGLHELVRHY  85
+
+
+> 2qms_D mol:protein length:120  Growth factor receptor-bound protein 
+7
+Length=120
+
+ Score = 32.0 bits (71),  Expect = 0.053, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 29/50 (58%), Gaps = 1/50 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKH  59
+           WFHG +SR ++ +L+ + G    G+FLVR+S+      VL+     K KH
+Sbjct  19  WFHGRISREESQRLIGQQGL-VDGLFLVRESQRNPQGFVLSLCHLQKVKH  67
+
+
+> 2qms_C mol:protein length:120  Growth factor receptor-bound protein 
+7
+Length=120
+
+ Score = 32.0 bits (71),  Expect = 0.053, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 29/50 (58%), Gaps = 1/50 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKH  59
+           WFHG +SR ++ +L+ + G    G+FLVR+S+      VL+     K KH
+Sbjct  19  WFHGRISREESQRLIGQQGL-VDGLFLVRESQRNPQGFVLSLCHLQKVKH  67
+
+
+> 2qms_B mol:protein length:120  Growth factor receptor-bound protein 
+7
+Length=120
+
+ Score = 32.0 bits (71),  Expect = 0.053, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 29/50 (58%), Gaps = 1/50 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKH  59
+           WFHG +SR ++ +L+ + G    G+FLVR+S+      VL+     K KH
+Sbjct  19  WFHGRISREESQRLIGQQGL-VDGLFLVRESQRNPQGFVLSLCHLQKVKH  67
+
+
+> 2qms_A mol:protein length:120  Growth factor receptor-bound protein 
+7
+Length=120
+
+ Score = 32.0 bits (71),  Expect = 0.053, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 29/50 (58%), Gaps = 1/50 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKH  59
+           WFHG +SR ++ +L+ + G    G+FLVR+S+      VL+     K KH
+Sbjct  19  WFHGRISREESQRLIGQQGL-VDGLFLVRESQRNPQGFVLSLCHLQKVKH  67
+
+
+> 1mw4_A mol:protein length:120  Growth factor receptor-bound protein 
+7
+Length=120
+
+ Score = 32.0 bits (71),  Expect = 0.053, Method: Compositional matrix adjust.
+ Identities = 19/50 (38%), Positives = 29/50 (58%), Gaps = 1/50 (2%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKH  59
+           WFHG +SR ++ +L+ + G    G+FLVR+S+      VL+     K KH
+Sbjct  19  WFHGRISREESQRLIGQQGL-VDGLFLVRESQRNPQGFVLSLCHLQKVKH  67
+
+
+> 1blk_A mol:protein length:114  P55 BLK PROTEIN TYROSINE KINASE
+Length=114
+
+ Score = 31.2 bits (69),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 24/83 (29%), Positives = 42/83 (51%), Gaps = 6/83 (7%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLT---FNFQGK-AKHLRL-SL  64
+           WF   +SR K A+  L       G FL+R+SE+ +G   L+      QG+  KH ++ SL
+Sbjct  14  WFFRTISR-KDAERQLLAPMNKAGSFLIRESESNKGAFSLSVKDITTQGEVVKHYKIRSL  72
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHF  87
+           +  G      + F ++  +++H+
+Sbjct  73  DNGGYYISPRITFPTLQALVQHY  95
+
+
+> 1blj_A mol:protein length:114  P55 BLK PROTEIN TYROSINE KINASE
+Length=114
+
+ Score = 31.2 bits (69),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 24/83 (29%), Positives = 42/83 (51%), Gaps = 6/83 (7%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLT---FNFQGK-AKHLRL-SL  64
+           WF   +SR K A+  L       G FL+R+SE+ +G   L+      QG+  KH ++ SL
+Sbjct  14  WFFRTISR-KDAERQLLAPMNKAGSFLIRESESNKGAFSLSVKDITTQGEVVKHYKIRSL  72
+
+Query  65  NAAGQCRVQHLHFQSIFDMLEHF  87
+           +  G      + F ++  +++H+
+Sbjct  73  DNGGYYISPRITFPTLQALVQHY  95
+
+
+> 2vif_A mol:protein length:141  SUPPRESSOR OF CYTOKINE SIGNALLING 
+6
+Length=141
+
+ Score = 30.0 bits (66),  Expect = 0.40, Method: Compositional matrix adjust.
+ Identities = 23/80 (29%), Positives = 35/80 (44%), Gaps = 6/80 (8%)
+
+Query  10   WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSLNAAGQ  69
+            W+ G ++R +A   +     GS   FLVR S   R    L+F   GK  H R+  +    
+Sbjct  26   WYWGPITRWEAEGKLANVPDGS---FLVRDSSDDRYLLSLSFRSHGKTLHTRIEHSNGRF  82
+
+Query  70   CRVQHLHFQ---SIFDMLEH  86
+               +    +   SI D++EH
+Sbjct  83   SFYEQPDVEGHTSIVDLIEH  102
+
+
+> 3hck_A mol:protein length:107  HCK SH2
+Length=107
+
+ Score = 28.9 bits (63),  Expect = 0.68, Method: Compositional matrix adjust.
+ Identities = 23/85 (27%), Positives = 42/85 (49%), Gaps = 7/85 (8%)
+
+Query  10  WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNF----QGKA-KHLRL-S  63
+           WF   +SR  A + +L  G    G F++R SET +G   L+       QG   KH ++ +
+Sbjct  6   WFFKGISRKDAERQLLAPGN-MLGSFMIRDSETTKGSYSLSVRDYDPRQGDTVKHYKIRT  64
+
+Query  64  LNAAGQCRVQHLHFQSIFDMLEHFR  88
+           L+  G        F ++ ++++H++
+Sbjct  65  LDNGGFYISPRSTFSTLQELVDHYK  89
+
+
+> 2cs0_A mol:protein length:119  Hematopoietic SH2 domain containing
+Length=119
+
+ Score = 28.9 bits (63),  Expect = 0.78, Method: Compositional matrix adjust.
+ Identities = 22/64 (34%), Positives = 29/64 (45%), Gaps = 5/64 (8%)
+
+Query  6   SGYP-WFHGMLSRLKAAQLVLEGGTGSHGVFLVRQSETRRGECVLTFNFQGKAKHLRLSL  64
+            G P WFHG +SR  A  L+     GS   FL+R S +  G   L++  Q    H  + L
+Sbjct  13  DGVPEWFHGAISREDAENLLESQPLGS---FLIRVSHSHVGY-TLSYKAQSSCCHFMVKL  68
+
+Query  65  NAAG  68
+              G
+Sbjct  69  LDDG  72
+
+
+> 3d5d_D mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 3d5b_D mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2v49_D mol:protein length:276  50S RIBOSOMAL PROTEIN L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2v47_D mol:protein length:276  50S RIBOSOMAL PROTEIN L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2j03_D mol:protein length:276  50S RIBOSOMAL PROTEIN L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2j01_D mol:protein length:276  50S RIBOSOMAL PROTEIN L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2hgu_D mol:protein length:276  50S RIBOSOMAL PROTEIN L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2hgq_D mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 2hgj_D mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 1vsp_B mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+> 1vsa_B mol:protein length:276  50S ribosomal protein L2
+Length=276
+
+ Score = 29.3 bits (64),  Expect = 0.87, Method: Compositional matrix adjust.
+ Identities = 17/59 (29%), Positives = 26/59 (44%), Gaps = 2/59 (3%)
+
+Query  15   LSRLKAAQLVLEGGTGSHGVFLVRQSETRR--GECVLTFNFQGKAKHLRLSLNAAGQCR  71
+            L+R       ++G  G + +  +   E R+  GEC  T    G A H  + L  AG+ R
+Sbjct  155  LARAAGTSAQIQGREGDYVILRLPSGELRKVHGECYATVGAVGNADHKNIVLGKAGRSR  213
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.139    0.436    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 762212640
+
+
+  Database: pdb_seq
+    Posted date:  Jan 29, 2024  12:06 PM
+  Number of letters in database: 30,839,592
+  Number of sequences in database:  133,266
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

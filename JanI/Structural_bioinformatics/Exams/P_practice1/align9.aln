@@ -1,0 +1,41 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+target  masstq------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  ------------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  ------------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  ------------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  ------------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  ------------------------------------------------------------
+1mc5A   ------------------------------------------------------------
+
+target  --------------------GQVITCKAAVAWEANKPMTIEDVQVAPPQAGEVRVKILFT
+1mc5A   -------------------ANEVIKCKAAVAWEAGKPLSIEEIEVAPPKAHEVRIKIIAT
+
+target  ALCHTDHYTWSGKDPEGLFPCILGHEAAGIVESVGEGVTEVQPGDHVIPCYQAECRECKF
+1mc5A   AVCHTDAYTLSGADPEGCFPVILGHEGAGIVESVGEGVTKLKAGDTVIPLYIPQCGECKF
+
+target  CKSGKTNLCGKVRAATGVGVmMNDRKSRFSINGKPIYHFMGTSTFSQYTVVHDVSVAKIN
+1mc5A   CLNPKTNLCQKIRVTQGKGL-MPDGTSRFTCKGKTILHYMGTSTFSEYTVVADISVAKID
+
+target  PQAPLDKVCLLGCGVSTGLGAVWNTAKVEAGSIVAIFGLGTVGLAVAEGAKSAGASRIIG
+1mc5A   PLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVCAVFGLGGVGLAVIMGCKVAGASRIIG
+
+target  IDIDSKKFDVAKNFGVTEFVNPKDHDKPIQQVIVDLTDGGVDYSFECIGNVSVMRSALEC
+1mc5A   VDINKDKFARAKEFGATECINPQDFSKPIQEVLIEMTDGGVDYSFECIGNVKVMRAALEA
+
+target  CHKGWGTSVIVGVAASGQEISTRPFQLVTGRVWKGTAFGGFKSRSQVPWLVEKYLNKEIK
+1mc5A   CHKGWGVSVVVGVAASGEEIATRPFQLVTGRTWKGTAFGGWKSVESVPKLVSEYMSKKIK
+
+target  VDEYVTHSMNLTDINKAFDLLHEGGCLRCVL--atdk
+1mc5A   VDEFVTHNLSFDEINKAFELMHSGKSIRTVVKI----
+

@@ -1,0 +1,99 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. 
+
+Each question accounts for 1 point. Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+In this exercise we are working with a target protein for which we have its sequence but we don't know its structure or function. This is its sequence:
+
+>target
+MASSTQGQVITCKAAVAWEANKPMTIEDVQVAPPQAGEVRVKILFTALCHTDHYTWSGKD
+PEGLFPCILGHEAAGIVESVGEGVTEVQPGDHVIPCYQAECRECKFCKSGKTNLCGKVRA
+ATGVGVMMNDRKSRFSINGKPIYHFMGTSTFSQYTVVHDVSVAKINPQAPLDKVCLLGCG
+VSTGLGAVWNTAKVEAGSIVAIFGLGTVGLAVAEGAKSAGASRIIGIDIDSKKFDVAKNF
+GVTEFVNPKDHDKPIQQVIVDLTDGGVDYSFECIGNVSVMRSALECCHKGWGTSVIVGVA
+ASGQEISTRPFQLVTGRVWKGTAFGGFKSRSQVPWLVEKYLNKEIKVDEYVTHSMNLTDI
+NKAFDLLHEGGCLRCVLATDK
+
+
+Answer the following questions:
+
+1) What is the function of this protein? 
+
+	$blastp -query target.fasta -db ~/Documents/databases/pdb_seq -out target_pdb.out 
+	Lowest E-value on .out -> name in uniprot -> 
+	Function: Catalyzes the oxidation of long-chain primary alcohols and the oxidation of S-(hydroxymethyl) glutathione 
+
+2) Get a HMM in the PFAM database that fits your target sequence and name it 2.hmm.
+
+	$hmmscan ~/Documents/databases/Pfam-A.hmm target.fasta > scan_target_PFAM.out
+	
+	Choose same option as function, ideally the first option (Alcohol dehydrogenase(ADH_N))
+	
+	$hmmfetch ~/Documents/databases/Pfam-A.hmm ADH_N > 2.hmm
+
+3) Use the HMM you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same HMM you used to get the sequences. Name the alignment 3.aln.
+	
+	$hmmsearch 2.hmm ~/Documents/databases/uniprot_sprot.fasta > MSA_2.out
+		$hmmsearch <HMM_file> <UniProt_database> > <output_fileMSA.out>
+	Mirar 4 primers ID (P42328, P12311, Q9UYX0, O58389)(seq1, seq2, seq3, seq4), descarregar seq from uniprot, cat tots junts
+		$cat seq*.fasta >>sequences.fasta
+	
+	$hmmalign 2.hmm sequences.fasta > MSA_ex3.sto
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <MSA_ex3.sto > 3.aln
+
+4) Discuss briefly your alignment. Does it show sequence conservation or not? Why some regions have capital letters and other regions have lowercase letters?
+
+	There is some conservation in the sequences, but the conserved parts are a minority in the sequence.
+	Capital letters align with the model, lowercase letters do not align
+
+5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it? 
+
+	$psiblast -query target.fasta -num_iterations 5 -out_pssm out_ex5.pssm -out trash.out -db ~/Documents/databases/uniprot_sprot.fasta
+	
+	$psiblast -in_pssm out_ex5.pssm -out pdb_ex5.out -db ~/Documents/databases/pdb_seq
+	
+	CAN ALSO USE BLASTP OUTPUT FROM EX1, MUCH EASIER
+	Get 4 first IDs (no chain), (1mc5, 2fze, 1teh, 1mp0)
+
+6) Superimpose the 4 templates you obtained in the previous question using pymol. Provide the RMSD value for all the superimpositions and save an image of the superimposition as 6.png.
+
+	super 1mc5, 1mp0, object=aln1
+	super 1teh, 1mp0, object=aln1
+	super 2fze, 1mp0, object=aln1
+	
+	RMSD(1mc5, 1mp0): 0.289
+	RMSD(1teh, 1mp0): 23.601
+	RMSD(2fze, 1mp0): 0.195
+
+7) Generate an structure-based alignment from the superimposition you created in the previous exercise. Name this alignment 7.aln.
+
+	save 7.aln, aln1
+
+8) Generate a HMM using as input the structure-based aligment you obtained in the previous question and name it 8.hmm.
+	
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out f <7.aln>7tofasta.fasta
+	$perl ~/Documents/databases/perl_scripts/fasta2sto.pl 7tofasta.fasta > 7MSA.sto
+	Execute hmmbuild to create a HMM using as input your MSA
+	$hmmbuild 8.hmm 7MSA.sto
+
+9) Make an structural model of the target sequence and name it 9.pdb.
+	
+	We need target(target.fasta) and alignment:
+	Obtain pdb from one of the templates
+	$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i 1mc5.pdb -o 1mc5
+	2 fastas, 1 for chain
+	$cat target.fasta > q9.fa
+	$cat 1mc5A.fa >> q9.fa
+	$hmmalign 8.hmm q9.fa > MSA9.sto
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <MSA9.sto>align9.aln
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <align9.aln>aln9.pir
+	Use modeling.py
+	names
+		alnfile  = 'aln9.pir'
+		knowns   = ('1mc5A')
+		sequence = 'target'
+	 mv target.B99990001.pdb 9.pdb
+10) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this?
+	
+	No image (:/)
+
+

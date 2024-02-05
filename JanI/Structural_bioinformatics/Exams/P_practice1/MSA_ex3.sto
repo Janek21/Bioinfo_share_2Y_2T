@@ -1,0 +1,29 @@
+# STOCKHOLM 1.0
+
+#=GS sp|P42328|ADH3_GEOSE DE Alcohol dehydrogenase OS=Geobacillus stearothermophilus OX=1422 PE=1 SV=1
+#=GS sp|P12311|ADH1_GEOSE DE Alcohol dehydrogenase OS=Geobacillus stearothermophilus OX=1422 GN=adhT PE=1 SV=2
+#=GS sp|Q9UYX0|TDH_PYRAB  DE L-threonine 3-dehydrogenase OS=Pyrococcus abyssi (strain GE5 / Orsay) OX=272844 GN=tdh PE=3 SV=1
+#=GS sp|O58389|TDH_PYRHO  DE L-threonine 3-dehydrogenase OS=Pyrococcus horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 100139 / OT-3) OX=70601 GN=tdh PE=1 SV=1
+
+sp|P42328|ADH3_GEOSE         ...mkaavveqfkeplkikevekptisy-GEVLVRIKACGVCHTDLHAAHGD..WPVKPKLPLIPGHEGVGIVEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLCEHQKNAGYSVDGGYAEYCRAAADYVVKIpdnlsfeeaapifcagvttykalkvtgakpgewvaiygigglghvavqyakamglnvvav
+#=GR sp|P42328|ADH3_GEOSE PP ...************************8.79*********************..****************************************999****************************************986************************************************************
+sp|P12311|ADH1_GEOSE         ...mkaavveqfkkplqvkevekpkisy-GEVLVRIKACGVCHTDLHAAHGD..WPVKPKLPLIPGHEGVGVIEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLCERQQNAGYSVDGGYAEYCRAAADYVVKIpdnlsfeeaapifcagvttykalkvtgakpgewvaiygigglghvavqyakamglnvvav
+#=GR sp|P12311|ADH1_GEOSE PP ...************************8.79*********************..****************************************999****************************************986************************************************************
+sp|Q9UYX0|TDH_PYRAB          msekmvaimktkpaygaelvevdvpkpgPGEVLIKVIATSICGTDLHIYEWNewAQSRIKPPQIMGHEVAGEVVEVGPGVEGIEVGDYVSVETHIV.CGKCYACRRGQYHVCQNTKIFGVDTDGVFAEYAVVPAQNVWK-npksippeyatlqeplgnavdtvlagpisgksvlitgagplgllgiavakasgaypvivs
+#=GR sp|Q9UYX0|TDH_PYRAB  PP ****************************68********************99888999**************************************.***************************************987.8***********************************************************
+sp|O58389|TDH_PYRHO          msekmvaimktkpgygaelvevdvpkpgPGEVLIKVLATSICGTDLHIYEWNewAQSRIKPPQIMGHEVAGEVVEIGPGVEGIEVGDYVSVETHIV.CGKCYACRRGQYHVCQNTKIFGVDTDGVFAEYAVVPAQNIWK-npksippeyatlqeplgnavdtvlagpisgksvlitgagplgllgiavakasgaypvivs
+#=GR sp|O58389|TDH_PYRHO  PP ****************************68********************99888999**************************************.**************************************9987.8***********************************************************
+#=GC PP_cons                 ............................689********************9..999***************************************.***************************************9986............................................................
+#=GC RF                      ............................xxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx............................................................
+
+sp|P42328|ADH3_GEOSE         digdeklelakelgadlvvnplkedaakfmkekvggvhaavvtavskpafqsaynsirrggacvlvglppeempipifdtvlngikiigsivgtrkdlqealqfaaegkvktiievqplekinevfdrmlkgqingrvvltledk.....
+#=GR sp|P42328|ADH3_GEOSE PP *************************************************************************************************************************************************.....
+sp|P12311|ADH1_GEOSE         dlgdeklelakqlgadlvvnpkhddaaqwikekvggvhatvvtavskaafesayksirrggacvlvglppeeipipifdtvlngvkiigsivgtrkdlqealqfaaegkvktivevqplenindvfdrmlkgqingrvvlkvd.......
+#=GR sp|P12311|ADH1_GEOSE PP ***********************************************************************************************************************************************.......
+sp|Q9UYX0|TDH_PYRAB          epsdfrrelakkvgadyvinpfeedvvkevmditdgngvdvflefsgapkaleqglqavtpagrvsllglypgkvsidfnnliifkaltvygitgrhlwetwytvsrllqsgklnldpiithkykgfdkyeeafelmragktgkvvfmlk
+#=GR sp|Q9UYX0|TDH_PYRAB  PP ******************************************************************************************************************************************************
+sp|O58389|TDH_PYRHO          epsdfrrelakkvgadyvinpfeedvvkevmditdgngvdvflefsgapkaleqglqavtpagrvsllglypgkvtidfnnliifkaltiygitgrhlwetwytvsrllqsgklnldpiithkykgfdkyeeafelmragktgkvvfmlk
+#=GR sp|O58389|TDH_PYRHO  PP ******************************************************************************************************************************************************
+#=GC PP_cons                 ......................................................................................................................................................
+#=GC RF                      ......................................................................................................................................................
+//

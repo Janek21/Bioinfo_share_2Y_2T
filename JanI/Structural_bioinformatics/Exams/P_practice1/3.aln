@@ -1,0 +1,32 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+sp|P42328|ADH3_GEOSE  ---mkaavveqfkeplkikevekptisy-GEVLVRIKACGVCHTDLHAAHGD--WPVKPK
+sp|P12311|ADH1_GEOSE  ---mkaavveqfkkplqvkevekpkisy-GEVLVRIKACGVCHTDLHAAHGD--WPVKPK
+sp|Q9UYX0|TDH_PYRAB   msekmvaimktkpaygaelvevdvpkpgPGEVLIKVIATSICGTDLHIYEWNewAQSRIK
+sp|O58389|TDH_PYRHO   msekmvaimktkpgygaelvevdvpkpgPGEVLIKVLATSICGTDLHIYEWNewAQSRIK
+
+sp|P42328|ADH3_GEOSE  LPLIPGHEGVGIVEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLCEHQKNAGY
+sp|P12311|ADH1_GEOSE  LPLIPGHEGVGVIEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLCERQQNAGY
+sp|Q9UYX0|TDH_PYRAB   PPQIMGHEVAGEVVEVGPGVEGIEVGDYVSVETHIV-CGKCYACRRGQYHVCQNTKIFGV
+sp|O58389|TDH_PYRHO   PPQIMGHEVAGEVVEIGPGVEGIEVGDYVSVETHIV-CGKCYACRRGQYHVCQNTKIFGV
+
+sp|P42328|ADH3_GEOSE  SVDGGYAEYCRAAADYVVKIpdnlsfeeaapifcagvttykalkvtgakpgewvaiygig
+sp|P12311|ADH1_GEOSE  SVDGGYAEYCRAAADYVVKIpdnlsfeeaapifcagvttykalkvtgakpgewvaiygig
+sp|Q9UYX0|TDH_PYRAB   DTDGVFAEYAVVPAQNVWK-npksippeyatlqeplgnavdtvlagpisgksvlitgagp
+sp|O58389|TDH_PYRHO   DTDGVFAEYAVVPAQNIWK-npksippeyatlqeplgnavdtvlagpisgksvlitgagp
+
+sp|P42328|ADH3_GEOSE  glghvavqyakamglnvvavdigdeklelakelgadlvvnplkedaakfmkekvggvhaa
+sp|P12311|ADH1_GEOSE  glghvavqyakamglnvvavdlgdeklelakqlgadlvvnpkhddaaqwikekvggvhat
+sp|Q9UYX0|TDH_PYRAB   lgllgiavakasgaypvivsepsdfrrelakkvgadyvinpfeedvvkevmditdgngvd
+sp|O58389|TDH_PYRHO   lgllgiavakasgaypvivsepsdfrrelakkvgadyvinpfeedvvkevmditdgngvd
+
+sp|P42328|ADH3_GEOSE  vvtavskpafqsaynsirrggacvlvglppeempipifdtvlngikiigsivgtrkdlqe
+sp|P12311|ADH1_GEOSE  vvtavskaafesayksirrggacvlvglppeeipipifdtvlngvkiigsivgtrkdlqe
+sp|Q9UYX0|TDH_PYRAB   vflefsgapkaleqglqavtpagrvsllglypgkvsidfnnliifkaltvygitgrhlwe
+sp|O58389|TDH_PYRHO   vflefsgapkaleqglqavtpagrvsllglypgkvtidfnnliifkaltiygitgrhlwe
+
+sp|P42328|ADH3_GEOSE  alqfaaegkvktiievqplekinevfdrmlkgqingrvvltledk-----
+sp|P12311|ADH1_GEOSE  alqfaaegkvktivevqplenindvfdrmlkgqingrvvlkvd-------
+sp|Q9UYX0|TDH_PYRAB   twytvsrllqsgklnldpiithkykgfdkyeeafelmragktgkvvfmlk
+sp|O58389|TDH_PYRHO   twytvsrllqsgklnldpiithkykgfdkyeeafelmragktgkvvfmlk
+

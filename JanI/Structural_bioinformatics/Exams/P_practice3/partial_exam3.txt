@@ -1,0 +1,39 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. 
+
+Each question accounts for 1 point. Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+In this exercise we are working with a target protein for which we have its sequence but we don't know its structure or function. This is its sequence:
+
+>target
+MFRKSVRPLVGAALVMAAAVAAGPTPASAAESEFYVNPDMASAQWVRDNPQDSRADVIAN
+RVADVPQGTWFTSYNPNEVQGQVDALVGSAESAGKTPIMVVYNIPNRDCSNHSGGGAPDH
+SSYRDWVDQVAAGLNGRPATIVVEPDVLSLMDSCMDQSQQNHVMDSIAYAGKTLMAGSSQ
+ARVYFDAGHSGWHSPGEIASRLNGADIANSAHGIATNTSNYNWTDDEVSYTRQIIDATGH
+SGLRAVVDTSRNGNGPQGSEWCDPEGRAIGTESTTNTGSSHVDAFLWVKLPGEADGCAAG
+AGEFVPQLAYDMAVAADPEPDPEPSPDPEPTPDPEPTPEPGEGCEAAYSVANEWSDGFQA
+EVTVTAGADLDGWEVAIDFPDGQGIEQAWNAEVSGSGGAYTASDVSHNGSLSAGESTGFG
+FTGTHSGANGEPELTCSAA
+
+1) What is the function of this protein?
+	
+	$blastp -query target.fasta -db ~/Documents/databases/pdb_seq -out target_pdb.out
+
+2) What is the fold of this protein? 
+
+3) Obtain a HMM for this protein in the PFAM database. Name this HMM 3.hmm.
+
+4) Use the HMM you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same HMM you used to get the sequences. Name the alignment 4.aln.
+
+5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it? 
+
+6) Superimpose the 4 templates you obtained in the previous question using pymol. Provide the RMSD value for all the superimpositions and save an image of the superimposition as 6.png.
+
+7) Your target is an enzyme. Find a template that contains a substrate molecule in its active site. Provide an image of the template you chose where the substrate can be seen and name the image 7.png.
+
+8) Analyze the template you selected in the previous question: identify 3 aminoacids that are making contacts with the substrate molecule. Provide 3 images (one for each aminoacid) where one of the aminoacids can be seen interacting with the substrate. Name the images active1.png, active2.png and active3.png.
+
+9) Make an structural model of the target sequence and name it 9.pdb. 
+
+10) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this?
+
+
