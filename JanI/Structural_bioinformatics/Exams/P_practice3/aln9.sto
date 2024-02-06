@@ -1,0 +1,30 @@
+# STOCKHOLM 1.0
+
+target         .................mfrksvrplvgaal-----------------------------------------------------------------------------------VMAAAVAAGPTPASaaESEFYVNPDMASAQWVR-DNPQDSRADVIANRVADVPQGTWFTSYNPNEVQGQVDALVGSAESAGKTP--
+#=GR target PP .................**988776666555...................................................................................556667777666551156789999888754333.33345666778999**********99999999999999999999999876..
+2bodX          dspfyvnpnmssaewvrnnpndprtpvirdr-------------------------------------------------------------------------------------------------..--------------------------------IASVPQGTWFAHHNPGQITGQVDAL-MSAAQAAG---K
+#=GR 2bodX  PP 9887777777777777666666666666554...................................................................................................................................6777777777654433333333333.33333333...3
+#=GC PP_cons   ..................................................................................................................55666777766655..56789999888754333.33345666778999888999999987766666666666696666666576.3
+#=GC RF        ...............................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target         --IMVVYNIPNRDCSNHSGGGA----P-DHSSYRDWVDQVAAGLNGRP---ATIVVEPDVLSLMDSCMDQ----SQQNHVMDSIAYAGKTLMAgsSQARVYFDAGHSGWHS-PGEI-------ASRLNGADIANSAHGIATNTSNYNWT--------------DDEVSYTRQIIDATGHSGLRA--VVDTSRNGNGPQ--
+#=GR target PP ..78**********98877774....3.4579************8776...45789***99876655553....4578899**********872246789********974.5544.......33335566677789*********942..............377777777777778899987..89******9887..
+2bodX          IPILVVYNAPGRDCGAPSH-----------SAYRSWIDEFAAGLKNRPA---YIIVEPDLISLMS-----SCMQHVQQEVLETMAYAGKALKAgsSQARIYFDAGHSAWHS-PAQM-------ASWLQQADISNSAHGIATNTSNYR-W-------------TADEVAYAKAVLSAIGNPSLRA--VIDTSRNGNGPA--
+#=GR 2bodX  PP 45789*********98643...........57************99874...5789***665433.....333568999**********99982245789*********64.5544.......55667788888899*********6.4.............3599*****9988888887776..89******9998..
+#=GC PP_cons   45789*********98765774....3.4568************98774..45789***877554555533335578899**********987..46789********964.5544.......44456677778889*********843.............3488899988888888888877..89******9998..
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target         --GSEWCDPEGRAIGTESTTNTGSSHVDAFLWVKLPGEADGCAAGA---------------------------------------gefvpqlaydmavaadpepdpepspdpeptpdpeptpepgegceaaysvanewsdgfqaevtvtagadldgwevaidfpdgqgieqawnaevsgsggaytasdvshngslsages
+#=GR target PP ..679************************************87644.......................................45555555556666666678999********************************************************************************************
+2bodX          --GNEWCDPSGRAIGTPSTTNTGDPMIDAFLWIKLPGEADGCI------------------------------------------agagqfvpqaayemaiaa.................................................................................................
+#=GR 2bodX  PP ..5689***********************************75..........................................5667888899999999**.................................................................................................
+#=GC PP_cons   ..668************************************86644..........................................................................................................................................................
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...................................................................................................................
+
+target         tgfgftgthsgangepeltcsaa
+#=GR target PP ***********************
+2bodX          .......................
+#=GR 2bodX  PP .......................
+#=GC PP_cons   .......................
+#=GC RF        .......................
+//

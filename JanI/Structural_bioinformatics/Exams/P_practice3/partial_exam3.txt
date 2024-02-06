@@ -84,8 +84,34 @@ FTGTHSGANGEPELTCSAA
 	
 9) Make an structural model of the target sequence and name it 9.pdb. 
 
-	Pymol? or modeller?
-
+	Target file= target.fasta
+	Alignment file= alignment target vs template in .pir
+	
+	Go to pdb, download .pdb of template (2bod) 
+	$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i 2bod.pdb -o 2bod
+	1 chain, 2bod_X
+	To align, place it in same file as target
+	$cat target.fasta > q9_prep.fasta
+	$cat 2bodX.fa >> q9_prep.fasta
+	
+	Use 4.aln to create a HMM, 4.aln comes from MSA_ex4.sto, so we will use that to build model9.hmm
+	$hmmbuild model9.hmm MSA_ex4.sto
+	
+	Align q9_prep.fasta using the model
+	$hmmalign model9.hmm q9_prep.fasta > aln9.sto
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c < aln9.sto > aln9.aln
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p < aln9.aln > aln9.pir
+	
+	In modeling.py change:
+		alnfile  = aln9.pir #the .pir name
+		knowns = 2bodX        #the output name in the perl SplitChain (+chain if needed)
+		sequence = target  #name of the sequence in the fasta
+	rename the target[...]1.pdb to 9.pdb
+	
+	
 10) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this?
-
+	
+	I would compare with our template, 2bod.pdb This is because the template (2bod.pdb) has been determined experimentally, so it should have a good energetic profile and therefore can be used as a reference. By doing this and compareing with our model we can determine the quality of our model, as if the model has higher energies than the template, it is very likely that it has been wrongly modeled.
+	
+	When we look at our model in the database we can see that our Z-score is small, which is good as it means that our protein model is likely to have similar structural properties to the ones in the reference set (it means that our model is accurate)
 
