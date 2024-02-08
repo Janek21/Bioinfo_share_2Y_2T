@@ -1,4 +1,6 @@
 
+from Evolution import Evolution
+from Sequence import Sequence
 
 class ToolsToWorkWithSeq(object):
 
@@ -7,58 +9,21 @@ class ToolsToWorkWithSeq(object):
         pass
     
     # Defining a function that will get the percentage of the nucleotides
-    def nucleotide_statistics(self, seq):
-        '''
-        Calculate the percentage of A, C, T, G in a given sequence.
+    def nucleotide_statistics(seq):
+        counts = {'A': 0, 'C': 0, 'T': 0, 'G': 0}
+        length = seq.sequence_length()
+        for position in range(length):
+            nucleotide = seq.nucleotide_at_position(position)   
+            counts[nucleotide] += 1
+        for key in counts.keys():
+            counts[key] = counts[key]/length
+        return counts
+    
 
-        Parameters:
-        - seq: A sequence as a list of nucleotides.
-
-        Returns:
-            A dictionary with the percentage of each nucleotide.
-        '''
-        # length of the sequence
-        s = len(seq)
-        
-        # Creating the dictionary that will have the count of each nucleotide
-        nucleo = {'A': 0, 'C': 0, 'T': 0, 'G': 0}
-
-        # Iteration through each item of the variable seq (list or string)
-        for x in seq:
-            # Updating the count of the current nucleotide in the 'nucleo' dictionary
-            nucleo[x] += (1 / s) * 100
-        
-        return nucleo  # Returning the result
-
-    def observed_pairwise_nucleotide_distance(self, seq1, seq2):
-        '''
-        Calculate the number of nucleotides that, for the same position, are different in two sequences.
-
-        Parameters:
-        - seq1
-        - seq2 
-        Returns:
-        The number of differing nucleotides at the same positions.
-        '''
-        # Checking which sequence is shorter to stop or not
-        if len(seq2) > len(seq1):
-            stop = len(seq1)
-        else:
-            stop = len(seq2)
-
-        # Variable result
-        result = 0
-
-        # Loop to iterate through the longest sequence
-        for x in range(stop):
-            # If the nucleotides at the current position are different, add 1 to the result
-            if seq1[x] != seq2[x]:
-                result += 1
-
-        # Taking into account the length difference
-        result += abs(len(seq1) - len(seq2))
-
-        return result  # Returning the output
+    @staticmethod
+    def observed_pairwise_nucleotide_distance(sequence_a, sequence_b):
+        result = [1 if sequence_a.nucleotide_at_position(pos) != sequence_b.nucleotide_at_position(pos) else 0 for pos in range(sequence_a.sequence_length())]
+        return sum(result)
 
     # Additional method as requested in the previous task
     def apply_methods_to_evolved_sequences(self, evolution_object):
@@ -86,26 +51,32 @@ class ToolsToWorkWithSeq(object):
             print()  
 
 def main():
-    # Input
-    seq = ['C', 'A', 'C', 'G', 'C', 'C', 'G', 'G', 'T', 'A', 'T', 'G', 'G', 'C', 'T', 'C', 'T', 'A', 'T', 'T', 'A', 'A', 'C', 'C', 'A', 'C', 'C', 'C', 'A', 'A', 'C', 'G', 'G', 'C', 'A', 'C']
-    seq1 = ['C', 'A', 'C', 'G', 'C', 'C', 'G', 'G', 'T', 'A', 'T', 'G', 'G', 'C', 'T', 'C', 'T', 'A', 'T', 'T', 'A', 'A', 'C', 'C', 'A', 'C', 'C', 'C', 'A', 'A', 'C', 'G', 'G', 'C', 'A', 'C']
-    seq2 = ['G', 'C', 'A', 'C', 'T', 'T', 'A', 'G', 'T', 'C', 'T', 'C', 'G', 'C', 'A', 'C', 'A', 'T', 'C', 'C', 'A', 'C', 'T', 'T', 'G', 'A', 'G', 'T', 'C', 'A', 'T', 'T', 'C', 'C', 'A', 'G']
 
-    # Starting the class
-    tools = ToolsToWorkWithSeq()
+    sequence = Sequence("First_Species", list("ACTGACTG"))
+    freqs = ToolsToWorkWithSeq.nucleotide_statistics(sequence)
+    for key in freqs.keys():
+        print('For', key,', the frequency is', freqs[key])
 
-    # Calling the nucleotide_statistics function and printing the output
-    stat = tools.nucleotide_statistics(seq)
-    stat1 = tools.nucleotide_statistics(seq1)
-    stat2 = tools.nucleotide_statistics(seq2)
-    print(f'Nucleotide statistics for sequence: {stat}')
+    sequence_ancestral = Sequence("Ancestral", "ACTGACTGACTGACTGACTGACTGACTGACTGACTG")
+    transition_probability = {"A":{"G":0.04,"C":0.04,"T":0.04,"A":0.88}, "C":{"G":0.04,"C":0.88,"T":0.04,"A":0.04}, "G":{"G":0.88,"C":0.04,"T":0.04,"A":0.04}, "T":{"G":0.04,"C":0.04,"T":0.88,"A":0.04}}
+    evolution = Evolution(sequence_ancestral, transition_probability)
+    evolution.split_species_in_two("Ancestral", "Species2") 
+    evolution.evolve(1000)
+    seq1 = evolution.get_sequence_species("Ancestral")
+    seq2 = evolution.get_sequence_species("Species2")
+    print('There are ',ToolsToWorkWithSeq.observed_pairwise_nucleotide_distance(seq1, seq2), ' different nucleotides among sequences.')
+    freq1 = ToolsToWorkWithSeq.nucleotide_statistics(seq1)
+    print('For sequence A:')
+    for key in freq1.keys():
+        print('For', key,', the frequency is', freq1[key])
+    freq2 = ToolsToWorkWithSeq.nucleotide_statistics(seq2)
+    print('For sequence B:')
+    for key in freq2.keys():
+        print('For', key,', the frequency is', freq2[key])    
 
-    print() 
 
-    # Calling the observed_pairwise_nucleotide_distance function and printing the result
-    pairwise = tools.observed_pairwise_nucleotide_distance(seq1, seq2)
-    print(f'Number of different nucleotides: {pairwise}')
-    print() 
+if __name__ == "__main__":
+    main ()   
 
 if __name__ == "__main__":
     main()
