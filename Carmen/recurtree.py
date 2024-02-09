@@ -1,19 +1,22 @@
 from pytokr import pytokr
+
 s=pytokr()
+size = int(s())
 
 '''
-This time, the tree is encoded differently; first we have our current node, immediately after we have the size OF OUR LEFT SUBTREE and THEN we have the our left child. A 0 can mean one of 2 things; there is no left subtree or, its a 0 in the node. Empty trees are omitted .
+the input is almost identical to the first recursive tree function THIS TIME we have a size we need to ignore: 
+it goes like size /n and then the tree
 '''
 
-def reading_input(size):        #define the tree according to the size we get
-    if size == 0:   #if the size is 0, then our left subtree is empty;
-        return tuple()  #return an empty tuple
-    l=int(s())  #take from the input the node we are on as integer
-    sizeleft=int(s())   #take its size as int 
-        # recursively build the tree by giving the sizeleft to the left child and to the right the total size -1 because of the node we are on and -sizeleft because we are on the right tree
-    return (l, reading_input(sizeleft), reading_input(size-1-sizeleft))
+def reading_input():    #DEFINE THE TREE    
+    l=int(s())      # make the inout number an integer
+    if l==-1:   #check if it's a leaf
+        return tuple()  #if it is  then return an emoty tuple because after this there are no more children     
+    else:   #otherwise we have a "root"
+        return (l, reading_input(), reading_input())    # Recursively build the left and right subtrees by calling 'reading_input' again
     
-    
+inp=reading_input()     #call the reading input to define the tree
+
 def post_order(inp):    #our first order of business
     if not inp:     #if there is no more inout or it is empty
         return []   # return an empty list
@@ -30,9 +33,8 @@ def inorder(inp):       #for inorder, second order of business
         left= inorder(inp[1])   #assign as always the left child as the first one right after our current node
         right= inorder(inp[2])  #assign the right one as the one after the left one 
         return left+ [inp[0]] + right   #return the left child first, then the root and then the right child
-        
-
-size = int(s())     #the first number is the size of our tree
-inp=reading_input(size)              #define the tree
-print('post:', *post_order(inp), '')    #run the post_order and print res
-print('in:', *inorder(inp), '')     #run the inorder and print res
+    
+    
+    
+print('', *post_order(inp)) #print our tree according to postorder  
+print('', *inorder(inp))    #print our tree according to inorder 
