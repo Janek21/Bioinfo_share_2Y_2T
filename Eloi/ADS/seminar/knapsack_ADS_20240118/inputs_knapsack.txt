@@ -1,0 +1,86 @@
+30
+3
+3
+1 10
+1 10
+2 20
+(very simple case, manually solvable)
+
+
+
+
+45
+26 
+5
+9 16
+8 15
+12 24
+11 23
+7 13
+(case given in the slides; solutions: (2, 3), (1, 3, 4);
+try also 51 which is the opt, then only the longer solution remains;
+source: https://people.sc.fsu.edu/~jburkardt/datasets/knapsack_01/knapsack_01.html, p02)
+
+
+
+
+270
+165 
+10
+23 92
+31 57
+29 49
+44 68
+53 60
+38 43
+63 67
+85 84
+89 87
+82 72
+(solutions: (0, 1, 2, 9), (0, 1, 3, 4), (0, 1, 3, 6), (0, 2, 3, 6), (0, 1, 2, 3, 5);
+opt: 309; source: https://people.sc.fsu.edu/~jburkardt/datasets/knapsack_01/knapsack_01.html, p01)
+
+
+
+
+
+25000
+7 
+12
+1 4386
+4 3449
+3 9648
+4 3782
+1 7850
+2 2900
+2 8853
+4 5742
+4 9637
+2 8
+3 8326
+2 1774
+(solutions: (2, 4, 6), (2, 4, 10), (4, 6, 8), (4, 6, 10), (0, 2, 4, 6), (0, 4, 6, 10);
+opt: 30707; try also 27000 as desired value, then only the two longer ones remain)
+
+
+
+
+ 
+240000
+12 
+14
+8 90956
+6 19206
+2 21187
+7 11463
+5 18134
+11 3438
+3 44945
+3 45078
+7 71063
+3 66895
+11 52687
+1 6599
+1 84078
+6 52688
+(solutions: (0, 9, 12), (6, 7, 9, 12), (2, 6, 7, 9, 12), (6, 7, 9, 11, 12); opt: 262183)
