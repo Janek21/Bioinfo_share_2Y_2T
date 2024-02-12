@@ -1,22 +1,43 @@
 import sys
 from pytokr import pytokr
-
+''' NOT WORK IN JUTGE FOR PRIVATE CASES, poser problemes en numeros de 2 digits
 def tree_read():
     root=sys.stdin.read(1)
     if root==" ":
         root=sys.stdin.read(1)
     next=sys.stdin.read(1)
-    if next!=" " and next!="\n":
-        if root=="-":
-            root=root+next
-        else:
-            root=root+next
+    if root=="-":
+        root=root+next
+    if next!=" ":
+        root=root+next
     root=int(root)
     if root==-1:
         return tuple()
     else:
         return(root, tree_read(), tree_read())
+'''
+def reader(num):
+    c_num=sys.stdin.read(1)
+    if c_num!=" ":
+        if len(num)!=0:
+            num=num[0] + c_num,
+        else:
+            num=tuple(c_num)
+        return reader(num)
+    root=int(''.join(num))
+    if root==-1:
+        return tuple()
+    else:
+        return(root, reader(tuple()), reader(tuple()))
 
+
+read=pytokr()
+def tree_read():
+    root=int(read())
+    if root==-1:
+        return tuple()
+    else:
+        return(root, tree_read(), tree_read())
 
 def tree_recursive_pos(numlist):
     if not numlist:
@@ -33,6 +54,7 @@ def tree_recursive_ino(numlist):
     return left+[numlist[0]]+right
 
 numlist=tree_read()
+print(numlist)
 pos=tree_recursive_pos(numlist)
 ino=tree_recursive_ino(numlist)
 print("pos:", *pos)

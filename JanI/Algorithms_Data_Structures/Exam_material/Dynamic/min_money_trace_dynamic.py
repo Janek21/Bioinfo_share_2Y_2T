@@ -38,10 +38,12 @@ for line in text:
     denoms=[int(x) for x in line[3:]]
 
     ls =min_change(goal, denoms)
+    print(ls)
     tr=trace(ls, goal)
     if tr==-1:
         print("no")
     elif tr:
+        print(tr)
         print(len(tr))
     else:
         print(0)
