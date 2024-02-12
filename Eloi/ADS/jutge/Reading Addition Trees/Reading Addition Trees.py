@@ -1,8 +1,5 @@
 import sys
 
-from pytokr import pytokr
-
-read=pytokr()
 def tree_reader():
     root=int(read())
     if root==-1:
@@ -29,3 +26,9 @@ def inorder(input_tree):
 
 print("pos:", *postorder(input_tree))
 print("ino:", *inorder(input_tree))
+
+
+inp = sys.stdin.readline()
+
+inp = inp.split()
+print(inp)

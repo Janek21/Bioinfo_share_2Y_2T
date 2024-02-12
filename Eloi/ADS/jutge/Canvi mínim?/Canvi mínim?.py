@@ -1,30 +1,51 @@
-import sys
+from pytokr import pytokr
 
-def canvi(l, pos, cands, candw, candv, maxw):
-	print(cands)
-	if candw > maxw:
-		return float('-inf')
+
+def trace(best, goal):
+	coins = []
+	while goal:
+		use = best[goal]
+		coins.append(use)
+		goal -= use
+	return coins
+	
+def canvi(coin_list, maxsum):
+	coin_list = [0] + coin_list
+	table = {}
+	best = {}
+	for coin in coin_list:
+		table[coin,0] = 0
+	for subprob in range(maxsum+1):
+		table[0,subprob] = float('inf')
 		
-	if pos == -1:
-		if candw <= maxw:
-			return candv
-		else:
-			return float('-inf')
+	for subprob in range(1, maxsum+1):
+		for coin in range(1, len(coin_list)):
+			if coin_list[coin] <= subprob and 1+ table[coin_list[coin], subprob-coin_list[coin]] < table[coin_list[coin-1], subprob]:
+				table[coin_list[coin], subprob] = 1+ table[coin_list[coin], subprob-coin_list[coin]]
+				best[subprob] = coin_list[coin]
+			else: table[coin_list[coin], subprob] = table[coin_list[coin-1], subprob]
+	result_trace = trace(best, maxsum)
+	return result_trace
+
+
+
+
+item, items = pytokr(iter = True)
+
+for case in items():
+	goal = int(case)
+	maxlist = []
+	for _ in range(int(item())):
+		maxlist.append(int(item()))
 	
-	option1 = canvi(l, pos - 1, cands, candw, candv, maxw)
-	option2 = canvi(l, pos - 1, cands + [l[pos + 1]], candw + l[pos + 1], candv + l[pos], maxw)
-	option3 = canvi(l, pos, cands + [l[pos + 1]], candw + l[pos + 1], candv + l[pos], maxw)
-	
-	return max(option1, option2, option3)
-
-
-t = sys.stdin.readlines()
-
-for x in t:
-	max_sum = x[3:].strip().split(' ')
-	max_sum = sum(int(num) for num in max_sum)
+	maxlist = sorted([int(num) for num in maxlist])
+	maxsum = sum(maxlist)
 	
 	box = [1, 2, 5, 10, 20, 50, 100, 200]
-
-	result = canvi(box, len(box)-1, [], 0, 0, max_sum)
-	print("{:.2f}".format(result))
+	
+	result = sorted(canvi(box, maxsum))
+	
+	if maxlist == result:
+		print('si')
+	else: print('no')
+	

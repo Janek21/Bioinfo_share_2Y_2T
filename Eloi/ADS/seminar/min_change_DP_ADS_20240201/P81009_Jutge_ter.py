@@ -43,4 +43,7 @@ for case in items():
 	else:
 		print(r)
 
+if __name__ == '__main__':
+	import doctest
+	doctest.testmod(verbose = True)
 

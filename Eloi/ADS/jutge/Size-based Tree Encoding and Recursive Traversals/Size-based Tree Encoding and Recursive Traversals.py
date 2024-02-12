@@ -3,14 +3,19 @@ import sys
 from pytokr import pytokr
 
 read=pytokr()
-def tree_reader():
-    root=int(read())
-    if root==-1:
-        return tuple()
-    else:
-        return(root, tree_reader(), tree_reader())
 
-input_tree = tree_reader()
+T = int(read())
+
+def tree_reader(T):
+	if T < 0:
+		return()
+		
+	x = int(read())
+	new_l = int(read())
+	
+	return(x, tree_reader(new_l-1), tree_reader(T-new_l-1))
+
+input_tree = tree_reader(T-1)
 
 def postorder(input_tree):
 	if not input_tree:
@@ -27,5 +32,8 @@ def inorder(input_tree):
 	right = inorder(input_tree[2])
 	return left + [input_tree[0]] + right
 
-print("pos:", *postorder(input_tree))
-print("ino:", *inorder(input_tree))
+print("post:", *postorder(input_tree))
+print("in:", *inorder(input_tree))
+
+
+
