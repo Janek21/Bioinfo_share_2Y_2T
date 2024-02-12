@@ -1,0 +1,7 @@
+Evaluable exercise for January 25, 2024:
+
+Solve X56351 Interval Subset Sum up to green light.
+Please work individually.
+
+NB: this exercise is from the midterm exam last year.
+
