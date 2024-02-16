@@ -44,24 +44,22 @@ class Evolution(object):
                 sequence_species = self.evolving_sequences[species] #for each species (name of a specie in evolving_sequences) get its sequence in the variable sequence_species
                 for n in range(sequence_species.sequence_length()): #iterate over the length of the just defined sequence, with the position being n
                     nucleotide_at_position_n = sequence_species.nucleotide_at_position(n) #get the nucleotide at position n
-                    print(nucleotide_at_position_n)
-                    propose_change = self.random_transition[nucleotide_at_position_n].sample() ##get a random position of the random transition numbers for the nucleotide that we are currently iterating over  (the one that corresponds to this base used as key in random_transition)
-                    nucleotide_propose_change = list(self.transition_matrix[nucleotide_at_position_n].keys())[propose_change] ##using the current nucleotide as a key, get the next nucleotide using the variable defined above as a position inside the nested dictionary
+                    #print(nucleotide_at_position_n)
+                    propose_change = self.random_transition[nucleotide_at_position_n].sample() #get a random position of the random transition numbers for the nucleotide that we are currently iterating over  (the one that corresponds to this base used as key in random_transition)
+                    nucleotide_propose_change = list(self.transition_matrix[nucleotide_at_position_n].keys())[propose_change] ##using the current nucleotide as a key, get the nucleotide at the position of propose_change from the keys of the nested dictionary of the current nucleotide inside transition matrix
                     #print(nucleotide_at_position_n,nucleotide_propose_change)
-                    sequence_species.mutate_nucleotide_at_position(n,nucleotide_propose_change)               
+                    sequence_species.mutate_nucleotide_at_position(n,nucleotide_propose_change) #use one of the Sequence methods to change the current nucleotide into the one that was proposed as a change (the 2 steps above)
 
             
 def main():
-    sequence_ancestral = Sequence("Ancestral", "ACTGACTGACTGACTGACTGACTGACTGACTGACTG")
-    transition_probability = {"A":{"G":0.04,"C":0.04,"T":0.04,"A":0.88}, "C":{"G":0.04,"C":0.88,"T":0.04,"A":0.04}, "G":{"G":0.88,"C":0.04,"T":0.04,"A":0.04}, "T":{"G":0.04,"C":0.04,"T":0.88,"A":0.04}}
-    evolution = Evolution(sequence_ancestral, transition_probability)
+    sequence_ancestral = Sequence("Ancestral", "ACTGACTGACTGACTGACTGACTGACTGACTGACTG") #get a sequence object
+    transition_probability = {"A":{"G":0.04,"C":0.04,"T":0.04,"A":0.88}, "C":{"G":0.04,"C":0.88,"T":0.04,"A":0.04}, "G":{"G":0.88,"C":0.04,"T":0.04,"A":0.04}, "T":{"G":0.04,"C":0.04,"T":0.88,"A":0.04}} #define the trasition probabilities
+    evolution = Evolution(sequence_ancestral, transition_probability) #define the evolution object using the Sequence and the transition matrix
     
-    evolution.split_species_in_two("Ancestral", "Species2")
+    evolution.evolve(1000) #let 1000 generations pass
     
-    evolution.evolve(1000)
-    
-    print(evolution.get_sequence_species("Ancestral"))
-    print(evolution.get_sequence_species("Species2"))    
+    print(evolution.get_sequence_species("Ancestral")) #return the sequence for name Ancestral
+    print(evolution.get_sequence_species("Species2")) #return the sequence for name Species2
 
     
 if __name__ == "__main__":
