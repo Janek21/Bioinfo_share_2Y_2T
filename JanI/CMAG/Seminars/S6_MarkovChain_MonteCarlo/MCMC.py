@@ -47,11 +47,12 @@ class MCMC(object):
 
         curr_lik=self.compute_loglikelihood_Values(mv)
         
-        ratio=math.exp(curr_lik-pre) #like doing curr_lik/pre (e^this)
+        ratio=curr_lik-pre #like doing curr_lik/pre (e^this)
 
         print("ratio", ratio)
  
-        r=random.uniform(0,1)
+        r=math.log(random.uniform(0,1)) #instead of exp in ratio
+        
         if ratio>=r: #if ratio bigger than 1 or random chance define mv as the new mean
             self.set_mean(mv) # define the new mean as the result of the movement
             self.previous_log_likelihood=mv #??
