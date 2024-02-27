@@ -51,7 +51,7 @@ class Three_in_line(object):
 	def is_game_ended(self):
 
 		'''
-		Function that checks if the game has ended
+		Function that checks if the game has ended (to know when to finish the game)
 		It does so by ckecking if the board is full or if one of the players has won
 		Output: True / False
 		'''
@@ -93,7 +93,7 @@ class Three_in_line(object):
 	def evaluate(self):
 
 		'''
-		Function that checks if one of the players has won using the previous function check_winner
+		Function that checks if one of the players has won using the previous function check_winner or 
 
 		Useful to implement it in the algorithm --> Three possible results: p1 won / p2 won / no winner
 		'''
@@ -105,7 +105,7 @@ class Three_in_line(object):
 		Function that looks for all the possible moves for the bot
 		'''
 
-		moves = []
+		moves = [] # Creating empty list moves
 
 		# Iterating through each cell of the board matrix
 		for i in range(self.n):
