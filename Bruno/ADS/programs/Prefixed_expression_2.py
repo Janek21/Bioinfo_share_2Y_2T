@@ -16,7 +16,7 @@ def calculator(tupple):
         return result
 
 
-def tree():
+def takeinput():
     root = sys.stdin.read(1)
 
         # Check for the end of input
@@ -29,7 +29,29 @@ def tree():
     else:
         return(root, tree(), tree())
 
-
-tupple = tree()
+tupple1 = takeinput()
 
 print(calculator(tupple1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tupple2 = ['+', '4', '3']
+#tupple3 =['*', '8', ['+', '4', '3']]
+#tupple4 = ['*', ['-', '2', '8'], ['+', '4', '3']]
+
+
+#print(calculator(tupple2))
+#print(calculator(tupple3))
+#print(calculator(tupple4))
+
+#print(tree())
