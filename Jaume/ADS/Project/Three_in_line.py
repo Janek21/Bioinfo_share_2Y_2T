@@ -9,8 +9,8 @@ class Three_in_line(object):
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] # Creation of a matrix n*n representing the board
 		
 		# Assigning symbols to represent the "fichas" of the players
-		self.player1 = 'X'  
-		self.player2 = 'O' 
+		self.player = 'X'  
+		self.bot = 'O' 
 
 	def represent_board(self):
 
@@ -56,7 +56,8 @@ class Three_in_line(object):
 		Output: True / False
 		'''
 
-		return
+		# Cheking if one of the players have won and if the board is full or not
+		return self.check_winner(self.bot) or self.check_winner(self.player) or self.is_board_full()
 
 	def check_winner(self, player):
 	
@@ -104,6 +105,14 @@ class Three_in_line(object):
 		Function that creates all the possible moves for the bot
 		'''
 
+		moves = []
+
+		for i in range(self.n):
+
+			for j in range(self.n):
+
+				
+
 		return
 	
 	def algorithm_name(self):
@@ -120,10 +129,12 @@ class Three_in_line(object):
 		'''
 		Function that modifies the board matrix to make the move
 
-		Input: self, the move a player wants to do and which player will do the move
+		Input: self, the move (i,j as positions) a player wants to do and which player will do the move
 		'''
 
-		return
+		i, j = move # Separing the variable move into the 2 indices
+
+		self.board[i][j] = player # Modifying the pos i,j of the matrix board with the symbol of the player
 	
 	def play(self):
 		
