@@ -3,6 +3,8 @@ import math
 class Three_in_line(object):
 
 	def __init__(self):
+
+		print('Welcome to Three in a row\n')
 		
 		self.n = 3
 		
@@ -18,8 +20,6 @@ class Three_in_line(object):
 		Function that allows us to visualize the board
 		'''
 
-		print(f'Board:\n')
-
 		print('-----')
 
 		# Iterating through each of the n rows of the board
@@ -28,6 +28,8 @@ class Three_in_line(object):
 			# Representation of the board:
 			print('|'.join(row))
 			print('-----')
+
+		print() # Empty line as separator
 			
 	def is_board_full(self):
 
@@ -123,7 +125,7 @@ class Three_in_line(object):
 		'''
 		Function that modifies the board matrix to make the move
 
-		Input: self, the move (i,j as positions) a player wants to do and which player will do the move
+		Input: self, the move (i,j as positions) and which player will do the move
 		'''
 
 		i, j = move # Separing the variable move into the 2 indices
@@ -143,6 +145,20 @@ def main():
 	game = Three_in_line()
 
 	game.represent_board()
+
+	game.make_move((0,0), 'X')
+	game.make_move((1,1), 'X')
+	game.make_move((2,2), 'X')
+
+	game.represent_board()
+
+	print('Did "X" win?')
+	a = game.check_winner('X')
+	print(a)
+
+	print('Did "O" win?')
+	a = game.check_winner('O')
+	print(a)
 
 if __name__ == "__main__":
 	
