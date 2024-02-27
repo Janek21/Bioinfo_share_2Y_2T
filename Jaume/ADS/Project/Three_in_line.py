@@ -1,5 +1,3 @@
-import math
-
 class Three_in_line(object):
 
 	def __init__(self):
