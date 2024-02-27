@@ -1,0 +1,30 @@
+# STOCKHOLM 1.0
+
+target         mklftstltakkssthkplislalsvlistllisetaqaad---ANDRLEQEVDKQAKQLMAQYQIPGMAFGIIVDGKSHFYNYGLADKQRNQPVSEDTIFELGSVSKTFAATLASYSELNGTLSLDDTADKYIPYLKNSAIGNTKLISLVTYSAGGYHYRCLKTLENNKELLQYYKSWHPDFPVNSKRLYSNASIGLFG
+#=GR target PP ************************************99655...566777789999999*********************************************************************************************************************************************
+1fr6_B         .........................................AAKTEQQIADIVNRTITPLMQEQAIPGMAVAIIYQGKPYYFTWGKADIANNRPVTQQTLFELGSVSKTFNGVLGGDAIARGEIKLSDPVTQYWPELTGKQWQGISLLHLATYTAGGLPLQVPDDVTDKAALLRFYQNWQPQWAPGAKRLYANSSIGLFG
+#=GR 1fr6_B PP .........................................79*************************************************************************************************************************************************************
+#=GC PP_cons   .........................................79*888889999999************************************************************************************************************************************************
+#=GC RF        .........................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target         YISALSMHSDYTKLIENTVLPSLKMTNTFVDVPANKMEDYAFGYNaAGEPIRVNPGMLDAEAYGIKSTSADMTRFMAANMGLVTVDS-QMQQALDNNRKGYYRTKSFTQGLAWEMYPLPTTLQQLVEGNSTETILQPQPIQLNEPPTPVLNDVWVNKTGATNGFGAYIAYMPAKKTGMFILANKNYPNTERVKAAYTILD
+#=GR target PP ***999999***********************************7369*********************************999976.68*************************************************************************************************************9
+1fr6_B         ALAVKPSGMSYEEAMSKRVLHPLKLAHTWITVPQSEQKDYAWGYR.EGKPVHVSPGQLDAEAYGVKSSVIDMTRWVQANMDASQVQEKTLQQGIELAQSRYWRIGDMYQGLGWEMLNWPVKADSIISGSDSKVALAALPAVEVNPPAPAVKASWVHKTGSTGGFGSYVAFVPEKNLGIVMLANKSYPNPVRVEAAWRILE
+#=GR 1fr6_B PP *********************************************.**********************************************************************************************************************************************************
+#=GC PP_cons   ********************************************9.8**************************************98*89*************************************************************************************************************9
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target         S-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#=GR target PP 7.......................................................................................................................................................................................................
+1fr6_B         KLQ-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#=GR 1fr6_B PP *97.....................................................................................................................................................................................................
+#=GC PP_cons   897.....................................................................................................................................................................................................
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target         --------------------------------------------------------------------------------------------------------------------------------------------------------------------vmnn
+#=GR target PP ....................................................................................................................................................................5789
+1fr6_B         --------------------------------------------------------------------------------------------------------------------------------------------------------------------....
+#=GR 1fr6_B PP ........................................................................................................................................................................
+#=GC PP_cons   ........................................................................................................................................................................
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx....
+//

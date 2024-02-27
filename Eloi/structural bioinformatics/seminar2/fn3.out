@@ -1,0 +1,137 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  fn3.hmm
+# target sequence database:        7LESS_DROME.fa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fn3  [M=85]
+Accession:   PF00041.13
+Description: Fibronectin type III domain
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                          -----------
+    1.6e-59  184.6   0.3    1.8e-16   46.6   0.8    9.7  9  sevenless_drosophila_melanogaster  
+
+
+Domain annotation for each sequence (and alignments):
+>> sevenless_drosophila_melanogaster  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0      0.21      0.21      60      72 ..     396     408 ..     395     410 .. 0.86
+   2 !   43.5   0.0   1.6e-15   1.6e-15       2      83 ..     439     520 ..     437     521 .. 0.96
+   3 !   16.3   0.0   5.1e-07   5.1e-07      14      84 ..     837     913 ..     827     914 .. 0.83
+   4 !    4.2   0.0    0.0031    0.0031       7      35 ..    1206    1235 ..    1202    1258 .. 0.81
+   5 !   22.6   0.0   5.3e-09   5.3e-09      14      79 ..    1313    1380 ..    1305    1385 .. 0.81
+   6 ?   -0.1   0.0     0.064     0.064      57      72 ..    1754    1769 ..    1746    1769 .. 0.87
+   7 !   46.6   0.8   1.8e-16   1.8e-16       1      82 [.    1799    1888 ..    1799    1891 .. 0.91
+   8 !   21.5   0.0   1.2e-08   1.2e-08       6      74 ..    1904    1967 ..    1901    1977 .. 0.89
+   9 !   13.4   0.0     4e-06     4e-06       1      85 []    1993    2107 ..    1993    2107 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.21
+                                        EES--TT-EEEEE CS
+                                fn3  60 ltgLkpgteYevr 72 
+                                        l+ L p+t+Y++r
+  sevenless_drosophila_melanogaster 396 LEALIPYTQYRFR 408
+                                        6789********8 PP
+
+  == domain 2  score: 43.5 bits;  conditional E-value: 1.6e-15
+                                        ---CEEEEEEECTTEEEEEEE--S.-SS--SEEEEEEEETTTCCGCEEEEEETTTSEEEEES--TT-EEEEEEEEE CS
+                                fn3   2 saPtnlsvtevtstsltlsWsppe.gngpitgYeveyrpknegeeekeltvpgtttsytltgLkpgteYevrVqav 76 
+                                        saP   ++++  ++ l ++W p +  ngpi+gY++++++++++  + e+ vp    sy++++L++gt+Y++ +  +
+  sevenless_drosophila_melanogaster 439 SAPVIEHLMGLDDSHLAVHWHPGRfTNGPIEGYRLRLSSSEGNA-TSEQLVPAGRGSYIFSQLQAGTNYTLALSMI 513
+                                        7899999999******************************9997.******************************* PP
+
+                                        ETTEE-E CS
+                                fn3  77 ngagegp 83 
+                                        n++gegp
+  sevenless_drosophila_melanogaster 514 NKQGEGP 520
+                                        ***9997 PP
+
+  == domain 3  score: 16.3 bits;  conditional E-value: 5.1e-07
+                                        TTEEEEEEE--S.......-SS--SEEEEEEEETTTCCGCEEEEEETTTSEEEEES--TT-EEEEEEEEEETTE.E CS
+                                fn3  14 stsltlsWsppe.......gngpitgYeveyrpknegeeekeltvpgtttsytltgLkpgteYevrVqavngag.e 81 
+                                        +  + +sW++pe       + +   +Ye+e+ ++ ++++   +++ g+   + l+ L+p+  Y++rV+a+n +g  
+  sevenless_drosophila_melanogaster 837 AQAAKISWKEPErnpyqsaDAARSWSYELEVLDVASQSAFSIRNIRGPI--FGLQRLQPDNLYQLRVRAINVDGeP 910
+                                        56678999999998887766777789********999966666677777..**********************966 PP
+
+                                        -EB CS
+                                fn3  82 gpe 84 
+                                        g++
+  sevenless_drosophila_melanogaster 911 GEW 913
+                                        665 PP
+
+  == domain 4  score: 4.2 bits;  conditional E-value: 0.0031
+                                         EEEEEECTTEEEEEEE--S.-SS--SEEEE CS
+                                fn3    7 lsvtevtstsltlsWsppe.gngpitgYev 35  
+                                         +++ +  ++ ++++W+p++ g+++  +Y++
+  sevenless_drosophila_melanogaster 1206 VRLDDGHWDDFHVRWQPSTsGGNHSVSYRL 1235
+                                         556666778899999999999999999987 PP
+
+  == domain 5  score: 22.6 bits;  conditional E-value: 5.3e-09
+                                         TTEEEEEEE--S....-SS--SEEEEEEEETTTCCGCEEEEEETTTSEEEEES--TT-EEEEEEEEEETT CS
+                                fn3   14 stsltlsWsppe....gngpitgYeveyrpknegeeekeltvpgtttsytltgLkpgteYevrVqavnga 79  
+                                         + s++l+W++pe       +   Y + ++  +e   + el++  ++ ++ +++L+p+++Y+++V a+ +a
+  sevenless_drosophila_melanogaster 1313 NVSAVLRWDAPEqgqeAPMQALEYHISCWVGSEL--HEELRLNQSALEARVEHLQPDQTYHFQVEARVAA 1380
+                                         5699*********8666777889******66555..566666666667*****************98765 PP
+
+  == domain 6  score: -0.1 bits;  conditional E-value: 0.064
+                                         EEEEES--TT-EEEEE CS
+                                fn3   57 sytltgLkpgteYevr 72  
+                                         s++lt+L p t+Y+v+
+  sevenless_drosophila_melanogaster 1754 SLNLTDLLPFTRYRVS 1769
+                                         799**********985 PP
+
+  == domain 7  score: 46.6 bits;  conditional E-value: 1.8e-16
+                                         ----CEEEEEEECTTEEEEEEE--S.-SS--SEEEEEEEETTTCC.......GCEEEEEETTTSEEEEES--TT CS
+                                fn3    1 psaPtnlsvtevtstsltlsWsppe.gngpitgYeveyrpknege.......eekeltvpgtttsytltgLkpg 66  
+                                         ps+P+n+sv+  ++++l++sW ppe  +++  +Y+++++++ +ge       +e +++  +t+ ++ ltg kpg
+  sevenless_drosophila_melanogaster 1799 PSPPRNFSVRVLSPRELEVSWLPPEqLRSESVYYTLHWQQELDGEnvqdrreWEAHERRLETAGTHRLTGIKPG 1872
+                                         9*************************************99999999****98777777788888********** PP
+
+                                         -EEEEEEEEEETTEE- CS
+                                fn3   67 teYevrVqavngageg 82  
+                                         + Y+++Vqa+ + +++
+  sevenless_drosophila_melanogaster 1873 SGYSLWVQAHATPTKS 1888
+                                         *********9877655 PP
+
+  == domain 8  score: 21.5 bits;  conditional E-value: 1.2e-08
+                                         EEEEEEECTTEEEEEEE--S-SS--SEEEEEEEETTTCCGCEEEEEETTTSEEEEES--TT-EEEEEEE CS
+                                fn3    6 nlsvtevtstsltlsWsppegngpitgYeveyrpknegeeekeltvpgtttsytltgLkpgteYevrVq 74  
+                                          l++ e +++sl+l+W      +p+ + ++e+r++ e+    +++v g++t ++++ L+p t+Y++r+ 
+  sevenless_drosophila_melanogaster 1904 ELQLLELGPYSLSLTWAGT--PDPLGSLQLECRSSAEQ---LRRNVAGNHTKMVVEPLQPRTRYQCRLL 1967
+                                         5888999************..9***********88555...7***********************9975 PP
+
+  == domain 9  score: 13.4 bits;  conditional E-value: 4e-06
+                                         ----CEEEEEEECTTEEEEEEE--S.-SS--SEEEEEEEETTTCC...........................GC CS
+                                fn3    1 psaPtnlsvtevtstsltlsWsppe.gngpitgYeveyrpknege...........................ee 46  
+                                         ps+P+ ++++ + +  ++++W++++ +++pi  Y++e  ++++                             e+
+  sevenless_drosophila_melanogaster 1993 PSQPGKPQLEHIAEEVFRVTWTAARgNGAPIALYNLEALQARSDIrrrrrrrrrnsggsleqlpwaeepvvvED 2066
+                                         89************************************777555568888888888888888888888888888 PP
+
+                                         EEEEEETTTS.EEEEES--TT-EEEEEEEEEETTE.E-EBE CS
+                                fn3   47 keltvpgttt.sytltgLkpgteYevrVqavngag.egpes 85  
+                                         ++l+  +tt+ s++++ L+ ++   +rV+a++ +  +gp+s
+  sevenless_drosophila_melanogaster 2067 QWLDFCNTTElSCIVKSLHSSRLLLFRVRARSLEHgWGPYS 2107
+                                         88888888888888888888888888888888554477765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (85 nodes)
+Target sequences:                          1  (2554 residues searched)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.00
+# Mc/sec: 38.18
+//
+[ok]

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A51BFDC1-C235-C5E6-758D-3808E65C872F" name="Product">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:13:39 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Barcode" id="1E41A2F7-53D3-1789-907F-A2A3F418410B">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:13:52 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="A6AB21BF-3899-0481-3BB0-DA6412F2C362">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:14:24 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Brand" id="AA5139DF-4B60-04CB-1525-CD63A71BA368">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:14:46 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price" id="FD2A60C2-2253-1CAD-6F6D-EB8C918589D3">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:15:01 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Stock" id="0761B84C-C0D0-EAF4-E062-394BF5E2165C">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-02 09:48:30 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A24A470C-8226-9665-91EB-D6782BDD3B73" name="Producte PK">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:14:19 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E41A2F7-53D3-1789-907F-A2A3F418410B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

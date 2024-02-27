@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="69012B8A-F4C0-D7B8-342B-BD705CB00460" name="eBOOK" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="91F37E2D-FE5D-490E-2556-8E5B2984DEF3" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="BD6C04A2-BCD9-6BFD-9EDB-C678A1FBB440" name="Member" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="91F37E2D-FE5D-490E-2556-8E5B2984DEF3" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="BCFE42F9-1018-D4EC-3DA2-4D36D9025F66" name="Relation_6" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="91F37E2D-FE5D-490E-2556-8E5B2984DEF3" propertySourceId="BD6C04A2-BCD9-6BFD-9EDB-C678A1FBB440" propertyTargetId="69012B8A-F4C0-D7B8-342B-BD705CB00460"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

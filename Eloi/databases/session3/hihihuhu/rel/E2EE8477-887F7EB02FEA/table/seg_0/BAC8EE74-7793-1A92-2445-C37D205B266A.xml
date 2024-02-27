@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAC8EE74-7793-1A92-2445-C37D205B266A" name="Sale">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_Barcode" id="ED332D70-B8B7-4FF6-B4B1-35FAB1897C5D">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="562DA195-46AC-92AB-496F-CD355EE3A75D" referredColumn="2361D2EE-2995-9E0F-84EC-986047A7204D"/>
+</associations>
+</Column>
+<Column name="Ticket_Box" id="FB81D25F-7B40-94F0-737D-58A9FDE96611">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02F21620-2ABF-D890-C36F-0D3855472FFA" referredColumn="337D7663-41FA-A844-1BE9-58E3325764F0"/>
+</associations>
+</Column>
+<Column name="Ticket_Date" id="91FC921C-6AA2-6ECF-D395-709545CD59E8">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02F21620-2ABF-D890-C36F-0D3855472FFA" referredColumn="D8A45E58-BEFD-BDA0-2FD7-8401A0D9BA89"/>
+</associations>
+</Column>
+<Column name="Units" id="179BF473-4086-A980-B8ED-0B97381210E9">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>D3DE1BEF-9379-A791-E8A6-50CB070B41A1</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED478C1C-A2AF-576F-6C75-B03201984355" name="Sale_PK">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED332D70-B8B7-4FF6-B4B1-35FAB1897C5D"/>
+<colUsage columnID="FB81D25F-7B40-94F0-737D-58A9FDE96611"/>
+<colUsage columnID="91FC921C-6AA2-6ECF-D395-709545CD59E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0ECCFF52-7076-D050-760C-69B2054ED4C6" name="Sale_Product_FK">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>F8874BD4-EA59-3074-E4FF-D05CE297E481</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED332D70-B8B7-4FF6-B4B1-35FAB1897C5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2745ECF-4041-ED95-BB36-1815F5D5CF66" name="Sale_Ticket_FK">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>F8874BD4-EA59-3074-E4FF-D05CE297E481</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB81D25F-7B40-94F0-737D-58A9FDE96611"/>
+<colUsage columnID="91FC921C-6AA2-6ECF-D395-709545CD59E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

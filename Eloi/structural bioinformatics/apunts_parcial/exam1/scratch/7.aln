@@ -1,0 +1,100 @@
+CLUSTAL
+
+1mc5         MA-NE----------------------VIKCKAAVAWEAGKPLSIEEIEV---APP-KAHEVR
+2fze         A--NE----------------------VIKCKAAVAWEAGKPLSIEEIEV---APP-KAHEVR
+1mp0         A--NEVIKCKAAVAWEAGKPLSIEEIE-----------------------VAP--PK-AHEVR
+1teh_A       ANE------------------------------------------------------------
+1teh_B       AN-------------------------------------------------------------
+                .                       ........       ... .. .   ... ......
+
+1mc5         IKIIATA------------------------VCHTDAYTLSGADPEGCFPVILGHE-G-AGIV
+2fze         IKIIATA------------------------VCHTDAYTLSGADPEGCFPVILGHE-G-AGIV
+1mp0         IKIIATAVCHTDAYTLSGADPEGCFPVILGH-------------------------E-GAGIV
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+             .......                        .   .               ..... . ....
+
+1mc5         -ESV-GEGVTKLKAGDTVIPLYIPQCGE-C-K-FC-LNPKTNLCQK----------IRVTQGK
+2fze         -ESV-GEGVTKLKAGDTVIPLYIPQCGE-C-K-FC-LNPKTNLCQK----------IRVTQGK
+1mp0         E-SVG-EGVTKLKAGDTVIPLYIPQCG-E-CKF-CL-NPKTNLCQKIRVTQGKGLM-------
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+              ... ....................... . . .. ..........          ..  .  
+
+1mc5         GLMP------------------DGTSRFTCKGKTILHYMGT--ST-F-SE-Y-T-VVADISVA
+2fze         GLMP------------------DGTSRFTCKGKTILHYMGT--ST-F-SE-Y-T-VVADISVA
+1mp0         ----PDGTSRFTCKGKTILHYM-----------------G-TS-TF-S-EY-T-V-VADISVA
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+              ...                  . . ..     ........  .. . .. . . ........
+
+1mc5         KID-PLAPLDKVCLLG-CGISTGYGAAVNTAKLEPGSVCAVFGLGGVGLAVIMGCKVAGASRI
+2fze         KIDP-LAPLDKVCLLG-CGISTGYGAAVNTAKLEPGSVCAVFGLGGVGLAVIMGCKVAGASRI
+1mp0         KID-PLAPLDKVCLLGC-GISTGYGAAVNTAKLEPGSVCAVFGLGGVGLAVIMGCKVAGASRI
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+             ... ............ ..............................................
+
+1mc5         IGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIEMTDGGVDYSFECIGNVKVMRAALEAC
+2fze         IGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIEMTDGGVDYSFECIGNVKVMRAALEAC
+1mp0         IGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIEMTDGGVDYSFECIGNVKVMRAALEAC
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+             ...............................................................
+
+1mc5         HKGWGVSVVVGVAA-SGEEIATRPFQLVTGRTWKGTAFGGW-KSVESVPKLVSEYMSKKIKVD
+2fze         HKGWGVSVVVGVAAS-GEEIATRPFQLVTGRTWKGTAFGGW-KSVESVPKLVSEYMSKKIKVD
+1mp0         HKGWGVSVVVGVAA-SGEEIATRPFQLVTGRTWKGTAFGGWK-SVESVPKLVSEYMSKKIKVD
+1teh_A       ---------------------------------------------------------------
+1teh_B       ---------------------------------------------------------------
+             .............. .......................... .....................
+
+1mc5         EFVTHNLSF-DE----INKA-------FELMHSG-K-SIRTVVKIMA-NEVIKCKAAVAWEAG
+2fze         EFVTHNLSF-DE----INKA-------FELMHSG-K-SIRTVVKI-A-NEVIKCKAAVAWEAG
+1mp0         EFVTHNLSFD--EINK----AFELMHS-------GKS-IRTVVKI--ANEVIKCKAAVAWEAG
+1teh_A       --------------------------------------------------VIKCKAAVAWEAG
+1teh_B       -------------------------------------------------EVIKCKAAVAWEAG
+             ......... ..    ....       . .  .. . ........ . ..*************
+
+1mc5         KPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSG-AD-P-E--GCFPVILGHEGAGIVES
+2fze         KPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSG-AD-P-E--GCFPVILGHEGAGIVES
+1mp0         KPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSG-AD-P-E--GCFPVILGHEGAGIVES
+1teh_A       KPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSG-ADP---E-GCFPVILGHEGAGIVES
+1teh_B       KPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSGA-D--P--EGCFPVILGHEGAGIVES
+             ************************************* .* . .  *****************
+
+1mc5         VGEGV-TKLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGLMPDGTS-RFTC--KG
+2fze         VGEGVT-KLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGLMPDGTS-RFTC--KG
+1mp0         VGEGVT-KLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGLMPDGTS-RFTC--KG
+1teh_A       VGEGV-TKLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGLMPDGTS-RFTCK---
+1teh_B       VGEGV-TKLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGLMPDGTSR-FTC-K-G
+             *****..*********************************************** .***  ..
+
+1mc5         -KTILHYMGTSTFSEYTVVA-DISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVC
+2fze         -KTILHYMGTSTFSEYTVVA-DISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVC
+1mp0         -KTILHYMGTSTFSEYTVVA-DISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVC
+1teh_A       GKTILHYMGTSTFSEYTVVA-DISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVC
+1teh_B       -KTILHYMGTSTFSEYTVVAD-ISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVC
+              ******************* .*****************************************
+
+1mc5         AVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIE-M
+2fze         AVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIE-M
+1mp0         AVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIE-M
+1teh_A       AVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIE-M
+1teh_B       AVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIEM-
+             ************************************************************* .
+
+1mc5         TD-GGVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAASG-EEIATRPFQLVTGRTWKGTA
+2fze         TD-GGVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAAS-GEEIATRPFQLVTGRTWKGTA
+1mp0         TD-GGVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAASG-EEIATRPFQLVTGRTWKGTA
+1teh_A       TD-GGVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAASG-EEIATRPFQLVTGRTWKGTA
+1teh_B       TDG-GVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAASG-EEIATRPFQLVTGRTWKGTA
+             ** .*************************************. ********************
+
+1mc5         FGGWKSVESVPKLVSEYMSKKIKVDEFVTHNLSFDEINKAFELM--H-S-G-KSIRTVVKI  
+2fze         FGGWKSVESVPKLVSEYMSKKIKVDEFVTHNLSFDEINKAFELM-H-S--G-KSIRTVVKI  
+1mp0         FGGWKSVESVPKLVSEYMSKKIKVDEFVTHNLSFDEINKAFELM--H-S-G-KSIRTVVKI  
+1teh_A       FGGWKSVESVPKLVSEYMSKKIKVDEFVTHNLSFDEINKAFELM--H-S-G-KSIRTVVKI  
+1teh_B       FGGWKSVESVPKLVSEYMSKKIKVDEFVTHNLSFDEINKAFELMH----SGK-SIRTVVKI  
+             ********************************************  . . * .********  
+

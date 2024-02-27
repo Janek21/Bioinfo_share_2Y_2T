@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="112A2227-085C-2A73-8D42-40380EABD244">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:32:00 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

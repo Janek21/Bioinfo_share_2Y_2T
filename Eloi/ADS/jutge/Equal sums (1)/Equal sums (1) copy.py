@@ -3,15 +3,8 @@ from pytokr import pytokr
 inp = pytokr()
 
 #Recursive Function
-def equal_sum(total, lista, current_item, cand, solutions):
-    if current_item == -1:
-        if sum(cand) == total:
-            solutions.append(cand)  
-        return
-
-    equal_sum(total, lista, current_item - 1, cand + [lista[current_item]], solutions)
-    equal_sum(total, lista, current_item - 1, cand, solutions)
-
+def equal_sum(total, L, pos, cand, solutions):
+	
 
 #Read input
 total = int(inp()) 

@@ -1,0 +1,30 @@
+# STOCKHOLM 1.0
+
+1mc5_A         ......a-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#=GR 1mc5_A PP ......7.................................................................................................................................................................................................
+target         masstqg-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#=GR target PP *998765.................................................................................................................................................................................................
+#=GC PP_cons   ........................................................................................................................................................................................................
+#=GC RF        .......xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+1mc5_A         ----------------------------------------------------------------------NEVIKCKAAVAWEAGKPLSIEEIEVAPPKAHEVRIKIIATAVCHTDAYTLSGADPEGCFPVILGHEGAGIVESVGEGVTKLKAGDTVIPLYIPQCGECKFCLNPKTNLCQKIRVTQGKGL.MPDGTSRFT
+#=GR 1mc5_A PP ......................................................................9***********************************************************************************************************************.*********
+target         -----------------------------------------------------------------------QVITCKAAVAWEANKPMTIEDVQVAPPQAGEVRVKILFTALCHTDHYTWSGKDPEGLFPCILGHEAAGIVESVGEGVTEVQPGDHVIPCYQAECRECKFCKSGKTNLCGKVRAATGVGVmMNDRKSRFS
+#=GR target PP .......................................................................79*******************************************************************************************************************9725799*****
+#=GC PP_cons   ......................................................................98*********************************************************************************************************************8.899******
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxx
+
+1mc5_A         CKGKTILHYMGTSTFSEYTVVADISVAKIDPLAPLDKVCLLGCGISTGYGAAVNTAKLEPGSVCAVFGLGGVGLAVIMGCKVAGASRIIGVDINKDKFARAKEFGATECINPQDFSKPIQEVLIEMTDGGVDYSFECIGNVKVMRAALEACHKGWGVSVVVGVAASGEEIATRPFQLVTGRTWKGTAFGGWKSVESVPKL
+#=GR 1mc5_A PP ********************************************************************************************************************************************************************************************************
+target         INGKPIYHFMGTSTFSQYTVVHDVSVAKINPQAPLDKVCLLGCGVSTGLGAVWNTAKVEAGSIVAIFGLGTVGLAVAEGAKSAGASRIIGIDIDSKKFDVAKNFGVTEFVNPKDHDKPIQQVIVDLTDGGVDYSFECIGNVSVMRSALECCHKGWGTSVIVGVAASGQEISTRPFQLVTGRVWKGTAFGGFKSRSQVPWL
+#=GR target PP ********************************************************************************************************************************************************************************************************
+#=GC PP_cons   ********************************************************************************************************************************************************************************************************
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+1mc5_A         VSEYMSKKIKVDEFVTHNLSFDEINKAFELMHSGKSIRTVVKI....
+#=GR 1mc5_A PP ******************************************8....
+target         VEKYLNKEIKVDEYVTHSMNLTDINKAFDLLHEGGCLRCVL--atdk
+#=GR target PP **************************************986..79**
+#=GC PP_cons   **************************************998*8....
+#=GC RF        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx....
+//

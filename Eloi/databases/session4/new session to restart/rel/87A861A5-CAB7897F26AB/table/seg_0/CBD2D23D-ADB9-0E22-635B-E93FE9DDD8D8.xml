@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBD2D23D-ADB9-0E22-635B-E93FE9DDD8D8" name="eBOOK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>69012B8A-F4C0-D7B8-342B-BD705CB00460</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ISBN" id="82C83B61-2DD3-349E-5502-94105639CE3A">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>687057A8-68FF-DFD0-894E-8050BB89BCDC</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Title" id="372511D6-81C2-950D-1518-CC6E9936183F">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>CD6DCCDD-408B-F89E-F290-9004AC28BDA1</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Author" id="3158894A-B43C-7C55-731F-D58ACC2012C9">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>7FE62F4E-AD2D-B69D-74AF-EB2907950F7F</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Edition_date" id="1D3DB956-37AF-4FAE-36AA-8264B521359C">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>0C7E168B-14F2-AC07-3B16-08E5F825FD58</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Publisher" id="70A0FC2C-96EF-DE45-7A8D-F2B2F7ED5599">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>C802CDE1-3DF3-107F-B191-7BA96E07C36E</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Member_ID" id="CDFBBE65-8491-0BD6-6EBA-8FBAEE7A8BAA">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>DEF4219A-25CB-1ABC-4CA5-4220F7DBCF3C</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="&apos;&apos;" id="9B3CACF7-7ECA-A9AA-0908-CC746E02BFE3">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>AD4939A3-2CCB-625F-3D3B-40E6E68071E1</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F098420-1629-C4BA-0A52-C9BC27D89984" referredColumn="4D877F5E-3F04-C013-D302-E1796D3C5ABB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A53510A-8FE3-2047-AE4F-AD1AF1ABACEB" name="eBOOK_PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>A9D32112-AED7-2225-AEF9-52BB26CDC02A</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDFBBE65-8491-0BD6-6EBA-8FBAEE7A8BAA"/>
+<colUsage columnID="82C83B61-2DD3-349E-5502-94105639CE3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83713E32-9423-F6E5-65C6-CA3D5564E3A5" name="eBOOK_Member_FK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>BCFE42F9-1018-D4EC-3DA2-4D36D9025F66</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B3CACF7-7ECA-A9AA-0908-CC746E02BFE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

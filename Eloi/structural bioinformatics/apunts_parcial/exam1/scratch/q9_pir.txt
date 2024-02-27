@@ -1,0 +1,7 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+CLUSTAL  W(1-60)
+target   masstqg
+1mc5_B   ------a
+1mc5_A   ------a
+

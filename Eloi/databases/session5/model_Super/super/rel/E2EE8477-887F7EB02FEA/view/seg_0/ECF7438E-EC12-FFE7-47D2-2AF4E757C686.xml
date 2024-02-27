@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="ECF7438E-EC12-FFE7-47D2-2AF4E757C686" name="sell_products">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:20 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[Select Ticket.box as cashier,
+       Ticket.ticketDate as SalesDate, 
+       Product.barcode as Barcode,
+       Product.name as ProductName,
+       (Product.price/Sale.units) as PriceUnit, 
+       Sale.units as ProductUnits,
+       (Product.price * Sale.units) as totalProductPrice
+from Product, Ticket, Sale
+where Sale.Product_Barcode = Product.Barcode
+and Sale.Ticket_Box = Ticket.Box
+and Sale.Ticket_Date = Ticket.TicketDate ]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cashier" id="66BFF18E-DAD3-1550-1BBB-5D206B7AA18E">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>cashier</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>cashier</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="SalesDate" id="A40451C3-D8D0-E7A4-1535-2EED2C3311C3">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>SalesDate</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>SalesDate</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="Barcode" id="85BE4D68-C943-D1DE-FCB6-6B7FB1C61E75">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>Barcode</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>Barcode</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ProductName" id="4CAE6580-46F1-0E5F-8CC9-519EB2350E92">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ProductName</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>ProductName</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PriceUnit" id="D9FB67B5-F09B-CC46-34F0-D2AD48BF2819">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PriceUnit</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>PriceUnit</headerAlias>
+<expression>(Product.price/Sale.units)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ProductUnits" id="D0B99AB2-7259-1E0D-D439-F3F6C401E20E">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ProductUnits</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>ProductUnits</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="totalProductPrice" id="DC1760A2-1DBD-6EAF-9574-A21B25D3D167">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 18:06:53 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>totalProductPrice</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>totalProductPrice</headerAlias>
+<expression>(Product.price*Sale.units)</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EE80AB7E-0AB9-FFD4-34BE-80BF7E16E945">
+<container>true</container>
+<tableName>Product</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="611A08A1-9BB2-D783-7456-3EA931A40E3E">
+<container>true</container>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BAC8EE74-7793-1A92-2445-C37D205B266A">
+<container>true</container>
+<tableName>Sale</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ED332D70-B8B7-4FF6-B4B1-35FAB1897C5D">
+<columnName>Product_Barcode</columnName>
+<tableName>Sale</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="337D7663-41FA-A844-1BE9-58E3325764F0">
+<columnName>Box</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2361D2EE-2995-9E0F-84EC-986047A7204D">
+<columnName>Barcode</columnName>
+<tableName>Product</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FB81D25F-7B40-94F0-737D-58A9FDE96611">
+<columnName>Ticket_Box</columnName>
+<tableName>Sale</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D8A45E58-BEFD-BDA0-2FD7-8401A0D9BA89">
+<columnName>TicketDate</columnName>
+<tableName>Ticket</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="56E98775-E47C-0651-E929-6E95D5E603DD">
+<columnName>Price</columnName>
+<tableName>Product</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91FC921C-6AA2-6ECF-D395-709545CD59E8">
+<columnName>Ticket_Date</columnName>
+<tableName>Sale</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="179BF473-4086-A980-B8ED-0B97381210E9">
+<columnName>Units</columnName>
+<tableName>Sale</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5BD0D805-83F5-7AF0-33AC-19FC5D425E02">
+<columnName>Name</columnName>
+<tableName>Product</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

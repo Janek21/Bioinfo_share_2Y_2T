@@ -1,0 +1,27 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. 
+
+Each question accounts for 1 point. Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+In this exercise we are working with a target protein for which we have its pdb but we don't know its sequence or function. The structure of this protein is stored in the file unknown.pdb.
+
+1) Get the sequence corresponding to this structure and save it in a fasta file named 1.fa.
+
+2) What is the fold of this protein? 
+
+3) Obtain a HMM for this protein in the PFAM database. Name this HMM 3.hmm.
+
+4) Use the HMM you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same HMM you used to get the sequences. Name the alignment 4.aln.
+
+
+5) Find an homologous protein to our protein of interest with available structure. Superimpose both structures and provide the RMSD and an image of the superimposition named 5.png. 
+
+6) Generate an structure-based alignment from the superimposition you created in the previous exercise. Name this alignment 6.aln.
+
+7) Analyze with prosa the structure of your protein of interest. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure could be this?
+
+8) PDB entry 2k79 contains an interaction between two proteins. One of these two proteins is homologous to our protein of interest, could you identify what chain in the 2k79 entry is homologous to our protein of interest?
+
+9) Superimpose our protein of interest on top of the homologous chain of the 2k79 entry. Provide the RMSD of the superimposition and a picture of the superimposition and name it 9.png.
+
+10) Generate a new pdb file that only contains our protein of interest interacting with the non homologous chain in the 2k79 structure. Name it 10.pdb. 
+

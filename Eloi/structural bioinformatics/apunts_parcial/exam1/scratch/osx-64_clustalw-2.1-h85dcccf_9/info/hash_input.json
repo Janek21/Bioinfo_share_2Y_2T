@@ -1,0 +1,7 @@
+{
+  "channel_targets": "bioconda main",
+  "cxx_compiler_version": "15",
+  "cxx_compiler": "clangxx",
+  "target_platform": "osx-64",
+  "CONDA_BUILD_SYSROOT": ""
+}

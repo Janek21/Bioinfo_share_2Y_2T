@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GS sp|B0XWL3|CBHC_ASPFC DE Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Aspergillus fumigatus (strain CBS 144.89 / FGSC A1163 / CEA10) OX=451804 GN=cbhC PE=3 SV=1
+#=GS sp|Q4WFK4|CBHC_ASPFU DE Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Aspergillus fumigatus (strain ATCC MYA-4609 / CBS 101355 / FGSC A1100 / Af293) OX=330879 GN=cbhC PE=3 SV=1
+#=GS sp|A1DJQ7|CBHC_NEOFI DE Probable 1,4-beta-D-glucan cellobiohydrolase C OS=Neosartorya fischeri (strain ATCC 1020 / DSM 3700 / CBS 544.65 / FGSC A1164 / JCM 1740 / NRRL 181 / WB 181) OX=331117 GN=cbhC PE=3 SV=1
+#=GS sp|P49075|GUX3_AGABI DE Exoglucanase 3 OS=Agaricus bisporus OX=5341 GN=cel3 PE=1 SV=1
+
+target                       .......................................................................mfrksvrplvgaalvmaaavaagptpasaaesefyVNPDMASAQWVRDNPQD.SRADVIANRVADVPQGTWFTSY-NPNEVQGQVDALVGSAESAGK...TPIMVVYNIPNRDC-SNHSGG-...GAPD
+#=GR target               PP .......................................................................***********************************79***************.*******************996.*********************...**************.******....****
+sp|B0XWL3|CBHC_ASPFC         mkhlassialtlllpavqaqqtvwgqcggqgwsgptscvagaacstlnpyyaqcipgatatsttlttttaatttsqtttkptttgpttsaptvtasgnpfsgyqlyANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGANppiAGIFVVYDLPDRDCAALASNGEysiANNG
+#=GR sp|B0XWL3|CBHC_ASPFC PP **********************************************************************************************************59*************999****************************************9999999999**************************
+sp|Q4WFK4|CBHC_ASPFU         mkhlassialtlllpavqaqqtvwgqcggqgwsgptscvagaacstlnpyyaqcipgatatsttlttttaatttsqtttkptttgpttsaptvtasgnpfsgyqlyANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGANppiAGIFVVYDLPDRDCAALASNGEysiANNG
+#=GR sp|Q4WFK4|CBHC_ASPFU PP **********************************************************************************************************59*************999****************************************9999999999**************************
+sp|A1DJQ7|CBHC_NEOFI         ....mkhlassialtlllpavqaqqtvwgqcggqgwsgptncvagaacstlnpyyaqcipgatatsttlstttttqtttkptttgpttsaptvtasgnpfsgyqlyANPYYSSEVHTLAMPSLpSSLQPKASAVAEVPSFVWLDVAAKVPTMGTYLADIQAKNKAGASppiAGIFVVYDLPDRDCAALASNGEysiANNG
+#=GR sp|A1DJQ7|CBHC_NEOFI PP ....******************************************************************************************************59*************999**************************************999988998999**************************
+sp|P49075|GUX3_AGABI         .......mfkfaallalaslvpgfvqaqspvwgqcggngwtgpttcasgstcvkqndfysqclpnnqappstttqpgttppatttsggtgptsgagnpytgktvwl-SPFYADEVAQAAADISnPSLATKAASVAKIPTFVWFDTVAKVPDLGGYLADARSKNQ----...LVQIVVYDLPDRDCAALASNGEfslANDG
+#=GR sp|P49075|GUX3_AGABI PP .......**************************************************************************************************7.68899**********99************************************9966.......*****************************
+#=GC PP_cons                 ..........................................................................................................699*************9.*********************9****************999999...99********************...****
+#=GC RF                      ..........................................................................................................xxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxxxxxxxxxxxxxxxxx...xxxx
+
+target                       HSSYRDWVDQVAAGL---NGRPATIVVEPDVLSL------MDSCMDQSQQNHVMDSIAYAGKTLMAGSsQARVYFDAGHSGWH--------SPGEIASRLNGADIANSAHGIATNTSNYNWT..............DDEVSYTRQIIDATGHSG--LRAVVDTSRNGNGP----QGSEWCDPEGRAIGTESTTNTGSSHV
+#=GR target               PP ***************...9**************7......799*********************99888**************........9******************************..............**************9875..569***********....699***********************
+sp|B0XWL3|CBHC_ASPFC         VANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLP.NVAMYLDAGHAGWLGWPANLGPAATLFAKVYTDAGSPAAVRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKEAGFDAHFIMDTSRNGVQPTKQNAWGDWCNVIGTGFGVRPSTNTGDPLQ
+#=GR sp|B0XWL3|CBHC_ASPFC PP **********************************************9..***************.***.***********************************************************************************************************************************
+sp|Q4WFK4|CBHC_ASPFU         VANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLP.NVAMYLDAGHAGWLGWPANLGPAATLFAKVYTDAGSPAAVRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKEAGFDAHFIMDTSRNGVQPTKQNAWGDWCNVIGTGFGVRPSTNTGDPLQ
+#=GR sp|Q4WFK4|CBHC_ASPFU PP **********************************************9..***************.***.***********************************************************************************************************************************
+sp|A1DJQ7|CBHC_NEOFI         VANYKAYIDAIRAQLVKYSDVHTILVIEPDSLANLVTNLNVAKCANA--QSAYLECVDYALKQL-NLP.NVAMYLDAGHAGWLGWPANLGPAATLFAKVYTDAGSPAALRGLATNVANYNAWslstcpsytqgdpnCDEKKYINAMAPLLKNAGFDAHFIMDTSRNGVQPTKQSAWGDWCNVIGTGFGVRPSTNTGDPLQ
+#=GR sp|A1DJQ7|CBHC_NEOFI PP **********************************************9..***************.***.***********************************************************************************************************************************
+sp|P49075|GUX3_AGABI         LNKYKNYVDQIAAQIKQFPDVSVVAVIEPDSLANLVTNLNVQKCANA--QSAYKEGVIYAVQKL-NAV.GVTMYIDAGHAGWLGWPANLSPAAQLFAQIYRDAGSPRNLRGIATNVANFNALrasspdpitqgnsnYDEIHYIEALAPMLSNAGFPAHFIVDQGRSGVQNI-RDQWGDWCNVKGAGFGQRPTTNTGSSLI
+#=GR sp|P49075|GUX3_AGABI PP **********************************************9..***************.777.*****************************************************************************************************7.****************************
+#=GC PP_cons                 *********************************9******9***********************9999.*****************************************************..............***************999**99************9***9*************************
+#=GC RF                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..............xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target                       DAFLWVKLPGEADGCA------------agagefvpqlaydmavaadpepdpepspdpeptpdpeptpepgegceaaysvanewsdgfqaevtvtagadldgwevaidfpdgqgieqawnaevsgsggaytasdvshngslsagestgfgftgthsgangepeltcsaa
+#=GR target               PP **************95............34566788999**********************************************************************************************************************************
+sp|B0XWL3|CBHC_ASPFC         DAFVWIKPGGESDGT---SNSTSPRYD-ahcgysdalqpapeagtwfqayfeqlltnanpsf...........................................................................................................
+#=GR sp|B0XWL3|CBHC_ASPFC PP ***************...666666665.7*********************************...........................................................................................................
+sp|Q4WFK4|CBHC_ASPFU         DAFVWIKPGGESDGT---SNSTSPRYD-ahcgysdalqpapeagtwfqayfeqlltnanpsf...........................................................................................................
+#=GR sp|Q4WFK4|CBHC_ASPFU PP ***************...666666665.7*********************************...........................................................................................................
+sp|A1DJQ7|CBHC_NEOFI         DAFVWIKPGGESDGT---SNSSSARYD-ahcgysdalqpapeagtwfqayfeqlltnanpsf...........................................................................................................
+#=GR sp|A1DJQ7|CBHC_NEOFI PP ***************...788888876.6*********************************...........................................................................................................
+sp|P49075|GUX3_AGABI         DAIVWVKPGGECDGT---SDNSSPRFD-shcslsdahqpapeagtwfqayfetlvananpal...........................................................................................................
+#=GR sp|P49075|GUX3_AGABI PP ***************...566666665.6*********************************...........................................................................................................
+#=GC PP_cons                 ***************5..677766665..............................................................................................................................................
+#=GC RF                      xxxxxxxxxxxxxxxxxxxxxxxxxxxx.............................................................................................................................................
+//

@@ -1,0 +1,44 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+sp|A2XAZ3|ADHX_ORYSI  masstqgqvitckaavaweankpmtiedvqvappqa-GEVRVKILFTALCHTDHYTWSG-
+sp|P42328|ADH3_GEOSE  -----------mkaavveqfkeplkikevekptisy-GEVLVRIKACGVCHTDLHAAHGD
+sp|P12311|ADH1_GEOSE  -----------mkaavveqfkkplqvkevekpkisy-GEVLVRIKACGVCHTDLHAAHGD
+sp|Q9UYX0|TDH_PYRAB   --------msekmvaimktkpaygaelvevdvpkpgPGEVLIKVIATSICGTDLHIYEWN
+sp|O58389|TDH_PYRHO   --------msekmvaimktkpgygaelvevdvpkpgPGEVLIKVLATSICGTDLHIYEWN
+
+sp|A2XAZ3|ADHX_ORYSI  --KDPEGLFPCILGHEAAGIVESVGEGVTEVQPGDHVIPCYQAE-CRECKFCKSGKTNLC
+sp|P42328|ADH3_GEOSE  --WPVKPKLPLIPGHEGVGIVEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLC
+sp|P12311|ADH1_GEOSE  --WPVKPKLPLIPGHEGVGVIEEVGPGVTHLKVGDRVGIPWLYSaCGHCDYCLSGQETLC
+sp|Q9UYX0|TDH_PYRAB   ewAQSRIKPPQIMGHEVAGEVVEVGPGVEGIEVGDYVSVETHIV-CGKCYACRRGQYHVC
+sp|O58389|TDH_PYRHO   ewAQSRIKPPQIMGHEVAGEVVEIGPGVEGIEVGDYVSVETHIV-CGKCYACRRGQYHVC
+
+sp|A2XAZ3|ADHX_ORYSI  gkvraatgvgvmmndrksrfsingkPIYHFMG---TSTFSQYTVVHDVSVAK-inpqapl
+sp|P42328|ADH3_GEOSE  -------------------------EHQKNAGYSVDGGYAEYCRAAADYVVKIpdnlsfe
+sp|P12311|ADH1_GEOSE  -------------------------ERQQNAGYSVDGGYAEYCRAAADYVVKIpdnlsfe
+sp|Q9UYX0|TDH_PYRAB   -------------------------QNTKIFGVDTDGVFAEYAVVPAQNVWK-npksipp
+sp|O58389|TDH_PYRHO   -------------------------QNTKIFGVDTDGVFAEYAVVPAQNIWK-npksipp
+
+sp|A2XAZ3|ADHX_ORYSI  dkvcllgcgvstglgavwntakveagsivaifglgtvglavaegaksagasriigidids
+sp|P42328|ADH3_GEOSE  eaapifcagvttykalkvtgakpgewvaiygigglghvavqyakamglnvvavdigdekl
+sp|P12311|ADH1_GEOSE  eaapifcagvttykalkvtgakpgewvaiygigglghvavqyakamglnvvavdlgdekl
+sp|Q9UYX0|TDH_PYRAB   eyatlqeplgnavdtvlagpisgksvlitgagplgllgiavakasgaypvivsepsdfrr
+sp|O58389|TDH_PYRHO   eyatlqeplgnavdtvlagpisgksvlitgagplgllgiavakasgaypvivsepsdfrr
+
+sp|A2XAZ3|ADHX_ORYSI  kkfdvaknfgvtefvnpkdhdkpiqqvivdltdggvdysfecignvsvmrsalecchkgw
+sp|P42328|ADH3_GEOSE  elakelgadlvvnplkedaakfmkekvggvhaavvtavskpafqsaynsirrggacvlvg
+sp|P12311|ADH1_GEOSE  elakqlgadlvvnpkhddaaqwikekvggvhatvvtavskaafesayksirrggacvlvg
+sp|Q9UYX0|TDH_PYRAB   elakkvgadyvinpfeedvvkevmditdgngvdvflefsgapkaleqglqavtpagrvsl
+sp|O58389|TDH_PYRHO   elakkvgadyvinpfeedvvkevmditdgngvdvflefsgapkaleqglqavtpagrvsl
+
+sp|A2XAZ3|ADHX_ORYSI  gtsvivgvaasgqeistrpfqlvtgrvwkgtafggfksrsqvpwlvekylnkeikvdeyv
+sp|P42328|ADH3_GEOSE  lppeempipifdtvlngikiigsivgtrkdlqealqfaaegkvktiievqplekinevfd
+sp|P12311|ADH1_GEOSE  lppeeipipifdtvlngvkiigsivgtrkdlqealqfaaegkvktivevqplenindvfd
+sp|Q9UYX0|TDH_PYRAB   lglypgkvsidfnnliifkaltvygitgrhlwetwytvsrllqsgklnldpiithkykgf
+sp|O58389|TDH_PYRHO   lglypgkvtidfnnliifkaltiygitgrhlwetwytvsrllqsgklnldpiithkykgf
+
+sp|A2XAZ3|ADHX_ORYSI  thsmnltdinkafdllheggclrcvlatdk
+sp|P42328|ADH3_GEOSE  rmlkgqingrvvltledk------------
+sp|P12311|ADH1_GEOSE  rmlkgqingrvvlkvd--------------
+sp|Q9UYX0|TDH_PYRAB   dkyeeafelmragktgkvvfmlk-------
+sp|O58389|TDH_PYRHO   dkyeeafelmragktgkvvfmlk-------
+

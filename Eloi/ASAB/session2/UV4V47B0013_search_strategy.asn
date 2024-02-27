@@ -1,0 +1,435 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastn",
+    service "megablast",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local str "Query_6401008"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.59519999999684"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.59519999999684"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi4na 'F88228814844881181442241444142244248884822421412
+142881244482184844241421841281142242882844241122141422421212441112422488812282
+22242844442148122818881820'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401009"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.56479999999681"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.56479999999681"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na '34551D8635E354940D7CFE54FF9051E78E8E1DE94FF2FD77
+44F74CFFF9243F9AABFFF0C4B4C4'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401010"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.59519999999684"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.59519999999684"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi4na 'F88228814844881181442241444142244248884822421412
+142881244482184844241421841281142242882844241122141422421212441112422488812282
+22242844442148122818881820'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401011"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.56479999999681"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.56479999999681"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na '34551D8635E354940D7CFE54FF9051E78E8E1DE94FF2FD77
+44F74CFFF9243F9AABFFF0C4B4C4'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401012"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.59519999999684"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.59519999999684"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi4na 'F88228814844881181442241444142244248884822421412
+142881244482184844241421841281142242882844241122141422421212441112422488812282
+22242844442148122818881820'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401013"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.56479999999681"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.56479999999681"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na '34551D8635E354940D7CFE54FF9051E78E8E1DE94FF2FD77
+44F74CFFF9243F9AABFFF0C4B4C4'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401014"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.56299999999683"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.56299999999683"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na 'B80D9CB2B533755DE5E5D3FD77480403355DD5EE753D1320
+202AEAD4BFC03002A4CE9C289820'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401015"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.554799999996824"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.554799999996824"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na '72D50C9AB3271212400825790382FBAC9D28BFA82FDE82CE
+AED3A7A85D8E0FA7F7000C003534'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401016"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.553199999996814"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.553199999996814"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na 'A3A379F9B977D59DF3FF041107753F501F91EF0B28354CF9
+42F28AF45F0A5E7F3BA03A7684F8'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401017"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.53739999999682"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.53739999999682"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na 'F1D3419C02902DFA99FEA0407994A63428305DC752826FD7
+543DE849F8C89489F3733BB11CC0'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401018"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.521199999996824"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.521199999996824"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na 'FA06E827B38F82FBC480B65AB876A929781239E9FA412483
+F945EE8AE7001C4909E9EAA22AF8'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_6401019"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">sequence36.51559999999686"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "sequence36.51559999999686"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 151,
+            seq-data ncbi2na 'BDD915A3D5CCCB7343E4DE53DF52EEAC8DF8BFD43688BBFF
+3C283977C21ECB9FAE9E478A78FC'H
+          }
+        }
+      }
+    },
+    subject database "nt",
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 5, 10, -2 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 0
+      },
+      {
+        name "DustFiltering",
+        value boolean TRUE
+      },
+      {
+        name "RepeatFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean TRUE
+      },
+      {
+        name "DustFilteringLevel",
+        value integer 20
+      },
+      {
+        name "DustFilteringWindow",
+        value integer 64
+      },
+      {
+        name "DustFilteringLinker",
+        value integer 1
+      },
+      {
+        name "GapXDropoff",
+        value real { 6, 10, 1 }
+      },
+      {
+        name "GapXDropoffFinal",
+        value real { 1, 10, 2 }
+      },
+      {
+        name "GapExtnAlgorithm",
+        value integer 1
+      },
+      {
+        name "MismatchPenalty",
+        value integer -2
+      },
+      {
+        name "MatchReward",
+        value integer 1
+      },
+      {
+        name "GapOpeningCost",
+        value integer 0
+      },
+      {
+        name "StrandOption",
+        value strand-type both-strands
+      },
+      {
+        name "WordSize",
+        value integer 28
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "12 sequences (sequence36.59519999999684)"
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+

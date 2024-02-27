@@ -1,0 +1,92 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    -mssrrwfhptisgieaekllqeqgfdgsflarlsssnpgaftlsvrrgnevthikiqnn
+sp|P41499|PTN11_RAT    mtsrrwfhpnitgveaenllltrgvdgsflarpsksnpgdftlsvrrngavthikiqntg
+sp|P35235|PTN11_MOUSE  mtsrrwfhpnitgveaenllltrgvdgsflarpsksnpgdftlsvrrngavthikiqntg
+sp|Q06124|PTN11_HUMAN  mtsrrwfhpnitgveaenllltrgvdgsflarpsksnpgdftlsvrrngavthikiqntg
+
+1                      ------------------------------------------sdqplsgypWFHGMLSRL
+sp|P29349|CSW_DROME    gdffdlyggekfatlpelvqyymengelkekngqaielkqplicaeptterWFHGNLSGK
+sp|P41499|PTN11_RAT    dyydlyggekfatlaelvqyymehhgqlkekngdvielkyplncadptserWFHGHLSGK
+sp|P35235|PTN11_MOUSE  dyydlyggekfatlaelvqyymehhgqlkekngdvielkyplncadptserWFHGHLSGK
+sp|Q06124|PTN11_HUMAN  dyydlyggekfatlaelvqyymehhgqlkekngdvielkyplncadptserWFHGHLSGK
+
+1                      KAAQLVLEggTGSHGVFLVRQSETRRGECVLTFNFQG----------KAKHLRLSLNAAG
+sp|P29349|CSW_DROME    EAEKLILE--RGKNGSFLVRESQSKPGDFVLSVRTDD----------KVTHVMIRWQDKK
+sp|P41499|PTN11_RAT    EAEKLLTE--KGKHGSFLVRESQSHPGDFVLSVRTGDdkgesndsksKVTHVMIRCQELK
+sp|P35235|PTN11_MOUSE  EAEKLLTE--KGKHGSFLVRESQSHPGDFVLSVRTGDdkgesndgksKVTHVMIRCQELK
+sp|Q06124|PTN11_HUMAN  EAEKLLTE--KGKHGSFLVRESQSHPGDFVLSVRTGDdkgesndgksKVTHVMIRCQELK
+
+1                      -QCRVQHLHFQSIFDMLEHFrvhpipdvvlvsyvps------------------------
+sp|P29349|CSW_DROME    -YDVGGGESFGTLSELIDHYkrnpmvetcgtvvhlrqpfnatritaaginarveqlvkgg
+sp|P41499|PTN11_RAT    -YDVGGGERFDSLTDLVEHYkknpmvetlgtvlqlkqplnttrinaaeiesrvrelskla
+sp|P35235|PTN11_MOUSE  -YDVGGGERFDSLTDLVEHYkknpmvetlgtvlqlkqplnttrinaaeiesrvrelskla
+sp|Q06124|PTN11_HUMAN  -YDVGGGERFDSLTDLVEHYkknpmvetlgtvlqlkqplnttrinaaeiesrvrelskla
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    fweefeslqqdsrdtfsrnegykqenrlknryrnilpydhtrvklldvehsvagaeyina
+sp|P41499|PTN11_RAT    ettdkvkqgfweefetlqqqeckllysrkegqrqenknknryknilpfdhtrvvlhdgdp
+sp|P35235|PTN11_MOUSE  ettdkvkqgfweefetlqqqeckllysrkegqrqenknknryknilpfdhtrvvlhdgdp
+sp|Q06124|PTN11_HUMAN  ettdkvkqgfweefetlqqqeckllysrkegqrqenknknryknilpfdhtrvvlhdgdp
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    nyirlptdgdlynmsssseslnssvpscpactaaqtqrncsncqlqnktcvqcavksail
+sp|P41499|PTN11_RAT    nepvsdyinaniimpefetkcnnskpkksyiatqgclqntvndfwrmvfqensrvivmtt
+sp|P35235|PTN11_MOUSE  nepvsdyinaniimpefetkcnnskpkksyiatqgclqntvndfwrmvfqensrvivmtt
+sp|Q06124|PTN11_HUMAN  nepvsdyinaniimpefetkcnnskpkksyiatqgclqntvndfwrmvfqensrvivmtt
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    pysncatcsrksdslskhkrsessassspssgsgsgpgssgtsgvssvngpgtptnltsg
+sp|P41499|PTN11_RAT    kevergkskcvkywpdecalkeygvmrvrnvresaahdytlrelklskvgqgntertvwq
+sp|P35235|PTN11_MOUSE  kevergkskcvkywpdeyalkeygvmrvrnvkesaahdytlrelklskvgqgntertvwq
+sp|Q06124|PTN11_HUMAN  kevergkskcvkywpdeyalkeygvmrvrnvkesaahdytlrelklskvgqgntertvwq
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    tagclvgllkrhsndssgavsismaererereremfktyiatqgclltqqvntvtdfwnm
+sp|P41499|PTN11_RAT    yhfrtwpdhgvpsdpggvldfleevhhkqesivdagpvvvhcsagigrtgtfividilid
+sp|P35235|PTN11_MOUSE  yhfrtwpdhgvpsdpggvldfleevhhkqesivdagpvvvhcsagigrtgtfividilid
+sp|Q06124|PTN11_HUMAN  yhfrtwpdhgvpsdpggvldfleevhhkqesimdagpvvvhcsagigrtgtfividilid
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    vwqentrvivmttkeyergkekcarywpdegrseqfghariqcvsenstsdytlreflvs
+sp|P41499|PTN11_RAT    iirekgvdcdidvpktiqmvrsqrsgmvqteaqyrfiymavqhyietlqrrieeeqkskr
+sp|P35235|PTN11_MOUSE  iirekgvdcdidvpktiqmvrsqrsgmvqteaqyrfiymavqhyietlqrrieeeqkskr
+sp|Q06124|PTN11_HUMAN  iirekgvdcdidvpktiqmvrsqrsgmvqteaqyrfiymavqhyietlqrrieeeqkskr
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    wrdqparrifhyhfqvwpdhgvpadpgcvlnflqdvntrqshlaqagekpgpicvhcsag
+sp|P41499|PTN11_RAT    kgheytnikyslvdqtsgdqsplppctptppcaemredsarvyenvglmqqqrsfr----
+sp|P35235|PTN11_MOUSE  kgheytnikyslvdqtsgdqsplppctptppcaemredsarvyenvglmqqqrsfr----
+sp|Q06124|PTN11_HUMAN  kgheytnikysladqtsgdqsplppctptppcaemredsarvyenvglmqqqksfr----
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    igrtgtfividmildqivrngldteidiqrtiqmvrsqrsglvqteaqykfvyyavqhyi
+sp|P41499|PTN11_RAT    ------------------------------------------------------------
+sp|P35235|PTN11_MOUSE  ------------------------------------------------------------
+sp|Q06124|PTN11_HUMAN  ------------------------------------------------------------
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    qtliarkraeeqslqvgreytnikytgeigndsqrsplppaissislvpsktpltptsad
+sp|P41499|PTN11_RAT    ------------------------------------------------------------
+sp|P35235|PTN11_MOUSE  ------------------------------------------------------------
+sp|Q06124|PTN11_HUMAN  ------------------------------------------------------------
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    lgtgmglsmgvgmgvgnkhaskqqpplpvvncnnnnngignsgcsngggssttsssngss
+sp|P41499|PTN11_RAT    ------------------------------------------------------------
+sp|P35235|PTN11_MOUSE  ------------------------------------------------------------
+sp|Q06124|PTN11_HUMAN  ------------------------------------------------------------
+
+1                      ------------------------------------------------------------
+sp|P29349|CSW_DROME    ngninallggiglglggnmrksnfysdslkqqqqreeqapagagkmqqpapplrprpgil
+sp|P41499|PTN11_RAT    ------------------------------------------------------------
+sp|P35235|PTN11_MOUSE  ------------------------------------------------------------
+sp|Q06124|PTN11_HUMAN  ------------------------------------------------------------
+
+1                      -------------------
+sp|P29349|CSW_DROME    klltspvifqqnsktfpkt
+sp|P41499|PTN11_RAT    -------------------
+sp|P35235|PTN11_MOUSE  -------------------
+sp|Q06124|PTN11_HUMAN  -------------------
+

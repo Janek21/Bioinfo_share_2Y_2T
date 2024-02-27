@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4881EAF-3A78-056D-FB76-5D5712EA6B45" name="Relation_1">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_Barcode" id="114102E8-9FD0-79AC-8748-600F8992C1B8">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39CAF9D1-8F63-7054-7859-06D97AAA406D" referredColumn="BFC1FCE0-91A9-3339-6B8A-835D9DF9A710"/>
+</associations>
+</Column>
+<Column name="Ticket_Date_CK" id="E619F0C9-234E-6FD0-C458-55AE29F9C28D">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D75D13C5-1481-346E-6689-4D554244F02C" referredColumn="9301D628-1F4E-B1A9-73C4-307677DEAA69"/>
+</associations>
+</Column>
+<Column name="Ticket_Box" id="1EE536FE-11D4-20E4-E97F-D66BA5C7564E">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D75D13C5-1481-346E-6689-4D554244F02C" referredColumn="90D171C9-C905-A4BD-56B1-A072124856EA"/>
+</associations>
+</Column>
+<Column name="UNITS_SOLD " id="8DC2D521-7735-4C00-F0BF-D0D203D1D4C2">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:24:20 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE92276A-930A-FE36-26AE-949710EF45C9" name="Relation_1_PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="114102E8-9FD0-79AC-8748-600F8992C1B8"/>
+<colUsage columnID="E619F0C9-234E-6FD0-C458-55AE29F9C28D"/>
+<colUsage columnID="1EE536FE-11D4-20E4-E97F-D66BA5C7564E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BF2C5B3-8E2F-69BF-58F1-0CE0D191D2B9" name="Relation_1_Product_FK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>CD868CFF-F22D-2880-FF2F-86C4828A0F12</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="114102E8-9FD0-79AC-8748-600F8992C1B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CC6DB13-7A2A-98F0-23D7-BF9CF2F258D9" name="Relation_1_Ticket_FK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>CD868CFF-F22D-2880-FF2F-86C4828A0F12</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E619F0C9-234E-6FD0-C458-55AE29F9C28D"/>
+<colUsage columnID="1EE536FE-11D4-20E4-E97F-D66BA5C7564E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

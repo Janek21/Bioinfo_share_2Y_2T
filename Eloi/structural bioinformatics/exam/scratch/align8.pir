@@ -1,0 +1,30 @@
+>P1;target
+structureX:target:1: : 401  : :  : : -1.00 :-1.00
+MKLFTSTLTAKKSSTHKPLISLALSVLISTLLISETAQAAD---ANDRLEQEVDKQAKQL
+MAQYQIPGMAFGIIVDGKSHFYNYGLADKQRNQPVSEDTIFELGSVSKTFAATLASYSEL
+NGTLSLDDTADKYIPYLKNSAIGNTKLISLVTYSAGGYHYRCLKTLENNKELLQYYKSWH
+PDFPVNSKRLYSNASIGLFGYISALSMHSDYTKLIENTVLPSLKMTNTFVDVPANKMEDY
+AFGYNAAGEPIRVNPGMLDAEAYGIKSTSADMTRFMAANMGLVTVDS-QMQQALDNNRKG
+YYRTKSFTQGLAWEMYPLPTTLQQLVEGNSTETILQPQPIQLNEPPTPVLNDVWVNKTGA
+TNGFGAYIAYMPAKKTGMFILANKNYPNTERVKAAYTILDS-------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+--------------------------------------------VMNN*
+>P1;1fr6_B
+structureX:1fr6_B:1: : 361  : :  : : -1.00 :-1.00
+-----------------------------------------AAKTEQQIADIVNRTITPL
+MQEQAIPGMAVAIIYQGKPYYFTWGKADIANNRPVTQQTLFELGSVSKTFNGVLGGDAIA
+RGEIKLSDPVTQYWPELTGKQWQGISLLHLATYTAGGLPLQVPDDVTDKAALLRFYQNWQ
+PQWAPGAKRLYANSSIGLFGALAVKPSGMSYEEAMSKRVLHPLKLAHTWITVPQSEQKDY
+AWGYR-EGKPVHVSPGQLDAEAYGVKSSVIDMTRWVQANMDASQVQEKTLQQGIELAQSR
+YWRIGDMYQGLGWEMLNWPVKADSIISGSDSKVALAALPAVEVNPPAPAVKASWVHKTGS
+TGGFGSYVAFVPEKNLGIVMLANKSYPNPVRVEAAWRILEKLQ-----------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------*

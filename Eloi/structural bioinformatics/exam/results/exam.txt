@@ -1,0 +1,139 @@
+1) What is the function of this protein? Why is it important for our society? (1 point)
+
+We find the following hit: O05465
+
+Function: 
+This protein is a serine beta-lactamase with a substrate specificity for cephalosporins.
+Becta-lactamases is a type of enzyme secreted by some enzymes that is responsible for some antibiotics resilience like penisiline, this antibiotics have what is called an becta-lactam ring, which becta-lactamases open up with hydrolisis.
+So it is important for our society because antibiotic resilience is something to be careful and to regulate.
+
+
+
+2) What is the fold of this protein? (1 point)
+
+we use psiblast to generate pssm:
+
+psiblast -query target.fasta -num_iterations 5 -out_pssm target.pssm -out trash.out -db ~/Desktop/databases/uniprot_sprot.fasta
+
+we then use this pssm to get some templates from pdb:
+
+psiblast -db ~/Desktop/databases/pdb_seq -in_pssm target.pssm -out templates_pdb.out
+
+we take the one with the highest score and we introduce it in the SCOP database:
+
+entry: 1fr6
+
+We got the following results:
+
+beta-lactamase/transpeptidase-like, contains a cluster of helices and an alpha+beta sandwich
+
+
+
+3) Obtain a hidden markov model for this protein in the PFAM database. Name this HMM 3.hmm. What region of your target is matching the hidden markov model? What can you say about this region? (1 point)
+
+We use hmmscan:
+hmmscan ~/Desktop/databases/Pfam-A.hmm target.fasta > target_hmmscanned.out
+
+We get the domain: "Becta-lactamase"
+
+we use hmmfetch:
+hmmfetch ~/Desktop/databases/Pfam-A.hmm Beta-lactamase > 3.hmm
+
+It is matching the domain of the sequence, it is highly conserved.
+
+4) Use the hidden markov model you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same hidden markov model you used to get the sequences. Make sure that the alignment is in clustalw format and name the alignment 4.aln. (1 point)
+
+we use hmmsearch on uniprot and 3hmm, we get the following names:
+P00811, P05193, P05364, P94958
+
+we copy their fastas into 4templates.fasta and we hmmalign them with 3.hmm into a .sto file
+
+we convert using perl scripts to convert into .aln (clustalw):
+perl ~/Desktop/perl_scripts/aconvertMod2.pl -in h -out c <4templatesalign.sto > 4.aln
+
+
+5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it? (1 point)
+We use the pdb templates in templates_pdb.out that we created in question 2:
+1fr6
+1fr1
+1rgy
+3bls
+
+We did not use the chain identifier.
+
+6) Superimpose the 4 templates you obtained in the previous question using pymol. Provide the RMSD value for all the superimpositions and save an image of the superimposition as 6.png. Is your superimposition good or wrong? Does this make sense to you? (1 point)
+
+super 1fr1,1fr6, object= aln4
+0.412 (5223 to 5223 atoms)
+
+super 1rgy,1fr6, object= aln4
+0.420 (2290 to 2290 atoms)
+
+cealign 1fr6, 3bls,object=aln4 // (We use cealign to better alignment due to 3bls being a distant homolog where its homodimer seems inverted)
+RMSD 0.559995 over 352 residues
+
+My superimposition seems correct, if i used "super" command in 3bls i would have a mess because the superimpositions would have been done between distant homologues and in this cases we are able to use only its structure (cealign) because it is the only conserved attribute.
+
+7) Create a multiple sequence aligment based on the structural superimposition you just did. Then, use that multiple sequence alignment to create a hidden markov model. Save that hidden markov model as 7.hmm. (1 point)
+
+We save: 
+save 7.aln, aln4
+
+We transform to fasta:
+perl ~/Desktop/perl_scripts/aconvertMod2.pl -in c -out f <7.aln>7.fa
+
+We transform to stockholm:
+perl ~/Desktop/perl_scripts/fasta2sto.pl 7.fa > 7.sto
+
+we build hmm with .sto:
+hmmbuild 7.hmm 7.sto
+
+
+8) Make an structural model of the target sequence and name it 9.pdb. (1.5 points)
+
+We are going to use target file: target.fasta
+
+An alignment file in PIR:
+
+	we need to make an alignment with one template, we use: 1fr6
+
+	we use perl to get fasta:
+		perl ~/Desktop/perl_scripts/PDBtoSplitChain.pl -i 1fr6.pdb -o 1fr6_
+
+	we use chain B because it is our first template on blast output, even though score is the same so we would not have noticeable differences
+		cat target.fasta > question8.fasta
+		cat 1fr6_B.fa >> question8.fasta
+	
+	we align using 7.hmm:
+		hmmalign 7.hmm question8.fasta >align8.sto
+	
+	we transform into pir format:
+		perl ~/Desktop/perl_scripts/aconvertMod2.pl -in h -out c <align8.sto>align8.aln
+		perl ~/Desktop/perl_scripts/aconvertMod2.pl -in c -out p <align8.aln>align8.pir
+
+	we change the following lines in modelling.py:
+	      alnfile  = 'align8.pir', # alignment filename
+              knowns   = ('1fr6_B'),     # codes of the templates
+              sequence = 'target')               # code of the target
+
+	we use modeller:
+		mod10.5 modeling.py
+	
+
+
+9) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this? (1.5 points)
+To analyze with prosa we look at the Z-score and the plot, comparing the structure to the one in the PDB.
+We can see 
+
+To analyze the model generated, we can check the Z-score and the following plot comparing how good our structure is in comparison with the structures in the PDB.
+
+We can observe a z-score of -7.55 in the 2nd generated structure, which a priori is good. Meaning that our protein model is likely to have similar structural properties to the ones in the reference set and, thus, that our model is accurate and reliable.
+
+We can take this with a grain of salt due to this scores not having really any thresholds discriminating if a model is good or bad due to them being relative of the structure we are using.
+
+To know if the score is good we should compare to the template, we can use the template as a reference. if we have higher energy than the template, then we might have done something wrong.
+
+Our template is 1fr6_B
+We put it in PROSA we obtain a score of -9.4 < -7.55, they have similar score which makes sense.
+
+we look to the local model of quality and there are no absupt peaks, which is also a good indicator.

@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "bin/clustalw",
+      "path_type": "softlink",
+      "sha256": "395c45a0fd15764dd9cabd0bf51f000d2b481dfa83b4c49c8887fd035aa9629e",
+      "size_in_bytes": 793272
+    },
+    {
+      "_path": "bin/clustalw2",
+      "path_type": "hardlink",
+      "sha256": "395c45a0fd15764dd9cabd0bf51f000d2b481dfa83b4c49c8887fd035aa9629e",
+      "size_in_bytes": 793272
+    }
+  ],
+  "paths_version": 1
+}

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="611A08A1-9BB2-D783-7456-3EA931A40E3E" name="Ticket">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>6F87E4AB-D8F6-ACB1-BEF2-5D563843656F</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Box" id="337D7663-41FA-A844-1BE9-58E3325764F0">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>D2C555D6-4144-8398-EED8-8BBAD77181C7</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TicketDate" id="D8A45E58-BEFD-BDA0-2FD7-8401A0D9BA89">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>C6F5A704-4EC4-51A0-BBEC-04A5B0365BCA</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FormPayment" id="DD349141-8DD8-7542-047D-06C5EA9DF89C">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>BB61171F-9B4A-9545-5749-9AE351CFCA06</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total" id="D382E6DD-AA89-A6E6-1FE0-5E16EB36B101">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>7295A420-AC86-74C9-3FBE-BF43C5800B9C</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8D3BA28-B3B0-FFB2-464E-31D3B9EDE18E" name="Ticket_PK">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>6C929039-CA2C-F533-DD12-F6A79EB83583</generatorID>
+<ownerDesignName>super</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="337D7663-41FA-A844-1BE9-58E3325764F0"/>
+<colUsage columnID="D8A45E58-BEFD-BDA0-2FD7-8401A0D9BA89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

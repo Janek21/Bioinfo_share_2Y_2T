@@ -1,0 +1,87 @@
+>>PPARD_XENLA and PPARG_CANLF alignment:
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+M G E T L G D S L I D P E S D S F A D T L S A S T S Q E T T M V D T E M P F W P
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+T N F G I S S V D L S V M D D H S H S F D I K P F T T V D F S S I S T P H Y E D
+· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - M K - E E I P P R S P - I L D
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+I P F S R A D P M V A D Y K Y D L K L Q E Y Q S A I K V E - - P - A S P P Y Y S
+· · · · · · · · · · · · · · · · · · · · · · · · ·   * · * · · * ·   * * ·      
+
+
+E Q P S T P L - - - E H Q E - T S Q S V D C K I - C - - - G D R A S G F H Y G V
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+E - - K T Q L Y N K P H - E E P S N S - L M A I E C R V C G D K A S G F H Y G V
+* · ·   *   * · · ·   * · * ·   *   * ·       * · * · · · * *   * * * * * * * *
+
+
+H A C E G C K G F F R R T I R M R L Q Y E H C D R N C K I Q K K N R N K C Q Y C
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+H A C E G C K G F F R R T I R L K L I Y D R C D L N C R I H K K S R N K C Q Y C
+* * * * * * * * * * * * * * *     *   *     * *   * *   *   * *   * * * * * * *
+
+
+R F N K C L S L G M S H N A I R F G R M P E S E K R K L V Q A P V S D S A A P D
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+R F Q K C L A V G M S H N A I R F G R M P Q A E K E K L - L A E I S - S - D I D
+* *   * * *     * * * * * * * * * * * * *     * *   * * ·   *     * · * ·     *
+
+
+- - S P V S - D L D V L - S Q L I H S S Y M N T F T M T K - K R A R D I L T G -
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+Q L N P E S A D L R A L A K H L Y D S - Y I K S F P L T K A K - A R A I L T G K
+· ·   *   * · * *     * ·     *     * · *       *     * * · * · * *   * * * * ·
+
+
+R N S I S P F V I H D M D T L W Q A E - Q G T V W E Q L P T Q N L T G T E I G V
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+T T D K S P F V I Y D M N S L M M G E D K I K F K H I T P L Q - E Q S K E V A I
+        * * * * *   * *     *       * ·                 *   * ·         *      
+
+
+H V F Y R C Q C T S V E T V R A L T D F A K R I P G F G T L Y L N D Q V T L L K
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+R I F Q G C Q F R S V E A V Q E I T E Y A K S I P G F V N L D L N D Q V T L L K
+    *     * *     * * *   *       *     * *   * * * *     *   * * * * * * * * *
+
+
+Y G V H E A I - F C M L A S L M N K D G - L L V A G G R G F V T R E F L R S L R
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+Y G V H E - I I Y T M L A S L M N K D G V L I S E G - Q G F M T R E F L K S L R
+* * * * * · * ·     * * * * * * * * * * · *       * ·   * *   * * * * *   * * *
+
+
+Q P F C H I M E P K F H F A S K F N A L E L N D - S D L A L F V A S I I L C G D
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+K P F G D F M E P K F E F A V K F N A L E L - D D S D L A I F I A V I I L S G D
+  * *       * * * * *   * *   * * * * * * * · * · * * * *   *   *   * * *   * *
+
+
+R P G L I N P S Q V E D I Q E G I L - G A L R R H L K A S H T D A P F L F P K L
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+R P G L L N V K P I E D I Q - D N L L Q A L E L Q L K L N H P E S S Q L F A K L
+* * * *   *         * * * * ·     * ·   * *       * *     *           * *   * *
+
+
+L H K M A D L R Q L V T E H A E L V Q S I K R T E S S A A L H P L L Q E I Y R D
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+L Q K M T D L R Q I V T E H V Q L L Q V I K K T E T D M S L H P L L Q E I Y K D
+*   * *   * * * *   * * * *     *   *   * *   * *         * * * * * * * * *   *
+
+
+M Y
+| |
+L Y
+  *
+
+
+Total score: -1462

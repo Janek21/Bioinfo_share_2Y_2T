@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EE80AB7E-0AB9-FFD4-34BE-80BF7E16E945" name="Product">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>A51BFDC1-C235-C5E6-758D-3808E65C872F</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Barcode" id="2361D2EE-2995-9E0F-84EC-986047A7204D">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>1E41A2F7-53D3-1789-907F-A2A3F418410B</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="5BD0D805-83F5-7AF0-33AC-19FC5D425E02">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>A6AB21BF-3899-0481-3BB0-DA6412F2C362</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Brand" id="90EC071F-B0B5-5165-64B8-2A8D052D3E8C">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>AA5139DF-4B60-04CB-1525-CD63A71BA368</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="56E98775-E47C-0651-E929-6E95D5E603DD">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>FD2A60C2-2253-1CAD-6F6D-EB8C918589D3</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stock" id="6BA1FE78-0693-B15D-26C6-7C02B81C3036">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>0761B84C-C0D0-EAF4-E062-394BF5E2165C</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="851C62C1-5207-3203-0DAE-B20F43CD2283" name="Product_PK">
+<createdBy>Carolina</createdBy>
+<createdTime>2023-02-02 21:24:16 UTC</createdTime>
+<generatorID>A24A470C-8226-9665-91EB-D6782BDD3B73</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2361D2EE-2995-9E0F-84EC-986047A7204D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

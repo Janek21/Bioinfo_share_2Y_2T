@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEA757E4-47C3-7973-4749-DE190B20ABB6" name="Member">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>BD6C04A2-BCD9-6BFD-9EDB-C678A1FBB440</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4D877F5E-3F04-C013-D302-E1796D3C5ABB">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>F7012867-AFB4-12F2-9759-3339B6F5893A</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="165AAFC0-310A-147B-4547-07D14A13D3FA">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>75B7EC7B-15FC-4DEC-2693-221E8DA85ECB</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="AF80DC0B-3902-9868-030C-4F4BA0C0A734">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>B5483030-CA94-2E8B-6899-6637BA2781D3</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telephone" id="F498F2C8-3CB8-5829-CDF1-8FB20BC249F9">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>4E93A987-79B0-20C2-231A-AD9D3126F557</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="First_and_last_name" id="535B004D-A30A-A293-125C-8F95AEBCAE97">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>967221FB-3A9B-4617-2777-36D6F1405F85</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DCCE245B-D729-BDCA-472C-75D90ED5A8EA" name="Member_PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:50:22 UTC</createdTime>
+<generatorID>18A2B002-D09A-97EE-2F6E-531EC4187FC8</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D877F5E-3F04-C013-D302-E1796D3C5ABB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

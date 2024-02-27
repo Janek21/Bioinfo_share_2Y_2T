@@ -37,7 +37,7 @@ def queens(L,i,j):
 		L[i][j] = 'Q'
 		queens(L,i,j+1)
 		L[i][j] = '.'
-
+	queens(L,i,j+1)
 	return
 	
 	
