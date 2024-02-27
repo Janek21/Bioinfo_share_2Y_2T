@@ -90,16 +90,6 @@ class Three_in_line(object):
 	
 		return False # If any of the conditions above are met the player has not won and we return False
 
-	def evaluate(self):
-
-		'''
-		Function that checks if one of the players has won using the previous function check_winner or 
-
-		Useful to implement it in the algorithm --> Three possible results: p1 won / p2 won / no winner
-		'''
-
-		return
-
 	def get_moves(self):
 		'''
 		Function that looks for all the possible moves for the bot
