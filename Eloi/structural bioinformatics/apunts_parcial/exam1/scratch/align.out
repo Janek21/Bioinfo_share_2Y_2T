@@ -1,6 +1,0 @@
-
-ERROR: Incorrect number of command line arguments.
-Usage: hmmalign [-options] <hmmfile> <seqfile>
-
-To see more help on available options, do hmmalign -h
-
