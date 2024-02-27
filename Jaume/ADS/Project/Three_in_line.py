@@ -3,8 +3,10 @@ import math
 class Three_in_line(object):
 
 	def __init__(self):
-
-		self.board = [[' ' for _ in range(3)] for _ in range(3)] # Creation of a matrix 3*3 representing the board
+		
+		self.n = 3
+		
+		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] # Creation of a matrix n*n representing the board
 		
 		# Assigning symbols to represent the "fichas" of the players
 		self.player1 = 'X'  
@@ -20,7 +22,7 @@ class Three_in_line(object):
 
 		print('-----')
 
-		# Iterating through each of the 3 rows of the board
+		# Iterating through each of the n rows of the board
 		for row in self.board:
 			
 			# Representation of the board:
@@ -34,7 +36,17 @@ class Three_in_line(object):
 		Output: True / False
 		'''
 
-		return
+		# Iterating throug each cell of the matrix
+		for i in range(self.n):
+
+			for j in range(self.n):
+
+				# Cheking if there is an empty cell in the board
+				if self.board[i][j] == ' ':
+
+					return False # If so the board is not false and we return False
+
+		return True
 
 	def is_game_ended(self):
 
@@ -54,7 +66,7 @@ class Three_in_line(object):
 		'''
 
 		# Iterating through each row
-		for i in range(3):
+		for i in range(self.n):
 
 			# Checking if the  current row has all elements equal to the given player
 			if self.board[i][0] == self.board[i][1] == self.board[i][2] == player:
@@ -62,7 +74,7 @@ class Three_in_line(object):
 				return True # If the condition is met the player has won and we return True
 	
 		# Iterating through each column
-		for j in range(3):
+		for j in range(self.n):
 		
 			# Checking if the  current row has all elements equal to the given player
 			if self.board[0][j] == self.board[1][j] == self.board[2][j] == player:
@@ -128,4 +140,5 @@ def main():
 	game.represent_board()
 
 if __name__ == "__main__":
+	
 	main()
