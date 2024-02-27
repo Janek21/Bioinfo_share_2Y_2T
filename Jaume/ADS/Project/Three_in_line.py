@@ -142,6 +142,10 @@ class Three_in_line(object):
 
 def main():
 
+	'''
+	Testing that the functions work correctly
+	'''
+
 	game = Three_in_line()
 
 	game.represent_board()
@@ -158,6 +162,57 @@ def main():
 
 	print('Did "O" win?')
 	a = game.check_winner('O')
+	print(a)
+
+	print("\nIs the board full?")
+	a = game.is_board_full()
+	print(a)
+
+	print("\nDid the game end?")
+	a = game.is_game_ended()
+	print(a)
+
+	game = Three_in_line()
+	game.make_move((0,0), 'X')
+	game.make_move((0,1), 'O')
+	game.make_move((0,2), 'X')
+
+	game.represent_board()
+	print("\nDid the game end?")
+	a = game.is_game_ended()
+	print(a)
+
+	print("Filling the board...")
+	game = Three_in_line()
+
+	game.make_move((0,0), 'O')
+	game.make_move((0,1), 'X')
+	game.make_move((0,2), 'O')
+
+	game.make_move((1,0), 'O')
+	game.make_move((1,1), 'X')
+	game.make_move((1,2), 'X')
+
+	game.make_move((2,0), 'X')
+	game.make_move((2,1), 'O')
+	game.make_move((2,2), 'O')
+
+	game.represent_board()
+
+	print("\nIs the board full?")
+	a = game.is_board_full()
+	print(a)
+
+	print('Did "X" win?')
+	a = game.check_winner('X')
+	print(a)
+
+	print('Did "O" win?')
+	a = game.check_winner('O')
+	print(a)
+
+	print("\nDid the game end?")
+	a = game.is_game_ended()
 	print(a)
 
 if __name__ == "__main__":
