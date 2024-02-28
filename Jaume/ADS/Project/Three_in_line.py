@@ -109,10 +109,10 @@ class Three_in_line(object):
 
 		return moves
 	
-	def algorithm_name(self):
+	def A0_star(self):
 
 		'''
-		Function that has the logic of the bot
+		Function that implements the A0 star algorithm to select the best movement
 		It will decide which move of the possible moves is the best
 		'''
 
