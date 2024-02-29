@@ -4,9 +4,9 @@ class Three_in_line(object):
 
 	def __init__(self):
 		
-		self.n = 0
+		self.n = 3
 
-		# Creation of a matrix n*n representing the board
+		# Creation of a matrix n*n representing the board (default: 3*3)
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
 		
 		# Initializing the players
@@ -20,6 +20,8 @@ class Three_in_line(object):
 		n = int(sys.stdin.readline().strip())
 
 		self.n = n
+
+		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)]
 
 		print(f"You have selected a {self.n}x{self.n} board\n")
 
