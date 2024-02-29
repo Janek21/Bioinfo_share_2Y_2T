@@ -4,7 +4,7 @@ class Three_in_line(object):
 
 	def __init__(self):
 		
-		self.n = 3
+		self.n = 0
 
 		# Creation of a matrix n*n representing the board
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
@@ -12,6 +12,16 @@ class Three_in_line(object):
 		# Initializing the players
 		self.player1 = ''  
 		self.player2 = ''
+		
+	def change_n(self):
+
+		print("Please enter the nº of rows and columns you want the board to have")
+
+		n = int(sys.stdin.readline().strip())
+
+		self.n = n
+
+		print(f"You have selected a {self.n}x{self.n} board\n")
 
 	def represent_board(self):
 
@@ -169,7 +179,9 @@ class Three_in_line(object):
 		'''
 		Function that implements all the other functions so that it is possible to play
 		'''
-		print('Welcome to Three in a row\n')
+		print('Welcome to N in a row\n')
+
+		self.change_n()
 
 		self.choose_player()
 		
@@ -213,79 +225,8 @@ class Three_in_line(object):
 def main():
 
 	'''
-	Testing that the functions work correctly
+	Testing
 	'''
-
-	game = Three_in_line()
-
-	game.represent_board()
-
-	game.make_move((0,0), 'X')
-	game.make_move((1,1), 'X')
-	game.make_move((2,2), 'X')
-
-	game.represent_board()
-
-	print('Did "X" win?')
-	a = game.check_winner('X')
-	print(a)
-
-	print('Did "O" win?')
-	a = game.check_winner('O')
-	print(a)
-
-	print("\nIs the board full?")
-	a = game.is_board_full()
-	print(a)
-
-	print("\nDid the game end?")
-	a = game.is_game_ended()
-	print(a)
-
-	game = Three_in_line()
-	game.make_move((0,0), 'X')
-	game.make_move((0,1), 'O')
-	game.make_move((0,2), 'X')
-
-	game.represent_board()
-	print("\nDid the game end?")
-	a = game.is_game_ended()
-	print(a)
-
-	print("Filling the board...")
-	game = Three_in_line()
-
-	game.make_move((0,0), 'O')
-	game.make_move((0,1), 'X')
-	game.make_move((0,2), 'O')
-
-	game.make_move((1,0), 'O')
-	game.make_move((1,1), 'X')
-	game.make_move((1,2), 'X')
-
-	game.make_move((2,0), 'X')
-	game.make_move((2,1), 'O')
-	game.make_move((2,2), 'O')
-
-	game.represent_board()
-
-	print("\nIs the board full?")
-	a = game.is_board_full()
-	print(a)
-
-	print('Did "X" win?')
-	a = game.check_winner('X')
-	print(a)
-
-	print('Did "O" win?')
-	a = game.check_winner('O')
-	print(a)
-
-	print("\nDid the game end?")
-	a = game.is_game_ended()
-	print(a)
-
-	print("\n------------------------------------------------------\n")
 
 	game = Three_in_line()
 
