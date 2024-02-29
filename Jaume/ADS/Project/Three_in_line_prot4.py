@@ -1,6 +1,6 @@
 import sys
 
-class Three_in_line(object):
+class N_in_line(object):
 
 	def __init__(self):
 		
@@ -230,7 +230,7 @@ def main():
 	Testing
 	'''
 
-	game = Three_in_line()
+	game = N_in_line()
 
 	game.play()
 
