@@ -5,10 +5,11 @@ class Three_in_line(object):
 	def __init__(self):
 		
 		self.n = 3
+
+		# Creation of a matrix n*n representing the board
+		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
 		
-		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] # Creation of a matrix n*n representing the board
-		
-		# Assigning symbols to represent the "fichas" of the players
+		# Initializing the players
 		self.player1 = ''  
 		self.player2 = '' 
 
@@ -95,13 +96,14 @@ class Three_in_line(object):
 
 		return False # If the function continues until here it means that the player has not won so returning False
 
-	def ask_move(self, x, y):
+	def ask_move(self):
 
 		print("Please do your move (Input example: '>>>i j')")
 
 		move = sys.stdin.readline().strip().split() # Getting and formating input from stdin
+		print() # Formatting output
 
-		return move[0]-1, move[1]-1 # Returning the coordinates
+		return int(move[0])-1, int(move[1])-1 # Returning the coordinates
 	
 	def choose_player(self):
 
@@ -120,13 +122,15 @@ class Three_in_line(object):
 			print("Invalid input. Tryining again...")
 			self.choose_player()
 
+		print() # Formatting the output (empty line)
+
 
 	def get_moves(self):
 		'''
 		Function that looks for all the possible moves for the bot
 		'''
 
-		moves = [] # Creating empty list moves
+		moves = [] # Creating empty list to store all the legal moves
 
 		# Iterating through each cell of the board matrix
 		for i in range(self.n):
@@ -147,7 +151,7 @@ class Three_in_line(object):
 		It will decide which move of the possible moves is the best
 		'''
 
-		return 0,0
+		return possible_moves[0]
 	
 	def make_move(self, move, player):
 
@@ -185,25 +189,25 @@ class Three_in_line(object):
 
 			self.represent_board() # Representing the board
 
-			best_move = A0_star(self.get_moves(), self.player2) # Computing the best move for the bot
+			best_move = self.A0_star(self.get_moves()) # Computing the best move for the bot
 
 			self.make_move(best_move, self.player2) #  Making bot's move
 
-			self.represent_board()
+			self.represent_board() # Representing the board
 
-		if self.is_board_full():
+		if self.is_board_full(): # Checking if the board is full
 
 			print('The board is full. No winners')
 
-		elif self.check_winner(self.player1):
+		elif self.check_winner(self.player1): # Checking if the player has won
 
 			print("Congralutations, you won!")
 
-		elif self.check_winner(self.player2):
+		elif self.check_winner(self.player2): # Checking if the bot has won
 
 			print("You lost! Better luck next time.")
 
-		else:
+		else: # Possible errors
 			print("An error occurred")
 
 def main():
@@ -280,6 +284,12 @@ def main():
 	print("\nDid the game end?")
 	a = game.is_game_ended()
 	print(a)
+
+	print("\n------------------------------------------------------\n")
+
+	game = Three_in_line()
+
+	game.play()
 
 if __name__ == "__main__":
 	
