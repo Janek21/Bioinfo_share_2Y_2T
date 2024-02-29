@@ -18,15 +18,15 @@ class Three_in_line(object):
 		'''
 		Function that allows us to visualize the board
 		'''
-
-		print('-----')
+		line = '-'*self.n + '-'*(self.n - 1) # Calculating the nº of dashes needed for each line depending on n
+		print(line)
 
 		# Iterating through each of the n rows of the board
 		for row in self.board:
 			
 			# Representation of the board:
 			print('|'.join(row))
-			print('-----')
+			print(line)
 
 		print() # Empty line as separator
 			
@@ -208,7 +208,7 @@ class Three_in_line(object):
 			print("You lost! Better luck next time.")
 
 		else: # Possible errors
-			print("An error occurred")
+			print("Something unexpected has occurred")
 
 def main():
 
