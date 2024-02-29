@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>print_fasta_any</h1>
+  
+  <h2>Description</h2>
+  <p> Modify the function <b>print_fasta(seqid_seq_dict)</b> so that sequences are printed with 60 characters per line.
+    </p>
+
+ 
+<h2>Tests</h2>
+  <pre>    >>> print_fasta({'fast_cat': 'THEFASTCAT'})
+    >fast_cat
+    THEFASTCAT
+    >>> print_fasta(read_fasta("thefastcat.fasta"))
+    >fast_cat
+    THEFASTCAT
+    >>> print_fasta(read_fasta("fastcats.fasta"))
+    >FAST_CAT
+    THE----FASTCAT
+    >FAT_RAT
+    THE----FA-TRAT
+    >VERYFAST_CAT
+    THEVERYFASTCAT
+    >LAST_CAT
+    ---LASTFA-TCAT
+    >>> print_fasta({'many_cats': 'CAT' * 100})
+    >many_cats
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+    CATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCATCAT
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+    <!--
+  <h3>Related exercises:</h3>
+  <p><a href="print_fasta_oneseq.html">print_fasta_oneseq</a></p>
+  <p><a href="read_fasta_oneline.html">read_fasta_oneline</a></p>
+-->
+</body>
+</html>

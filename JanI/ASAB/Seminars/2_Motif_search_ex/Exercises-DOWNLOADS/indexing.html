@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>indexing</h1>
+  
+  <h2>Description</h2>
+  <p> Write a function <b>indexing(string)</b> that returns a sorted list of tuples containing all possible offsets of the substrings in the string.
+    Each tuple has two elements: the substring and the list of offsets for this substring in the string.
+
+
+    </p>
+
+ 
+<h2>Example</h2>
+<p>The format should be</p>
+<pre><code>
+[('A', [4, 8]), ('AS', [4]), ('AST', [4]), ('ASTC', [4]), ('ASTCA', [4]), ('ASTCAT', [4]), ('AT', [8]),
+('C', [7]), ('CA', [7]), ('CAT', [7]), ('E', [2]), ('EF', [2]), ('EFA', [2]), ('EFAS', [2]), ('EFAST', [2]),
+('EFASTC', [2]), ('EFASTCA', [2]), ('EFASTCAT', [2]), ('F', [3]), ('FA', [3]), ('FAS', [3]), ('FAST', [3]),
+('FASTC', [3]), ('FASTCA', [3]), ('FASTCAT', [3]), ('H', [1]), ('HE', [1]), ('HEF', [1]), ('HEFA', [1]), 
+('HEFAS', [1]), ('HEFAST', [1]), ('HEFASTC', [1]), ('HEFASTCA', [1]), ('HEFASTCAT', [1]), ('S', [5]), 
+('ST', [5]), ('STC', [5]), ('STCA', [5]), ('STCAT', [5]), ('T', [0, 6, 9]), ('TC', [6]), ('TCA', [6]), 
+('TCAT', [6]), ('TH', [0]), ('THE', [0]), ('THEF', [0]), ('THEFA', [0]), ('THEFAS', [0]), ('THEFAST', [0]), 
+('THEFASTC', [0]), ('THEFASTCA', [0]), ('THEFASTCAT', [0])]
+</code></pre>
+ 
+<h2>Tests</h2>
+  <pre>    >>> indexing("THEFASTCAT")
+    [('A', [4, 8]), ('AS', [4]), ('AST', [4]), ('ASTC', [4]), ('ASTCA', [4]), ('ASTCAT', [4]), ('AT', [8]), ('C', [7]), ('CA', [7]), ('CAT', [7]), ('E', [2]), ('EF', [2]), ('EFA', [2]), ('EFAS', [2]), ('EFAST', [2]), ('EFASTC', [2]), ('EFASTCA', [2]), ('EFASTCAT', [2]), ('F', [3]), ('FA', [3]), ('FAS', [3]), ('FAST', [3]), ('FASTC', [3]), ('FASTCA', [3]), ('FASTCAT', [3]), ('H', [1]), ('HE', [1]), ('HEF', [1]), ('HEFA', [1]), ('HEFAS', [1]), ('HEFAST', [1]), ('HEFASTC', [1]), ('HEFASTCA', [1]), ('HEFASTCAT', [1]), ('S', [5]), ('ST', [5]), ('STC', [5]), ('STCA', [5]), ('STCAT', [5]), ('T', [0, 6, 9]), ('TC', [6]), ('TCA', [6]), ('TCAT', [6]), ('TH', [0]), ('THE', [0]), ('THEF', [0]), ('THEFA', [0]), ('THEFAS', [0]), ('THEFAST', [0]), ('THEFASTC', [0]), ('THEFASTCA', [0]), ('THEFASTCAT', [0])]
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="count_matches_stars.html">count_matches_stars</a></p>
+  -->
+</body>
+</html>

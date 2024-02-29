@@ -1,0 +1,24 @@
+https://mmb.irbbarcelona.org/biobb/workflows/tutorials/md_setup
+
+$jupyter-notebook biobb_wf_md_setup/notebooks/biobb_MDsetup_tutorial.ipynb
+
+In first box
+
+------------------
+import nglview
+import ipywidgets
+
+pdbCode = "1AKI" #Set your protein PDB id
+------------------
+
+In topology:
+Provides zip file
+
+$unzip 1AKI_pdb2gmx_top.zip
+
+get files...
+...
+
+Never run the last binary file (portable binary file), too much for laptop, use a cluster
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>score_words</h1>
+  
+  <h2>Description</h2>
+  <p>Write a function that takes a list of words (all words with the same length) and perform all-to-all comparison of words using a BLOSUM62 substitution matrix. 
+    The output should be as indicated in the tests: a dictionary of with words as keys and list of tuples as values that consist of the score and the aligned word sorted from larger to smaller score.
+</p>
+
+<h2>Hint</h2>
+<p>You can take the substitution matrix from Biopython
+</p>
+<pre>from Bio.Align import substitution_matrices
+substitution_matrices.load("BLOSUM62")
+</pre >
+
+<h2>Tests</h2>
+  <pre>    >>> score_words(['AAA', 'AAS', 'ASA', 'SSA', 'SSS'])
+    {'AAA': [(12.0, 'AAA'), (9.0, 'ASA'), (9.0, 'AAS'), (6.0, 'SSA'), (3.0, 'SSS')], 'AAS': [(12.0, 'AAS'), (9.0, 'AAA'), (6.0, 'SSS'), (6.0, 'ASA'), (3.0, 'SSA')], 'ASA': [(12.0, 'ASA'), (9.0, 'SSA'), (9.0, 'AAA'), (6.0, 'SSS'), (6.0, 'AAS')], 'SSA': [(12.0, 'SSA'), (9.0, 'SSS'), (9.0, 'ASA'), (6.0, 'AAA'), (3.0, 'AAS')], 'SSS': [(12.0, 'SSS'), (9.0, 'SSA'), (6.0, 'ASA'), (6.0, 'AAS'), (3.0, 'AAA')]}
+    >>> score_words(kmers("QLNFQLMSAGQLQ", 10))
+    {'QLNFQLMSAG': [(49.0, 'QLNFQLMSAG'), (-8.0, 'NFQLMSAGQL'), (-13.0, 'LNFQLMSAGQ'), (-15.0, 'FQLMSAGQLQ')], 'LNFQLMSAGQ': [(49.0, 'LNFQLMSAGQ'), (-3.0, 'FQLMSAGQLQ'), (-13.0, 'QLNFQLMSAG'), (-13.0, 'NFQLMSAGQL')], 'NFQLMSAGQL': [(49.0, 'NFQLMSAGQL'), (-8.0, 'QLNFQLMSAG'), (-12.0, 'FQLMSAGQLQ'), (-13.0, 'LNFQLMSAGQ')], 'FQLMSAGQLQ': [(48.0, 'FQLMSAGQLQ'), (-3.0, 'LNFQLMSAGQ'), (-12.0, 'NFQLMSAGQL'), (-15.0, 'QLNFQLMSAG')]}
+   </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+    <!--
+  <h3>Related exercises:</h3>
+  <p><a href="print_fasta_oneseq.html">print_fasta_oneseq</a></p>
+  <p><a href="read_fasta_oneline.html">read_fasta_oneline</a></p>
+-->
+</body>
+</html>

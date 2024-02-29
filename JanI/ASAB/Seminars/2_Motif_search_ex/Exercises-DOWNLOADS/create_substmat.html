@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>create_substmat</h1>
+  
+  <h2>Description</h2>
+  <p> Create a substitution matrix based on the frequencies of amino acids and their transitions 
+    in a given <a href="baba.fasta">.FASTA</a> file.
+    Assume all sequences are aligned and have the same length (with gaps).
+    
+</p>
+<!--
+
+<h2>Hint</h2>
+<pre><code>
+</code></pre>
+-->
+
+<h2>Tests</h2>
+  <pre>    >>> create_substmat("baba.fasta")
+    {'A': {'A': 1, 'B': -2, 'C': -2}, 'B': {'A': -2, 'B': 3, 'C': 1}, 'C': {'A': -2, 'B': 1, 'C': 3}}
+    >>> create_substmat("baba.fasta")
+    'The alignment contains amino acids that are not in the provided alphabet'
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+<!--
+  <h3>Related exercises:</h3>
+  <p><a href="count_matches_stars.html">count_matches_stars</a></p>
+  -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>dna2allprots</h1>
+  
+  <h2>Description</h2>
+  <p>Write a function that returns the list all possible proteins that could be encoded from a DNA segment. Consider the 3 reading frames both on the forward and the reverse complementary sequence.
+    
+</p>
+
+<h2>Hint</h2>
+<p>You can open the fasta file using Biopython
+</p>
+<pre>from Bio import SeqIO
+SeqIO.parse(filename, "fasta")
+</pre >
+
+<h2>Tests</h2>
+  <pre>>>> dna2allprots('AGTCGATGCACACGATCGATGCATCGATATCGTATATCCGATACCCCGTAC')
+    ['SRCTRSMHRYRISDTPY', 'VDAHDRCIDIVYPIPR', 'SMHTIDASISYIRYPV', 'VRGIGYTISMHRSCAST', 'YGVSDIRYRCIDRVHR', 'TGYRIYDIDASIVCID']
+   </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+    <!--
+  <h3>Related exercises:</h3>
+  <p><a href="print_fasta_oneseq.html">print_fasta_oneseq</a></p>
+  <p><a href="read_fasta_oneline.html">read_fasta_oneline</a></p>
+-->
+</body>
+</html>

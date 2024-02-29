@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>overlaps</h1>
+  
+  <h2>Description</h2>
+  <p>Write a fuction <b>count_ov(sequence, motif)</b> that works similar to str.count() method but is aware of overlaps between motifs (see Tests).
+    <b>count_ov</b> should return a tuple with both the counts and a list with the positions where motifs start.</p>
+
+<!--
+<h2>Hint</h2>
+<p>
+</p>
+<pre><code> 
+</code></pre>
+-->
+  <h2>Tests</h2>
+  <pre><code>    >>> 'GATATAT'.count('ATAT')
+    1
+    >>> count_ov('GATATAT', 'ATAT')
+    (2, [1, 3])
+    >>> count_ov('GATATATATATGCATATATACTT', 'ATAT')
+    (6, [1, 3, 5, 7, 13, 15])
+    >>> count_ov('GAT', 'ATAT')
+    (0, [])
+    >>> count_ov('GAT', '')
+    (0, [])
+</code></pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  
+     <!--
+  <p>Related Exercises:</p>
+  <ul>
+    <li><a href="dna2rna.html">dna2rna</a></li>
+  </ul>
+-->
+  
+</body>
+</html>

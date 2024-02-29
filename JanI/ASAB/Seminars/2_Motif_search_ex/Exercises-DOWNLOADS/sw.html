@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>sw</h1>
+  
+  <h2>Description</h2>
+  <p> Implement Smith and Waterman from <b>nw_substmat</b>.
+    The function should return the optimal score and the two aligned substrings.</p>
+
+    
+</p>
+
+<!--
+<h2>Hint</h2>
+You can get any substitution matrix from Biopython
+
+<pre><code>from Bio.Align import substitution_matrices
+subst_mat = substitution_matrices.load("BLOSUM62")
+
+</code></pre>
+-->
+
+<h2>Tests</h2>
+  <pre>    >>> sw('THEFASTCAT', 'THERAT', -4)
+    (20.0, ('THEFAS', 'THERAT'))
+    >>> sw('FAT', 'THEFASTCAT', -4)
+    (11.0, ('FAT', 'FAS'))
+    </pre>
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+<!--
+  <h3>Related exercises:</h3>
+  <p><a href="nw2.html">nw2</a></p>
+  -->
+</body>
+</html>
+
+
