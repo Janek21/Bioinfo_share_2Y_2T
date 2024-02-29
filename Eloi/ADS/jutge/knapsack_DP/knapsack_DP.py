@@ -24,7 +24,7 @@ def knapsack(WL,VL, maxw):
 
     return table[(WL[len(WL)-1], VL[len(VL)-1]), maxw]
 
-weights =  [1, 1, 1, 1]
-values =  [3, 5, 7, 7]
-print(knapsack(weights, values, 2))
+weights =  [7, 8, 3]
+values =  [3000, 6000, 2000]
+print(knapsack(weights, values, 10))
 

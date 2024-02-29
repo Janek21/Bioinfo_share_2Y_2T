@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="A51BFDC1-C235-C5E6-758D-3808E65C872F" name="Product" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2B30E5C1-9780-4655-080C-965DE275FAE8" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="6F87E4AB-D8F6-ACB1-BEF2-5D563843656F" name="Ticket" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2B30E5C1-9780-4655-080C-965DE275FAE8" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="F8874BD4-EA59-3074-E4FF-D05CE297E481" name="Sale" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Relation" propertyParentId="2B30E5C1-9780-4655-080C-965DE275FAE8" propertySourceId="A51BFDC1-C235-C5E6-758D-3808E65C872F" propertyTargetId="6F87E4AB-D8F6-ACB1-BEF2-5D563843656F"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

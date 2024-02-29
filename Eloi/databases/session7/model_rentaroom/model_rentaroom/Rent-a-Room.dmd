@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Rent-a-Room" id="256D3000-D7E7-8ABC-B110-1C272D718662" version="3.5">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:29:03 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>256D3000-D7E7-8ABC-B110-1C272D718662</designId>
+</OSDM_Design>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>score_words_threshold</h1>
+  
+  <h2>Description</h2>
+  <p>Modify the function <b>score_words()</b> by adding a minimum threshold for the words to be returned in the output.
+    One test use <a href="kmers.html">kmers()</a> function
+</p>
+
+<h2>Hint</h2>
+<p>You can take the substitution matrix from Biopython
+</p>
+<pre>from Bio.Align import substitution_matrices
+substitution_matrices.load("BLOSUM62")
+</pre >
+
+<h2>Tests</h2>
+  <pre>    >>> score_words(['AAA', 'AAS', 'ASA', 'SSA', 'SSS'], 8)
+    {'AAA': [(12.0, 'AAA'), (9.0, 'ASA'), (9.0, 'AAS')], 'AAS': [(12.0, 'AAS'), (9.0, 'AAA')], 'ASA': [(12.0, 'ASA'), (9.0, 'SSA'), (9.0, 'AAA')], 'SSA': [(12.0, 'SSA'), (9.0, 'SSS'), (9.0, 'ASA')], 'SSS': [(12.0, 'SSS'), (9.0, 'SSA')]}
+    >>> score_words(kmers("QLNFQLMSAGQLQ", 3), 8)
+    {'QLN': [(15.0, 'QLN'), (9.0, 'QLQ')], 'LNF': [(16.0, 'LNF')], 'NFQ': [(17.0, 'NFQ')], 'FQL': [(15.0, 'FQL')], 'QLM': [(14.0, 'QLM'), (9.0, 'QLQ')], 'LMS': [(13.0, 'LMS')], 'MSA': [(13.0, 'MSA')], 'SAG': [(14.0, 'SAG')], 'AGQ': [(15.0, 'AGQ')], 'GQL': [(15.0, 'GQL')], 'QLQ': [(14.0, 'QLQ'), (9.0, 'QLN'), (9.0, 'QLM')]}
+    </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+    <!--
+  <h3>Related exercises:</h3>
+  <p><a href="print_fasta_oneseq.html">print_fasta_oneseq</a></p>
+  <p><a href="read_fasta_oneline.html">read_fasta_oneline</a></p>
+-->
+</body>
+</html>

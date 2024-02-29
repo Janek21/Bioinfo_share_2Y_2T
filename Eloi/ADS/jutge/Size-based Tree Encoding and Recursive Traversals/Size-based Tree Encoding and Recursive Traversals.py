@@ -1,4 +1,3 @@
-import sys
 
 from pytokr import pytokr
 
@@ -10,10 +9,10 @@ def tree_reader(T):
 	if T < 0:
 		return()
 		
-	x = int(read())
+	node = int(read()) 
 	new_l = int(read())
 	
-	return(x, tree_reader(new_l-1), tree_reader(T-new_l-1))
+	return (node, tree_reader(new_l-1), tree_reader(T-new_l-1))
 
 input_tree = tree_reader(T-1)
 

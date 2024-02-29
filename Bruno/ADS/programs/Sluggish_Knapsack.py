@@ -1,4 +1,3 @@
-
 def knapsack(weights, values, n, limw):
     lista = []
     answer = []
@@ -49,9 +48,13 @@ def maxima_suma(indexes, values):
 
 
 
+
 #weights = [1, 1, 1, 1]
 #values = [3, 5, 7, 7]
 #n = 4
 #limw = 2
 #bruno = knapsack(weights, values, n, limw)
 #print(bruno)
+
+
+

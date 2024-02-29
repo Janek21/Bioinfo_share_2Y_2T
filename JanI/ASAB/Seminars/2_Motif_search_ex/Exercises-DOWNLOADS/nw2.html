@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>nw2</h1>
+  
+  <h2>Description</h2>
+  <p> Change the implementation of Needleman and Wunsch you did in <b>nw1</b>.
+    </p>
+
+<h2>Hint</h2>
+<p>In nw1 you had ... </p>
+<pre>    >>> nw('THEFASTCAT', 'THERAT', 1, -8, -4)
+    ('THE-FASTCAT', 'THER-A-T---')
+    >>> nw('THERAT', 'THEFASTCAT', 1, -8, -4)
+    ('THE-RA-T---', 'THEF-ASTCAT')
+  </pre >
+<p>which is different from the tests you have below </p>
+
+<h2>Tests</h2>
+  <pre>   >>> nw('THEFASTCAT', 'THERAT', 1, -8, -4)
+    ('THEF-ASTCAT', 'THE-RA-T---')
+    >>> nw('THERAT', 'THEFASTCAT', 1, -8, -4)
+    ('THER-A-T---', 'THE-FASTCAT')
+  </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+
+  <h3>Related exercises:</h3>
+  <p><a href="nw3.html">nw3</a></p>
+  
+</body>
+</html>
+
+

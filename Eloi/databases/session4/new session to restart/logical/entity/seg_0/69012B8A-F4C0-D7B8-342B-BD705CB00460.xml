@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69012B8A-F4C0-D7B8-342B-BD705CB00460" name="eBOOK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:32:31 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ISBN" id="687057A8-68FF-DFD0-894E-8050BB89BCDC">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:23 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Title" id="CD6DCCDD-408B-F89E-F290-9004AC28BDA1">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:31 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Author" id="7FE62F4E-AD2D-B69D-74AF-EB2907950F7F">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:34 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Edition_date" id="0C7E168B-14F2-AC07-3B16-08E5F825FD58">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:39 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Publisher" id="C802CDE1-3DF3-107F-B191-7BA96E07C36E">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:46 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Member_ID" id="DEF4219A-25CB-1ABC-4CA5-4220F7DBCF3C">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:36:54 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="AD4939A3-2CCB-625F-3D3B-40E6E68071E1">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:43:12 UTC</createdTime>
+<generatorID>BCFE42F9-1018-D4EC-3DA2-4D36D9025F66</generatorID>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<referedAttribute>F7012867-AFB4-12F2-9759-3339B6F5893A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A9D32112-AED7-2225-AEF9-52BB26CDC02A" name="eBOOK PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:49:43 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<engineerTo>
+<item key="87A861A5-FC2E-441E-E9BF-CAB7897F26AB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DEF4219A-25CB-1ABC-4CA5-4220F7DBCF3C</attributeRef>
+<attributeRef>687057A8-68FF-DFD0-894E-8050BB89BCDC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

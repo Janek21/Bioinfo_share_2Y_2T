@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Sale" directorySegmentName="seg_0" id="F8874BD4-EA59-3074-E4FF-D05CE297E481">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:17:13 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<sourcePk>A24A470C-8226-9665-91EB-D6782BDD3B73</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A51BFDC1-C235-C5E6-758D-3808E65C872F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6F87E4AB-D8F6-ACB1-BEF2-5D563843656F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Units" id="D3DE1BEF-9379-A791-E8A6-50CB070B41A1">
+<createdBy>csanchez</createdBy>
+<createdTime>2019-10-01 14:17:23 UTC</createdTime>
+<ownerDesignName>super</ownerDesignName>
+<engineerTo>
+<item key="E2EE8477-FBB4-279A-C2DA-887F7EB02FEA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

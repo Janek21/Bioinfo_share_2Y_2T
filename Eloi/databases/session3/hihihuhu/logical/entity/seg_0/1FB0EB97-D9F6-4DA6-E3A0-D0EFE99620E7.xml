@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FB0EB97-D9F6-4DA6-E3A0-D0EFE99620E7" name="Product">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 17:33:33 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Barcode" id="ADA91104-2A17-EB19-0CB1-D75ABA73BF8C">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:02:51 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Units" id="F627911C-8D11-5B3E-F8EA-D5C2BA6926EF">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:02:56 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price" id="57DBAC7E-C6B4-E361-A61A-00F0DD6B9BD6">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:03:04 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Brand" id="BD47F135-5AA2-59DB-6C9F-06B902A1E1BA">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:03:10 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="9B1ECAC7-CAFD-D577-A2DE-C6CFD4464348">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:03:12 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="558533B0-2391-2006-A30A-6B219B8C6ECD" name="Product PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:02:54 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ADA91104-2A17-EB19-0CB1-D75ABA73BF8C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

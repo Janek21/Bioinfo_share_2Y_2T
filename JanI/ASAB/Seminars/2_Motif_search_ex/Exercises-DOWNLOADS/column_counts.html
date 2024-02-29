@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>column_counts</h1>
+  
+  <h2>Description</h2>
+  <p> Write a function that takes a fasta file and a column position and returns a dictionary with the counts of each of the residues (or gaps) in that specific column in the alignment. Columns start at 0.
+</p>
+
+
+<h2>Tests</h2>
+  <pre>    >>> column_counts("fastcats.fasta", 0)
+    {'T': 3, '-': 1}
+    >>> column_counts("fastcats.fasta", 3)
+    {'-': 2, 'V': 1, 'L': 1}
+    >>> column_counts("fastcats.fasta", 7)
+    {'F': 4}
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="rna_to_prot.html">rna_to_prot</a></p>
+  -->
+</body>
+</html>

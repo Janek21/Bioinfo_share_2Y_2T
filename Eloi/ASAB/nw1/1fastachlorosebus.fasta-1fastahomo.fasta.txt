@@ -1,0 +1,27 @@
+>>>1fastachlorosebus.fasta and 1fastahomo.fasta alignment:
+
+M V H L T D A E - K S A V S C L W A K V N P D E V G G E A L G R L L V V Y P W T
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+M V H L T - P E E K S A V T A L W G K V N V D E V G G E A L G R L L V V Y P W T
+* * * * * ·   * · * * * *     * *   * * *   * * * * * * * * * * * * * * * * * *
+
+
+Q R Y F - D S F G D L S S A S A I M G N P K V K A H G K K V I T A F N E G L K N
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+Q R - F F E S F G D L S T P D A V M G N P K V K A H G K K V L G A F S D G L A H
+* * · * ·   * * * * * *       *   * * * * * * * * * * * * *     * *     * *    
+
+
+L D N L K G T F A S L S E L H C D K L H V D P E N F R L L G N A I V I V L G H H
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+L D N L K G T F A T L S E L H C D K L H V D P E N F R L L G N V L V C V L A H H
+* * * * * * * * *   * * * * * * * * * * * * * * * * * * * * *     *   * *   * *
+
+
+L G K D F T P A A Q A A F Q K V V A G V A T A L A H K Y H
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+F G K E F T P P V Q A A Y Q K V V A G V A N A L A H K Y H
+  * *   * * *     * * *   * * * * * * * *   * * * * * * *
+
+
+Total score: -114

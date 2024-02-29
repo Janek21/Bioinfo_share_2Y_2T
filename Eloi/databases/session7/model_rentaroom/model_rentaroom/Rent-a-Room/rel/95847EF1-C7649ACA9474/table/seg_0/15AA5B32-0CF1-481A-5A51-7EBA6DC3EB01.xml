@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15AA5B32-0CF1-481A-5A51-7EBA6DC3EB01" name="Room_Hotel">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>6DC6533B-0706-BF90-FDE6-6C9E59F1F3B2</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<ordsAlias>habitacio_hotel</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Room_num" id="0AABB334-9A75-590B-F06D-FFD5A1BF84BD">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>BAFA3F04-2B81-360E-CBF2-B478A5421CBF</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hotel_name" id="AA6841E3-8434-5DCD-5014-54144E4004DA">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>6C15CC78-539C-9CB3-687D-00863E5F6145</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Room_size" id="E36D05E8-AF5B-BEBD-E0A6-274D217C36CA">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>0D6E6FC4-0996-60F5-B813-8E31FC97D11C</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Beds" id="2CBC7FE6-561E-C43B-572E-3DC818B8A1FF">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>DA04DBCA-DAB0-19BD-777E-98B680AADAAE</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Type_room" id="FBAEE4B2-98A1-AACA-FFCC-FEC5A42308BC">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>56690C9D-8366-9413-BCF3-21ACCC08AAB5</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="524691B7-BB20-C24D-30F0-4CFE7435D8AF">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>CCB890B4-2F71-50CB-D790-4284325392A8</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rating" id="37DEE00D-2812-CA65-3104-127CE75510C9">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>5DF3D0BB-385A-E407-AEC1-EA7036BE1923</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Address" id="9335F895-1BCB-CF4D-74DD-434B8C4DB91A">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>A6B3D85B-9C23-3255-420C-6528DBB61216</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hotel_phone" id="3465F60F-449A-B7BF-C99D-E8E07EBFD1EE">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>30A6C142-5EE5-A7F6-C952-5F82737223B9</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DFA2CA1-E286-C01F-8199-FDCE42E1F7A9" name="Room_Hotel_PK">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:36:37 UTC</createdTime>
+<generatorID>200BA2C4-85B1-D772-21C6-AC19DA61807E</generatorID>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AABB334-9A75-590B-F06D-FFD5A1BF84BD"/>
+<colUsage columnID="AA6841E3-8434-5DCD-5014-54144E4004DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

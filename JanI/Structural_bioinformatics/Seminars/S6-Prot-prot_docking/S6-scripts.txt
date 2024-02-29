@@ -1,0 +1,43 @@
+Once you have the Zdocking results, open the 10 best (higher values on 7th column) in pymol
+
+super complex.2 and chain F, complex.1 and chain F
+super complex.3 and chain F, complex.1 and chain F
+
+##########
+Compare the docking poses to experimental structures
+
+$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i ligand.pdb -o ligand.fasta
+$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i receptor.pdb -o receptor.fasta
+
+$hmmscan ~/Documents/databases/Pfam-A.hmm ligandF.fa > ligandF.out
+$hmmscan ~/Documents/databases/Pfam-A.hmm receptorA.fa > receptorA.out
+
+Looking at the .out you know that the domains of your proteins are RhoGAP and RAS.Go to the 3did database and search for one of these two domains, then check if they interact.
+Click on the RAS-RhoGAP bridge and get the ID of the best match >> Pymol (same session as before)
+
+fetch 5c2j
+
+Superimposing the biggest chains in the interaction and calculating the distance between the ligand of my docking pose and the ligand in the experimental structure would be a way to quantify the error in my docking prediction.
+
+super complex.1 and chain F, 5c2j and chain B
+
+Measure the RMSD between two sets of atoms (chain As of complex and 5c2j)
+
+rms_cur complex.1 and chain A, 5c2j and chain A
+
+###########
+Comparing and analyzing protein interfaces
+FIND AMINOACID CONTACTS
+
+Open receptor.pdb in pymol
+
+fetch 5c2j
+
+select intR, receptor and (byres all within 5 of ligand)
+select intR, ligand and (byres all within 5 of receptor)
+
+Spot contacts and bonds visually
+or 
+Shift+click to select area (select everything)
+Sidebar > A >find >polar contacts >between chains
+

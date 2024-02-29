@@ -28,7 +28,3 @@ for y in sets[::-1]:
     clau = '{}'
     print(f'{clau[0]}{st}{clau[1]}')
 
-'''
-4 125
-a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-'''

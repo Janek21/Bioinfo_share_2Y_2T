@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="new session to restart" id="47E5E0A8-5014-39B4-6588-0130346A66D4" version="3.5">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:31:59 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>47E5E0A8-5014-39B4-6588-0130346A66D4</designId>
+</OSDM_Design>

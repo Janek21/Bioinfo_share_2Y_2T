@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DC6533B-0706-BF90-FDE6-6C9E59F1F3B2" name="Room_Hotel">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:29:33 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Room_num" id="BAFA3F04-2B81-360E-CBF2-B478A5421CBF">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:29:50 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hotel_name" id="6C15CC78-539C-9CB3-687D-00863E5F6145">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:30:16 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Room_size" id="0D6E6FC4-0996-60F5-B813-8E31FC97D11C">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:35:00 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Beds" id="DA04DBCA-DAB0-19BD-777E-98B680AADAAE">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:33:21 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Type_room" id="56690C9D-8366-9413-BCF3-21ACCC08AAB5">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:33:06 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Price" id="CCB890B4-2F71-50CB-D790-4284325392A8">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:31:22 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rating" id="5DF3D0BB-385A-E407-AEC1-EA7036BE1923">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:34:26 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Address" id="A6B3D85B-9C23-3255-420C-6528DBB61216">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:32:06 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hotel_phone" id="30A6C142-5EE5-A7F6-C952-5F82737223B9">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:31:44 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<ownDataTypeParameters>,0,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="200BA2C4-85B1-D772-21C6-AC19DA61807E" name="Room_Hotel PK">
+<createdBy>debora</createdBy>
+<createdTime>2018-10-11 09:29:57 UTC</createdTime>
+<ownerDesignName>Rent-a-Room</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="95847EF1-1CFF-947A-B288-C7649ACA9474" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>BAFA3F04-2B81-360E-CBF2-B478A5421CBF,6C15CC78-539C-9CB3-687D-00863E5F6145</newElementsIDs>
+<usedAttributes>
+<attributeRef>BAFA3F04-2B81-360E-CBF2-B478A5421CBF</attributeRef>
+<attributeRef>6C15CC78-539C-9CB3-687D-00863E5F6145</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

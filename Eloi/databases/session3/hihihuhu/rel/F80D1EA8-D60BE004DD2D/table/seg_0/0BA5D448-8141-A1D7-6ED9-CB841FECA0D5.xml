@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0BA5D448-8141-A1D7-6ED9-CB841FECA0D5" name="Ticket">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>0D1DF4DE-C986-7D7C-68A3-DC281D17DCA2</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Total_amount" id="1A3DACBB-D28A-176B-0C66-AD97A690BAA7">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>834C03E1-DFB1-06A6-4331-D4D36BD7272E</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date_CK" id="9301D628-1F4E-B1A9-73C4-307677DEAA69">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>A0F0D6BE-CBC0-2006-9A16-0B3B1337D4A0</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Form_payment" id="347EE4EF-26EB-9644-6EB2-B98EB4DC3F36">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>9A00B0D3-1EC0-2674-908E-0E25E7BF858B</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Box" id="90D171C9-C905-A4BD-56B1-A072124856EA">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>B7126A78-AD05-F9EA-5714-7464F340A703</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B31DA6A5-5DCE-A4DE-1ED9-9DCE8477C964" name="Ticket_PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>78C8FA46-CA8C-994E-4476-87D20063CA83</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9301D628-1F4E-B1A9-73C4-307677DEAA69"/>
+<colUsage columnID="90D171C9-C905-A4BD-56B1-A072124856EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

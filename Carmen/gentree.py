@@ -28,9 +28,7 @@ def post_order(inp):
     
     
 inp=reading_input()
-#print(inp)
+print(inp)
 print('', *post_order(inp))
 
-#12
-#7 3 8 0 4 2 3 1 0 1 6 0 
-#5 0 2 4 9 0 1 0 8 0 5 0
+

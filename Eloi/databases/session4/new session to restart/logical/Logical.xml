@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="91F37E2D-FE5D-490E-2556-8E5B2984DEF3" mainViewID="50A5EB7E-2F86-2DB4-9AB3-AD015E2FE0F8">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:31:59 UTC</createdTime>
+<ownerDesignName>new session to restart</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

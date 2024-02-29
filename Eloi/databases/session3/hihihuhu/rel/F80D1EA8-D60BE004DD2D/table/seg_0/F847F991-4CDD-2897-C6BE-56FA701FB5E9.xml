@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F847F991-4CDD-2897-C6BE-56FA701FB5E9" name="Product">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>1FB0EB97-D9F6-4DA6-E3A0-D0EFE99620E7</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Barcode" id="BFC1FCE0-91A9-3339-6B8A-835D9DF9A710">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>ADA91104-2A17-EB19-0CB1-D75ABA73BF8C</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Units" id="0663761E-976F-814A-F32F-F8D6D66F56F3">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>F627911C-8D11-5B3E-F8EA-D5C2BA6926EF</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Price" id="B443E5A2-153C-E3EE-8C77-789606DD13ED">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>57DBAC7E-C6B4-E361-A61A-00F0DD6B9BD6</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Brand" id="8B40A37C-6306-35BA-F9E6-DC7AB48E05E0">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>BD47F135-5AA2-59DB-6C9F-06B902A1E1BA</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Name" id="1C7CE6E2-A8CC-CA69-ABBE-71ADCBF9AFF7">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>9B1ECAC7-CAFD-D577-A2DE-C6CFD4464348</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAC5661B-0BFF-2B1F-637B-80F4F6E1C2E4" name="Product_PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:14:48 UTC</createdTime>
+<generatorID>558533B0-2391-2006-A30A-6B219B8C6ECD</generatorID>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFC1FCE0-91A9-3339-6B8A-835D9DF9A710"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D1DF4DE-C986-7D7C-68A3-DC281D17DCA2" name="Ticket">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 17:49:59 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Total_amount" id="834C03E1-DFB1-06A6-4331-D4D36BD7272E">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 17:50:05 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Date_CK" id="A0F0D6BE-CBC0-2006-9A16-0B3B1337D4A0">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 17:50:12 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Form_payment" id="9A00B0D3-1EC0-2674-908E-0E25E7BF858B">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 17:50:33 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Box" id="B7126A78-AD05-F9EA-5714-7464F340A703">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-26 17:10:50 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="78C8FA46-CA8C-994E-4476-87D20063CA83" name="Ticket PK">
+<createdBy>eloivilellaescolano</createdBy>
+<createdTime>2024-01-19 18:03:26 UTC</createdTime>
+<ownerDesignName>hihihuhu</ownerDesignName>
+<engineerTo>
+<item key="F80D1EA8-8F2C-215C-CB51-D60BE004DD2D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0F0D6BE-CBC0-2006-9A16-0B3B1337D4A0</attributeRef>
+<attributeRef>B7126A78-AD05-F9EA-5714-7464F340A703</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
