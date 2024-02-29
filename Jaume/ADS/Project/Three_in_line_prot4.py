@@ -225,11 +225,6 @@ class N_in_line(object):
 			print("Something unexpected has occurred")
 
 def main():
-
-	'''
-	Testing
-	'''
-
 	game = N_in_line()
 
 	game.play()
