@@ -1,0 +1,89 @@
+
+Extract fasta from model PDB
+	$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i model.pdb -o model
+
+WE DON'T DO $runpsipred_single model.fa
+
+Convert target.ss2 into a pir alignment containing the model sequence and its secondary structure
+	$perl ~/Documents/databases/perl_scripts/psipred.pl psipred_outputs/target.ss2 > psipred.pir
+
+No workie $dssp model.pdb model.dssp
+Download from moodle
+
+Dssp to .pir
+	$perl ~/Documents/databases/perl_scripts/aliss.pl model.dssp > dssp.pir
+	
+Get both .pir into 1 file
+	$cat psipred.pir dssp.pir > compare.pir
+
+Transform the concatenated pir into a ClustalW alignment
+
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in p -out c <compare.pir> compare.clu
+
+Look for confidence 9 in .horz (Ctrl+F)-> look at aminoacid -> look at aminoacid in alignment -> discrepancies dssp and alignment?
+This is to identify problematic region
+
+Go to Pymol
+	super 1meeA, model_, object=aln
+	
+Identify problematic region in pymol
+	Display sequence -> it will be a non-matched area, look for the aminoacids(we know the sequence) in a gray area, color them red to see them in the structure
+	
+There is a loop where a helix/sheet there should be beecause there are gaps in the input alignment for modeller. If you check the alignment we have a gap at the region with the error.
+We move these gaps somwhere where they don't affect overall quality -> inside other loops -> "error" loops where real loops should be = preserve the secondary structure -> less error
+To move the loop inside the model we modify the input alignemnt for modeller
+
+CLustalW P11018.fa and 1meeA.fa (already done, target_template.fa) -> in the alignment search for the "reddened"(AQLIRRTLPLD) aminoacids(in model in this case) and move the gap in the sequence (.aln file) to be filled with the closest aminoacids
+
+If we want to check, look at the other sequence in Pymol and fill the gap with the aminoacid in the same order
+
+WTNAQVRDRLES was the seq in other chain pymol, in .aln we have WTN<gap>AQVRDR<gap>LES, we move it together
+
+Transform .aln in to .pir
+
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <target_template.aln> target_template.pir
+	
+Use it in modelling.py
+
+	alnfile  = 'target_template.pir'
+	knowns   = ('1meeA')
+	sequence = 'P11018'
+
+Execute modeller
+	mod10.5 modeling.py
+
+Load ...001.pdb into pymol and align
+
+	super P11018.B99990001, model_, object=aln
+	
+We see that we have an extra 16 aminoacids at the front -> 132 atoms -> go to .pdb file and delete 132 first atoms manually, load again -> ALL OK
+
+^^Model improvement
+
+Check with prosa -> not better than model, but still its ok
+
+Compare all models, first has very-high energy in C-term, second has lower, we improved the model.
+
+TOday we used a method, but we also can use other methods (hmm, jackhhmer, +) some can be found in the pdf of scripts( ("class guide")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

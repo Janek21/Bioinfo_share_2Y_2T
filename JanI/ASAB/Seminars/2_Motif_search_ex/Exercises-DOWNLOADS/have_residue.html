@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>residue_counts</h1>
+  
+  <h2>Description</h2>
+  <p> Write a function <b>have_residue(fasta_file, residue, mincount)</b> that reads a <a href="fastcats.fasta">fasta file</a> and tells how many of the sequence contain at least the number of residues specified. 
+    
+</p>
+<h2>Hint</h2>
+<!--
+<pre><code>
+</code></pre>
+
+<p>
+</p>
+-->
+<h2>Tests</h2>
+  <pre>    >>> have_residue("fastcats.fasta", "E", 2)
+    1
+    >>> have_residue("fastcats.fasta", "T", 2)
+    4
+    >>> have_residue("fastcats.fasta", "W", 0)
+    4
+    >>> have_residue("fastcats.fasta", "W", 1)
+    0
+    >>> have_residue("fastcats.fasta", "", 1)
+    0
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="rna_to_prot.html">rna_to_prot</a></p>
+  -->
+</body>
+</html>

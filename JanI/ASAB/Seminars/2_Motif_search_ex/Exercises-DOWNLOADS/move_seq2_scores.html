@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>move_seq2_scores</h1>
+  
+  <h2>Description</h2>
+  <p> Reuse the functions <b>move_seq2()</b> and <b>score_seqs()</b> from previous exercises. Create a new function <b>move_seq2_scores(seq1, seq2, match, mismatch, gap)</b> that prints seq1 with the necessary gaps at the end and then the different alignments of seq2 with the corresponding alignment score to seq1.
+</p>
+<!--
+<h2>Hint</h2>
+
+<pre>
+<code>
+</code></pre>
+
+<p>
+</p>
+-->
+<h2>Tests</h2>
+  <pre>    >>> move_seq2_scores('THEFASTCAT', 'AFASTCAT', 1, -1, -2)
+    THEFASTCAT--------
+    AFASTCAT---------- -28
+    -AFASTCAT--------- -28
+    --AFASTCAT-------- -14
+    ---AFASTCAT------- -29
+    ----AFASTCAT------ -28
+    -----AFASTCAT----- -29
+    ------AFASTCAT---- -30
+    -------AFASTCAT--- -33
+    --------AFASTCAT-- -32
+    ---------AFASTCAT- -35
+    ----------AFASTCAT -36
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="move_seq2.html">move_seq2</a></p>
+  <p><a href="move_gaps_scores.html">move_gaps_scores</a></p>
+  -->
+</body>
+</html>

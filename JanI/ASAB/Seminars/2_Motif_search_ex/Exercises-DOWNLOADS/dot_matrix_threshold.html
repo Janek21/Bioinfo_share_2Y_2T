@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+
+  <h1>dot_matrix_threhold</h1>
+  
+  <h2>Description</h2>
+  <p> Modify <b>dot_matrix(seq1, seq2)</b> function to implement a threshold (add a fourth parameter). Dot should appear ONLY at the first character of a match. 
+    When implementing the window, assume there are no inversions (diagonals always go downhill). When no window size is specified the result should be as if there was no window.
+    </p>
+
+ 
+<h2>Example</h2>
+<p>For a window size of 2 and a threshold of 4 the dotplot of FASTCAT and FASTRAT should be:</p>
+<pre><code>     FASTCAT
+    Fo
+    A  o
+    T   o
+    R
+    A
+    T
+</code></pre>
+ 
+<h2>Tests</h2>
+  <pre>    >>> dot_matrix("FASTCAT", "FATRAT", 2)
+    [['o', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ']]
+    >>> dot_matrix("FASTCAT", "FATRAT")
+    [['o', ' ', ' ', ' ', ' ', ' ', ' '], [' ', 'o', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', 'o', ' ', ' ', 'o'], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', 'o', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', 'o', ' ', ' ', 'o']]
+    >>> dot_matrix("FASTCAT", "FATRAT", 2, 4)
+    A threshold smaller or equal than the window does not make sense
+    """</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="dot_matrix_allwindow.html">dot_matrix_allwindow</a></p>
+-->
+</body>
+</html>

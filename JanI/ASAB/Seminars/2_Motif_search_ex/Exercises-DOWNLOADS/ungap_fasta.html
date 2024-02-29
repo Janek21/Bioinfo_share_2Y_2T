@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>ungap_fasta</h1>
+  
+  <h2>Description</h2>
+  <p> Remove columns with a high percentage of gaps from a <a href="gpcrs.fasta">.FASTA</a> file.
+     and save the modified sequences to a new file.     Assume all sequences are aligned and have the same length (with gaps).</p>
+  <p>
+    Args:
+        input_file (str): The path to the input FASTA file.
+        output_file (str): The path to the output FASTA file.
+        min_perc (float, optional): The minimum percentage of gaps allowed in a column. Columns with a higher percentage of gaps will be removed. Defaults to 10.
+    </p>
+    <p>
+    Returns:
+        int: The length of the modified sequences after removing columns with many gaps.
+    </p>
+
+    
+<!--
+<h2>Hint</h2>
+
+<pre><code>
+</code></pre>
+
+</p>
+-->
+
+<h2>Tests</h2>
+  <pre>    >>> ungap_fasta("gpcrs.fasta", "gpcrs_ungapped.fasta", 10)
+    277
+    >>> ungap_fasta("gpcrs.fasta", "gpcrs_ungapped.fasta")
+    277
+    >>> ungap_fasta("gpcrs.fasta", "gpcrs_ungapped.fasta", 5)
+    262
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+<!--
+  <h3>Related exercises:</h3>
+  <p><a href="count_matches_stars.html">count_matches_stars</a></p>
+  -->
+</body>
+</html>

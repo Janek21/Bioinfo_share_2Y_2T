@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>read_fasta_any</h1>
+  
+  <h2>Description</h2>
+  <p> Modify the previous <b>read_fasta()</b> function so that it is able to read any fasta file (such as <a href="ppar.fasta">these one</a>).
+    </p>
+
+ 
+<h2>Tests</h2>
+  <pre>    >>> len(read_fasta("ppar.fasta"))
+    133
+    >>> seq_dict = read_fasta("ppar.fasta")
+    >>> seq_dict['sp|P62987|RL40_HUMAN Ubiquitin-60S ribosomal protein L40 OS=Homo sapiens OX=9606 GN=UBA52 PE=1 SV=2']
+    'MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGGIIEPSLRQLAQKYNCDKMICRKCYARLHPRAVNCRKKKCGHTNNLRPKKKVK'
+</pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="print_fasta_oneseq.html">print_fasta_oneseq</a></p>
+  <p><a href="read_fasta_oneline.html">read_fasta_oneline</a></p>
+-->
+</body>
+</html>

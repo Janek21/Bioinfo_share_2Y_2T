@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>nw1</h1>
+  
+  <h2>Description</h2>
+  <p> Returns the pairwise global sequence alignment by implementing
+     Needleman and Wunsch as in the material provided. Use provided match, mismatch and gep parameters.
+    </p>
+
+    
+</p>
+<!--
+<h2>Hint</h2>
+
+<pre><code>
+</code></pre>
+
+</p>
+-->
+
+<h2>Tests</h2>
+  <pre>    >>> nw('FAT', 'FAST', 2, -1, -1)
+    ('FA-T', 'FAST')
+    >>> nw('THEFASTCAT', 'THERAT', 1, -8, -4)
+    ('THE-FASTCAT', 'THER-A-T---')
+    >>> nw('THERAT', 'THEFASTCAT', 1, -8, -4)
+    ('THE-RA-T---', 'THEF-ASTCAT')
+  </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+
+  <h3>Related exercises:</h3>
+  <p><a href="nw2.html">nw2</a></p>
+  
+</body>
+</html>
+
+

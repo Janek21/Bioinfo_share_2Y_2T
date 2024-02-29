@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+
+  <h1>dot_matrix_window</h1>
+  
+  <h2>Description</h2>
+  <p> Modify <b>dot_matrix(seq1, seq2)</b> function to implement a window size 
+    (add a third parameter). Dot should appear ONLY at the first character of a match. 
+    When implementing the window, assume there are no inversions (diagonals always go downhill). When no window size is specified the result should be as if there was no window.
+    </p>
+
+ 
+<h2>Example</h2>
+<p>For a window size of 2 the dotplot of FASTCAT and FASTRAT should be:</p>
+<pre><code>     FASTCAT
+    Fo      
+    A     o 
+    T       
+    R       
+    A     o 
+    T       
+</code></pre>
+<p>Woth no window (window=1) the dotplot of FASTCAT and FASTRAT should be:</p>
+<pre><code>     FASTCAT
+    Fo
+    A o   o
+    T   o  o
+    R
+    A o   o
+    T   o  o
+</code></pre>
+ 
+<h2>Tests</h2>
+  <pre>    >>> dot_matrix("FASTCAT", "FATRAT", 2)
+    [['o', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', ' ', ' ', ' ', ' ']]
+    >>> dot_matrix("FASTCAT", "FATRAT")
+    [['o', ' ', ' ', ' ', ' ', ' ', ' '], [' ', 'o', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', 'o', ' ', ' ', 'o'], [' ', ' ', ' ', ' ', ' ', ' ', ' '], [' ', 'o', ' ', ' ', ' ', 'o', ' '], [' ', ' ', ' ', 'o', ' ', ' ', 'o']]
+    >>> dot_matrix("FASTCAT", "FATRAT", 0)
+    Window should be 1 or larger
+  </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+
+  <h3>Related exercises:</h3>
+  <p><a href="dot_matrix_threshold.html">dot_matrix_threshold</a></p>
+
+</body>
+</html>

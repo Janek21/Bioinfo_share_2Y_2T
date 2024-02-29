@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Exercise</title>
+  <style>
+    p {
+        font-size: 18px
+    }
+    pre {
+        font-size: 16px
+    }
+    .long {
+        overflow-wrap: break-word;
+    }    
+  </style>
+</head>
+
+
+<body>
+  <h1>entropy_consensus</h1>
+  
+  <h2>Description</h2>
+  <p> Modify the function <b>get_entropies()</b> in the previous exercise so that it returns a list of tuples with the consensus aminoacid, its frequency in the alignment and the entropy of a column for all columns in the alignment.
+   Numbers should be presented with up to two decimals. 
+</p>
+
+
+<h2>Tests</h2>
+  <pre>    >>> get_entropies("tm3.fa")
+    [('L', 0.3, 0.65), ('V', 0.2, 0.86), ('G', 0.14, 0.9), ('F', 0.24, 0.76), ('L', 0.37, 0.65), ('D', 0.2, 0.86), ('Y', 0.16, 0.87), ('L', 0.22, 0.75), ('N', 0.27, 0.71), ('M', 0.19, 0.81), ('Y', 0.27, 0.76), ('A', 0.39, 0.63), ('S', 0.73, 0.34), ('I', 0.4, 0.58), ('L', 0.31, 0.7), ('F', 0.21, 0.72), ('L', 0.73, 0.34), ('T', 0.31, 0.66), ('A', 0.37, 0.64), ('I', 0.57, 0.42), ('S', 0.55, 0.39), ('V', 0.34, 0.59), ('D', 0.65, 0.4), ('R', 0.95, 0.1), ('Y', 0.66, 0.4), ('L', 0.42, 0.69), ('A', 0.47, 0.65), ('I', 0.46, 0.42), ('V', 0.29, 0.74), ('H', 0.32, 0.75), ('P', 0.68, 0.41)]
+    </pre >
+
+  <hr>
+
+  <p><a href="index.html">Back to index</a></p>
+  <br>
+  <!--
+  <h3>Related exercises:</h3>
+  <p><a href="rna_to_prot.html">rna_to_prot</a></p>
+  -->
+</body>
+</html>
