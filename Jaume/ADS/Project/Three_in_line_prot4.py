@@ -4,7 +4,7 @@ class N_in_line(object):
 
 	def __init__(self):
 		
-		self.n = 3
+		self.n = 3 # Setting 3 as deffault
 
 		# Creation of a matrix n*n representing the board (default: 3*3)
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
@@ -17,20 +17,31 @@ class N_in_line(object):
 
 		print("Please enter the nº of rows and columns you want the board to have")
 
-		n = int(sys.stdin.readline().strip())
+		n = sys.stdin.readline().strip()
 
-		self.n = n
+		if n.isspace(): # If  no value is entered, keeping the default one
+			pass
 
-		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)]
+		elif  not n.isdigit(): # Checking if the input is a digit
 
-		print(f"You have selected a {self.n}x{self.n} board\n")
+			print('Invalid input. Try again.\n')
+			self.change_n()
+
+		else:
+
+			n = int(n) # Transforming into integer
+
+			self.n = n # Changing n inside the class
+
+			self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] # Creation of the n*n board
+			print(f"You have selected a {self.n}x{self.n} board\n")
 
 	def represent_board(self):
 
 		'''
 		Function that allows us to visualize the board
 		'''
-		line = '-'*self.n + '-'*(self.n - 1) # Calculating the nº of dashes needed for each line depending on n
+		line = '-' * self.n + '-' * (self.n - 1) # Calculating the nº of dashes needed for each line depending on n
 		print(line)
 
 		# Iterating through each of the n rows of the board
@@ -115,11 +126,17 @@ class N_in_line(object):
 		move = sys.stdin.readline().strip().split() # Getting and formating input from stdin
 		print() # Formatting output
 
-		return int(move[0])-1, int(move[1])-1 # Returning the coordinates
+		if  len(move) != 2 or move[0].isdigit() or move[1].isdigit(): # Checking that the input is correct
+
+			print("Invalid input. Try again.\n")
+			self.ask_move()
+		
+		else:
+			return int(move[0])-1, int(move[1])-1 # Returning the coordinates (User frendly) if the input is correct
 	
 	def choose_player(self):
 
-		print('Chose your symbol: X / O')
+		print('Chose your symbol: X / O (Upper)')
 		symb = sys.stdin.readline().strip()
 
 		if symb == 'X':
@@ -131,11 +148,10 @@ class N_in_line(object):
 			self.player2 = 'X'
 
 		else:
-			print("Invalid input. Tryining again...")
+			print("Invalid input. Try again.\n")
 			self.choose_player()
 
 		print() # Formatting the output (empty line)
-
 
 	def get_moves(self):
 		'''
@@ -179,11 +195,11 @@ class N_in_line(object):
 	
 	def play(self):
 		'''
-		Function that implements all the other functions so that it is possible to play
+		Function that calls all the other functions so that it is possible to play
 		'''
 		print('Welcome to N in a row\n')
 
-		self.change_n()
+		self.change_n() # 
 
 		self.choose_player()
 		
@@ -195,7 +211,7 @@ class N_in_line(object):
 
 			while m not in self.get_moves(): # Checking if a move is illegal
 
-				print("Illegal move. Try again")
+				print("Illegal move. Try again.\n")
 
 				m = self.ask_move() # Aking for a new move
 			
@@ -222,7 +238,7 @@ class N_in_line(object):
 			print("You lost! Better luck next time.")
 
 		else: # Possible errors
-			print("Something unexpected has occurred")
+			print("Something unexpected has occurred. Please restart de game.")
 
 def main():
 	game = N_in_line()
