@@ -172,10 +172,10 @@ class N_in_line(object):
 
 		return moves
 	
-	def A0_star(self, possible_moves):
+	def min_max(self, possible_moves):
 
 		'''
-		Function that implements the A0 star algorithm to select the best movement
+		Function that implements the min max algorithm to select the best movement
 		It will decide which move of the possible moves is the best
 		'''
 
