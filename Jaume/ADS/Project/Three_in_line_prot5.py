@@ -117,38 +117,53 @@ class N_in_line(object):
 		Function that takes self and the player as arguments and tells us if a determined player is the winner or not.
 		Output: True / False
 		"""
-
-		# Counters for rows, columns, and diagonals
-		row_counts = [0] * self.n
-		col_counts = [0] * self.n
-		diag_main = [0] * ((self.n * 2) - 1)
-		diag_sec = [0] * ((self.n * 2) - 1)
-		main_diag_count = 0
-		sec_diag_count = 0
-
-		# Iterating through all the matrix
+		# Initialize counters for rows, columns, and diagonals
 		for i in range(self.n):
-
+			row_count = 0
+			col_count = 0
 			for j in range(self.n):
-
 				# Counting player symbols in rows and columns
 				if self.board[i][j] == player:
-					row_counts[i] += 1
-					col_counts[j] += 1
+					row_count += 1
+					if row_count == self.obj:
+						return True
+				if self.board[j][i] == player:
+					col_count += 1
+					if col_count == self.obj:
+						return True
 
-					# Updating diagonal counts by checking if the conditions for a diagonal are met
-					if i == j:
-						main_diag_count += 1
+		# Checking diagonals
+		main_diag_count = 0
+		sec_diag_count = 0
+		for i in range(self.n):
+			if self.board[i][i] == player:
+				main_diag_count += 1
+				if main_diag_count == self.obj:
+					return True
+			if self.board[i][self.n - i - 1] == player:
+				sec_diag_count += 1
+				if sec_diag_count == self.obj:
+					return True
 
-					if i + j == self.n - 1:
-						sec_diag_count += 1
+		# Check other diagonals
+		for i in range(self.n - self.obj + 1):  # Iterate over rows
+			for j in range(self.n - self.obj + 1):  # Iterate over columns
+				# Check diagonal going from bottom-left to top-right
+				count = 0
+				for k in range(self.obj):
+					if self.board[i + k][j + k] == player:
+						count += 1
+				if count == self.obj:
+					return True
+				# Check diagonal going from top-left to bottom-right
+				count = 0
+				for k in range(self.obj):
+					if self.board[i + self.obj - k - 1][j + k] == player:
+						count += 1
+				if count == self.obj:
+					return True
 
-					# Checking if any row, column, or diagonal has all player symbols
-					if row_counts[i] == self.obj or col_counts[j] == self.obj or main_diag_count == self.obj or sec_diag_count == self.obj:
-						
-						return True # If so the player has won and we return True
-
-		return False # If the function continues until here it means that the player has not won so returning False
+		return False  # If the function continues until here it means that the player has not won so returning False
 
 	def ask_move(self):
 
@@ -299,11 +314,10 @@ class N_in_line(object):
 			self.represent_board() # Representing the board
 			
 			score, best_move = self.min_max(self.player2, depth=self.n, alpha=-math.inf, beta=math.inf) # Computing the best move for the bot
-			self.make_move(best_move, self.player2)
-
-			self.make_move(best_move, self.player2) #  Making bot's move
-
-			self.represent_board() # Representing the board
+			
+			if best_move is not None:
+				self.make_move(best_move, self.player2)
+				self.represent_board() # Representing the board
 
 		if self.is_board_full(): # Checking if the board is full
 
