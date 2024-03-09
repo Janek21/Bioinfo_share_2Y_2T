@@ -1,0 +1,4 @@
+-------Query teh Pacient id that are 2 from nodul
+    SELECT PACIENT_ID
+    FROM NODUL
+    WHERE PACIENT_ID=2

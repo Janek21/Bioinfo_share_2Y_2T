@@ -1,0 +1,102 @@
+Show tables:
+    select *
+    from nodul
+    
+    SELECT *
+    FROM broncovideo
+    
+    select *
+    from biopsiplan
+    
+    select *
+    from biopsiresult
+    
+    select *
+    from ctnodul
+    
+    select *
+    from ctestudi
+
+1.Weight of patients over 50 years. Return Pacient_ID and weight.
+
+	select pacient_id, pes
+	from pacient
+	where ((sysdate-data_naixement)/365)>50
+	order by 1,2
+
+2.List of nodule types. Return Pacient_ID, NodulID and Tipus.
+
+	select nodul.tipus, pacient_id, nodulid
+	from nodul
+	--same as
+	select N.tipus, pacient_id, nodulid
+	from nodul N
+
+3.Patients Biopsied between 01/02/2016 and 30/03/2016. Return Pacient_ID and date.
+
+//agafar videoarxiu que tinguin la data que vull de broncovideo i buscarlos a biopsiresult
+	select b.pacient_id
+	from biopsiresult b
+	where b.video_arxiu in (
+	    select v.videoarxiu
+	    from broncovideo v
+	    where v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
+	)
+
+//per agafar videodata tmb has d ajuntar taules
+	select b.pacient_id, v.videodata
+	from biopsiresult b
+	join broncovideo v on b.video_arxiu = v.videoarxiu
+	where b.video_arxiu in (
+	    select v.videoarxiu
+	    from broncovideo v
+	    where v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
+	)
+
+
+4.Final diagnosis of nodules biopsied explorations carried out in February 2016. Return Pacient_ID, NodulID and diagnosis.
+
+	select N.diagnostic, N.pacient_id, N.nodulid
+	from nodul N
+	where N.pacient_id in(
+	    select b.pacient_id
+	    from biopsiresult b
+	    where b.video_arxiu in (
+		select v.videoarxiu
+		from broncovideo v
+		where v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
+	    )
+	)
+
+5.Segmental location of non-visible (field "VisibleEscopia") nodules with conclusive diagnosis (diagnostic is not NULL). Return Pacient_ID, NodulID, LocSeg.
+
+	select N.pacient_id, N.nodulid, N.locseg
+	from nodul N
+	where N.pacient_id in(
+	    select b.pacient_id
+	    from biopsiresult b
+	    where b.visibleescopia is not NULL
+	    
+	)
+
+6.How many smokers are there in the database? Return the number of smokers.  
+
+	select count(*)
+	from pacient
+	where tabac='SI'
+
+7.Maximum real distance (field "DistanciaCarinaReal") for the nodules with conclusive diagnosis (is not null). Return the maximum distance. 
+	
+	select b.DistanciaCarinaReal
+	from biopsiresult b
+	where b.pacient_id in(
+	    select n.pacient_id
+	    from nodul n
+	    where n.diagnostic is NULL
+	)
+
+8.Number of patients over 60 years. Return the number of patients.
+
+	select count(*)
+	from pacient
+	where ((sysdate-data_naixement)/365)>60
