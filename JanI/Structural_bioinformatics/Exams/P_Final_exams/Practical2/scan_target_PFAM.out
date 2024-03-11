@@ -1,0 +1,65 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fa
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=423]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+      6e-31  106.3  12.3    8.5e-31  105.8  12.3    1.2  1  zf-C4          Zinc finger, C4 type (two domains)
+    4.7e-28   97.5   0.0    6.7e-28   97.0   0.0    1.1  1  Hormone_recep  Ligand-binding domain of nuclear hormone recep
+
+
+Domain annotation for each model (and alignments):
+>> zf-C4  Zinc finger, C4 type (two domains)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.8  12.3   1.2e-34   8.5e-31       2      69 ..      78     145 ..      77     146 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 105.8 bits;  conditional E-value: 1.2e-34
+             B-S----B----BTTC---------HHHHHHTT-----S-------STTCHHC-HHHHHHHHHH---- CS
+   zf-C4   2 lCkvCgdkasglhygvltCegCkgFFkRsiqkkakysCkkekkCvidkkkRnrCqaCRlkkClevGms 69 
+             lC vCgd asg+hygv++Ce+Ck+FFkR+iq +++ysC ++++C+i+k++R++CqaCR+ kCl+vGm 
+  target  78 LCLVCGDVASGYHYGVASCEACKAFFKRTIQGSIEYSCPASNECEITKRRRKACQACRFTKCLRVGML 145
+             7******************************************************************7 PP
+
+>> Hormone_recep  Ligand-binding domain of nuclear hormone receptor
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.0   0.0   9.8e-32   6.7e-28      20     197 ..     226     398 ..     223     414 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 97.0 bits;  conditional E-value: 9.8e-32
+  Hormone_recep  20 nelseiwerdlelvvewlksfpefrkLsaddqiallksswhellrlelasrsaqnldkddllfangdyldqknlekiwlskiiseqieylrslvqp 115
+                     +l+++ +r+++ +++w+ks+p+f++Ls +dq+  l+s+w+e+l+l  a+rs     +d l fa++ +ld++ ++       + e    l +lv++
+         target 226 ATLCDLFDREIVVTISWAKSIPGFSSLSLSDQMSVLQSVWMEVLVLGVAQRSL--PLQDELAFAEDLVLDEEGARAA----GLGELGAALLQLVRR 315
+                    689**************************************************..899****************999....9999999******** PP
+
+  Hormone_recep 116 lseLqltdvElallkalllfnpagkrlqgeileiveklqeelsneLheyy...qskgvpeysgRlakllqllpalrkisrkiiek 197
+                    l++L l  +E++llkal l n++ ++++ + +  ve+l+e+l ++L ey      +g     +R ++ll +lp lr+   k+  +
+         target 316 LQALRLEREEYVLLKALALANSDSVHIE-DAEA-VEQLREALHEALLEYEagrAGPGGGAERRRAGRLLLTLPLLRQTAGKVLAH 398
+                    ****************************.9999.9**************9988777777779**************988777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (423 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       527  (0.0385459); expected 273.4 (0.02)
+Passed bias filter:                      356  (0.0260386); expected 273.4 (0.02)
+Passed Vit filter:                        27  (0.00197484); expected 13.7 (0.001)
+Passed Fwd filter:                         2  (0.000146284); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.71u 0.94s 00:00:01.65 Elapsed: 00:00:07.50
+# Mc/sec: 134.99
+//
+[ok]

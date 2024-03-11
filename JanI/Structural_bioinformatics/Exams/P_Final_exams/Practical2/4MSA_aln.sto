@@ -1,0 +1,40 @@
+# STOCKHOLM 1.0
+
+#=GS sp|Q92753|RORB_HUMAN DE Nuclear receptor ROR-beta OS=Homo sapiens OX=9606 GN=RORB PE=1 SV=3
+#=GS sp|P45446|RORB_RAT   DE Nuclear receptor ROR-beta OS=Rattus norvegicus OX=10116 GN=Rorb PE=1 SV=3
+#=GS sp|Q8R1B8|RORB_MOUSE DE Nuclear receptor ROR-beta OS=Mus musculus OX=10090 GN=Rorb PE=1 SV=3
+#=GS sp|P18515|RARB_NOTVI DE Retinoic acid receptor beta (Fragment) OS=Notophthalmus viridescens OX=8316 GN=RARB PE=3 SV=1
+
+sp|Q92753|RORB_HUMAN         .............mcenqlktkadataqievi-PCKICGDKSSGIHYGVITCEGCKGFFRRSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslyaevqkhqqrlqeqrqqqsgeaealarvysssisnglsnlnnetsgtyanghvidlpksegyynvdsgqpspdqsgldmtgi
+#=GR sp|Q92753|RORB_HUMAN PP .............******************7.6******************************************************************85**************************************************************************************************
+sp|P45446|RORB_RAT           .............mcenqlktkadgtaqievi-PCKICGDKSSGIHYGVITCEGCKGFFRRSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslyaevqkhqqrlqeqrqqqsgeaealarvysssisnglsnlntetggtyanghvidlpksegyynidsgqpspdqsgldmtgi
+#=GR sp|P45446|RORB_RAT   PP .............******************7.6******************************************************************85**************************************************************************************************
+sp|Q8R1B8|RORB_MOUSE         .............mcenqpktkadgtaqievi-PCKICGDKSSGIHYGVITCEGCKGFFRRSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslyaevqkhqqrlqeqrqqqsgeaealarvysssisnglsnlntetggtyanghvidlpksegyysidsgqpspdqsgldmtgi
+#=GR sp|Q8R1B8|RORB_MOUSE PP .............******************7.6******************************************************************85**************************************************************************************************
+sp|P18515|RARB_NOTVI         rhsaqsietqstsseelvpsppsplppprvyk-PCFVCQDKSSGYHYGVSACEGCKGFFRRSIQKNMIYTCHRDKNCVINKVTRNRCQYCRLQRCFEVGMSKesvrndrnkkkkepikqecieslemtaelddltekirkahqetfpslcqlgkyttns.........................................
+#=GR sp|P18515|RARB_NOTVI PP *******************************5.7******************************************************************96*********************************************************.........................................
+#=GC PP_cons                 .................................6******************************************************************86..................................................................................................
+#=GC RF                      ................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..................................................................................................
+
+sp|Q92753|RORB_HUMAN         kqikqepiydltsvpnlftyssfnngqlapgitmteidriaqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvvefakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgsddlvneafdfaknlcslqlteeeialfssavlispdrawl
+#=GR sp|Q92753|RORB_HUMAN PP ********************************************************************************************************************************************************************************************************
+sp|P45446|RORB_RAT           kqikqepiydltsvhnlftyssfnngqlapgitmseidriaqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvvefakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgsddlvneafdfaknlcslqlteeeialfssavlispdrawl
+#=GR sp|P45446|RORB_RAT   PP ********************************************************************************************************************************************************************************************************
+sp|Q8R1B8|RORB_MOUSE         kqikqepiydltsvpnlftyssfnngqlapgitmseidriaqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvvefakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgsddlvneafdfaknlcslqlteeeialfssavlispdrawl
+#=GR sp|Q8R1B8|RORB_MOUSE PP ********************************************************************************************************************************************************************************************************
+sp|P18515|RARB_NOTVI         ........................................................................................................................................................................................................
+#=GR sp|P18515|RARB_NOTVI PP ........................................................................................................................................................................................................
+#=GC PP_cons                 ........................................................................................................................................................................................................
+#=GC RF                      ........................................................................................................................................................................................................
+
+sp|Q92753|RORB_HUMAN         ieprkvqklqekiyfalqhviqknhlddetlakliakiptitavcnlhgeklqvfkqshpeivntlfpplykelfnpdcatgck
+#=GR sp|Q92753|RORB_HUMAN PP ************************************************************************************
+sp|P45446|RORB_RAT           leprkvqklqekiyfalqhviqknhlddetlakliakiptitavcnlhgeklqvfkqshpdivntlfpplykelfnpdcaavck
+#=GR sp|P45446|RORB_RAT   PP ************************************************************************************
+sp|Q8R1B8|RORB_MOUSE         ieprkvqklqekiyfalqhviqknhlddetlakliakiptitavcnlhgeklqvfkqshpdivntlfpplykelfnpdcaavck
+#=GR sp|Q8R1B8|RORB_MOUSE PP ************************************************************************************
+sp|P18515|RARB_NOTVI         ....................................................................................
+#=GR sp|P18515|RARB_NOTVI PP ....................................................................................
+#=GC PP_cons                 ....................................................................................
+#=GC RF                      ....................................................................................
+//

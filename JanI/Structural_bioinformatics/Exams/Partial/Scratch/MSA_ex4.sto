@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GS sp|P00811|AMPC_ECOLI DE Beta-lactamase OS=Escherichia coli (strain K12) OX=83333 GN=ampC PE=1 SV=1
+#=GS sp|P05193|AMPC_CITFR DE Beta-lactamase OS=Citrobacter freundii OX=546 GN=ampC PE=1 SV=1
+#=GS sp|P05364|AMPC_ENTCL DE Beta-lactamase OS=Enterobacter cloacae OX=550 GN=ampC PE=1 SV=1
+#=GS sp|P94958|AMPC_MORMO DE Beta-lactamase OS=Morganella morganii OX=582 GN=ampC PE=3 SV=1
+
+target                       mklftstltakkssthkplislalsvlistllisetaqaadandrleqev-DKQAKQLMAQYQIPGMAFGIIVDGKSHFYNY-GLADKQRNQPVSEDTIFELGSVSKTFAATLASYSELNGTLSLDDTADKYIPYLKNSAIGNTKLISLVTYSAGGYHYRCLKTLENNK----ELLQYYKSWHPDFPVNSKRLYSNASIG
+#=GR target               PP *************************************************5.677899*************************.9************************************************************************9999999999998....***************************
+sp|P00811|AMPC_ECOLI         .....................mfkttlcallitascstfaapqqindivh--RTITPLIEQQKIPGMAVAVIYQGKPYYFTW-GYADIAKKQPVTQQTLFELGSVSKTFTGVLGGDAIARGEIKLSDPTTKYWPELTAKQWNGITLLHLATYTAGGLPLQVPDEVKSSS----DLLRFYQNWQPAWAPGTQRLYANSSIG
+#=GR sp|P00811|AMPC_ECOLI PP .....................***************************65..7899999***********************.9************************************************************************************9....***************************
+sp|P05193|AMPC_CITFR         ...................mmkksiccallltasfstfaaakteqqiadiVNRTITPLMQEQAIPGMAVAIIYEGKPYYFTW-GKADIANNHPVTQQTLFELGSVSKTFNGVLGGDRIARGEIKLSDPVTKYWPELTGKQWRGISLLHLATYTAGGLPLQIPGDVTDKA----ELLRFYQNWQPQWTPGAKRLYANSSIG
+#=GR sp|P05193|AMPC_CITFR PP ...................*******************************5799****************************.89***********************************************************************9999999999999....***************************
+sp|P05364|AMPC_ENTCL         ...................mmrkslccalllgiscsalatpvsekqlaevVANTITPLMKAQSVPGMAVAVIYQGKPHYYTF-GKADIAANKPVTPQTLFELGSISKTFTGVLGGDAIARGEISLDDAVTRYWPQLTGKQWQGIRMLDLATYTAGGLPLQVPDEVTDNA----SLLRFYQNWQPQWKPGTTRLYANASIG
+#=GR sp|P05364|AMPC_ENTCL PP ...................*******************************57899*************************99.89************************************************************************************....***************************
+sp|P94958|AMPC_MORMO         ....................mkkslsatlisallafsapgfsaadnvaavVDSTIKPLMAQQDIPGMAVAVSVKGKPYYFNY-GFADVQAKQPVTENTLFELGSVSKTFTGVLGAVSVAKKEMTLNDPAEKYQPELALPQWKGITLLDLATYTAGGLPLQVPDAVKSRA----DLLHFYQQWQPSRKPGDMRLYANSSIG
+#=GR sp|P94958|AMPC_MORMO PP ....................******************************6899****************************.9************************************************************************************9....***************************
+#=GC PP_cons                 ..................................................578999**************************.99**************************************************************************9999999999....***************************
+#=GC RF                      ..................................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target                       LFGY-ISALSmHSDYTKLIENTVLPSLKMTNTFVDVPANKMEDYAFGYNAAGEPIRVNPGMLDAEAY---GIKSTSADMTRFM--AANMGLVTVDSQMQQALDNNRKGYYRTKSFTQGL...--AWEMYPLPTTlqqlvegnstetilqpqpiqlnepptpvlnDVWVNKTGatNGFGAYIAYMPAKKTGMFILANKNYP
+#=GR target               PP ****.555554789*****************************************************...*************..9*******************************98.....44444444444466699***********************************************************
+sp|P00811|AMPC_ECOLI         LFGALAVKPS.GLSFEQAMQTRVFQPLKLNHTWINVPPAEEKNYAWGY-REGKAVHVSPGALDAEAY---GVKSTIEDMARWV-QSNLKPLDINEKTLQQGIQLAQSRYWQTGDMYQGLgweMLDWPVNPDSIIngsdnkialaar.....pvkaitpptpavrASWVHKTGatGGFGSYVAFIPEKELGIVMLANKNYP
+#=GR sp|P00811|AMPC_ECOLI PP **********.*************************************.9*****************...*************.99********************************9999999999987777************.....*************************************************
+sp|P05193|AMPC_CITFR         LFGALAVKSS.GMSYEEAMTRRVLQPLKLAHTWITVPQSEQKNYAWGY-LEGKPVHVSPGQLDAEAY---GVKSSVIDMARWV-QANMDASHVQEKTLQQGIELAQSRYWRIGDMYQGLgweMLNWPLKADSIIngsdskvalaal.....pavevnppapavkASWVHKTGstGGFGSYVAFVPEKNLGIVMLANKSYP
+#=GR sp|P05193|AMPC_CITFR PP **********.*************************************.9*****************...*************.*********************************98666666666654444************.....*************************************************
+sp|P05364|AMPC_ENTCL         LFGALAVKPS.GMPYEQAMTTRVLKPLKLDHTWINVPKAEEAHYAWGY-RDGKAVRVSPGMLDAQAY---GVKTNVQDMANWV-MANMAPENVADASLKQGIALAQSRYWRIGSMYQGLgweMLNWPVEANTVVegsdskvalapl.....pvaevnppappvkASWVHKTGstGGFGSYVAFIPEKQIGIVMLANTSYP
+#=GR sp|P05364|AMPC_ENTCL PP **********.*************************************.99****************...*************.***********************************99999****999999************.....*************************************************
+sp|P94958|AMPC_MORMO         LFGALTANAA.GMPYEQLLTARILAPLGLSHTFITVPESAQSQYAYGY-KNKKPVRVSPGQLDAESY---GVKSASKDMLRWA-EMNMEPSRAGNADLEMAMYLAQTRYYKTAAINQGL...--GWEMYDWPQQkdmiingvtneval.qphpvtdnqvqpynrASWVHKTGatTGFGAYVAFIPEKQVAIVILANKNYP
+#=GR sp|P94958|AMPC_MORMO PP **********.*************************************.9*****************...*************.779999***************************75.....888888888888999*********.***************************************************
+#=GC PP_cons                 *****99999.9*************************************9*****************...*************.99*******************************98...887777777777..............................********..**************************
+#=GC RF                      xxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxxxxxxxxx..............................xxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxx
+
+target                       NTERVKAAYTILD---svmnn
+#=GR target               PP **99999998876...679**
+sp|P00811|AMPC_ECOLI         NPARVDAAWQILNAL-q....
+#=GR sp|P00811|AMPC_ECOLI PP 999999999998876.6....
+sp|P05193|AMPC_CITFR         NPARVEAAWRILEK--lq...
+#=GR sp|P05193|AMPC_CITFR PP *******9999886..57...
+sp|P05364|AMPC_ENTCL         NPARVEAAYHILEAL-q....
+#=GR sp|P05364|AMPC_ENTCL PP ********9999986.6....
+sp|P94958|AMPC_MORMO         NTERVKAAQAILSAL-e....
+#=GR sp|P94958|AMPC_MORMO PP *********999886.7....
+#=GC PP_cons                 *****9999998876......
+#=GC RF                      xxxxxxxxxxxxxxxx.....
+//

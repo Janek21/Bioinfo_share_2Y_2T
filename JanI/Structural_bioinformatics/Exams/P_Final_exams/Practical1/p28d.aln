@@ -1,0 +1,26 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+sp|P10059|HBA_SPHPU  ----------------mlsasDKANVKAIWSKVCV----HAEEYGAETLERMFTVYPSTK
+sp|P26914|GLB_PSEDC  mhssivlaivlfvaiasaskt-RELCMKSLEHAKVgtskEAKQDGIDLYKHMFEHYPAMK
+sp|P28316|GLB_ASCSU  mrsllllsivffvvtvsankt-RELCMKSLEHAKVdtsnEARQDGIDLYKHMFENYPPLR
+
+sp|P10059|HBA_SPHPU  TYFPHF-DLT-----HGSAQVKAHGKKVVNAMGEAVNHL--D-DMAGALLKLSDLHAQKL
+sp|P26914|GLB_PSEDC  KYFKHR-ENYtPADVQKDPFFIKQGQNILLACHVLCATYDDRETFDAYVGELMARHERDH
+sp|P28316|GLB_ASCSU  KYFKNREE-YtAEDVQNDPFFAKQGQKILLACHVLCATYDDRETFNAYTRELLDRHARDH
+
+sp|P10059|HBA_SPHPU  -rVDPVNFKLLAQCFLvvlgvhhpaaltpevhasldkflcavglvltakyr---------
+sp|P26914|GLB_PSEDC  vkIPNDVWNHFWEHF-ieflgskttldeptkhawqeigkefsheishhgrhsvrdhcmns
+sp|P28316|GLB_ASCSU  vhMPPEVWTDFWKLF-eeylgkkttldeptkqawheigrefakeinkhgrhavrhqcmrs
+
+sp|P10059|HBA_SPHPU  ------------------------------------------------------------
+sp|P26914|GLB_PSEDC  leyiaigdkehqkqngidlykhmfehyphmrkafkgrenftkedvqkdaffvkqghkill
+sp|P28316|GLB_ASCSU  lqhidighsetakqngidlykhmfenypsmreafkdrenytaedvqkdpffvkqgqrill
+
+sp|P10059|HBA_SPHPU  ------------------------------------------------------------
+sp|P26914|GLB_PSEDC  alrmlcssyddeptfdyfvdalmdrhikddihlpqeqwhefwklfaeylnekshqhltea
+sp|P28316|GLB_ASCSU  achllcasyddeetfhmyvhelmerherlgvqlpdqhwtdfwklfeeflekkshlcehtk
+
+sp|P10059|HBA_SPHPU  -----------------------------------------
+sp|P26914|GLB_PSEDC  ekhawstigedfaheadkhakaekdhhegehkeehh-----
+sp|P28316|GLB_ASCSU  hawavigkefayeatrhgkehhehkeehkeehkeehkeeqh
+

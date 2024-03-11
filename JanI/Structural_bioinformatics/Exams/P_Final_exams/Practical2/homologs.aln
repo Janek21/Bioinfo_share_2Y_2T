@@ -1,0 +1,47 @@
+CLUSTAL W(1.60) multiple sequence alignment
+
+sp|Q92753|RORB_HUMAN  -------------mcenqlktkadataqievi-PCKICGDKSSGIHYGVITCEGCKGFFR
+sp|P45446|RORB_RAT    -------------mcenqlktkadgtaqievi-PCKICGDKSSGIHYGVITCEGCKGFFR
+sp|Q8R1B8|RORB_MOUSE  -------------mcenqpktkadgtaqievi-PCKICGDKSSGIHYGVITCEGCKGFFR
+sp|P18515|RARB_NOTVI  rhsaqsietqstsseelvpsppsplppprvyk-PCFVCQDKSSGYHYGVSACEGCKGFFR
+
+sp|Q92753|RORB_HUMAN  RSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslya
+sp|P45446|RORB_RAT    RSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslya
+sp|Q8R1B8|RORB_MOUSE  RSQQNNASYSCPRQRNCLIDRTNRNRCQHCRLQKCLALGMSRdavkfgrmskkqrdslya
+sp|P18515|RARB_NOTVI  RSIQKNMIYTCHRDKNCVINKVTRNRCQYCRLQRCFEVGMSKesvrndrnkkkkepikqe
+
+sp|Q92753|RORB_HUMAN  evqkhqqrlqeqrqqqsgeaealarvysssisnglsnlnnetsgtyanghvidlpksegy
+sp|P45446|RORB_RAT    evqkhqqrlqeqrqqqsgeaealarvysssisnglsnlntetggtyanghvidlpksegy
+sp|Q8R1B8|RORB_MOUSE  evqkhqqrlqeqrqqqsgeaealarvysssisnglsnlntetggtyanghvidlpksegy
+sp|P18515|RARB_NOTVI  cieslemtaelddltekirkahqetfpslcqlgkyttns---------------------
+
+sp|Q92753|RORB_HUMAN  ynvdsgqpspdqsgldmtgikqikqepiydltsvpnlftyssfnngqlapgitmteidri
+sp|P45446|RORB_RAT    ynidsgqpspdqsgldmtgikqikqepiydltsvhnlftyssfnngqlapgitmseidri
+sp|Q8R1B8|RORB_MOUSE  ysidsgqpspdqsgldmtgikqikqepiydltsvpnlftyssfnngqlapgitmseidri
+sp|P18515|RARB_NOTVI  ------------------------------------------------------------
+
+sp|Q92753|RORB_HUMAN  aqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvve
+sp|P45446|RORB_RAT    aqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvve
+sp|Q8R1B8|RORB_MOUSE  aqniikshletcqytmeelhqlawqthtyeeikayqsksrealwqqcaiqithaiqyvve
+sp|P18515|RARB_NOTVI  ------------------------------------------------------------
+
+sp|Q92753|RORB_HUMAN  fakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgs
+sp|P45446|RORB_RAT    fakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgs
+sp|Q8R1B8|RORB_MOUSE  fakritgfmelcqndqilllksgclevvlvrmcrafnplnntvlfegkyggmqmfkalgs
+sp|P18515|RARB_NOTVI  ------------------------------------------------------------
+
+sp|Q92753|RORB_HUMAN  ddlvneafdfaknlcslqlteeeialfssavlispdrawlieprkvqklqekiyfalqhv
+sp|P45446|RORB_RAT    ddlvneafdfaknlcslqlteeeialfssavlispdrawlleprkvqklqekiyfalqhv
+sp|Q8R1B8|RORB_MOUSE  ddlvneafdfaknlcslqlteeeialfssavlispdrawlieprkvqklqekiyfalqhv
+sp|P18515|RARB_NOTVI  ------------------------------------------------------------
+
+sp|Q92753|RORB_HUMAN  iqknhlddetlakliakiptitavcnlhgeklqvfkqshpeivntlfpplykelfnpdca
+sp|P45446|RORB_RAT    iqknhlddetlakliakiptitavcnlhgeklqvfkqshpdivntlfpplykelfnpdca
+sp|Q8R1B8|RORB_MOUSE  iqknhlddetlakliakiptitavcnlhgeklqvfkqshpdivntlfpplykelfnpdca
+sp|P18515|RARB_NOTVI  ------------------------------------------------------------
+
+sp|Q92753|RORB_HUMAN  tgck
+sp|P45446|RORB_RAT    avck
+sp|Q8R1B8|RORB_MOUSE  avck
+sp|P18515|RARB_NOTVI  ----
+

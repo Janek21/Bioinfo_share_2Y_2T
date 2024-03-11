@@ -1,0 +1,67 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fa
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=147]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+      8e-22   77.4   0.1    1.4e-21   76.7   0.1    1.4  1  Globin    Globin
+  ------ inclusion threshold ------
+      0.032   14.3   0.9      0.041   13.9   0.9    1.2  1  DUF2946   Protein of unknown function (DUF2946)
+
+
+Domain annotation for each model (and alignments):
+>> Globin  Globin
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.7   0.1   2.1e-25   1.4e-21       1     107 [.       6     105 ..       6     106 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 76.7 bits;  conditional E-value: 2.1e-25
+             HHHHHHHHHHHHCHHHHHHHHHHHHHHHHHSGGGGGGGCCCTTTTHHHHHTSCHHHHHHHHHHHHHHHHHHCTTSHHHHHHHHHHHHHH..HHTT---HHHHC CS
+  Globin   1 qkalvkaswekvkanaeeigaeilkrlfkaypdtkklFkkfgdlsaedlksspkfkahakkvlaaldeavknldnddnlkaalkklgar..Hakrgvdpanfk 101
+             +k +vka w+kv a+a e+gae+l+r+f  +p tk++F++f dls     +s+++k h+kkv++al++av+++  d ++ +al++l+++  H++r  dp n k
+  target   6 DKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-DLS----HGSAQVKGHGKKVADALTNAVAHV--D-DMPNALSALSDDeaHKERD-DPVNDK 99 
+             6899*************************************.999....9**********************9..4.7788888887653377777.888888 PP
+
+             CHHHHH CS
+  Globin 102 lfgeal 107
+             l++++l
+  target 100 LLSHCL 105
+             888887 PP
+
+>> DUF2946  Protein of unknown function (DUF2946)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.9   0.9     6e-06     0.041      33      93 ..      67     128 ..      37     142 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 6e-06
+  DUF2946  33 saeiCsadgsg..htamdksasaqeaassaakhaafd.....aCgyCsllahapalpaalalllalvr 93 
+                ++ + d++    +a +++ +++e +++             +C + +l+ahapal+  +a + ++v+
+   target  67 TNAVAHVDDMPnaLSALSDDEAHKERDDPV------NdkllsHCLLVTLAAHAPALAHLPAEFTPAVH 128
+              333333333331233334444444444333......144455************99888777766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (147 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       310  (0.0226741); expected 273.4 (0.02)
+Passed bias filter:                      266  (0.0194558); expected 273.4 (0.02)
+Passed Vit filter:                        28  (0.00204798); expected 13.7 (0.001)
+Passed Fwd filter:                         2  (0.000146284); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.43u 0.72s 00:00:01.14 Elapsed: 00:00:08.39
+# Mc/sec: 41.98
+//
+[ok]

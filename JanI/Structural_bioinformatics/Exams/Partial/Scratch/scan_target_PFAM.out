@@ -1,0 +1,65 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             target.fasta
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       target  [L=401]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model          Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+    5.9e-71  239.0   0.2      7e-71  238.8   0.2    1.0  1  Beta-lactamase  Beta-lactamase
+
+
+Domain annotation for each model (and alignments):
+>> Beta-lactamase  Beta-lactamase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  238.8   0.2   5.1e-75     7e-71       2     327 ..      51     396 ..      50     399 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 238.8 bits;  conditional E-value: 5.1e-75
+                     HHHHHHHHHHHTB---EEEEE---EEEEEE.....BTTTTBESSTTSBEE-GGTHHHHHHHHHHTTTCTGG..TTSBGGGGSTTG.SGTTCSCBH CS
+  Beta-lactamase   2 drlvrelmaqggipGvavavvrdgkvvldkggGvadleggrpvtadtlfriaSvtKtftaaavlqlveeGkldLddpVskylPefagpgkgkiTl 96 
+                     d+  ++lmaq++ipG+a+++++dgk +++++ G+ad+++++pv++dt+f+++Sv+Ktf+a+++      G+l+Ldd+ +ky+P +++++ g+  l
+          target  51 DKQAKQLMAQYQIPGMAFGIIVDGKSHFYNY-GLADKQRNQPVSEDTIFELGSVSKTFAATLASYSELNGTLSLDDTADKYIPYLKNSAIGNTKL 144
+                     67789**************************.9************************************************************** PP
+
+                     HHHHTTHHHH.BSS.HTTCHSHHH..HHHHHHHHHG..SS....EE.--TTTHHHHHHHCCHHH.HHHHHHHHHHHTTTTTTSTTEESSHHGGGG CS
+  Beta-lactamase  97 rdLltHtsGlpdlfasdlleeaaadaaellralatlppkyapGtkwgYsntgygllgellekvt.grsleqllreeilrpLgmkdtelgppesgd 190
+                       L t+++G  ++   ++le+++    ell+++++++p+++ ++k+ Ysn+++gl+g+ + +++   ++ +l+++++l  L+m++t + +p++++
+          target 145 ISLVTYSAGGYHYRCLKTLENNK----ELLQYYKSWHPDFPVNSKRLYSNASIGLFGY-ISALSmHSDYTKLIENTVLPSLKMTNTFVDVPANKM 234
+                     **********9999999999998....*******************************.555554789*************************** PP
+
+                     GGBEEEC.CTT....EE....HHHH......EEEHHHHHHHHHHHHHTGGGSSSHHHHHHHCHCHSEEEE--SEEE--EEESSEEHHHHH..... CS
+  Beta-lactamase 191 prdaagytgngpearappanlpaeaegagglistardlarflglalegglllsaetlaqltaklssgttrpagiraglglGwvladktga..... 280
+                     + +a gy+ +g + r++p++l+aea+   g++st +d+ rf+  a+++gl+  + +++q+ ++++ g++r+  +++gl   w +++ +       
+          target 235 EDYAFGYNAAGEPIRVNPGMLDAEAY---GIKSTSADMTRFM--AANMGLVTVDSQMQQALDNNRKGYYRTKSFTQGL--AWEMYPLPTTlqqlv 322
+                     **************************...*************..9*******************************98..444444444444666 PP
+
+                     .........................SEEEEE....SSTCEEEEEEGGGTEEEEEEESSSS.HHHHHHHHHHHHH CS
+  Beta-lactamase 281 .........................pgtfghtG..ggygtyvfvdpeanlvvavltnrdppnedaaedarlial 327
+                                                ++++tG  +g+g+y+++ p+++ ++++l+n+++pn ++ ++a+ i++
+          target 323 egnstetilqpqpiqlnepptpvlnDVWVNKTGatNGFGAYIAYMPAKKTGMFILANKNYPNTERVKAAYTILD 396
+                     99*************************************************************99999998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (401 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       612  (0.044763); expected 273.4 (0.02)
+Passed bias filter:                      476  (0.0348157); expected 273.4 (0.02)
+Passed Vit filter:                        39  (0.00285255); expected 13.7 (0.001)
+Passed Fwd filter:                         1  (7.31422e-05); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.60u 0.88s 00:00:01.48 Elapsed: 00:00:09.10
+# Mc/sec: 105.55
+//
+[ok]

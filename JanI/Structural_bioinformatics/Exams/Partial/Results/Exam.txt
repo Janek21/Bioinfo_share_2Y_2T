@@ -1,0 +1,120 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. Also, I recommend you to create a text file where you put explanations of what you are doing during your exam. 
+
+Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+In this exercise we are working with a target protein for which we have its sequence but we don't know its structure or function. This is its sequence:
+
+>target
+MKLFTSTLTAKKSSTHKPLISLALSVLISTLLISETAQAADANDRLEQEVDKQAKQLMAQ
+YQIPGMAFGIIVDGKSHFYNYGLADKQRNQPVSEDTIFELGSVSKTFAATLASYSELNGT
+LSLDDTADKYIPYLKNSAIGNTKLISLVTYSAGGYHYRCLKTLENNKELLQYYKSWHPDF
+PVNSKRLYSNASIGLFGYISALSMHSDYTKLIENTVLPSLKMTNTFVDVPANKMEDYAFG
+YNAAGEPIRVNPGMLDAEAYGIKSTSADMTRFMAANMGLVTVDSQMQQALDNNRKGYYRT
+KSFTQGLAWEMYPLPTTLQQLVEGNSTETILQPQPIQLNEPPTPVLNDVWVNKTGATNGF
+GAYIAYMPAKKTGMFILANKNYPNTERVKAAYTILDSVMNN
+
+
+Answer the following questions:
+
+1) What is the function of this protein? Why is it important for our society? (1 point)
+
+	$blastp -query target.fasta -db ~/Documents/databases/pdb_seq -out target_pdb.out
+	Look at the blast output file, and choose the hit with lowest E-value (first hit), get the ID(2qz6, chain A) and search for it in uniprot, there you can look up its function
+	Function: This protein is a serine beta-lactamase with a substrate specificity for cephalosporins.
+	If we look up beta-lactamases, we can see that they are enzymes that provide resistance to antibiotics.
+	
+	They are important for our society because they "deactivate" antibiotics, causing bacteria to resist more and affect more patients. It helps in the spreading of diseases, as bacteria that present this protein are molt difficult to eliminate.
+
+2) What is the fold of this protein? (1 point)
+
+	To know the fold of this protein we search it in the SCOP database using its pdb identifier. We get that its fold is beta-lactamase/transpeptidase-like.
+
+3) Obtain a hidden markov model for this protein in the PFAM database. Name this HMM 3.hmm. What region of your target is matching the hidden markov model? What can you say about this region? (1 point)
+
+	$hmmscan ~/Documents/databases/Pfam-A.hmm target.fasta > scan_target_PFAM.out
+	
+	Choose the first hit in scan_target_PFAM.out (Beta-lactamase) for the search in PFAM
+	
+	$hmmfetch ~/Documents/databases/Pfam-A.hmm Beta-lactamase > 3.hmm
+	
+	The matching region is chain B.
+
+4) Use the hidden markov model you just obtained to retrieve 4 sequences from the uniprot database. Then, align these 4 sequences and your target using the same hidden markov model you used to get the sequences. Make sure that the alignment is in clustalw format and name the alignment 4.aln. (1 point)
+
+	$hmmsearch 3.hmm ~/Documents/databases/uniprot_sprot.fasta > MSA_3.out
+	
+	Take the first 4 sequences of this file, the ones with lowest E-values, (P00811, P05193, P05364, P94958) , search them in the Uniprot database and download them in fasta format and add seq in front of their names.
+	$cat target.fasta seq* >> sequences.fasta
+	
+	$hmmalign 3.hmm sequences.fasta > MSA_ex4.sto
+	We transform it into a fasta file and the  we use ClustalW
+	$perl ~/Documents/databases/perl_scripts/sto2fasta.pl -g MSA_ex4.sto > 4.fa
+	$clustalw 4.fa
+	
+5) Obtain 4 templates for your target. Indicate their corresponding PDB IDs. Should you use the whole PDB entry or just a part of it? (1 point)
+
+	To get the PDB IDs we can use the results from the first exercise (2qz6, 1zkj, 2q9n, 2q9m)
+	$psiblast -query target.fasta -num_iterations 5 -out_pssm db5.pssm -out trash.out -db ~/Documents/databases/uniprot_sprot.fasta
+	Use pssm to search for templates in pdb
+	$psiblast -db ~/Documents/databases/pdb_seq -in_pssm db5.pssm -out templates.out
+	
+	We take the first 4 entries, we only take a part of the entry (we don't take the chain)
+	1fr6
+	1rgy
+	3bls
+	2rcx
+	
+
+6) Superimpose the 4 templates you obtained in the previous question using pymol. Provide the RMSD value for all the superimpositions and save an image of the superimposition as 6.png. Is your superimposition good or wrong? Does this make sense to you? (1 point)
+	
+	fetch 1fr6 1rgy 3bls 2rcx
+	remove resn hoh
+	super 1rgy, 1fr6, object=aln6
+	super 3bls, 1fr6, object=aln6
+	super 2rcx, 1fr6, object=aln6
+	
+	1rgy, 1fr6 RMSD = 0.420 (2290 to 2290 atoms)
+	3bls, 1fr6 RMSD = 28.662 (5081 to 5081 atoms)
+	2rcx, 1fr6 RMSD = 28.425 (5119 to 5119 atoms)
+	
+	The superimposition is good, you can see it if you activate sequence display, you will see that most residues are well aligned, teh worst aligned one is 1rgy, that is shorter than the rest. It makes sense to me, because when we look at the pymol simulation almost all the protein is covered by the alignment markers
+	
+	To save the image you go to Draw/Ray, select your preferences, and save it there
+	
+7) Create a multiple sequence aligment based on the structural superimposition you just did. Then, use that multiple sequence alignment to create a hidden markov model. Save that hidden markov model as 7.hmm. (1 point)
+
+	In pymol we used teh following command to save the alignment in a file
+	save aln7.aln, aln6
+	Then we use perl to transform the .aln into a fasta file, and then into a .sto, to use it in the hmmbuild command
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out f <aln7.aln>7tofasta.fasta
+	$perl ~/Documents/databases/perl_scripts/fasta2sto.pl 7tofasta.fasta > 7MSA.sto
+	$hmmbuild 7.hmm 7MSA.sto
+	
+8) Make an structural model of the target sequence and name it 9.pdb. (1.5 points)
+
+	We need 2 files, an alingnment and a target(target.fasta), to create the alignment we did
+	
+	Obtain the pdb from a template (use the pdb ID and download it through www.rcsb.org) and transform it into fasta
+	$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i 1fr6.pdb -o 1fr6
+	
+	We get 2 fasta files, one for each chain, but as in templates.out (ex5) the one with lowest E-value was chain B we will use that one
+	$cat target.fasta > q8.fa
+	$cat 1fr6B.fa >> q8.fa
+	We use this fasta and the previously created hmm to get an MSA for the template, and we transform it into a .pir for the modeller to use
+	$hmmalign 7.hmm q8.fa > MSA8.sto
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <MSA8.sto>align8.aln
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <align8.aln>aln8.pir
+	
+	We will now use the python script modeling.py to get the model, but we have to change some parameters first
+		alnfile  = 'aln8.pir'
+		knowns   = ('1fr6B')
+		sequence = 'target'
+	$mod10.5 modeling.py 
+	And now we change the name of the first (target.B99990001.pdb) .pdb file to match the requested one(9.pdb).
+
+9) Analyze with prosa the model you generated in the previous question. To perform a reliable analysis, should you compare the analysis of your model with another structure? What structure is this? (1.5 points)
+	
+	In the prosa web we can see(9prosa.png) that the Z-score is very high, that means that its very far form the PDB model, therefore its not accurate.
+	
+	Yes, to preform a reliable analysis you should compare your model with one of the templates. This is because they have been determined experimentally, and therefore they should have a good energetic profile. 
+	This is why to determine if our model is good or bad, we would compare their energies, if the model were to have higher energies than the template, the most probable option is that there was an error in some point of the modeling.
