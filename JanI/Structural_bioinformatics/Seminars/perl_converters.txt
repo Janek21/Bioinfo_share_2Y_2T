@@ -23,7 +23,16 @@ Pdb -> fa
 $ perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i unknown.pdb -o output.fasta
 
 Aln -> pir
-perl /shared/PERL/aconvertMod2.pl -in c -out p <align.aln>align.pir
+perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <align.aln>align.pir
+
+Pir -> aln
+perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in p -out c <align.pir>align.aln
+
+ss2 -> pir
+perl ~/Documents/databases/perl_scripts/psipred.pl input.ss2 > output.pir
+
+Dssp -> pir
+perl ~/Documents/databases/perl_scripts/aliss.pl input.dssp > output.pir
 
 
 
