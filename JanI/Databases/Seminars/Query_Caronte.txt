@@ -1,22 +1,3 @@
-Show tables:
-    select *
-    from nodul
-    
-    SELECT *
-    FROM broncovideo
-    
-    select *
-    from biopsiplan
-    
-    select *
-    from biopsiresult
-    
-    select *
-    from ctnodul
-    
-    select *
-    from ctestudi
-
 1.Weight of patients over 50 years. Return Pacient_ID and weight.
 
 	select pacient_id, pes
@@ -26,11 +7,13 @@ Show tables:
 
 2.List of nodule types. Return Pacient_ID, NodulID and Tipus.
 
-	select nodul.tipus, pacient_id, nodulid
-	from nodul
+	select pacient_id, nodulid, nodul.tipus
+    	from nodul
+    	ORDER BY 1, 2
 	--same as
-	select N.tipus, pacient_id, nodulid
+	select pacient_id, nodulid, N.tipus
 	from nodul N
+	order by 1,2
 
 3.Patients Biopsied between 01/02/2016 and 30/03/2016. Return Pacient_ID and date.
 
@@ -44,18 +27,14 @@ Show tables:
 	)
 
 //per agafar videodata tmb has d ajuntar taules
-	select b.pacient_id, v.videodata
-	from biopsiresult b
-	join broncovideo v on b.video_arxiu = v.videoarxiu
-	where b.video_arxiu in (
-	    select v.videoarxiu
-	    from broncovideo v
-	    where v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
-	)
-
+	select b.pacient_id, to_char(v.videodata, 'DD/MM/YYYY')
+	from biopsiresult b, broncovideo v
+	where b.video_arxiu = v.videoarxiu and v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
+	order by 1,2
 
 4.Final diagnosis of nodules biopsied explorations carried out in February 2016. Return Pacient_ID, NodulID and diagnosis.
 
+#no esta be
 	select N.diagnostic, N.pacient_id, N.nodulid
 	from nodul N
 	where N.pacient_id in(
@@ -64,39 +43,152 @@ Show tables:
 	    where b.video_arxiu in (
 		select v.videoarxiu
 		from broncovideo v
-		where v.videodata between TO_DATE('01-FEB-16', 'DD-MON-YY') AND TO_DATE('30-MAR-16', 'DD-MON-YY')
+		where v.videodata between TO_DATE('01/02/2016', 'DD/MM/YYYY') AND TO_DATE('30/03/2016', 'DD/MM/YYYY')
 	    )
 	)
+	order by 1,2
 
 5.Segmental location of non-visible (field "VisibleEscopia") nodules with conclusive diagnosis (diagnostic is not NULL). Return Pacient_ID, NodulID, LocSeg.
 
 	select N.pacient_id, N.nodulid, N.locseg
 	from nodul N
-	where N.pacient_id in(
+	where n.diagnostic is not NULL and N.pacient_id in(
 	    select b.pacient_id
 	    from biopsiresult b
-	    where b.visibleescopia is not NULL
+	    where b.visibleescopia='NO'
 	    
-	)
+	    )
+	order by 1,2
 
 6.How many smokers are there in the database? Return the number of smokers.  
 
 	select count(*)
 	from pacient
 	where tabac='SI'
+	order by 1
 
 7.Maximum real distance (field "DistanciaCarinaReal") for the nodules with conclusive diagnosis (is not null). Return the maximum distance. 
 	
-	select b.DistanciaCarinaReal
+	select max(b.DistanciaCarinaReal)
 	from biopsiresult b
 	where b.pacient_id in(
-	    select n.pacient_id
-	    from nodul n
-	    where n.diagnostic is NULL
+		select n.pacient_id
+		from nodul n
+		where n.diagnostic is not NULL
 	)
-
+	
 8.Number of patients over 60 years. Return the number of patients.
 
 	select count(*)
 	from pacient
 	where ((sysdate-data_naixement)/365)>60
+	order by 1
+	
+9.Minimum weight of the EX-smokers. Return the minimum weight.
+
+	select min(pes)
+	from pacient
+	where tabac='EX'
+
+10.Average cross area (given the formula: diammenor* diammajor) for the nodules of smoker. Return the average cross area.
+
+	select avg(diammenor*diammajor)
+    	from nodul
+    	where pacient_id in(
+        	select pacient_id
+        	from pacient
+        	where tabac='SI'
+    	)
+
+11.Average weight of patients classified according to their smoking condition. Return smoking condition and average weight.
+
+    select tabac, avg(pes)
+    from pacient
+    group by tabac
+    order by 1
+
+12.Number of biopsied nodules without diagnosis (null) according to visibility (field "visibleEscopia"). Return VisibleEscopia and number of nodules. 
+
+	select b.visibleescopia, count(*)
+	from biopsiresult b
+	where b.pacient_id in(
+		select n.pacient_id
+		from nodul n
+		where n.diagnostic is NULL
+	)
+	group by b.visibleescopia
+	order 1,2
+
+13.Number of biopsy per month independently of the year. Return month (TO_CHAR(date,'MM')) and number of biopsies.
+
+    select to_char(v.videodata, 'MM'), count(*)
+    from biopsiresult br
+    join broncovideo v on br.video_arxiu = v.videoarxiu
+    where br.video_arxiu in(
+        select v.videoarxiu
+        from broncovideo v
+    )
+    group by to_char(v.videodata, 'MM')
+    order 1,2
+
+14.Minimum distance (field "distanciacarinareal") of biopsied nodules according to segmental location. Return segmental location (field "locseg") and minimum distance.
+
+	select n.locseg, min(b.distanciacarinareal)
+	from nodul n
+	join biopsiresult b on n.pacient_id = b.pacient_id
+	where n.pacient_id in (
+		select b.pacient_id
+		from biopsiresult b
+	)
+	group by n.locseg
+
+15.Number of CT studies for each patient. Return pacient_ID and number of CT studies.
+	
+	select ctn.pacient_id, count(unique(ctn.ct_id))
+	from ctnodul ctn
+	group by ctn.pacient_id
+	order by 1,2
+
+16.Segmental locations (field “locseg”) with more than 2 nodules. Return segmental location.
+	
+	select n.locseg
+	from nodul n
+	having count(nodulid)>2
+	group by n.locseg
+	order by 1
+
+17.Patients with 1 (=1) biopsy exploration. Return the patient ID (field "pacient_ID").
+	
+	select br.pacient_id
+	from biopsiresult br
+	group by br.pacient_id
+	having count(br.video_arxiu) =1
+	order by 1
+
+18.Patients with more than 1 nodule (>1). Return patient ID (field "pacient_ID").
+	
+	select n.pacient_id
+	from nodul n
+	group by n.pacient_id
+	having count(n.nodulid)>1
+	order by 1
+
+19.Smoking conditions (field "tabac") that have been biopsied with conclusive diagnosis more than 2 times. Return smoking condition and number of biopsies.
+
+	select p.tabac, count(*) as num_biopsies
+	from biopsiresult br
+	join pacient p on br.pacient_id = p.pacient_id
+	where br.btbdiagnostic is not NULL
+	group by tabac
+	having count(*) > 2
+	order by tabac
+
+20.Age with more than 2 patients. Return age in years (use "floor" function) and number of patients.
+	
+	select floor((sysdate-p.data_naixement)/365), count(p.pacient_id)
+	from pacient p 
+	group by floor((sysdate-p.data_naixement)/365)
+	having count(*)>2
+	order by 1,2
+
+		
