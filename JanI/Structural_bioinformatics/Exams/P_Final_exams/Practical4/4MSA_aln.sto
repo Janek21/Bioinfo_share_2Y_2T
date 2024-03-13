@@ -1,0 +1,33 @@
+# STOCKHOLM 1.0
+
+#=GS sp|P24823|PPBN_MOUSE DE Alkaline phosphatase, germ cell type OS=Mus musculus OX=10090 GN=Alpg PE=2 SV=2
+#=GS sp|P05187|PPB1_HUMAN DE Alkaline phosphatase, placental type OS=Homo sapiens OX=9606 GN=ALPP PE=1 SV=2
+#=GS sp|P10696|PPBN_HUMAN DE Alkaline phosphatase, germ cell type OS=Homo sapiens OX=9606 GN=ALPG PE=1 SV=4
+
+sp|P24823|PPBN_MOUSE         ....mwgacllllglslqvcpsvipveeenpafwnrkaaealdaakklkpiqtsAKNLVILMGDGMGVSTVTATRILKGQQQGHLGPETqLAMDRFPHMALSKTYNTDKQIPDSAGTGTAFLCGVKTNMKVIGLSaaarfnqcntTWGNEVVSVMHRAKKAGKSVGVVTTTSVQHASPAGTYAHTVNRGWYSDAQMPASA
+#=GR sp|P24823|PPBN_MOUSE PP ....**************************************************7*************************************************************************************************************************************************
+sp|P05187|PPB1_HUMAN         mlgpcmlllllllglrlqlslgiipveeenpdfwnreaaealgaakklqpaqtaAKNLIIFLGDGMGVSTVTAARILKGQKKDKLGPEIpLAMDRFPYVALSKTYNVDKHVPDSGATATAYLCGVKGNFQTIGLSaaarfnqcntTRGNEVISVMNRAKKAGKSVGVVTTTRVQHASPAGTYAHTVNRNWYSDADVPASA
+#=GR sp|P05187|PPB1_HUMAN PP ******************************************************7*************************************************************************************************************************************************
+sp|P10696|PPBN_HUMAN         ...mqgpwvllllglrlqlslgiipveeenpdfwnrqaaealgaakklqpaqtaAKNLIIFLGDGMGVSTVTAARILKGQKKDKLGPETfLAMDRFPYVALSKTYSVDKHVPDSGATATAYLCGVKGNFQTIGLSaaarfnqcntTRGNEVISVMNRAKKAGKSVGVVTTTRVQHASPAGAYAHTVNRNWYSDADVPASA
+#=GR sp|P10696|PPBN_HUMAN PP ...***************************************************7*************************************************************************************************************************************************
+#=GC PP_cons                 ......................................................7**********************************.*********************************************..........*******************************************************
+#=GC RF                      ......................................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..........xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+sp|P24823|PPBN_MOUSE         LQDGCKDISTQLISNM-DIDVILGGGRKFMFPKGTPDQeyptdTKQAGTRLDGRNLVQEWlaKHQGARYVWNRSELIQASLNRSVTHLMGLFEPNDMKYEIHRDPAQDPSLAEMTEVAVRMLSRNPKGFYLFVEGGRIDHGHHETVAYRALTEAVMFDSAVDKADKLT-SEQDTMILVTADHSHVFSFGGYTQRGASIFG
+#=GR sp|P24823|PPBN_MOUSE PP ****************.*********************999999****************************************************************************************************************************.*******************************
+sp|P05187|PPB1_HUMAN         RQEGCQDIATQLISNM-DIDVILGGGRKYMFRMGTPDPeypddYSQGGTRLDGKNLVQEWlaKRQGARYVWNRTELMQASLDPSVTHLMGLFEPGDMKYEIHRDSTLDPSLMEMTEAALRLLSRNPRGFFLFVEGGRIDHGHHESRAYRALTETIMFDDAIERAGQLT-SEEDTLSLVTADHSHVFSFGGYPLRGSSIFG
+#=GR sp|P05187|PPB1_HUMAN PP ****************.********************999999*****************************************************************************************************************************.*******************************
+sp|P10696|PPBN_HUMAN         RQEGCQDIATQLISNM-DIDVILGGGRKYMFPMGTPDPeypddYSQGGTRLDGKNLVQEWlaKHQGARYVWNRTELLQASLDPSVTHLMGLFEPGDMKYEIHRDSTLDPSLMEMTEAALLLLSRNPRGFFLFVEGGRIDHGHHESRAYRALTETIMFDDAIERAGQLT-SEEDTLSLVTADHSHVFSFGGYPLRGSSIFG
+#=GR sp|P10696|PPBN_HUMAN PP ****************.********************999999*****************************************************************************************************************************.*******************************
+#=GC PP_cons                 ****************.********************9.....9****************..**********************************************************************************************************.*******************************
+#=GC RF                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.....xxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+sp|P24823|PPBN_MOUSE         LAPFKA-EDGKSFTSILYGNGPGYKLHNGARADVTEEESSNPTYQQQAAVPLSSETHSGEDVAIFARGPQAHLVHGVQEQNYIAHVMAFAACLepytdcglaspagqssavspgymstllcllagkmlmlmaaaep..
+#=GR sp|P24823|PPBN_MOUSE PP ******.************************************************************************************97*******************************************..
+sp|P05187|PPB1_HUMAN         LAPGKA-RDRKAYTVLLYGNGPGYVLKDGARPDVTESESGSPEYRQQSAVPLDEETHAGEDVAVFARGPQAHLVHGVQEQTFIAHVMAFAACLepytacdlappagttdaahpgrsvvpallpllagtlllletatap
+#=GR sp|P05187|PPB1_HUMAN PP ******.************************************************************************************97*********************************************
+sp|P10696|PPBN_HUMAN         LAPGKA-RDRKAYTVLLYGNGPGYVLKDGARPDVTESESGSPEYRQQSAVPLDGETHAGEDVAVFARGPQAHLVHGVQEQTFIAHVMAFAACLepytacdlapragttdaahpgpsvvpallpllagtllllgtatap
+#=GR sp|P10696|PPBN_HUMAN PP ******.************************************************************************************97*********************************************
+#=GC PP_cons                 ******.************************************************************************************97.............................................
+#=GC RF                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.............................................
+//

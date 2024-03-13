@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  structural.hmm
+# target sequence database:        targetA.fa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       5MSA_aln  [M=497]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-37  115.0   4.4    9.5e-20   56.2   0.0    3.3  3  targetA   
+
+
+Domain annotation for each sequence (and alignments):
+>> targetA  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.5   0.6   1.5e-19   1.5e-19      40     230 ..      31     224 ..      18     252 .. 0.76
+   2 !   56.2   0.0   9.5e-20   9.5e-20     303     382 ..     304     384 ..     298     415 .. 0.83
+   3 !    2.7   0.0    0.0016    0.0016     446     481 ..     416     451 ..     412     454 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 55.5 bits;  conditional E-value: 1.5e-19
+  5MSA_aln  40 aakklkpaqtaaknliillgdgmgvstvtaar...ilkgqkkdklgpetqlamdrfp......yvalsktynvdkhvpdsgatataylcgvkgnlkvigls 131
+               aa++   ++  akn+i+l+gdgmg s +t      +l  ++  +     +  +d +p      + al k       v ds+a+ata+  gvk+   ++g+ 
+   targetA  31 AALRNSLSDKPAKNIILLIGDGMGDSEITLLLtlpLLAARNYAEGAGGFFKGIDALPltgqytHYALNKKTGKPDYVTDSAASATAWSTGVKTYNGALGVD 131
+               56666667789***************999643111444444444444455556655422222277888887888889*****************9999997 PP
+
+  5MSA_aln 132 aaarfnqcnttrgnevisvmnrakkagksvgvvtttrvqhaspagtyahtvnrnwy....sdadvpasarqegckdiatqlisnmdidvilgggrkymfpk 228
+                            ++  ++++ ak ag + g v+t+++q a+pa   ah   r+ y    +  + p  a+++g k   t+ + n   dv lggg k + + 
+   targetA 132 IHE----------KDHPTILEMAKAAGLATGNVSTAELQDATPAALVAHVTSRKCYgpsaTSQKCPGNALEKGGKGSITEQLLNARADVTLGGGAKTFAET 222
+               644..........344568999**********************************432223468*****999998888888899*********9976555 PP
+
+  5MSA_aln 229 gt 230
+                t
+   targetA 223 AT 224
+               54 PP
+
+  == domain 2  score: 56.2 bits;  conditional E-value: 9.5e-20
+  5MSA_aln 303 dpslaemteaallllsrnprgfflfveggridhghhesrayraltetimfddaieragqlts.eedtlslvtadhshvfsf 382
+                p+la+mt+ a+ lls+n +gffl veg  id+  h +     + et+ +d+a++ra +++  e +tl++vtadh+h   +
+   targetA 304 VPTLAQMTDKAIELLSKNEKGFFLQVEGASIDKQDHAANPCGQIGETVDLDEAVQRALEFAKkEGNTLVIVTADHAHASQI 384
+               499******************************************************998752679***********8655 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.0016
+  5MSA_aln 446 deethagedvavfargpqahlvhgvqeqtfiahvma 481
+               d++ h+g ++ + a gp a  v g+ +qt + + m 
+   targetA 416 DSQEHTGSQLRIAAYGPHAANVVGLTDQTDLFYTMK 451
+               6789************************98877775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (497 nodes)
+Target sequences:                          1  (454 residues searched)
+Passed MSV filter:                         1  (1); expected 0.0 (0.02)
+Passed bias filter:                        1  (1); expected 0.0 (0.02)
+Passed Vit filter:                         1  (1); expected 0.0 (0.001)
+Passed Fwd filter:                         1  (1); expected 0.0 (1e-05)
+Initial search space (Z):                  1  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7.50
+//
+[ok]

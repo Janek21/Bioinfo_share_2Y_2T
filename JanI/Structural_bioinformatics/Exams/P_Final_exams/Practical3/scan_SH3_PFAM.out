@@ -1,0 +1,61 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             SH3A.fa
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       SH3A  [L=63]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model    Description
+    ------- ------ -----    ------- ------ -----   ---- --  -------- -----------
+    1.4e-14   53.1   0.1    1.6e-14   52.9   0.1    1.1  1  SH3_1     SH3 domain
+    8.6e-08   31.4   0.0    9.5e-08   31.3   0.0    1.0  1  SH3_2     Variant SH3 domain
+
+
+Domain annotation for each model (and alignments):
+>> SH3_1  SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   52.9   0.1   2.3e-18   1.6e-14       1      48 []       9      55 ..       9      55 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 52.9 bits;  conditional E-value: 2.3e-18
+           EESS-BE-SSTTS-EB-TT-EEEEEEESSSSEEEEEETTTTB---EEG CS
+  SH3_1  1 iAlYDYearesdELsfkkGDviivleksedgWwkgrlkgtgkeGliPs 48
+           iAlYDY+ ++++EL ++ ++++++l+ se +Ww++++k+ g+eG+ Ps
+   SH3A  9 IALYDYQTNDPQELALRCDEEYYLLDSSEIHWWRVQDKN-GHEGYAPS 55
+           7*************************9999********9.69*****8 PP
+
+>> SH3_2  Variant SH3 domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   0.0   1.4e-11   9.5e-08       2      54 ..       8      60 ..       7      61 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 31.3 bits;  conditional E-value: 1.4e-11
+           EEE-S-B--SS-----B----EEEEE.E-S----BEEEE.-TT---B--HHHHH CS
+  SH3_2  2 vraiedyvaedpeeLslkkGDvikvlgskesdgwweges.gGrvGlfPsslVee 54
+           v+a+ dy  +dp+eL l+ ++  ++l +++ ++ww++   +G++G++Pss++ e
+   SH3A  8 VIALYDYQTNDPQELALRCDEEYYLL-DSSEIHWWRVQDkNGHEGYAPSSYLVE 60
+           89999*********************.9*********888**********9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (63 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       250  (0.0182855); expected 273.4 (0.02)
+Passed bias filter:                      220  (0.0160913); expected 273.4 (0.02)
+Passed Vit filter:                        20  (0.00146284); expected 13.7 (0.001)
+Passed Fwd filter:                         2  (0.000146284); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.28u 0.36s 00:00:00.64 Elapsed: 00:00:01.91
+# Mc/sec: 78.80
+//
+[ok]

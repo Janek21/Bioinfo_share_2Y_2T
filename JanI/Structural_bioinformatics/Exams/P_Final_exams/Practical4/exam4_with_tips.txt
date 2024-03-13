@@ -1,0 +1,36 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. 
+
+Each question accounts for 1 point. Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+
+In this exercise we are working with a protein for which we have its sequence in a separate file (target.fa) and its structure in a separate pdb file (target.pdb). Answer the following questions about the protein we are studying: 
+
+a) What function do you think it may have? (practical 1)
+
+b) Does it belongs to some family of PFAM?. If so, obtain the HMM profile from PFAM and name it domain.hmm. (practical 2)
+
+c) the structure of this protein belongs to some fold in SCOP?, which one? (practical 1)
+
+d) Obtain at least three more sequences with known structure and align them with the sequence of the PROBLEM using the HMM profile. Name the alignment hmm_alignment.aln. (practical 2)
+
+e) Superimpose the three structures and provide an image of the superimposition. Name the image superimposition.png. Then, obtain a structure-based HMM from the superimposition you just obtained. Name this HMM structural.hmm. (practical 3)
+
+f) Provide an image of the alignment between the HMM you created in the previous question and the sequence of the problem protein. Name the image hmm_match.png. Can you identify what it the region of the protein sequence that is matching the HMM? (practical 2)
+
+g) Obtain the secondary structure with DSSP and name it dssp.dssp. (practical 5)
+
+h) Do you think the prediction of secondary structure agrees with the actual secondary structure from DSSP?. Obtain an alignment as proof and name it secondary_structure.aln. Is this prediction reliable? (practical 5)
+
+i) Do you think the structure is correct? Can you prove it? show one or more images of the energies that prove it and name them SP1.png, SP2.png, SP3.png and so on. (practical 4)
+
+j) Find if there is some structural problem and show the location with an image (name it structural_problem.png). What's the sequence fragment with this problem? (practical 5)
+
+k) Do you think the protein PROBLEM can work as a dimer? show an image that can prove it (name it dimer.png). (practical 3)
+
+l) Even if it was a monomer, do you think it will work with the function you selected in answer "a"? Use a sequence alignment (ie. you can reuse the alignment from question d) to show the conservation/non-conservation of functional residues. Mark the functionally important amino-acids (conserved or non-conserved) in the alignment with the symbol # at the bottom. (structure analysis with pymol)
+
+m) To further proof your answer in "j": Show an image of the structure of the active site with the relevant aminoacids that preserve (or don't preserve) the function in its active form (i.e. if it requires a cofactor, such as ATP, Ca, etc. include it in the active site interacting with the corresponding residues of the PROBLEM). Name it active_site.png. (protein analysis with pymol)
+
+n) If the structure of the PROBLEM was incorrect (answer in question i), try to fix it. Name the new monomer model as corrected_model.pdb. (practical 5)
+
+o) Do you think that your corrected model can work as a dimer? Can you explain why the original model couldn't work as a dimer? Provide pictures of the corrected model and of the original structure to proof your explanations. Name these images corrected_dimer1.png and corrected_dimer2.png. (practical 3)

@@ -1,0 +1,66 @@
+FINAL EXAM 2
+	 	 	 	
+a) Does it belong to some family of PFAM?. If so, obtain the HMM profile from PFAM and name it p28b.hmm
+
+Make the sequence a fasta file 
+hmmscan ~/Documents/databases/Pfam-A.hmm target.fa > a.out
+the model is zf-C4 (this is also the fold)
+hmmfetch ~/Documents/databases/Pfam-A.hmm zf-C4 > p28b.hmm
+b) Do you think that this protein belongs to some fold in SCOP?, which one?
+
+psiblast -query target.fa -num_iterations 5 -out_pssm target.pssm -out target_uniprot.out -db ~/Documents/databases/uniprot_sprot.fasta
+
+→ P11474
+
+psiblast -db ~/Documents/databases/pdb_seq -in_pssm target.pssm -out target_pdb.out
+
+→ 3e00_A
+
+Fold is the Nuclear receptor ligand-binding domain.
+
+
+c) What function do you think this protein may have?
+Binds to an ERR-alpha response element (ERRE) containing a single consensus half-site, 5'-TNAAGGTCA-3'. Can bind to the medium-chain acyl coenzyme A dehydrogenase (MCAD) response element NRRE-1 and may act as an important regulator of MCAD promoter. Binds to the C1 region of the lactoferrin gene promoter. Requires dimerization and the coactivator, PGC-1A, for full activity. The ERRalpha/PGC1alpha complex is a regulator of energy metabolism. Induces the expression of PERM1 in the skeletal muscle
+
+d) Find 4 homologous proteins in the swissprot database and align them using the HMM you obtained in question a). Then, change the format of this alignment from stockholm to clustalw. Name this alignment homologs.aln.
+Agafar el psiblast d’abans i agafar-ne 5 (4 homologs i la target file) 
+P11474 (target)
+
+psiblast -query target.fa -num_iterations 5 -out_pssm target.pssm -out target_uniprot.out -db 
+~/Documents/databases/uniprot_sprot.fasta
+Align les homologous sequences sense el target.
+cat P62510, Q61539, O95718 and P06211 > sequences.fa
+hmmalign p28b.hmm sequences.fa > homologs.sto
+perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <msa_exd.sto> homologs.aln
+e) Find one template for our protein.
+It’s the same as the output of the psiblast → P11474
+Mirar el target_pdb.out
+3e00_A 
+
+f) Use the template you obtained in the previous question to make a model of our target protein. Name this file model.pdb.
+perl ~/Documents/perl_scripts/PDBtoSplitChain.pl -i 3e00.pdb -o chains (es el prefix)
+cat target.fa > target_template.fa
+cat chainsA.fa >> target_template.fa
+clustalw target_template.fa
+perl ~/Documents/perl_scripts/aconvertMod2.pl -in c -out p <target_template.aln>target_template.pir
+Al modeler Knowns →chainsA la sortida que li has donat al pdb
+Mod10.5 modeling.py
+
+
+Canviar-li al target……pdb el nom a model
+g) Use ProSa to analyze the energies of our model. What structure should you compare your model with? Discuss the energy profile of your model. Save an image of the energy profiles of your model and the protein you decided to compare with as energy_profile.png.
+Es puja el model.pdb a prosa →-5.5
+Es puja el template a prosa →chainsA.dpb →.7.71
+Si es mes petit el template que el model bien!
+
+We should compare the model with the template, in this case the chainsA
+
+h) Compare the secondary structure of your model with the predicted secondary sequence from the sequence. Display this comparison as an alignment including your target sequence, the secondary structure of your model and the predicted secondary structure. Name this file secondary_structure.aln.
+perl /home/sergi/Documentos/perl_scripts/aliss.pl model.dssp > dssp.pir
+perl /home/sergi/Documentos/perl_scripts/psipred.pl target.ss2 > psipred.pir
+cat psipred.pir dssp.pir > compare.pir
+perl /home/sergi/Documentos/perl_scripts/aconvertMod2.pl -in p -out c<compare.pir>secondary_strcuture.aln
+less secondary_strcuture.aln 
+i) This protein can bind ligands such as drugs or hormones. Find an homologous structure that contains one of these ligands. Name it ligand_template.pdb.
+less target_pdb.out
+PDB structure is 3d24

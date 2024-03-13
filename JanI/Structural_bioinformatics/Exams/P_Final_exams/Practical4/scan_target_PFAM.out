@@ -1,0 +1,152 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             targetA.fa
+# target HMM database:             /home/jj/Documents/databases/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       targetA  [L=454]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------        -----------
+   1.9e-140  468.1   2.3   4.3e-130  434.0   0.6    2.0  2  Alk_phosphatase  Alkaline phosphatase
+    9.1e-07   28.3   3.7      2e-06   27.1   0.8    2.4  2  Metalloenzyme    Metalloenzyme superfamily
+    6.4e-05   22.3   0.0    9.4e-05   21.7   0.0    1.3  1  Phosphodiest     Type I phosphodiesterase / nucleotide pyroph
+  ------ inclusion threshold ------
+      0.016   14.0   0.5       0.54    9.0   0.0    2.9  3  Sulfatase        Sulfatase
+
+
+Domain annotation for each model (and alignments):
+>> Alk_phosphatase  Alkaline phosphatase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  434.0   0.6  1.3e-133  4.3e-130       1     350 [.      42     414 ..      42     418 .. 0.97
+   2 !   34.9   0.1   1.8e-12   6.2e-09     381     419 ..     416     454 .]     413     454 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 434.0 bits;  conditional E-value: 1.3e-133
+                      -SEEEEE-------HHHH........HHHHHH--TTS--...S-TGCC-SEEEEEE--ECSSS......S--HHHHHHHHH-----BTT-B--- CS
+  Alk_phosphatase   1 aknvilligDGmgvstvt........aaRslkeqakgklgeeilaldrlplvglsktyavdkq......vtDSaataTAyacgvktyngaigvd 80 
+                      akn+illigDGmg+s++t        aaR+++e+a g +    + +d+lpl+g++++ya +k+      vtDSaa+aTA+++gvktynga+gvd
+          targetA  42 AKNIILLIGDGMGDSEITllltlpllAARNYAEGAGGFF----KGIDALPLTGQYTHYALNKKtgkpdyVTDSAASATAWSTGVKTYNGALGVD 131
+                      7***************98776677778999999999997....99************************************************* PP
+
+                      TTS-----HHHHHHH-------EESS-TTSCCCHTTT--BSSTT--SGHHC.....-HHCCH-----HHHHHHHCS..-SB-B----GGGCCB- CS
+  Alk_phosphatase  81 thgkevksvleaAkkaGkstGlVtTtrvthAtPaalvahvasRkweddaat.....aasakkeGckdiaeqlikakkkidvllGGGrkeflptg 169
+                       h+k+++++le+Ak+aG +tG+V+T+++++AtPaalvahv+sRk+++++at     +++++k+G+++i+eql++a+  +dv+lGGG+k+f++t+
+          targetA 132 IHEKDHPTILEMAKAAGLATGNVSTAELQDATPAALVAHVTSRKCYGPSATsqkcpGNALEKGGKGSITEQLLNAR--ADVTLGGGAKTFAETA 223
+                      ***************************************************999999999****************..************8888 PP
+
+                      ---STT....B----BHHHHHCH---EE--SHHHHHHHHT-TTSSSEE----------CC.....................CTSTTTS--HHHH CS
+  Alk_phosphatase 170 tkdeekerGtrldgrnlieeakkagyqyvsdrkeLlkakeensvkplLGLFadgdlkvel.....................erdekeePsLkem 242
+                      t +       +++g++l+eea ++gyq+vsd+++L++++++n++kplLGLFadg+++v++                     +++++++P+L++m
+          targetA 224 TGG-------EWQGKTLREEAEARGYQLVSDAASLNSVTDANQQKPLLGLFADGNMPVRWlgpkatyhgnidkpavtctpnPQRNDSVPTLAQM 310
+                      777.......************************************************************************************ PP
+
+                      HHHHHHHHTT-----EEEEE--HHHHHHCTT-HHHHHHHHHHHHHHHHHHHHHCHHTTTEEEEEE-SSEES.B.-EEE-TT------EEEEE-T CS
+  Alk_phosphatase 243 tevAiklLsknekGFFLlVEGsrIDhaaHendavgalsEvvefdeAvkaalefakkeketlvvvTaDHshvfsiggytqrgtsieglaaakktk 336
+                      t++Ai+lLsknekGFFL+VEG++ID+++H+++++g+++E+v++deAv++alefakke +tlv+vTaDH+h+   +++++ +t++ gl++a++tk
+          targetA 311 TDKAIELLSKNEKGFFLQVEGASIDKQDHAANPCGQIGETVDLDEAVQRALEFAKKEGNTLVIVTADHAHA---SQIVAPDTKAPGLTQALNTK 401
+                      ***********************************************************************...******************** PP
+
+                      TSSEEECSBB..E- CS
+  Alk_phosphatase 337 dgkakklilygnge 350
+                      dg+++++ +ygn+e
+          targetA 402 DGAVMVM-SYGNSE 414
+                      ****999.999986 PP
+
+  == domain 2  score: 34.9 bits;  conditional E-value: 1.8e-12
+                      SS--EE---EEEEEE---GGGG---EECCHHHHHHHHHT CS
+  Alk_phosphatase 381 tseeHtgedvavfAygpkaelvrGvqeqteiakvlaaal 419
+                      +s+eHtg++++++Aygp+a++v G+++qt+++++++aal
+          targetA 416 DSQEHTGSQLRIAAYGPHAANVVGLTDQTDLFYTMKAAL 454
+                      699*********************************986 PP
+
+>> Metalloenzyme  Metalloenzyme superfamily
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.1     0.046   1.6e+02       1      16 [.      43      58 ..      43      64 .. 0.88
+   2 !   27.1   0.8     6e-10     2e-06     136     228 ..     308     433 ..     267     450 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.046
+                   xxxxxxxxxxxxxxxx RF
+  Metalloenzyme  1 kkvvlivlDGlGdrea 16
+                   k ++l++ DG+Gd+e 
+        targetA 43 KNIILLIGDGMGDSEI 58
+                   5799*********985 PP
+
+  == domain 2  score: 27.1 bits;  conditional E-value: 6e-10
+                    xxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxx................. RF
+  Metalloenzyme 136 kevtdkllealekgkyd.fivvnlantDmvGHtgdveakvkaieavDealgelldalekeddll.iitADHgnaeemkd................. 212
+                    +++tdk++e l k++   f+ v  a +D+  H+ ++ +++    ++Dea+++ l+ ++ke+++l i+tADH  a++++                  
+        targetA 308 AQMTDKAIELLSKNEKGfFLQVEGASIDKQDHAANPCGQIGETVDLDEAVQRALEFAKKEGNTLvIVTADHAHASQIVApdtkapgltqalntkdg 403
+                    4689********999986889**************************************98876268*********99988888888888777777 PP
+
+                    ..............xxxxxxxxxxxxxxxx RF
+  Metalloenzyme 213 ..............TsHtrepVPvliygkg 228
+                                   +Ht  +  ++ yg++
+        targetA 404 avmvmsygnseedsQEHTGSQLRIAAYGPH 433
+                    777777777777777777777777777764 PP
+
+>> Phosphodiest  Type I phosphodiesterase / nucleotide pyrophosphatase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   0.0   2.7e-08   9.4e-05     163     254 ..     304     393 ..     215     433 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 2.7e-08
+                   HHHHHHHHH.HCTS.-TTT-ECEEEEEEECCCH--------SHCCHHHHHHHHHH--------TTTT-CCCEEEEEE-------B...-TTSEEE CS
+  Phosphodiest 163 epkvdtilsdvakrlleeerpdlllvylselDsvgHkfgpdspevedalrrvDraigqLlealdergllentniilvSDHGmadv...lnkkvid 254
+                    p + + + ++++ l ++e+  +l v+ +++D+  H+  p +        ++D+a+++ le ++++   +nt++i+++DH  a+    ++ k+  
+       targetA 304 VPTLAQMTDKAIELLSKNEKGFFLQVEGASIDKQDHAANPCGQI--GETVDLDEAVQRALEFAKKE---GNTLVIVTADHAHASQivaPDTKAPG 393
+                   47788899999999999*******************99996544..4789****************...***********887765554444444 PP
+
+>> Sulfatase  Sulfatase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.42   1.4e+03       1      17 [.      43      59 ..      43      75 .. 0.86
+   2 ?    2.1   0.1      0.02        68     147     175 ..     301     328 ..      88     330 .. 0.70
+   3 ?    9.0   0.0   0.00016      0.54     220     251 ..     354     382 ..     336     450 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.42
+               -EEEEEEEST--CCHCC CS
+  Sulfatase  1 pnvvliladdlgagdlg 17
+               +n++l+++d +g++ ++
+    targetA 43 KNIILLIGDGMGDSEIT 59
+               69*********998665 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.02
+                .GGGSHHHHHHHHHHHHHHHCTTSSEEEE CS
+  Sulfatase 147 peggysdealldealefllarndkPffly 175
+                ++     ++++d+a+e+ l +n+k ffl+
+    targetA 301 NDSVPTLAQMTDKAIEL-LSKNEKGFFLQ 328
+                33334446788888888.67778888876 PP
+
+  == domain 3  score: 9.0 bits;  conditional E-value: 0.00016
+                HHHHHHHHHHHHH---GGGEEEEEEE-----G CS
+  Sulfatase 220 DdaigrvlaaLeenglldnTlvvftSDHgasl 251
+                D+a++r   aLe +++  nTlv++t+DH ++ 
+    targetA 354 DEAVQR---ALEFAKKEGNTLVIVTADHAHAS 382
+                555555...566668899**********9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (454 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                       279  (0.0204067); expected 273.4 (0.02)
+Passed bias filter:                      232  (0.016969); expected 273.4 (0.02)
+Passed Vit filter:                        21  (0.00153599); expected 13.7 (0.001)
+Passed Fwd filter:                         4  (0.000292569); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.48u 0.29s 00:00:00.77 Elapsed: 00:00:02.09
+# Mc/sec: 519.52
+//
+[ok]

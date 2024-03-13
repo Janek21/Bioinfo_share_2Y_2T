@@ -1,0 +1,114 @@
+The exam submission will consist in one compressed directory. In this compressed directory you will include two directories: one named results and another named scratch. In the results directory you will include all the files I ask you during the different questions and a text file where you will answer the questions. The scratch directory will be the directory where you have done the exam, and it will contain all the files you have generated. 
+
+Each question accounts for 1 point. Try to keep answers simple and direct. You can use your notes and materials of the classes if you want, you can also check biological databases. 
+
+
+In this exercise we are working with a protein for which we have its sequence in a separate file (target.fa) and its structure in a separate pdb file (target.pdb). Answer the following questions about the protein we are studying: 
+
+a) What function do you think it may have?
+
+	$perl ~/Documents/databases/perl_scripts/PDBtoSplitChain.pl -i target.pdb -o target
+	$blastp -query targetA.fa -db ~/Documents/databases/uniprot_sprot.fasta -out target.out
+
+	Look into the file: P00634 -> Alkaline phosphatase -> Function: Catalytic activity
+
+b) Does it belongs to some family of PFAM?. If so, obtain the HMM profile from PFAM and name it domain.hmm.
+	
+	$hmmscan ~/Documents/databases/Pfam-A.hmm targetA.fa > scan_target_PFAM.out
+	Get Alk_phosphatase -> use in hmmfetch
+	$hmmfetch ~/Documents/databases/Pfam-A.hmm Alk_phosphatase > domain.hmm
+
+c) the structure of this protein belongs to some fold in SCOP?, which one?
+
+	$blastp -query targetA.fa -db ~/Documents/databases/pdb_seq -out target_pdb.out
+	Search 1alk in scop
+	Fold is: Alkaline phosphatase-like
+
+d) Obtain at least three more sequences with known structure and align them with the sequence of the PROBLEM using the HMM profile. Name the alignment hmm_alignment.aln.
+
+	$hmmsearch domain.hmm ~/Documents/databases/uniprot_sprot.fasta > 4MSA_homologs.out
+	Get first 3 (P24823, P05187, P10696)
+	$cat P24823.fasta P05187.fasta P10696.fasta > sequences.fasta
+	
+	$hmmalign domain.hmm sequences.fasta> 4MSA_aln.sto
+	Sto→aln
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in h -out c <4MSA_aln.sto> hmm_alignment.aln
+
+e) Superimpose the three structures and provide an image of the superimposition. Name the image superimposition.png. Then, obtain a structure-based HMM from the superimposition you just obtained. Name this HMM structural.hmm.
+	
+	Look uniprot of P24823, P05187, P10696 and download pdb from structure section
+	>remove resn hoh
+	>super P05187, P10696, object=aln1
+	>super P24823, P10696, object=aln1
+	>save ealign.aln, aln1
+	#pots posar target tmb
+	
+	$ perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out f <ealign.aln> 5_aln.fa
+	$ perl ~/Documents/databases/perl_scripts/fasta2sto.pl 5_aln.fa > 5MSA_aln.sto
+	
+	$hmmbuild structural.hmm 5MSA_aln.sto
+
+f) Provide an image of the alignment between the HMM you created in the previous question and the sequence of the problem protein. Name the image hmm_match.png. Can you identify what it the region of the protein sequence that is matching the HMM?
+
+	$hmmsearch structural.hmm targetA.fa> 7_toaln.out
+	scroll down and save the image as hmm_match.png
+	??
+
+g) Obtain the secondary structure with DSSP and name it dssp.dssp.
+	Already given
+	$mv target.dssp dssp.dssp
+
+h) Do you think the prediction of secondary structure agrees with the actual secondary structure from DSSP?. Obtain an alignment as proof and name it secondary_structure.aln. Is this prediction reliable?
+	
+	$perl ~/Documents/databases/perl_scripts/psipred.pl targetA.ss2 > h_tsecondary.pir
+	$perl ~/Documents/databases/perl_scripts/aliss.pl dssp.dssp > h_dsecondary.pir
+	
+	$cat h_tsecondary.pir h_dsecondary.pir >h_secondary.pir
+	
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in p -out c <h_secondary.pir>secondary_structure.aln
+	
+	Compare target.ss2SS and dssp.dsspSS on secondary_structure.aln and target.horiz(only in score 9 amino acids), if the 3 are equal the prediction for the amino acid is correct. 
+
+i) Do you think the structure is correct? Can you prove it? show one or more images of the energies that prove it and name them SP1.png, SP2.png, SP3.png and so on. 
+
+	$cat targetA.fa > template.fa
+	Change name to template 
+	$cat targetA.fa > target_template.fa
+	$cat template.fa >> target_template.fa 
+	$clustalw target_template.fa 
+	$perl ~/Documents/databases/perl_scripts/aconvertMod2.pl -in c -out p <target_template.aln> target_template.pir
+	
+	Use modeling.py:
+		alnfile  = 'target_template.pir',
+		knowns   = ('targetA'), 
+		sequence = 'template')
+
+	$mv template.B99990001.pdb model.pdb
+	
+	Load the model to prosa and analize images
+
+j) Find if there is some structural problem and show the location with an image (name it structural_problem.png). What's the sequence fragment with this problem?
+
+	Superimpose the template of the modeller with two structures of PDB you obtained before( P05187 , P10696)
+	>remove resn hoh
+	>super model_, P10696
+	RMSD=1.423
+	>super P05187 , P10696
+	RMSD=0.301
+	There are some structural differences.
+	Analize horiz file, we see that there are some regions that do not match.
+	We load model.pdb to Qmeans, and we see peak down in 50+ (around 60) we also see that there is a orange region in 60, look in pymol, around 60s model has loop, P10696 has helix.
+	
+k) Do you think the protein PROBLEM can work as a dimer? show an image that can prove it (name it dimer.png).
+
+	Fer alignment de model, pero no se amb que alineo, show a structure with the model in 2 positions (com tetramer del 3)
+	
+l) Even if it was a monomer, do you think it will work with the function you selected in answer "a"? Use a sequence alignment (ie. you can reuse the alignment from question d) to show the conservation/non-conservation of functional residues. Mark the functionally important amino-acids (conserved or non-conserved) in the alignment with the symbol # at the bottom.
+
+	
+
+m) To further proof your answer in "j": Show an image of the structure of the active site with the relevant aminoacids that preserve (or don't preserve) the function in its active form (i.e. if it requires a cofactor, such as ATP, Ca, etc. include it in the active site interacting with the corresponding residues of the PROBLEM). Name it active_site.png.
+
+n) If the structure of the PROBLEM was incorrect (answer in question i), try to fix it. Name the new monomer model as corrected_model.pdb.
+
+o) Do you think that your corrected model can work as a dimer? Can you explain why the original model couldn't work as a dimer? Provide pictures of the corrected model and of the original structure to proof your explanations. Name these images corrected_dimer1.png and corrected_dimer2.png. 

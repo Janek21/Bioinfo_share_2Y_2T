@@ -1,14 +1,11 @@
-CLUSTAL 2.1 multiple sequence alignment
+CLUSTAL W(1.60) multiple sequence alignment
 
+target    vlspaDKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-DLS----HGSAQV
+template  vlspaDKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHF-DLS----HGSAQV
 
-tout            VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGK
-target          VLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGK
-                ************************************************************
+target    KGHGKKVADALTNAVAHV--D-DMPNALSALSDDeaHKERD-DPVNDKLLSHCL-lvtla
+template  KGHGKKVADALTNAVAHV--D-DMPNALSALSDDeaHKERD-DPVNDKLLSHCL-lvtla
 
-tout            KVADALTNAVAHVDDMPNALSALSDDEAHKERDDPVNDKLLSHCLLVTLAAHAPALAHLP
-target          KVADALTNAVAHVDDMPNALSALSDDEAHKERDDPVNDKLLSHCLLVTLAAHAPALAHLP
-                ************************************************************
+target    ahapalahlpaeftpavhasldkflasvstvdtskyr
+template  ahapalahlpaeftpavhasldkflasvstvdtskyr
 
-tout            AEFTPAVHASLDKFLASVSTVDTSKYR
-target          AEFTPAVHASLDKFLASVSTVDTSKYR
-                ***************************

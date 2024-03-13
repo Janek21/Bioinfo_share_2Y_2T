@@ -9,9 +9,9 @@ env = environ()  # create a new MODELLER environment to build this model in
 env.io.atom_files_directory = ['.', '../atom_files']
 
 a = automodel(env,
-              alnfile  = 'seq.pir', # alignment filename
-              knowns   = ('tout'),     # codes of the templates #NOM QUE LI HAS POSAT AL PAS DEL PERL(splitchain), L ULTIM ARGUMENT  # add chain if needed
-              sequence = 'tout')               # code of the target (name of the protein in the fasta)
+              alnfile  = '7aln.pir', # alignment filename
+              knowns   = ('target'),     # codes of the templates #NOM QUE LI HAS POSAT AL PAS DEL PERL(splitchain), L ULTIM ARGUMENT  # add chain if needed
+              sequence = 'template')               # code of the target (name of the protein in the fasta)
 a.starting_model= 1                 # index of the first model
 a.ending_model  = 2                 # index of the last model
                                     # (determines how many models to calculate)

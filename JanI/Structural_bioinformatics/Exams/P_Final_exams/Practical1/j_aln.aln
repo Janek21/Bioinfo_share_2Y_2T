@@ -1,0 +1,34 @@
+CLUSTAL
+
+model_       V--------------------------------------------------------------
+1z8u         MALLKANKDLISAGLKEFSVLLNQQVFNDALVSEEDMVTVVEDWMNFYINYYRQQVTGEPQER
+                                                                            
+
+model_       ---------------------------------------------------------------
+1z8u         DKALQELRQELNTLANPFLAKYRDFLKSHELPSHPPPSSMVLSPADKTNVKAAWGKVGAHAGE
+                                                                            
+
+model_       ---------------------------------------------------------------
+1z8u         YGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDL
+                                                                            
+
+model_       ---------------------------------------------------------------
+1z8u         HAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYRMALLKANK
+                                                                            
+
+model_       ---------------------------------------------------------------
+1z8u         DLISAGLKEFSVLLNQQVFNDALVSEEDMVTVVEDWMNFYINYYRQQVTGEPQERDKALQELR
+                                                                            
+
+model_       ---------------------------------LSPADKTNVKAAWGKVGAHAGEYGAEALER
+1z8u         QELNTLANPFLAKYRDFLKSHELPSHPPPSSMVLSPADKTNVKAAWGKVGAHAGEYGAEALER
+                                              ******************************
+
+model_       MFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHV-DDMPNALSALSDDEAHKERD
+1z8u         MFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNA-LSALSDLHAHKLRV
+             *****************  *********************** *.... * ****..***.*.
+
+model_       DPVNDKLLSHCLLVTLAAHAPALAHLPAEFTPAVHASLDKFLASVSTVDTSKYR         
+1z8u         DPVNFKLLSHCL------LVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR         
+             ****.*******      .....**********************                  
+

@@ -1,0 +1,34 @@
+CLUSTAL 2.1 multiple sequence alignment
+
+
+targetA         TPEMPVLENRAAQGNITAPGGARRLTGDQTAALRNSLSDKPAKNIILLIGDGMGDSEITL
+template        TPEMPVLENRAAQGNITAPGGARRLTGDQTAALRNSLSDKPAKNIILLIGDGMGDSEITL
+                ************************************************************
+
+targetA         LLTLPLLAARNYAEGAGGFFKGIDALPLTGQYTHYALNKKTGKPDYVTDSAASATAWSTG
+template        LLTLPLLAARNYAEGAGGFFKGIDALPLTGQYTHYALNKKTGKPDYVTDSAASATAWSTG
+                ************************************************************
+
+targetA         VKTYNGALGVDIHEKDHPTILEMAKAAGLATGNVSTAELQDATPAALVAHVTSRKCYGPS
+template        VKTYNGALGVDIHEKDHPTILEMAKAAGLATGNVSTAELQDATPAALVAHVTSRKCYGPS
+                ************************************************************
+
+targetA         ATSQKCPGNALEKGGKGSITEQLLNARADVTLGGGAKTFAETATGGEWQGKTLREEAEAR
+template        ATSQKCPGNALEKGGKGSITEQLLNARADVTLGGGAKTFAETATGGEWQGKTLREEAEAR
+                ************************************************************
+
+targetA         GYQLVSDAASLNSVTDANQQKPLLGLFADGNMPVRWLGPKATYHGNIDKPAVTCTPNPQR
+template        GYQLVSDAASLNSVTDANQQKPLLGLFADGNMPVRWLGPKATYHGNIDKPAVTCTPNPQR
+                ************************************************************
+
+targetA         NDSVPTLAQMTDKAIELLSKNEKGFFLQVEGASIDKQDHAANPCGQIGETVDLDEAVQRA
+template        NDSVPTLAQMTDKAIELLSKNEKGFFLQVEGASIDKQDHAANPCGQIGETVDLDEAVQRA
+                ************************************************************
+
+targetA         LEFAKKEGNTLVIVTADHAHASQIVAPDTKAPGLTQALNTKDGAVMVMSYGNSEEDSQEH
+template        LEFAKKEGNTLVIVTADHAHASQIVAPDTKAPGLTQALNTKDGAVMVMSYGNSEEDSQEH
+                ************************************************************
+
+targetA         TGSQLRIAAYGPHAANVVGLTDQTDLFYTMKAAL
+template        TGSQLRIAAYGPHAANVVGLTDQTDLFYTMKAAL
+                **********************************
