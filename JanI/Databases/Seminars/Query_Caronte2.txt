@@ -1,22 +1,3 @@
-Show tables:
-    select *
-    from nodul
-    
-    SELECT *
-    FROM broncovideo
-    
-    select *
-    from biopsiplan
-    
-    select *
-    from biopsiresult
-    
-    select *
-    from ctnodul
-    
-    select *
-    from ctestudi
-
 1.Patients without biopsies but with CT. Return Pacient ID.
 	
 	select distinct ctn.pacient_id
@@ -84,12 +65,33 @@ Show tables:
 
 8.Percentage of nodules of interventions planned by CVC having a conclusive diagnosis.
 	
-	select
+	select count(case when n.diagnostic is not NULL then 1 end)*100.0/count(*)
+	from biopsiplan bp
+	join nodul n on bp.nodulid = n.nodulid and bp.pacient_id = n.pacient_id
+	where bp.navegador = 'CVC'
 	
 9.Percentage of males.
 	
-	select
+	select count(case when p.sexo='HOME' then 1 end) * 100/count(*)
+	from pacient p
 
 10.Percentage of intubated patients (field "IOT" from broncovideo) grouped by gender. Return the "sexo" and % of intubated patients (patients with  broncovideo / patients with broncovideo and IOT='IOT')
 
-	select
+    select sub2.sexo, (sub1.iot / sub2.total) *100
+    from (
+        select count(*) as iot, sexo
+        from pacient p
+        where p.pacient_id in(
+            select b.pacient_id
+            from biopsiresult b, broncovideo v
+            where v.videoarxiu=b.video_arxiu and v.iot = 'IOT'
+            )
+        group by p.sexo
+    ) sub1,(
+    select count(*) as total, sexo
+    from pacient p, broncovideo v, biopsiresult b
+    where p.pacient_id=b.pacient_id and b.video_arxiu=v.videoarxiu
+    group by sexo
+    )sub2
+    where sub1.sexo=sub2.sexo
+    order by 1,2
