@@ -1,3 +1,22 @@
+Show tables:
+    select *
+    from nodul
+    
+    SELECT *
+    FROM broncovideo
+    
+    select *
+    from biopsiplan
+    
+    select *
+    from biopsiresult
+    
+    select *
+    from ctnodul
+    
+    select *
+    from ctestudi
+
 1.Weight of patients over 50 years. Return Pacient_ID and weight.
 
 	select pacient_id, pes
@@ -33,20 +52,19 @@
 	order by 1,2
 
 4.Final diagnosis of nodules biopsied explorations carried out in February 2016. Return Pacient_ID, NodulID and diagnosis.
-
-#no esta be
-	select N.diagnostic, N.pacient_id, N.nodulid
+#
+	select N.pacient_id, N.nodulid, N.diagnostic
 	from nodul N
 	where N.pacient_id in(
-	    select b.pacient_id
-	    from biopsiresult b
-	    where b.video_arxiu in (
-		select v.videoarxiu
-		from broncovideo v
-		where v.videodata between TO_DATE('01/02/2016', 'DD/MM/YYYY') AND TO_DATE('30/03/2016', 'DD/MM/YYYY')
-	    )
+		select b.pacient_id
+		from biopsiresult b
+		where b.video_arxiu in (
+			select v.videoarxiu
+			from broncovideo v
+			where to_char(v.videodata, 'MMYY') = 0216
+		)
 	)
-	order by 1,2
+	order by 1, 2, 3
 
 5.Segmental location of non-visible (field "VisibleEscopia") nodules with conclusive diagnosis (diagnostic is not NULL). Return Pacient_ID, NodulID, LocSeg.
 
@@ -92,6 +110,7 @@
 
 10.Average cross area (given the formula: diammenor* diammajor) for the nodules of smoker. Return the average cross area.
 
+//enganxar be
 	select avg(diammenor*diammajor)
     	from nodul
     	where pacient_id in(
@@ -117,22 +136,23 @@
 		where n.diagnostic is NULL
 	)
 	group by b.visibleescopia
-	order 1,2
+	order by 1, 2
 
 13.Number of biopsy per month independently of the year. Return month (TO_CHAR(date,'MM')) and number of biopsies.
 
-    select to_char(v.videodata, 'MM'), count(*)
-    from biopsiresult br
-    join broncovideo v on br.video_arxiu = v.videoarxiu
-    where br.video_arxiu in(
-        select v.videoarxiu
-        from broncovideo v
-    )
-    group by to_char(v.videodata, 'MM')
-    order 1,2
+	select to_char(v.videodata, 'MM'), count(*)
+	from biopsiresult br
+	join broncovideo v on br.video_arxiu = v.videoarxiu
+	where br.video_arxiu in(
+		select v.videoarxiu
+		from broncovideo v
+	)
+	group by to_char(v.videodata, 'MM')
+	order by 1,2
 
 14.Minimum distance (field "distanciacarinareal") of biopsied nodules according to segmental location. Return segmental location (field "locseg") and minimum distance.
 
+#
 	select n.locseg, min(b.distanciacarinareal)
 	from nodul n
 	join biopsiresult b on n.pacient_id = b.pacient_id
@@ -141,6 +161,7 @@
 		from biopsiresult b
 	)
 	group by n.locseg
+	order by n.locseg
 
 15.Number of CT studies for each patient. Return pacient_ID and number of CT studies.
 	
