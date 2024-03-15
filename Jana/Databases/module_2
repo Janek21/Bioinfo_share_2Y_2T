@@ -63,18 +63,17 @@ order by 1
 
 --- 10	Percentage of intubated patients (field "IOT" from broncovideo) grouped by gender. Return the "sexo" and % of intubated patients (patients with  broncovideo / patients with broncovideo and 
 --- IOT='IOT') (MAL)
-select A.sexo, (B.el/A.la)*100
-from (select p.sexo, count(BO.IOT) as la
-        from pacient p, nodul n, ctnodul ct, biopsiplan bp, biopsiresult br, ctestudi c, broncovideo bo
-        where p.pacient_id=n.pacient_id and n.nodulID=ct.nodulID and n.pacient_id=ct.pacient_id and ct.ct_id=c.ct_id and 
-            ct.pacient_id=bp.pacient_id and ct.nodulID=bp.nodulID and ct.ct_id=bp.ct_id and bp.nodulID=br.nodulID and 
-            bp.cami_id=br.cami_id and bp.ct_id=br.ct_id and bp.pacient_id=br.pacient_id and bo.videoarxiu = br.video_arxiu
-            and bo.IOT = 'IOT' 
-            group by p.sexo)A, 
-    (select p.sexo, count(BO.IOT) as el 
-    from pacient p, nodul n, ctnodul ct, biopsiplan bp, biopsiresult br, ctestudi c, broncovideo bo
-    where p.pacient_id=n.pacient_id and n.nodulID=ct.nodulID and n.pacient_id=ct.pacient_id and ct.ct_id=c.ct_id and 
-        ct.pacient_id=bp.pacient_id and ct.nodulID=bp.nodulID and ct.ct_id=bp.ct_id and bp.nodulID=br.nodulID and 
-        bp.cami_id=br.cami_id and bp.ct_id=br.ct_id and bp.pacient_id=br.pacient_id and bo.videoarxiu = br.video_arxiu
-    group by p.sexo)B
-where A.sexo = B.sexo
+
+SELECT A.sexo, (A.total/B.totiot)*100
+from (SELECT sexo, count(*) as total
+from pacient p, broncovideo bv, biopsiresult br
+where p.pacient_id = br.pacient_id
+and br.video_arxiu = bv.videoarxiu
+group by sexo)A, (SELECT sexo, count(*) as totiot
+from pacient p, broncovideo bv, biopsiresult br
+where p.pacient_id = br.pacient_id
+and br.video_arxiu = bv.videoarxiu
+and bv.IOT ='IOT'
+group by sexo)B
+where a.sexo = b.sexo
+order by 1, 2
