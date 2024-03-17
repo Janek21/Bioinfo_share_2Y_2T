@@ -51,7 +51,7 @@ class N_in_line(object):
 		elif not n.isdigit():  # Checking if the input is a digit
 			print('Invalid input. Try again.\n')
 			self.change_n()
-		elif int(n) > self.n:
+		elif int(n) > self.n: # Checking for a coherent n
 			print(f'The number of tokens in a row of your input is too high. Try again\n')
 			self.change_obj()
 		else:
@@ -162,7 +162,7 @@ class N_in_line(object):
 		'''
 		Function that asks the player for it's next move
 		'''
-		print("Please do your move (Input example: '>>>i j')")
+		print("Please do your move (Input example: '>>>row column')")
 		move = sys.stdin.readline().strip().split()  # Getting and formatting input from stdin
 		print()  # Formatting output
 
@@ -173,7 +173,7 @@ class N_in_line(object):
 			print("Invalid input. Try again.\n")
 			self.ask_move()
 		else:
-			return int(move[0]) - 1, int(move[1]) - 1  # Returning the coordinates (User friendly) if the input is correct
+			return int(move[0]) - 1, int(move[1]) - 1  # Returning the coordinates (from userfriendly to programming logic) if the input is correct
 
 	def choose_player(self):
 		'''
@@ -292,9 +292,9 @@ class N_in_line(object):
 		Custom heuristic function to evaluate the desirability of a move.
 		It has in account the following info:
 		- If there is a winner move for the bot
-		- Winner moves avaliable for the oponent
+		- Winner moves avaliable for the oponent (to make the bot stop them)
 		- Critical positions:
-			· Center of the board
+			· Exact center of the board
 			· Corners
 			· Edges
 			· Proximity to the center of the board
