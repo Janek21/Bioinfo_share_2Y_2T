@@ -1,6 +1,6 @@
 import sys
 import math
-
+import os
 class N_in_line(object):
 
 	def __init__(self):
@@ -289,18 +289,19 @@ class N_in_line(object):
 		'''
 		Function that calls all the other functions so that it is possible to play
 		'''
+		os.system('cls' if os.name == 'nt' else 'clear')
 		print('Welcome to N in a row\n')
 
 		self.change_n() # 
-
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.change_obj()
-
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.choose_player()
-		
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.represent_board() # Representing the board
 
 		while self.is_game_ended() == False:
-				
+
 			m = self.ask_move() # Player moves first so we ask for it's move
 
 			while m not in self.get_moves(): # Checking if a move is illegal
@@ -310,7 +311,7 @@ class N_in_line(object):
 				m = self.ask_move() # Aking for a new move
 			
 			self.make_move(m, self.player1) # Doing player's move
-
+			os.system('cls' if os.name == 'nt' else 'clear')
 			self.represent_board() # Representing the board
 			
 			score, best_move = self.min_max(self.player2, depth=self.n, alpha=-math.inf, beta=math.inf) # Computing the best move for the bot

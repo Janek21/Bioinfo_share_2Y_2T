@@ -1,12 +1,12 @@
 import sys
 import math
-
+import os
 class N_in_line(object):
 
 	def __init__(self):
 		
 		self.n = 3 # Setting 3 as deffault
-		self.obj = 3
+		self.obj = 3 # Setting 3 as deffault
 
 		# Creation of a matrix n*n representing the board (default: 3*3)
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
@@ -24,7 +24,7 @@ class N_in_line(object):
 		if n.isspace(): # If  no value is entered, keeping the default one
 			pass
 
-		elif  not n.isdigit(): # Checking if the input is a digit
+		elif not n.isdigit(): # Checking if the input is a digit
 
 			print('Invalid input. Try again.\n')
 			self.change_n()
@@ -117,35 +117,33 @@ class N_in_line(object):
 		Function that takes self and the player as arguments and tells us if a determined player is the winner or not.
 		Output: True / False
 		"""
-		# Initialize counters for rows, columns, and diagonals
+		# Check rows
 		for i in range(self.n):
 			row_count = 0
-			col_count = 0
 			for j in range(self.n):
-				# Counting player symbols in rows and columns
 				if self.board[i][j] == player:
 					row_count += 1
 					if row_count == self.obj:
-						return True
-				if self.board[j][i] == player:
+						# Check if the next cell is empty or belongs to the opponent
+						if j == self.n - 1 or self.board[i][j + 1] != player:
+							return True
+				else:
+					row_count = 0
+
+		# Check columns
+		for j in range(self.n):
+			col_count = 0
+			for i in range(self.n):
+				if self.board[i][j] == player:
 					col_count += 1
 					if col_count == self.obj:
-						return True
+						# Check if the next cell is empty or belongs to the opponent
+						if i == self.n - 1 or self.board[i + 1][j] != player:
+							return True
+				else:
+					col_count = 0
 
-		# Checking diagonals
-		main_diag_count = 0
-		sec_diag_count = 0
-		for i in range(self.n):
-			if self.board[i][i] == player:
-				main_diag_count += 1
-				if main_diag_count == self.obj:
-					return True
-			if self.board[i][self.n - i - 1] == player:
-				sec_diag_count += 1
-				if sec_diag_count == self.obj:
-					return True
-
-		# Check other diagonals
+		# Check diagonals
 		for i in range(self.n - self.obj + 1):  # Iterate over rows
 			for j in range(self.n - self.obj + 1):  # Iterate over columns
 				# Check diagonal going from bottom-left to top-right
@@ -153,17 +151,26 @@ class N_in_line(object):
 				for k in range(self.obj):
 					if self.board[i + k][j + k] == player:
 						count += 1
-				if count == self.obj:
-					return True
+						if count == self.obj:
+							# Check if the next cell is empty or belongs to the opponent
+							if (i + k == self.n - 1 or j + k == self.n - 1) or self.board[i + k + 1][j + k + 1] != player:
+								return True
+					else:
+						count = 0
+
 				# Check diagonal going from top-left to bottom-right
 				count = 0
 				for k in range(self.obj):
 					if self.board[i + self.obj - k - 1][j + k] == player:
 						count += 1
-				if count == self.obj:
-					return True
+						if count == self.obj:
+							# Check if the next cell is empty or belongs to the opponent
+							if (i + self.obj - k - 1 == self.n - 1 or j + k == self.n - 1) or self.board[i + self.obj - k - 2][j + k + 1] != player:
+								return True
+					else:
+						count = 0
 
-		return False  # If the function continues until here it means that the player has not won so returning False
+		return False  # If the function continues until here it means that the player has not won, so returning False
 
 	def ask_move(self):
 
@@ -222,33 +229,116 @@ class N_in_line(object):
 
 		return moves
 	
-	def min_max(self, player, depth, alpha, beta):
+	def heuristic(self, move, player):
+		"""
+		Heuristic function to evaluate the desirability of a move for the given player.
+		Factors considered:
+		- Number of consecutive tokens of the player in rows, columns, and diagonals.
+		- Number of consecutive tokens of the opponent that could be blocked.
+		- Proximity to winning positions.
+		"""
 
+		def count_consecutive_tokens(board, player):
+			"""
+			Count consecutive tokens of the player in rows, columns, and diagonals.
+			"""
+			consecutive_count = 0
+			max_consecutive_count = 0
+
+			# Check rows
+			for row in board:
+				for token in row:
+					if token == player:
+						consecutive_count += 1
+						max_consecutive_count = max(max_consecutive_count, consecutive_count)
+					else:
+						consecutive_count = 0
+				consecutive_count = 0
+
+			# Check columns
+			for j in range(self.n):
+				for i in range(self.n):
+					if board[i][j] == player:
+						consecutive_count += 1
+						max_consecutive_count = max(max_consecutive_count, consecutive_count)
+					else:
+						consecutive_count = 0
+				consecutive_count = 0
+
+			# Check diagonals
+			for i in range(self.n - self.obj + 1):
+				for j in range(self.n - self.obj + 1):
+					# Check diagonal going from bottom-left to top-right
+					for k in range(self.obj):
+						if board[i + k][j + k] == player:
+							consecutive_count += 1
+							max_consecutive_count = max(max_consecutive_count, consecutive_count)
+						else:
+							consecutive_count = 0
+					consecutive_count = 0
+
+					# Check diagonal going from top-left to bottom-right
+					for k in range(self.obj):
+						if board[i + self.obj - k - 1][j + k] == player:
+							consecutive_count += 1
+							max_consecutive_count = max(max_consecutive_count, consecutive_count)
+						else:
+							consecutive_count = 0
+					consecutive_count = 0
+
+			return max_consecutive_count
+
+		# Initialize heuristic score
+		score = 0
+
+		# Get a copy of the board to evaluate hypothetical moves
+		hypothetical_board = [row[:] for row in self.board]
+		x, y = move
+
+		# Simulate placing the player's token at the specified move
+		hypothetical_board[x][y] = player
+
+		# Check the number of consecutive tokens for the player and the opponent
+		player_consecutive_count = count_consecutive_tokens(hypothetical_board, player)
+		opponent_consecutive_count = count_consecutive_tokens(hypothetical_board, self.player1 if player == self.player2 else self.player2)
+
+		# Prioritize moves that lead to a win
+		if player_consecutive_count == self.obj - 1:
+			score += 1000
+
+		# Prioritize blocking opponent's potential winning moves
+		if opponent_consecutive_count == self.obj - 1:
+			score += 500
+
+		# Proximity to winning positions
+		center = self.n // 2
+		score -= abs(x - center) + abs(y - center)
+
+		return score
+
+	def min_max(self, player, depth, alpha, beta):
 		'''
-		Function that implements the min max with alpha and beta prouring algorithm to select the best movement
-		It will decide which move of the possible moves is the best
+		Optimized Minimax with Alpha-Beta Pruning
 		'''
-	# Base case: check if the game has ended or if the depth limit has been reached
+		# Base case: check if the game has ended or if the depth limit has been reached
 		if self.is_game_ended() or depth == 0:
-			if self.check_winner(self.player1):  # If player1 wins, return a positive score
+			if self.check_winner(self.player1): # If player1 wins, return a positive score
 				return 1, None
-			elif self.check_winner(self.player2):  # If player2 wins, return a negative score
+			elif self.check_winner(self.player2): # If player2 wins, return a negative score
 				return -1, None
-			else:  # Otherwise, it's a draw
+			else: # Otherwise, it's a draw
 				return 0, None
 
-	# If it's player1's turn, initialize best_score to negative infinity
-		if player == self.player1:
-			best_score = -math.inf
-		else:  # If it's player2's turn, initialize best_score to positive infinity
-			best_score = math.inf
-
+		# If it's player1's turn, initialize best_score to negative infinity
+		best_score = -math.inf if player == self.player1 else math.inf
 		best_move = None
 
 		# Get all possible moves for the current player
 		possible_moves = self.get_moves()
 
-		# For each possible move, evaluate the score using recursive min_max
+		# Sort moves based on some heuristic (e.g., center of the board first)
+		possible_moves.sort(key=lambda move: self.heuristic(move, player), reverse=True)
+
 		for move in possible_moves:
 			# Make the move
 			self.make_move(move, player)
@@ -256,22 +346,24 @@ class N_in_line(object):
 			score, _ = self.min_max(self.player1 if player == self.player2 else self.player2, depth - 1, alpha, beta)
 			# Undo the move
 			self.make_move(move, ' ')
-			# Update the best_score and best_move based on the current player
-			if player == self.player1:  # If it's player1's turn
+
+			if player == self.player1: # If it's player1's turn
 				if score > best_score:
 					best_score = score
 					best_move = move
 				alpha = max(alpha, best_score)
-			else:  # If it's player2's turn
+			else: # If it's player2's turn
 				if score < best_score:
 					best_score = score
 					best_move = move
 				beta = min(beta, best_score)
-		# Perform alpha-beta pruning
+
+			# Perform alpha-beta pruning
 			if alpha >= beta:
 				break
 
 		return best_score, best_move
+
 	
 	def make_move(self, move, player):
 
@@ -289,18 +381,19 @@ class N_in_line(object):
 		'''
 		Function that calls all the other functions so that it is possible to play
 		'''
+		os.system('cls' if os.name == 'nt' else 'clear')
 		print('Welcome to N in a row\n')
 
 		self.change_n() # 
-
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.change_obj()
-
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.choose_player()
-		
+		os.system('cls' if os.name == 'nt' else 'clear')
 		self.represent_board() # Representing the board
 
 		while self.is_game_ended() == False:
-				
+
 			m = self.ask_move() # Player moves first so we ask for it's move
 
 			while m not in self.get_moves(): # Checking if a move is illegal
@@ -310,7 +403,7 @@ class N_in_line(object):
 				m = self.ask_move() # Aking for a new move
 			
 			self.make_move(m, self.player1) # Doing player's move
-
+			os.system('cls' if os.name == 'nt' else 'clear')
 			self.represent_board() # Representing the board
 			
 			score, best_move = self.min_max(self.player2, depth=self.n, alpha=-math.inf, beta=math.inf) # Computing the best move for the bot
@@ -318,6 +411,7 @@ class N_in_line(object):
 			if best_move is not None:
 				self.make_move(best_move, self.player2)
 				self.represent_board() # Representing the board
+				print(f'The IA moved: {best_move}\n')
 
 		if self.is_board_full(): # Checking if the board is full
 
