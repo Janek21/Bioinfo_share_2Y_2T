@@ -6,7 +6,7 @@ class N_in_line(object):
 	def __init__(self):
 		
 		self.n = 3 # Setting 3 as deffault
-		self.obj = 3 # Setting 3 as deffault
+		self.obj = 3
 
 		# Creation of a matrix n*n representing the board (default: 3*3)
 		self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)] 
@@ -24,7 +24,7 @@ class N_in_line(object):
 		if n.isspace(): # If  no value is entered, keeping the default one
 			pass
 
-		elif not n.isdigit(): # Checking if the input is a digit
+		elif  not n.isdigit(): # Checking if the input is a digit
 
 			print('Invalid input. Try again.\n')
 			self.change_n()
@@ -330,7 +330,6 @@ class N_in_line(object):
 			if best_move is not None:
 				self.make_move(best_move, self.player2)
 				self.represent_board() # Representing the board
-				print(f'The IA moved: {best_move}\n')
 
 		if self.is_board_full(): # Checking if the board is full
 

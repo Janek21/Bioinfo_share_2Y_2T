@@ -1,6 +1,7 @@
 import sys
 import math
 import os
+import random
 class N_in_line(object):
 
 	def __init__(self):
@@ -114,8 +115,8 @@ class N_in_line(object):
 
 	def check_winner(self, player):
 		"""
-		Function that takes self and the player as arguments and tells us if a determined player is the winner or not.
-		Output: True / False
+		Function that checks if a player has won the game.
+		Output: True if the player has won, False otherwise.
 		"""
 		# Check rows
 		for i in range(self.n):
@@ -124,9 +125,7 @@ class N_in_line(object):
 				if self.board[i][j] == player:
 					row_count += 1
 					if row_count == self.obj:
-						# Check if the next cell is empty or belongs to the opponent
-						if j == self.n - 1 or self.board[i][j + 1] != player:
-							return True
+						return True
 				else:
 					row_count = 0
 
@@ -137,40 +136,36 @@ class N_in_line(object):
 				if self.board[i][j] == player:
 					col_count += 1
 					if col_count == self.obj:
-						# Check if the next cell is empty or belongs to the opponent
-						if i == self.n - 1 or self.board[i + 1][j] != player:
-							return True
+						return True
 				else:
 					col_count = 0
 
-		# Check diagonals
-		for i in range(self.n - self.obj + 1):  # Iterate over rows
-			for j in range(self.n - self.obj + 1):  # Iterate over columns
-				# Check diagonal going from bottom-left to top-right
+		# Check main diagonals (from top-left to bottom-right)
+		for i in range(self.n - self.obj + 1):
+			for j in range(self.n - self.obj + 1):
 				count = 0
 				for k in range(self.obj):
 					if self.board[i + k][j + k] == player:
 						count += 1
 						if count == self.obj:
-							# Check if the next cell is empty or belongs to the opponent
-							if (i + k == self.n - 1 or j + k == self.n - 1) or self.board[i + k + 1][j + k + 1] != player:
-								return True
+							return True
 					else:
 						count = 0
 
-				# Check diagonal going from top-left to bottom-right
+		# Check secondary diagonals (from top-right to bottom-left)
+		for i in range(self.n - self.obj + 1):
+			for j in range(self.obj - 1, self.n):
 				count = 0
 				for k in range(self.obj):
-					if self.board[i + self.obj - k - 1][j + k] == player:
+					if self.board[i + k][j - k] == player:
 						count += 1
 						if count == self.obj:
-							# Check if the next cell is empty or belongs to the opponent
-							if (i + self.obj - k - 1 == self.n - 1 or j + k == self.n - 1) or self.board[i + self.obj - k - 2][j + k + 1] != player:
-								return True
+							return True
 					else:
 						count = 0
 
-		return False  # If the function continues until here it means that the player has not won, so returning False
+		return False
+
 
 	def ask_move(self):
 
@@ -265,7 +260,7 @@ class N_in_line(object):
 						consecutive_count = 0
 				consecutive_count = 0
 
-			# Check diagonals
+			# Check main diagonals
 			for i in range(self.n - self.obj + 1):
 				for j in range(self.n - self.obj + 1):
 					# Check diagonal going from bottom-left to top-right
@@ -280,6 +275,27 @@ class N_in_line(object):
 					# Check diagonal going from top-left to bottom-right
 					for k in range(self.obj):
 						if board[i + self.obj - k - 1][j + k] == player:
+							consecutive_count += 1
+							max_consecutive_count = max(max_consecutive_count, consecutive_count)
+						else:
+							consecutive_count = 0
+					consecutive_count = 0
+
+			# Check secondary diagonals
+			for i in range(self.n - self.obj + 1):
+				for j in range(self.obj - 1, self.n):
+					# Check diagonal going from bottom-right to top-left
+					for k in range(self.obj):
+						if board[i + k][j - k] == player:
+							consecutive_count += 1
+							max_consecutive_count = max(max_consecutive_count, consecutive_count)
+						else:
+							consecutive_count = 0
+					consecutive_count = 0
+
+					# Check diagonal going from top-right to bottom-left
+					for k in range(self.obj):
+						if board[i + self.obj - k - 1][j - k] == player:
 							consecutive_count += 1
 							max_consecutive_count = max(max_consecutive_count, consecutive_count)
 						else:
@@ -364,6 +380,7 @@ class N_in_line(object):
 
 		return best_score, best_move
 
+	
 	def make_move(self, move, player):
 
 		'''
@@ -405,12 +422,12 @@ class N_in_line(object):
 			os.system('cls' if os.name == 'nt' else 'clear')
 			self.represent_board() # Representing the board
 			
-			score, best_move = self.min_max(self.player2, depth=self.n, alpha=-math.inf, beta=math.inf) # Computing the best move for the bot
+			score, best_move = self.min_max(self.player2, depth=self.obj, alpha=-math.inf, beta=math.inf) # Computing the best move for the bot
 			
 			if best_move is not None:
 				self.make_move(best_move, self.player2)
 				self.represent_board() # Representing the board
-				print(f'The IA moved at position {best_move[0] + 1}, {best_move[1]}\n')
+				print(f'The IA moved at position {best_move[0] + 1}, {best_move[1] + 1}\n')
 
 		if self.is_board_full(): # Checking if the board is full
 
