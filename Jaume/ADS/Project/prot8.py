@@ -411,8 +411,7 @@ class N_in_line(object):
 			if best_move is not None:
 				self.make_move(best_move, self.player2)
 				self.represent_board() # Representing the board
-				x, y = best_move
-				print(f'The IA moved at position {x + 1}, {y + 1}\n')
+				print(f'The IA moved at position {best_move[0] + 1}, {best_move[1]}\n')
 
 		if self.is_board_full(): # Checking if the board is full
 
