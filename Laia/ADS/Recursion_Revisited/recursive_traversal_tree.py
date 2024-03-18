@@ -36,5 +36,3 @@ p = postorder(inp)
 i = inorder(inp)
 print('',*p)
 print('',*i)
-
-

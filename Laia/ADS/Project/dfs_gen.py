@@ -2,9 +2,6 @@
 Manually programmed iterative dfs
 '''
 
-from collections import deque
-
-
 class MyDiGraph(dict):
 
     def add_edge(self, u, v):
@@ -22,19 +19,19 @@ class MyDiGraph(dict):
         for u in self:
             yield u
 
-    def bfs(self, init, goal):
-        q = deque()
+    def dfs(self, init):
+        q = list()
         q.append(init)
         seen = set()
         while q:
-            curr = q.popleft()
-            if curr == goal:
-                return True
+            curr = q.pop()
             seen.add(curr)
             for neigh in self[curr]:
                 if neigh not in seen:
                     q.append(neigh)
+                    yield neigh
         return False
+
 
 def read_graph():
     n = int(r())
@@ -53,4 +50,6 @@ r = pytokr()
 g = read_graph()
 init = int(r())
 goal = int(r())
-print("yes" if g.bfs(init, goal) else "no")
+print("yes" if g.dfs(init) else "no")
+
+
