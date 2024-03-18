@@ -10,15 +10,6 @@ def tree_read():
     else:
         return[root, tree_read(), tree_read()]
 
-def tree_leveling(numlist):
-    if not numlist:
-        return []
-    print(numlist[0])
-    left=tree_leveling(numlist[1])
-    right=tree_leveling(numlist[2])
-    
-    #return 
-
 def print_levels(lst, out, level=1):
     if not lst:
         return
