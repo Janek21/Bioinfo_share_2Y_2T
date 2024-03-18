@@ -123,10 +123,8 @@ class N_in_line(object):
 
 	def check_winner(self, player):
 		"""
-		Function that takes self and the player as arguments and tells us if a determined player is the winner or not.
-		Output: True / False
+		Function that checks if a player has won the game.
 		"""
-
 		# Clearing winning positions list at the start of the method
 		self.winning_pos = []
 
@@ -138,11 +136,10 @@ class N_in_line(object):
 					row_count += 1
 					self.winning_pos.append([i, j])
 					if row_count == self.obj:
-						# Check if the next cell is empty or belongs to the opponent
-						if j == self.n - 1 or self.board[i][j + 1] != player:
-							return True
+						return True
 				else:
 					row_count = 0
+					self.winning_pos = []
 
 		# Check columns
 		for j in range(self.n):
@@ -152,44 +149,40 @@ class N_in_line(object):
 					col_count += 1
 					self.winning_pos.append([i, j])
 					if col_count == self.obj:
-						# Check if the next cell is empty or belongs to the opponent
-						if i == self.n - 1 or self.board[i + 1][j] != player:
-							return True
+						return True
 				else:
 					col_count = 0
+					self.winning_pos = []
 
-		# Check diagonals
-		for i in range(self.n - self.obj + 1):  # Iterate over rows
-			for j in range(self.n - self.obj + 1):  # Iterate over columns
-				# Check diagonal going from bottom-left to top-right
-				count = 0
+		# Check main diagonal (top-left to bottom-right)
+		for i in range(self.n - self.obj + 1):
+			for j in range(self.n - self.obj + 1):
+				diag_count = 0
 				for k in range(self.obj):
 					if self.board[i + k][j + k] == player:
-						count += 1
+						diag_count += 1
 						self.winning_pos.append([i + k, j + k])
-						if count == self.obj:
-							# Check if the next cell is empty or belongs to the opponent
-							if (i + k == self.n - 1 or j + k == self.n - 1) or self.board[i + k + 1][j + k + 1] != player:
-								return True
+						if diag_count == self.obj:
+							return True
 					else:
-						count = 0
+						diag_count = 0
+						self.winning_pos = []
 
-				# Check diagonal going from top-left to bottom-right
-				count = 0
+		# Check secondary diagonal (top-right to bottom-left)
+		for i in range(self.n - self.obj + 1):
+			for j in range(self.obj - 1, self.n):
+				diag_count = 0
 				for k in range(self.obj):
-					if self.board[i + self.obj - k - 1][j + k] == player:
-						count += 1
-						self.winning_pos.append([i + self.obj - k - 1, j + k])
-						if count == self.obj:
-							# Check if the next cell is empty or belongs to the opponent
-							if (i + self.obj - k - 1 == self.n - 1 or j + k == self.n - 1) or self.board[
-								i + self.obj - k - 2][j + k + 1] != player:
-								return True
+					if self.board[i + k][j - k] == player:
+						diag_count += 1
+						self.winning_pos.append([i + k, j - k])
+						if diag_count == self.obj:
+							return True
 					else:
-						count = 0
+						diag_count = 0
+						self.winning_pos = []
 
-		return False  # If the function continues until here it means that the player has not won, so returning False
-
+		return False
 
 	def ask_move(self):
 		'''
@@ -327,7 +320,7 @@ class N_in_line(object):
 		x, y = move
 
 		row, col = False, False
-		
+		diag = 0
 		for i in range(self.n):
 			
 			for j in range(self.n):
@@ -337,8 +330,48 @@ class N_in_line(object):
 
 				elif self.board[i][y] == player:
 					col = True
+
+		# Check main diagonals
+		for i in range(self.n - self.obj + 1):
+			for j in range(self.n - self.obj + 1):
+
+				# Check diagonal going from top-left to bottom-right
+				count = 0
+				for k in range(self.obj):
+					if self.board[i + k][j + k] == player:
+						count += 1
+						if count == self.obj:
+							diag += 1
+
+				# Check diagonal going from bottom-left to top-right
+				count = 0
+				for k in range(self.obj):
+					if self.board[i + self.obj - k - 1][j + k] == player:
+						count += 1
+						if count == self.obj:
+							diag += 1
+		# Check secondary diagonals (for non-square boards)
+		if self.n != self.obj:  # Only need to check if the board is not square and obj is not equal to n
+			for i in range(self.n - self.obj + 1):
+				for j in range(self.obj - 1, self.n):
+
+					# Check diagonal going from top-right to bottom-left
+					count = 0
+					for k in range(self.obj):
+						if self.board[i + k][j - k] == player:
+							count += 1
+							if count == self.obj:
+								diag += 1
+
+					# Check diagonal going from bottom-right to top-left
+					count = 0
+					for k in range(self.obj):
+						if self.board[i + self.obj - k - 1][j - k] == player:
+							count += 1
+							if count == self.obj:
+								diag+=1
 		
-		return row, col
+		return row, col, diag
 
 	def heuristic(self, move, player):
 		"""
@@ -351,6 +384,7 @@ class N_in_line(object):
 			· Corners
 			· Edges
 			· Proximity to the center of the board
+		- Token in rival diagonal, column or row
 		- Movility (avaliable moves after  the current one)
 		"""
 		x, y = move
@@ -380,13 +414,15 @@ class N_in_line(object):
 			score += 20  # Moderate score for occupying edges
 			score += max(0, (self.n // 2) - distance_to_center) * 10
 
-		row_check, col_check = self.check_col_row(move, opponent)
+		row_check, col_check, diag = self.check_col_row(move, opponent)
 
 		if row_check and col_check == True:
 			score -= 20
 		elif row_check == True or  col_check == True:
 			score -= 10
 
+		score -= diag*10
+		
 		# Mobility
 		num_available_moves_after = len(self.get_moves())
 		score += num_available_moves_after * 5
