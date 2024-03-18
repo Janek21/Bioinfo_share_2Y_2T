@@ -16,6 +16,8 @@ class N_in_line(object):
 		self.player1 = ''
 		self.player2 = ''
 
+		self.winning_pos = []
+
 	def change_n(self):
 		'''
 		Function that asks the player for the size of the board
@@ -62,20 +64,39 @@ class N_in_line(object):
 			self.obj = n  # Changing n inside the class
 			print(f"To win you need {self.obj} tokens in a row to win\n")
 
-	def represent_board(self):
+	def represent_board(self, finish=False):
 		'''
 		Function that allows us to visualize the board
 		'''
-		line = '-' * self.n + '-' * (self.n - 1)  # Calculating the number of dashes needed for each line depending on n
-		print(line)
-
-		# Iterating through each of the n rows of the board
-		for row in self.board:
-			# Representation of the board:
-			print('|'.join(row))
+		if finish:
+			# If there is a winner, show only the winning row, column, or diagonal
+			line = '-' * self.n + '-' * (self.n - 1)
 			print(line)
 
-		print()  # Empty line as separator
+			for i in range(self.n):
+				l = ''
+				for j in range(self.n):
+					if [i, j] in self.winning_pos:
+						l += self.board[i][j] + '|'
+					else:
+						l += ' ' + '|'
+				print(l[:-1])
+				print(line)
+
+			print()
+
+		else:
+			# If there is no winner, show the entire board
+			line = '-' * self.n + '-' * (self.n - 1)  # Calculating the number of dashes needed for each line depending on n
+			print(line)
+
+			# Iterating through each of the n rows of the board
+			for row in self.board:
+				# Representation of the board:
+				print('|'.join(row))
+				print(line)
+
+			print()  # Empty line as separator
 
 	def is_board_full(self):
 		'''
@@ -105,12 +126,17 @@ class N_in_line(object):
 		Function that takes self and the player as arguments and tells us if a determined player is the winner or not.
 		Output: True / False
 		"""
+
+		# Clearing winning positions list at the start of the method
+		self.winning_pos = []
+
 		# Check rows
 		for i in range(self.n):
 			row_count = 0
 			for j in range(self.n):
 				if self.board[i][j] == player:
 					row_count += 1
+					self.winning_pos.append([i, j])
 					if row_count == self.obj:
 						# Check if the next cell is empty or belongs to the opponent
 						if j == self.n - 1 or self.board[i][j + 1] != player:
@@ -124,6 +150,7 @@ class N_in_line(object):
 			for i in range(self.n):
 				if self.board[i][j] == player:
 					col_count += 1
+					self.winning_pos.append([i, j])
 					if col_count == self.obj:
 						# Check if the next cell is empty or belongs to the opponent
 						if i == self.n - 1 or self.board[i + 1][j] != player:
@@ -139,6 +166,7 @@ class N_in_line(object):
 				for k in range(self.obj):
 					if self.board[i + k][j + k] == player:
 						count += 1
+						self.winning_pos.append([i + k, j + k])
 						if count == self.obj:
 							# Check if the next cell is empty or belongs to the opponent
 							if (i + k == self.n - 1 or j + k == self.n - 1) or self.board[i + k + 1][j + k + 1] != player:
@@ -151,6 +179,7 @@ class N_in_line(object):
 				for k in range(self.obj):
 					if self.board[i + self.obj - k - 1][j + k] == player:
 						count += 1
+						self.winning_pos.append([i + self.obj - k - 1, j + k])
 						if count == self.obj:
 							# Check if the next cell is empty or belongs to the opponent
 							if (i + self.obj - k - 1 == self.n - 1 or j + k == self.n - 1) or self.board[
@@ -160,6 +189,7 @@ class N_in_line(object):
 						count = 0
 
 		return False  # If the function continues until here it means that the player has not won, so returning False
+
 
 	def ask_move(self):
 		'''
@@ -290,13 +320,13 @@ class N_in_line(object):
 		self.make_move(move, ' ')
 		return False
 	
-	def check_col_row_col(self, move, player):
+	def check_col_row(self, move, player):
 		'''
 		Function that  checks whether a column or row has a token of a determined token
 		'''
 		x, y = move
 
-		row, col, row = False, False, False
+		row, col = False, False
 		
 		for i in range(self.n):
 			
@@ -475,8 +505,10 @@ class N_in_line(object):
 			print('The board is full. No winners')
 		elif self.check_winner(self.player1):  # Checking if the player has won
 			print("Congratulations, you won!")
+			self.represent_board()
 		elif self.check_winner(self.player2):  # Checking if the bot has won
 			print("You lost! Better luck next time.")
+			self.represent_board(True)
 		else:  # Possible errors
 			print("Something unexpected has occurred. Please restart the game.")
 
