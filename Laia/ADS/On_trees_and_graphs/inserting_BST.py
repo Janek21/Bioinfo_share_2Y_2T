@@ -1,38 +1,33 @@
-class TreeNode:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-        self.right = None
+from pytokr import pytokr
+item, items = pytokr(iter = True)
 
-def insert(root, key):
-    if root is None:
-        return TreeNode(key)
-    if key < root.key:
-        root.left = insert(root.left, key)
-    elif key > root.key:
-        root.right = insert(root.right, key)
-    return root
+def insert_number(number, tree):
+    if not tree:
+        return (number, None, None)
+    else:
+        root = tree[0]
+        left = tree[1]
+        right = tree[2]
 
-def preorder_traversal(root):
-    if root:
-        print(root.key)
-        preorder_traversal(root.left)
-        preorder_traversal(root.right)
+        if number < root:
+            return (root, insert_number(number, left), right)
+        elif number > root:
+            return (root, left, insert_number(number, right))
+        else:
+            return tree
 
-def build_bst(sequence):
-    root = None
-    for num in sequence:
-        root = insert(root, num)
-    return root
+def preordered_tree(tree):
+    if tree:
+        return [tree[0]] + preordered_tree(tree[1]) + preordered_tree(tree[2])
+    return []
 
-if __name__ == "__main__":
-    sequence = []
-    while True:
-        try:
-            num = int(input())
-            sequence.append(num)
-        except EOFError:
-            break
-    
-    root = build_bst(sequence)
-    preorder_traversal(root)
+
+numbers = list(items())
+tree = None
+for number in numbers:
+    number = int(number)
+    # print(f"reading {number}")
+    tree = insert_number(number, tree)
+tree = preordered_tree(tree)
+for num in tree:
+    print(num)

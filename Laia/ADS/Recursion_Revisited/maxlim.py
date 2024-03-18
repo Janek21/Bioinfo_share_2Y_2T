@@ -14,8 +14,24 @@ def maxlim(m, k):
     68037
     '''
 
+    n = 0
+    sols = maxlim_aux(str(m), k, n, '')
+    return sols
 
-    return 'a'
+
+def maxlim_aux(m, k, n, cands):
+    if n == len(m) or len(cands) == k :
+        if cands:
+            return int(cands)
+        return 0
+
+    else:
+        sol1 = maxlim_aux(m, k, n+1, cands)
+        sol2 = maxlim_aux(m, k, n+1, cands+m[n])
+
+    return max(sol1, sol2)
 
 
-
+if __name__ == "__main__":
+	import doctest
+	doctest.testmod(verbose=True)

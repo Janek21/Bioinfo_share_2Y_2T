@@ -28,4 +28,3 @@ for n in items():
         print('no')
     else:
         print('si')
-

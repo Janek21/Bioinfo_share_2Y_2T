@@ -2,9 +2,9 @@ from pytokr import pytokr
 item, items = pytokr(iter = True)
 
 def read_tree_in():
-    root = int(item()) #read() returns strings, so we need to transform it inot int
+    root = int(item()) # read() returns strings, so we need to transform it inot int
     if root == -1:
-        return tuple() #empty trees are represented as empty tuples
+        return tuple() # empty trees are represented as empty tuples
     else:
         return (root, read_tree_in(), read_tree_in())
 

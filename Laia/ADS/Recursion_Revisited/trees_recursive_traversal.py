@@ -27,6 +27,7 @@ def inorder(tree): #left --> root --> right
         return left + root + right
     
 inp = read_input()
+print(inp)
 print("pos:", *postorder(inp))
 print("ino:", *inorder(inp))
 
