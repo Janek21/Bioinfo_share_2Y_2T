@@ -298,7 +298,7 @@ class N_in_line(object):
 			· Corners
 			· Edges
 			· Proximity to the center of the board
-		- Movility (avaliable moves after  the current one)
+		- Movility (avaliable moves after the current one)
 		"""
 		x, y = move
 		score = 0
@@ -415,7 +415,6 @@ class N_in_line(object):
 				self.make_move(m, self.player1)  # Doing player's move
 				os.system('cls' if os.name == 'nt' else 'clear')
 				self.represent_board()  # Representing the board
-
 				score, best_move = self.min_max(self.player2, depth=(self.n)*2 if (self.n)*2 > 8 else 8, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
 
 				if best_move is not None:
@@ -424,20 +423,21 @@ class N_in_line(object):
 					print(f'The BOT moved at position {best_move[0] + 1}, {best_move[1] + 1}\n')
 			
 			else:
-				score, best_move = self.min_max(self.player2, depth=(self.n)*2 if (self.n)*2 > 8 else 8, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
+				score, best_move = self.min_max(self.player2, depth=(self.n)*2 if (self.n)*2 > 8 else 5, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
 
 				if best_move is not None:
 					self.make_move(best_move, self.player2)
 					self.represent_board()  # Representing the board
 					print(f'The BOT moved at position {best_move[0] + 1}, {best_move[1] + 1}\n')
-					
-				m = self.ask_move()  # Player moves first so we ask for its move
-				while m not in self.get_moves():  # Checking if a move is illegal
-					print("Illegal move. Try again.\n")
-					m = self.ask_move()  # Asking for a new move
-				self.make_move(m, self.player1)  # Doing player's move
-				os.system('cls' if os.name == 'nt' else 'clear')
-				self.represent_board()  # Representing the board
+
+				if not self.is_game_ended():
+					m = self.ask_move()  # Player moves first so we ask for its move
+					while m not in self.get_moves():  # Checking if a move is illegal
+						print("Illegal move. Try again.\n")
+						m = self.ask_move()  # Asking for a new move
+					self.make_move(m, self.player1)  # Doing player's move
+					os.system('cls' if os.name == 'nt' else 'clear')
+					self.represent_board()  # Representing the board
 
 		if self.is_board_full():  # Checking if the board is full
 			print('The board is full. No winners')
