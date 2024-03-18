@@ -36,7 +36,7 @@ class N_in_line(object):
 				self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)]  # Creation of the n*n board
 				print(f"You have selected a {self.n}x{self.n} board\n")
 			else:
-				print("Invalid input. Try again. \n")
+				print("The input is too small. Try again. \n")
 				self.change_n()
 
 	def change_obj(self):
@@ -51,8 +51,11 @@ class N_in_line(object):
 		elif not n.isdigit():  # Checking if the input is a digit
 			print('Invalid input. Try again.\n')
 			self.change_obj()
-		elif int(n) > self.n: # Checking for a coherent n
+		elif int(n) > self.n: # Checking for a coherent objective
 			print(f'The number of tokens in a row of your input is too high. Try again\n')
+			self.change_obj()
+		elif int(n) < 3:
+			print("The input is too small. Try again. \n")
 			self.change_obj()
 		else:
 			n = int(n)  # Transforming into integer
@@ -457,7 +460,9 @@ class N_in_line(object):
 					self.make_move(best_move, self.player2)
 					self.represent_board()  # Representing the board
 					print(f'The BOT moved at position {best_move[0] + 1}, {best_move[1] + 1}\n')
-					
+				
+				if self.is_game_ended()==True: break
+
 				m = self.ask_move()  # Player moves first so we ask for its move
 				while m not in self.get_moves():  # Checking if a move is illegal
 					print("Illegal move. Try again.\n")
