@@ -50,7 +50,7 @@ class N_in_line(object):
 			pass
 		elif not n.isdigit():  # Checking if the input is a digit
 			print('Invalid input. Try again.\n')
-			self.change_n()
+			self.change_obj()
 		elif int(n) > self.n: # Checking for a coherent n
 			print(f'The number of tokens in a row of your input is too high. Try again\n')
 			self.change_obj()
@@ -416,7 +416,7 @@ class N_in_line(object):
 				os.system('cls' if os.name == 'nt' else 'clear')
 				self.represent_board()  # Representing the board
 
-				score, best_move = self.min_max(self.player2, depth=(self.n)*2 if (self.n)*2 > 8 else 8, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
+				score, best_move = self.min_max(self.player2, depth=6, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
 
 				if best_move is not None:
 					self.make_move(best_move, self.player2)
@@ -424,7 +424,7 @@ class N_in_line(object):
 					print(f'The BOT moved at position {best_move[0] + 1}, {best_move[1] + 1}\n')
 			
 			else:
-				score, best_move = self.min_max(self.player2, depth=(self.n)*2 if (self.n)*2 > 8 else 8, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
+				score, best_move = self.min_max(self.player2, depth=6, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
 
 				if best_move is not None:
 					self.make_move(best_move, self.player2)
