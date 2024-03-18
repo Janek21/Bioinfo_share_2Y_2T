@@ -136,6 +136,7 @@ class N_in_line(object):
 					row_count += 1
 					self.winning_pos.append([i, j])
 					if row_count == self.obj:
+						self.winning_pos = self.winning_pos[-(self.obj):]
 						return True
 				else:
 					row_count = 0
@@ -149,6 +150,7 @@ class N_in_line(object):
 					col_count += 1
 					self.winning_pos.append([i, j])
 					if col_count == self.obj:
+						self.winning_pos = self.winning_pos[-(self.obj):]
 						return True
 				else:
 					col_count = 0
@@ -163,6 +165,7 @@ class N_in_line(object):
 						diag_count += 1
 						self.winning_pos.append([i + k, j + k])
 						if diag_count == self.obj:
+							self.winning_pos = self.winning_pos[-(self.obj):]
 							return True
 					else:
 						diag_count = 0
@@ -177,11 +180,11 @@ class N_in_line(object):
 						diag_count += 1
 						self.winning_pos.append([i + k, j - k])
 						if diag_count == self.obj:
+							self.winning_pos = self.winning_pos[-(self.obj):]
 							return True
 					else:
 						diag_count = 0
 						self.winning_pos = []
-
 		return False
 
 	def ask_move(self):
