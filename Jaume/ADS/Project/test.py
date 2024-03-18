@@ -17,12 +17,8 @@ class N_in_line(object):
 		self.player2 = ''
 
 	def change_n(self):
-		'''
-		Function that asks the player for the size of the board
-		'''
 		print("Please enter the number of rows and columns you want the board to have")
 		n = sys.stdin.readline().strip()
-
 		if n.isspace():  # If no value is entered, keeping the default one
 			pass
 		elif not n.isdigit():  # Checking if the input is a digit
@@ -30,28 +26,19 @@ class N_in_line(object):
 			self.change_n()
 		else:
 			n = int(n)  # Transforming into integer
-
-			if n >= 3:
-				self.n = n  # Changing n inside the class
-				self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)]  # Creation of the n*n board
-				print(f"You have selected a {self.n}x{self.n} board\n")
-			else:
-				print("Invalid input. Try again. \n")
-				self.change_n()
+			self.n = n  # Changing n inside the class
+			self.board = [[' ' for _ in range(self.n)] for _ in range(self.n)]  # Creation of the n*n board
+			print(f"You have selected a {self.n}x{self.n} board\n")
 
 	def change_obj(self):
-		'''
-		Function that allows the player to configure the nº of tokens in a row needed to win
-		'''
 		print("Please enter the number of tokens in a row to win")
 		n = sys.stdin.readline().strip()
-
 		if n.isspace():  # If no value is entered, keeping the default one
 			pass
 		elif not n.isdigit():  # Checking if the input is a digit
 			print('Invalid input. Try again.\n')
 			self.change_n()
-		elif int(n) > self.n: # Checking for a coherent n
+		elif int(n) > self.n:
 			print(f'The number of tokens in a row of your input is too high. Try again\n')
 			self.change_obj()
 		else:
@@ -159,13 +146,9 @@ class N_in_line(object):
 		return False  # If the function continues until here it means that the player has not won, so returning False
 
 	def ask_move(self):
-		'''
-		Function that asks the player for it's next move
-		'''
-		print("Please do your move (Input example: '>>>row column')")
+		print("Please do your move (Input example: '>>>i j')")
 		move = sys.stdin.readline().strip().split()  # Getting and formatting input from stdin
 		print()  # Formatting output
-
 		if len(move) != 2:
 			print("Invalid input. Try again.\n")
 			self.ask_move()
@@ -173,15 +156,11 @@ class N_in_line(object):
 			print("Invalid input. Try again.\n")
 			self.ask_move()
 		else:
-			return int(move[0]) - 1, int(move[1]) - 1  # Returning the coordinates (from userfriendly to programming logic) if the input is correct
+			return int(move[0]) - 1, int(move[1]) - 1  # Returning the coordinates (User friendly) if the input is correct
 
 	def choose_player(self):
-		'''
-		Function that allows the player to change it's token
-		'''
 		print('Choose your symbol: X / O (Upper)')
 		symb = sys.stdin.readline().strip()
-
 		if symb == 'X':
 			self.player1 = 'X'
 			self.player2 = 'O'
@@ -191,7 +170,6 @@ class N_in_line(object):
 		else:
 			print("Invalid input. Try again.\n")
 			self.choose_player()
-
 		print()  # Formatting the output (empty line)
 
 	def get_moves(self):
@@ -199,14 +177,12 @@ class N_in_line(object):
 		Function that looks for all the possible moves for the bot
 		'''
 		moves = []  # Creating empty list to store all the legal moves
-
 		# Iterating through each cell of the board matrix
 		for i in range(self.n):
 			for j in range(self.n):
 				# Checking if there is an empty space
 				if self.board[i][j] == ' ':
 					moves.append((i, j))  # If there is an empty space we append its coordinates into the moves list
-
 		return moves
 
 	def check_potential_win(self, move, player):
@@ -215,15 +191,12 @@ class N_in_line(object):
 		"""
 		x, y = move
 
-		self.make_move(move, player) # Does the move in the board but it will erase it once the cheacking is done
-
 		# Check rows
 		row_count = 0
 		for j in range(self.n):
 			if self.board[x][j] == player:
 				row_count += 1
 				if row_count == self.obj:
-					self.make_move(move, ' ')
 					return True
 			else:
 				row_count = 0
@@ -234,7 +207,6 @@ class N_in_line(object):
 			if self.board[i][y] == player:
 				col_count += 1
 				if col_count == self.obj:
-					self.make_move(move, ' ')
 					return True
 			else:
 				col_count = 0
@@ -242,14 +214,12 @@ class N_in_line(object):
 		# Check main diagonals
 		for i in range(self.n - self.obj + 1):
 			for j in range(self.n - self.obj + 1):
-
 				# Check diagonal going from top-left to bottom-right
 				count = 0
 				for k in range(self.obj):
 					if self.board[i + k][j + k] == player:
 						count += 1
 						if count == self.obj:
-							self.make_move(move, ' ')
 							return True
 
 				# Check diagonal going from bottom-left to top-right
@@ -258,21 +228,18 @@ class N_in_line(object):
 					if self.board[i + self.obj - k - 1][j + k] == player:
 						count += 1
 						if count == self.obj:
-							self.make_move(move, ' ')
 							return True
 
 		# Check secondary diagonals (for non-square boards)
 		if self.n != self.obj:  # Only need to check if the board is not square and obj is not equal to n
 			for i in range(self.n - self.obj + 1):
 				for j in range(self.obj - 1, self.n):
-
 					# Check diagonal going from top-right to bottom-left
 					count = 0
 					for k in range(self.obj):
 						if self.board[i + k][j - k] == player:
 							count += 1
 							if count == self.obj:
-								self.make_move(move, ' ')
 								return True
 
 					# Check diagonal going from bottom-right to top-left
@@ -281,29 +248,18 @@ class N_in_line(object):
 						if self.board[i + self.obj - k - 1][j - k] == player:
 							count += 1
 							if count == self.obj:
-								self.make_move(move, ' ')
 								return True
-							
-		self.make_move(move, ' ')
+
 		return False
 
 	def heuristic(self, move, player):
 		"""
 		Custom heuristic function to evaluate the desirability of a move.
-		It has in account the following info:
-		- If there is a winner move for the bot
-		- Winner moves avaliable for the oponent (to make the bot stop them)
-		- Critical positions:
-			· Exact center of the board
-			· Corners
-			· Edges
-			· Proximity to the center of the board
-		- Movility (avaliable moves after  the current one)
 		"""
 		x, y = move
 		score = 0
 
-		# Check for potential winning moves
+		# Check for potential winning moves for the current player
 		if self.check_potential_win(move, player):
 			score += 1000  # High score for potential wins
 
@@ -312,20 +268,20 @@ class N_in_line(object):
 		if self.check_potential_win(move, opponent):
 			score += 500  # Moderate score for blocking opponent's win
 
-		# Control of the center
+		# Check for potential winning moves for the opponent and penalize if not blocked
+		opponent_winning_moves = [m for m in self.get_moves() if self.check_potential_win(m, opponent)]
+		if opponent_winning_moves:
+			score -= 500  # Penalize for allowing opponent's potential win
+
+		# Control of key positions (center, corners, edges)
 		center = self.n // 2
 		distance_to_center = abs(x - center) + abs(y - center)
-		#score += max(0, (self.n // 2) - distance_to_center) * 10
-
-		# Occupying critical positions (e.g., corners and edges)
 		if distance_to_center == 0:
-			score += 100
+			score += 100  # Higher score for moves closer to the center
 		elif (x, y) in [(0, 0), (0, self.n - 1), (self.n - 1, 0), (self.n - 1, self.n - 1)]:
-			score += 50  # Higher score for occupying corners
-			score += max(0, (self.n // 2) - distance_to_center) * 10
+			score += 50  # Moderate score for occupying corners
 		elif x == 0 or x == self.n - 1 or y == 0 or y == self.n - 1:
 			score += 20  # Moderate score for occupying edges
-			score += max(0, (self.n // 2) - distance_to_center) * 10
 
 		# Mobility
 		num_available_moves_after = len(self.get_moves())
@@ -335,7 +291,7 @@ class N_in_line(object):
 
 	def min_max(self, player, depth, alpha, beta):
 		'''
-		Minimax algorith with Alpha-Beta Pruning optimization
+		Optimized Minimax with Alpha-Beta Pruning
 		'''
 		# Base case: check if the game has ended or if the depth limit has been reached
 		if self.is_game_ended() or depth == 0:
@@ -364,7 +320,6 @@ class N_in_line(object):
 			score, _ = self.min_max(self.player1 if player == self.player2 else self.player2, depth - 1, alpha, beta)
 			# Undo the move
 			self.make_move(move, ' ')
-
 			# Update the best_score and best_move based on the current player
 			if player == self.player1:  # If it's player1's turn
 				if score > best_score:
@@ -376,7 +331,6 @@ class N_in_line(object):
 					best_score = score
 					best_move = move
 				beta = min(beta, best_score)
-
 		# Perform alpha-beta pruning
 			if alpha >= beta:
 				break
@@ -398,7 +352,7 @@ class N_in_line(object):
 		os.system('cls' if os.name == 'nt' else 'clear')
 		print('Welcome to N in a row\n')
 
-		self.change_n()
+		self.change_n()  #
 		os.system('cls' if os.name == 'nt' else 'clear')
 		self.change_obj()
 		os.system('cls' if os.name == 'nt' else 'clear')
@@ -415,7 +369,7 @@ class N_in_line(object):
 			os.system('cls' if os.name == 'nt' else 'clear')
 			self.represent_board()  # Representing the board
 
-			score, best_move = self.min_max(self.player2, depth=self.n, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
+			score, best_move = self.min_max(self.player2, depth=self.obj, alpha=-math.inf, beta=math.inf)  # Computing the best move for the bot
 
 			if best_move is not None:
 				self.make_move(best_move, self.player2)
