@@ -45,8 +45,8 @@ def nw(seq_i, seq_j, match, mismatch, gep):
             if [inser, subst, delet].count(mx)>1: ##NEW
                 ties+=1                     ## Do a tie for every match, multiple matches count as 1
 
-    for row in traceback:
-        print(row)
+    # for row in traceback:
+    #     print(row)
     # We do the traceback
     aln_i = []
     aln_j = []
@@ -72,4 +72,4 @@ def nw(seq_i, seq_j, match, mismatch, gep):
     return "".join(reversed(aln_i)), "".join(reversed(aln_j))
 
 
-nw("FAT", "FAST", 2, -1, -1)
+print(nw("FAT", "FAST", 2, -1, -1))
