@@ -12,7 +12,7 @@ https://www.linuxcapable.com/how-to-install-github-desktop-on-ubuntu-linux/
 
 ## Instruccions
 Once you have github desktop installed
-  Clone repository https://github.com/Janek21/Bioinfo_share_2Y_2T to local
+  Clone repository https://github.com/Janek21/BDBI_works_2Y2T to local
 #### Managed by: Janek21
 
 ##### Commit regularly, Before commiting: fetch>pull>commit>push
